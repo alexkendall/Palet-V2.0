@@ -41,17 +41,30 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
             cell.textLabel?.textColor = UIColor.lightGrayColor();
         }
         
-        // add ability to delete palets
+        // add button to delete palets
         let delete_button = DeleteButton();
         let del_height:CGFloat = cell.bounds.height * 0.5;
         let del_margin:CGFloat = (cell.bounds.height - del_height) * 0.5;
-        let del_x:CGFloat = cell.bounds.width - del_margin - del_height;
+        let del_x:CGFloat = cell.bounds.width - del_height;
         delete_button.frame = CGRect(x: del_x, y: del_margin, width: del_height, height: del_height);
         delete_button.set_highlight_color(LIGHT_GRAY);
         delete_button.set_unhighlight_color(SOFT_RED);
         delete_button.addTarget(self, action: "delete_palet:", forControlEvents: UIControlEvents.TouchUpInside);
         delete_button.tag = indexPath.row;
         cell.addSubview(delete_button);
+        
+        
+        // add button to view palets
+        let view_button = ViewButton();
+        let view_height:CGFloat = cell.bounds.height * 0.5;
+        let view_margin:CGFloat = (cell.bounds.height - del_height) * 0.5;
+        let view_x:CGFloat = delete_button.frame.minX - (view_height * 1.5) - view_margin;
+        view_button.frame = CGRect(x: view_x, y: view_margin, width: view_height, height: view_height);
+        view_button.set_highlight_color(LIGHT_GRAY);
+        view_button.set_unhighlight_color(SOFT_GREEN);
+        //view_button.addTarget(self, action: "view_palet:", forControlEvents: UIControlEvents.TouchUpInside);
+        view_button.tag = indexPath.row;
+        cell.addSubview(view_button);
         
         let view = UIView();
         view.backgroundColor = UIColor.whiteColor();

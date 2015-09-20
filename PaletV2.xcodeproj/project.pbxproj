@@ -42,6 +42,7 @@
 		466888EB1BAD5B5E00495931 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466888EA1BAD5B5E00495931 /* NotificationController.swift */; settings = {ASSET_TAGS = (); }; };
 		46B553191BAB5CB6007D814D /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B553181BAB5CB6007D814D /* EmailButton.swift */; };
 		46BF1F681BAF29AB0095F13B /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F671BAF29AB0095F13B /* DeleteButton.swift */; settings = {ASSET_TAGS = (); }; };
+		46BF1F6B1BAF45770095F13B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F6A1BAF45770095F13B /* Core.swift */; settings = {ASSET_TAGS = (); }; };
 		46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */; };
 		46EFAA8C1BAB874700E5AA40 /* ViewPaletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */; };
 		46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */; };
@@ -97,6 +98,7 @@
 		466888EA1BAD5B5E00495931 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		46B553181BAB5CB6007D814D /* EmailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		46BF1F671BAF29AB0095F13B /* DeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		46BF1F6A1BAF45770095F13B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = ../Core.swift; sourceTree = "<group>"; };
 		46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPaletController.swift; sourceTree = "<group>"; };
 		46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,8 @@
 				46140F981BA9F18D00E8CCD2 /* MyTableCell.swift */,
 				46140F901BA92FC900E8CCD2 /* EncodeImage.swift */,
 				46140F941BA9C18800E8CCD2 /* Color.swift */,
+				46BF1F6C1BAF4F120095F13B /* Persistence */,
+				46BF1F6A1BAF45770095F13B /* Core.swift */,
 				460898441BAB2B1B005275AD /* Menu */,
 				46140F9C1BA9FFD900E8CCD2 /* ControlButtons */,
 				46140F8A1BA90FD800E8CCD2 /* ViewControllers */,
@@ -254,6 +258,13 @@
 				4664BFDF1BADF11700E25D4A /* OperationController.swift */,
 			);
 			name = InfoControllers;
+			sourceTree = "<group>";
+		};
+		46BF1F6C1BAF4F120095F13B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				46140F991BA9F18D00E8CCD2 /* MyTableCell.swift in Sources */,
 				460898371BAA785F005275AD /* AnimatedViewProtocol.swift in Sources */,
 				46140FA01BAA027400E8CCD2 /* CheckButton.swift in Sources */,
+				46BF1F6B1BAF45770095F13B /* Core.swift in Sources */,
 				466888E91BAD3E4400495931 /* NewPaletController.swift in Sources */,
 				460898391BAA7B08005275AD /* AnimatedButton.swift in Sources */,
 				460898301BAA7286005275AD /* NavController.swift in Sources */,
