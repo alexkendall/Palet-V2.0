@@ -62,7 +62,7 @@ func fetch_colors(group:String)->[NSManagedObject]?
 }
 
 // stores color in group
-func store_color(group:String, color:UIColor)
+func store_color(color:UIColor, group:String)
 {
     var red:CGFloat = 0;
     var green:CGFloat = 0;
@@ -135,5 +135,18 @@ func delete_group(group:String)
     }
     
 }
+
+// returns color from managed object
+func get_color(color_data:NSManagedObject)->UIColor
+{
+    let red = color_data.valueForKey("red") as! CGFloat;
+    let green = color_data.valueForKey("green") as! CGFloat;
+    let blue = color_data.valueForKey("blue") as! CGFloat;
+    return UIColor(red: red, green: green, blue: blue, alpha: 1.0);
+}
+
+
+
+
 
 

@@ -65,6 +65,3 @@ func get_hex(color:UIColor)->String
     let b:Int = Int(255.0 * blue);
     return NSString(format:"#%02X%02X%02X", r, g, b) as String;
 }
-
-
-

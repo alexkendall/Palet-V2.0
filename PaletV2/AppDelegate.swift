@@ -14,6 +14,7 @@ let sel_controller = SelController();
 let favorites_controller = FavoritesController();
 let view_palet_controller = ViewPaletController();
 let email_controller = EmailController();
+let FAVORITE_GROUP_NAME = "favorites";
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window?.rootViewController = sel_controller;
         //window?.rootViewController = favorites_controller;
         //window?.rootViewController = view_palet_controller;
-        
         return true
     }
 

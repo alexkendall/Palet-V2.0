@@ -203,10 +203,10 @@ class PickerController:AuxillaryController {
     func add_favorite()
     {
         let color = self.color_view.backgroundColor;
-        nav_controller.favorites_controller.colors.append(color!);
+        store_color(color!, group: FAVORITE_GROUP_NAME);
         nav_controller.favorites_controller.table.reloadData();
         nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to favorites");
-        
+
     }
     
     func add_to_palette()
@@ -217,6 +217,7 @@ class PickerController:AuxillaryController {
             nav_controller.view_palet_controller.colors.append(color!);
             nav_controller.view_palet_controller.color_colection.reloadData();
             nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to " + selected_palet);
+            store_color(color!, group: selected_palet);
         }
         else
         {

@@ -36,7 +36,3 @@ class EmailController:MFMailComposeViewController
     }
     
 }
-
-
-
-

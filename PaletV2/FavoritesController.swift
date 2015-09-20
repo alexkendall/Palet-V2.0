@@ -14,11 +14,22 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
     var margin:CGFloat!;
     var table:UITableView!;
     var label_texts = ["NEW PALETTE", "VIEW PALETTES", "VIEW FAVORITES", "COLOR PICKER", "EMAIL PALETTE"];
-    var colors = [SOFT_GREEN, SOFT_ORANGE, SOFT_RED, WOLF_GRAY, DARK_GRAY];
+    var colors = [UIColor]();
     var selected_index:Int = -1;
     var selected_colors = Set<Int>();
     var sorted_colors = [Int]();
     
+    
+    
+    func load_favorites()
+    {
+        colors.removeAll(keepCapacity: true);
+        let fav_colors = fetch_colors(FAVORITE_GROUP_NAME);
+        for(var i = 0; i < fav_colors!.count; ++i)
+        {
+            colors.append(get_color(fav_colors![i]));
+        }
+    }
     
     // START UITABLEVIEWDATASOURCE PROTOCOL IMPLEMENTATION------------------------
     
@@ -100,6 +111,7 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        load_favorites();
         return colors.count;
     }
     
@@ -107,12 +119,13 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
     {
         for(var i = 0; i < sorted_colors.count; ++i)
         {
-            colors.removeAtIndex(sorted_colors[i]);
+            let index = sorted_colors[i];
+            delete_color(colors[index], group: FAVORITE_GROUP_NAME)
+            colors.removeAtIndex(index);
         }
         sorted_colors.removeAll();
         selected_colors.removeAll();
         table.reloadData();
-        
         nav_controller.operation_controller.hide();
     }
     
