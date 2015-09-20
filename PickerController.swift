@@ -74,7 +74,7 @@ class PickerController:AuxillaryController {
         let rgb_out_frame = CGRect(x: rgb_offx, y: -rgb_height, width: rgb_width, height: rgb_height);
         rgb_label = AnimatedLabel(in_frame: rgb_in_frame, out_frame: rgb_out_frame);
         
-        rgb_label.text = "rgb(128, 128, 128)     #808080";
+        rgb_label.text = "#808080  rgb(128, 128, 128)";
         rgb_label.font = UIFont.systemFontOfSize(16.0);
         super_view.addSubview(rgb_label);
         
@@ -277,44 +277,10 @@ class PickerController:AuxillaryController {
     
     func update_code()
     {
-        // update rgb
-        let r:Int = Int(255.0 * sliders[0].value);
-        let g:Int = Int(255.0 * sliders[1].value);
-        let b:Int = Int(255.0 * sliders[2].value);
-        rgb_label.text = "(" + String(r) + ", " + String(g) + ", " + String(b) + ")";
+        let hex = get_hex(color_view.backgroundColor!);
+        let rgb = get_rgb(color_view.backgroundColor!);
+        rgb_label.text = hex + "  " + rgb;
         
-        if(r < 50 && g < 50 && b < 50)
-        {
-            favorite_button.layer.borderColor = UIColor.grayColor().CGColor;
-            add_button.layer.borderColor = UIColor.grayColor().CGColor;
-        }
-        else
-        {
-            favorite_button.layer.borderColor = UIColor.clearColor().CGColor;
-            add_button.layer.borderColor = UIColor.clearColor().CGColor;
-        }
-        
-        // get fill
-        let comps = [r,g,b];
-        var fill = 0;
-        for(var i = 0; i < NUM_COMPONENTS; ++i)
-        {
-            if(comps[i] < 10)
-            {
-                fill += 2;
-            }
-            else if(comps[i] < 100)
-            {
-                ++fill;
-            }
-        }
-        print(fill);
-        for(var i = 0; i < fill; ++i)
-        {
-            rgb_label.text = rgb_label.text! + "  ";
-        }
-        let hex:String = NSString(format:"     #%02X%02X%02X", r, g, b) as String;
-        rgb_label.text = rgb_label.text! + hex;
     }
     
     override func didReceiveMemoryWarning() {
