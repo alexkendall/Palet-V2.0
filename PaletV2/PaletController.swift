@@ -52,7 +52,6 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         delete_button.set_highlight_color(LIGHT_GRAY);
         delete_button.set_unhighlight_color(SOFT_RED);
         delete_button.addTarget(self, action: "delete_palet:", forControlEvents: UIControlEvents.TouchUpInside);
-        delete_button.addTarget(self, action: "push_right", forControlEvents: UIControlEvents.TouchUpInside);
         delete_button.tag = indexPath.row;
         cell.addSubview(delete_button);
         
@@ -180,14 +179,14 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
     override func push_left(duration: NSTimeInterval) {
         super.push_left(duration);
         selected_index = -1;
-        table.reloadData();
+        //table.reloadData();
         
     }
     
     override func push_right(duration: NSTimeInterval) {
         super.push_right(duration);
         selected_index = -1;
-        table.reloadData();
+        //table.reloadData();
         
     }
 

@@ -125,12 +125,17 @@ func delete_group(group:String)
     }
     else
     {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        let managedContext = appDelegate.managedObjectContext;
         for(var i = 0; i < color_objects?.count; ++i)
         {
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-            let managedContext = appDelegate.managedObjectContext;
             let color_data = color_objects![i] as NSManagedObject;
             managedContext?.deleteObject(color_data);
+        }
+        do {
+            try managedContext!.save()
+        } catch let fetchError as NSError {
+            print("Unable to save palet: \(fetchError.localizedDescription)")
         }
     }
     
@@ -217,13 +222,20 @@ func remove_palet(name:String)
     }
     else
     {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        let managedContext = appDelegate.managedObjectContext;
         for(var i = 0; i < palets!.count; ++i)
         {
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-            let managedContext = appDelegate.managedObjectContext;
             let palet = palets![i] as NSManagedObject;
             managedContext?.deleteObject(palet);
         }
+        
+        do {
+            try managedContext!.save()
+        } catch let fetchError as NSError {
+            print("Unable to save palet: \(fetchError.localizedDescription)")
+        }
+
     }
-    
 }
+
