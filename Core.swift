@@ -147,6 +147,83 @@ func get_color(color_data:NSManagedObject)->UIColor
 
 
 
+// fetehces all palets
+func fetch_palets()->[NSManagedObject]?
+{
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    let managedContext = appDelegate.managedObjectContext;
+    let fetchRequest = NSFetchRequest(entityName: "Palet");
+
+    do {
+        let fetchedResults = try managedContext?.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+        print("PALETS STORED COUNT: " + String(fetchedResults?.count));
+        return fetchedResults!;
+    } catch let fetchError as NSError {
+        print("fetch error: \(fetchError.localizedDescription)")
+        return nil;
+    }
+    
+}
+
+// fetehces all palets
+func fetch_palet(name:String)->[NSManagedObject]?
+{
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    let managedContext = appDelegate.managedObjectContext;
+    let fetchRequest = NSFetchRequest(entityName: "Palet");
+    let predicate = NSPredicate(format:"palet_name like[cd] %@", name);
+    fetchRequest.predicate = predicate;
+    
+    do {
+        let fetchedResults = try managedContext?.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+        print("PALETS STORED COUNT: " + String(fetchedResults?.count));
+        return fetchedResults!;
+    } catch let fetchError as NSError {
+        print("fetch error: \(fetchError.localizedDescription)")
+        return nil;
+    }
+    
+}
+
+func get_palet(palet_data:NSManagedObject)->String
+{
+    return palet_data.valueForKey("palet_name") as! String;
+}
+
+// stores color in group
+func store_palet(name:String)
+{
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    let managedContext = appDelegate.managedObjectContext!;
+    let entity = NSEntityDescription.entityForName("Palet", inManagedObjectContext: managedContext);
+    let palet_data = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
+    palet_data.setValue(name, forKey: "palet_name");
+    // here's the sugar
+    do {
+        try managedContext.save()
+    } catch let fetchError as NSError {
+        print("Unable to save palet: \(fetchError.localizedDescription)")
+    }
+}
 
 
-
+// deletes color from group
+func remove_palet(name:String)
+{
+    let palets:[NSManagedObject]? = fetch_palet(name);
+    if(palets == nil)
+    {
+        print("palets not found");
+    }
+    else
+    {
+        for(var i = 0; i < palets!.count; ++i)
+        {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            let managedContext = appDelegate.managedObjectContext;
+            let palet = palets![i] as NSManagedObject;
+            managedContext?.deleteObject(palet);
+        }
+    }
+    
+}

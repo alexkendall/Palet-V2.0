@@ -14,7 +14,7 @@ class SelController:AuxillaryController
     var margin:CGFloat!;
     var nav:NavButton!;
     var back_view:UIView!;
-    var label_texts = ["NEW PALETTE", "VIEW PALETTES", "VIEW FAVORITES", "COLOR PICKER", "EMAIL PALETTE"];
+    var label_texts = ["NEW PALETTE", "SEARCH COLOR", "VIEW FAVORITES", "COLOR PICKER", "EMAIL PALETTE"];
     var colors = [SOFT_GREEN, SOFT_ORANGE, MAGENTA, LIGHT_BLUE, UIColor.yellowColor()];
     
     override func viewDidLoad() {
@@ -62,7 +62,7 @@ class SelController:AuxillaryController
             {
                 icon_button = ViewButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
                 icon_button.set_path_width(3.0);
-                icon_button.addTarget(nav_controller, action: "view_palet", forControlEvents: UIControlEvents.TouchUpInside);
+                icon_button.addTarget(nav_controller, action: "search_color", forControlEvents: UIControlEvents.TouchUpInside);
             }
             else if(i == 2)
             {

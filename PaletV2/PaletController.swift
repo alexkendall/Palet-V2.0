@@ -13,7 +13,9 @@ import UIKit
 class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDelegate
 {
     
-    var palette_names = ["My Website", "MyHTML", "MyColors", "MyScopr"]; //[String]();
+    var palette_names = [String]();
+    
+    
     var selected_index:Int = -1;
     
     // start data source ---------------------------------------------------------------
@@ -50,6 +52,7 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         delete_button.set_highlight_color(LIGHT_GRAY);
         delete_button.set_unhighlight_color(SOFT_RED);
         delete_button.addTarget(self, action: "delete_palet:", forControlEvents: UIControlEvents.TouchUpInside);
+        delete_button.addTarget(self, action: "push_right", forControlEvents: UIControlEvents.TouchUpInside);
         delete_button.tag = indexPath.row;
         cell.addSubview(delete_button);
         
@@ -59,13 +62,15 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         let view_height:CGFloat = cell.bounds.height * 0.5;
         let view_margin:CGFloat = (cell.bounds.height - del_height) * 0.5;
         let view_x:CGFloat = delete_button.frame.minX - (view_height * 1.5) - view_margin;
+        view_button.tag = indexPath.row;
         view_button.frame = CGRect(x: view_x, y: view_margin, width: view_height, height: view_height);
         view_button.set_highlight_color(LIGHT_GRAY);
         view_button.set_unhighlight_color(SOFT_GREEN);
-        //view_button.addTarget(self, action: "view_palet:", forControlEvents: UIControlEvents.TouchUpInside);
         view_button.tag = indexPath.row;
+        view_button.addTarget(nav_controller.view_palet_controller, action: "set_name:", forControlEvents: UIControlEvents.TouchUpInside);
+        view_button.addTarget(nav_controller, action: "view_colors", forControlEvents: UIControlEvents.TouchUpInside);
         cell.addSubview(view_button);
-        
+    
         let view = UIView();
         view.backgroundColor = UIColor.whiteColor();
         cell.selectedBackgroundView = view;
@@ -73,7 +78,20 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        palette_names.removeAll(keepCapacity: true);
+        let palets = fetch_palets();
+        for(var i = 0; i < palets!.count; ++i)
+        {
+            palette_names.append(get_palet(palets![i]));
+        }
+        print(palette_names.count);
         return palette_names.count;
+    }
+    
+    func set_name(sender:UIButton)
+    {
+        
     }
     
     // end data source --------------------------------------------------------------------
@@ -141,6 +159,10 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
     
     func delete_palet(sender:DeleteButton)
     {
+        let name = palette_names[sender.tag];
+        delete_group(name);
+        remove_palet(name);
+        
         palette_names.removeAtIndex(sender.tag);
         print("Palet count: " + String(palette_names.count));
         print(sender.tag);
@@ -153,6 +175,7 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         table.reloadData();
         nav_controller.new_palet_controller.table.reloadData();
     }
+    
     
     override func push_left(duration: NSTimeInterval) {
         super.push_left(duration);

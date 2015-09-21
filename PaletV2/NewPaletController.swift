@@ -96,7 +96,9 @@ class NewPaletController:AuxillaryController, UITextFieldDelegate
     {
         if((text_entry.text != "") && (text_entry.text != ERROR_ENTRY) && (text_entry.text != INIT_ENTRY))
         {
-            nav_controller.palet_controller.palette_names.append(text_entry.text!);
+            //nav_controller.palet_controller.palette_names.append(text_entry.text!);
+            store_palet(text_entry.text!);
+            
             self.table.reloadData();
             nav_controller.palet_controller.table.reloadData();
             text_entry.text = INIT_ENTRY;

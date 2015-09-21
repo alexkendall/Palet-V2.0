@@ -128,7 +128,6 @@ class PickerController:AuxillaryController {
         // configure rgb labels
         let comp_margin:CGFloat = color_view.frame.origin.x;
         let comp_dim:CGFloat = super_view.bounds.width * 0.075;
-        
         let slider_width:CGFloat = super_view.bounds.width - (comp_margin * 2.0) - comp_dim;
         let slider_height:CGFloat = comp_dim;
         
@@ -217,6 +216,7 @@ class PickerController:AuxillaryController {
             nav_controller.view_palet_controller.colors.append(color!);
             nav_controller.view_palet_controller.color_colection.reloadData();
             nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to " + selected_palet);
+            nav_controller.view_palet_controller.palet_name = selected_palet;
             store_color(color!, group: selected_palet);
         }
         else

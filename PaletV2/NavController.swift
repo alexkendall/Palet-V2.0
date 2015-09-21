@@ -98,17 +98,44 @@ class NavController: UIViewController
     
     func view_palet()
     {
+        
         menu_controller.push_left(0.5);
         view_palet_controller.show(0.5);
-        show_label("MY WEBSITE");
+        let name = view_palet_controller.palet_name;
+        if(name == "")
+        {
+            show_label("unselected");
+        }
+        else
+        {
+            show_label(name);
+        }
         
+    }
+    
+    func view_colors()
+    {
+        print(view_palet_controller.palet_name);
+        
+        show_label(view_palet_controller.palet_name);
+        view_palet_controller.color_colection.reloadData();
+        picker_controller.push_right(0.5);
+        favorites_controller.push_right(0.5);
+        view_palet_controller.show(0.5);
+        palet_controller.push_right(0.5);
+        new_palet_controller.push_right(0.5);
     }
     
     func new_palet()
     {
         menu_controller.push_left(0.5);
         new_palet_controller.show(0.5);
-        show_label("NEW PALET");
+        show_label("PALETS");
+    }
+    
+    func search_color()
+    {
+        
     }
     
     override func didReceiveMemoryWarning() {

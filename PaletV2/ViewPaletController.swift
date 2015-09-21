@@ -17,8 +17,25 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
     let info_label = AnimatedView();
     var rgb_label:UILabel!
     var hex_label:UILabel!
+    var colors = [UIColor]();
+    var palet_name:String = "";
     
-    var colors = [SOFT_GREEN, SOFT_ORANGE, LIGHT_BLUE, WOLF_GRAY, SOFT_RED];
+    //var colors = [SOFT_GREEN, SOFT_ORANGE, LIGHT_BLUE, WOLF_GRAY, SOFT_RED];
+    
+    func set_name(sender:UIButton)
+    {
+        palet_name = nav_controller.palet_controller.palette_names[sender.tag];
+    }
+    
+    func load_palet()
+    {
+        colors.removeAll(keepCapacity: true);
+        var palet_colors = fetch_colors(palet_name);
+        for(var i = 0; i < palet_colors?.count; ++i)
+        {
+            colors.append(get_color(palet_colors![i]));
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +93,7 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
     
     // data source
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        load_palet();
         return colors.count;
     }
     
@@ -151,6 +169,7 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
         self.selected_index = -1;
         self.color_colection.reloadData();
         info_label.hide(1.0);
+        
     }
     
     override func push_right(duration: NSTimeInterval) {
@@ -158,8 +177,13 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
         self.selected_index = -1;
         self.color_colection.reloadData();
         info_label.hide(0.5);
+    
     }
     
+    override func show(duration: NSTimeInterval) {
+        super.show(duration);
+         print("SELECTED PALET:" + palet_name);
+    }
     
 }
 

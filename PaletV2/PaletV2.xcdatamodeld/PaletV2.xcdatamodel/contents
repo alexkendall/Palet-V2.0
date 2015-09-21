@@ -6,7 +6,11 @@
         <attribute name="group" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="red" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
+    <entity name="Palet" syncable="YES">
+        <attribute name="palet_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Color" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Palet" positionX="-54" positionY="18" width="128" height="60"/>
     </elements>
 </model>
