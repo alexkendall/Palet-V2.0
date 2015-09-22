@@ -70,6 +70,7 @@ class AuxillaryController:UIViewController
     func place_right()
     {
         super_view.frame = CGRect(x: super_view.bounds.width, y: super_view.frame.origin.y, width: super_view.bounds.width, height: self.super_view.bounds.height);
+        print(super_view.frame);
     }
     
     

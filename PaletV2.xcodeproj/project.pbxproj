@@ -36,6 +36,9 @@
 		46140F9E1BA9FFFE00E8CCD2 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46140F9D1BA9FFFE00E8CCD2 /* ControlButton.swift */; };
 		46140FA01BAA027400E8CCD2 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46140F9F1BAA027400E8CCD2 /* CheckButton.swift */; };
 		46140FA51BAA0D4200E8CCD2 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46140FA41BAA0D4200E8CCD2 /* NavButton.swift */; };
+		464A7D811BB0F84000D24F05 /* CopyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7D801BB0F84000D24F05 /* CopyController.swift */; settings = {ASSET_TAGS = (); }; };
+		464A7D831BB103FD00D24F05 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7D821BB103FD00D24F05 /* ExitButton.swift */; settings = {ASSET_TAGS = (); }; };
+		464A7D851BB1195700D24F05 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7D841BB1195700D24F05 /* SaveButton.swift */; settings = {ASSET_TAGS = (); }; };
 		4664BFE01BADF11700E25D4A /* OperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664BFDF1BADF11700E25D4A /* OperationController.swift */; settings = {ASSET_TAGS = (); }; };
 		466888E71BAC82DE00495931 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466888E61BAC82DE00495931 /* BaseController.swift */; settings = {ASSET_TAGS = (); }; };
 		466888E91BAD3E4400495931 /* NewPaletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466888E81BAD3E4400495931 /* NewPaletController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -92,6 +95,9 @@
 		46140F9D1BA9FFFE00E8CCD2 /* ControlButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		46140F9F1BAA027400E8CCD2 /* CheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		46140FA41BAA0D4200E8CCD2 /* NavButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		464A7D801BB0F84000D24F05 /* CopyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyController.swift; sourceTree = "<group>"; };
+		464A7D821BB103FD00D24F05 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		464A7D841BB1195700D24F05 /* SaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 		4664BFDF1BADF11700E25D4A /* OperationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationController.swift; sourceTree = "<group>"; };
 		466888E61BAC82DE00495931 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		466888E81BAD3E4400495931 /* NewPaletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPaletController.swift; sourceTree = "<group>"; };
@@ -157,11 +163,13 @@
 			children = (
 				460898421BAAA997005275AD /* MenuButton.swift */,
 				460898471BAB2B94005275AD /* AddButton.swift */,
+				464A7D821BB103FD00D24F05 /* ExitButton.swift */,
 				46BF1F671BAF29AB0095F13B /* DeleteButton.swift */,
 				460898491BAB38CD005275AD /* ViewButton.swift */,
 				460898501BAB4261005275AD /* PickerButton.swift */,
 				460898541BAB4895005275AD /* FavoriteButton.swift */,
 				46B553181BAB5CB6007D814D /* EmailButton.swift */,
+				464A7D841BB1195700D24F05 /* SaveButton.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 		46BF1F661BAF288A0095F13B /* InfoControllers */ = {
 			isa = PBXGroup;
 			children = (
+				464A7D801BB0F84000D24F05 /* CopyController.swift */,
 				466888EA1BAD5B5E00495931 /* NotificationController.swift */,
 				4664BFDF1BADF11700E25D4A /* OperationController.swift */,
 			);
@@ -371,11 +380,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46140F9E1BA9FFFE00E8CCD2 /* ControlButton.swift in Sources */,
+				464A7D831BB103FD00D24F05 /* ExitButton.swift in Sources */,
 				46140F931BA9BE3E00E8CCD2 /* PaletController.swift in Sources */,
 				466888E71BAC82DE00495931 /* BaseController.swift in Sources */,
 				46140F911BA92FC900E8CCD2 /* EncodeImage.swift in Sources */,
 				460898551BAB4895005275AD /* FavoriteButton.swift in Sources */,
 				460898341BAA76C8005275AD /* AnimatedView.swift in Sources */,
+				464A7D811BB0F84000D24F05 /* CopyController.swift in Sources */,
 				46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */,
 				46B553191BAB5CB6007D814D /* EmailButton.swift in Sources */,
 				4608983D1BAA7B7F005275AD /* AnimatedLabel.swift in Sources */,
@@ -394,6 +405,7 @@
 				46140FA51BAA0D4200E8CCD2 /* NavButton.swift in Sources */,
 				460898431BAAA997005275AD /* MenuButton.swift in Sources */,
 				460898411BAA9F95005275AD /* SelController.swift in Sources */,
+				464A7D851BB1195700D24F05 /* SaveButton.swift in Sources */,
 				46140F951BA9C18800E8CCD2 /* Color.swift in Sources */,
 				460898481BAB2B94005275AD /* AddButton.swift in Sources */,
 				4608984A1BAB38CD005275AD /* ViewButton.swift in Sources */,

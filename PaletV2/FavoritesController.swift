@@ -106,6 +106,7 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
             if(selected_colors.count == 0)
             {
                 nav_controller.operation_controller.hide();
+                nav_controller.copy_controller.hide();
             }
         }
     }

@@ -202,9 +202,19 @@ class PickerController:AuxillaryController {
     func add_favorite()
     {
         let color = self.color_view.backgroundColor;
-        store_color(color!, group: FAVORITE_GROUP_NAME);
-        nav_controller.favorites_controller.table.reloadData();
-        nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to favorites");
+        
+        // check if color is already saved in favorites... if it is, tell the user and do nothing
+        let result = fetch_color(color!, group: FAVORITE_GROUP_NAME);
+        if(result!.count > 0)
+        {
+            nav_controller.notification_controller.show(get_hex(color!) +  " already saved to favorites");
+        }
+        else
+        {
+            store_color(color!, group: FAVORITE_GROUP_NAME);
+            nav_controller.favorites_controller.table.reloadData();
+            nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to favorites");
+        }
 
     }
     
@@ -213,11 +223,21 @@ class PickerController:AuxillaryController {
         if(selected_palet != "")
         {
             let color = self.color_view.backgroundColor;
-            nav_controller.view_palet_controller.colors.append(color!);
-            nav_controller.view_palet_controller.color_colection.reloadData();
-            nav_controller.notification_controller.show("Added " + get_hex(color!) +  " to " + selected_palet);
-            nav_controller.view_palet_controller.palet_name = selected_palet;
-            store_color(color!, group: selected_palet);
+            
+            // check if color already present in palet to prevent duplicates
+            let result = fetch_color(color!, group: selected_palet);
+            if(result!.count > 0)
+            {
+                nav_controller.notification_controller.show("Color already in " + selected_palet);
+            }
+            else
+            {
+                nav_controller.view_palet_controller.colors.append(color!);
+                nav_controller.view_palet_controller.color_colection.reloadData();
+                nav_controller.notification_controller.show(get_hex(color!) +  " added to " + selected_palet);
+                nav_controller.view_palet_controller.palet_name = selected_palet;
+                store_color(color!, group: selected_palet);
+            }
         }
         else
         {

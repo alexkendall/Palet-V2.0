@@ -98,9 +98,10 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell:UICollectionViewCell = color_colection.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! UICollectionViewCell;
+        let cell:UICollectionViewCell = color_colection.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath);
         cell.backgroundColor = colors[indexPath.row];
         cell.layer.borderColor = UIColor.whiteColor().CGColor;
+        
         
         if(indexPath.row == self.selected_index)
         {
@@ -110,7 +111,29 @@ class ViewPaletController:AuxillaryController, UICollectionViewDataSource, UICol
         {
             cell.layer.borderWidth = 1.0;
         }
+        
+        
+        // add delete button
+        let delete_button = ExitButton();
+        let dim:CGFloat = cell.bounds.width * 0.2;
+        delete_button.frame = CGRect(x: cell.bounds.width - dim, y: 0.0, width: dim, height: dim);
+        delete_button.set_image_color(UIColor.blackColor());
+        delete_button.set_unhighlight_color(UIColor.whiteColor());
+        delete_button.set_highlight_color(UIColor.lightGrayColor());
+        delete_button.set_square();
+        delete_button.set_border_color(UIColor.blackColor());
+        delete_button.set_path_width(2.0);
+        delete_button.tag = indexPath.row;
+        delete_button.addTarget(self, action: "delete_selected:", forControlEvents: UIControlEvents.TouchDown);
+        cell.addSubview(delete_button);
         return cell;
+    }
+    
+    func delete_selected(sender:UIButton)
+    {
+        delete_color(colors[sender.tag], group: palet_name);
+        self.color_colection.reloadData();
+        
     }
     
     
