@@ -487,6 +487,17 @@ SWIFT_CLASS("_TtC7PaletV213SelController")
 @end
 
 
+SWIFT_CLASS("_TtC7PaletV29TextField")
+@interface TextField : UITextField
+@property (nonatomic) CGFloat text_offset;
+- (CGRect)textRectForBounds:(CGRect)bounds;
+- (CGRect)editingRectForBounds:(CGRect)bounds;
+- (void)set_text_offset:(CGFloat)offset_x;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7PaletV210ViewButton")
 @interface ViewButton : MenuButton
 - (void)drawRect:(CGRect)rect;

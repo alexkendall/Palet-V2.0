@@ -196,6 +196,7 @@ class PickerController:AuxillaryController {
             shade_slider.layer.addSublayer(gradient);
             super_view.addSubview(shade_slider);
     
+            
         }
     }
     

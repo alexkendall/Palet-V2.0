@@ -43,6 +43,7 @@
 		46BF1F681BAF29AB0095F13B /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F671BAF29AB0095F13B /* DeleteButton.swift */; settings = {ASSET_TAGS = (); }; };
 		46BF1F6B1BAF45770095F13B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F6A1BAF45770095F13B /* Core.swift */; settings = {ASSET_TAGS = (); }; };
 		46D670FD1BC6F1E70007296D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D670FC1BC6F1E70007296D /* MenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		46D671021BC70F5A0007296D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D671011BC70F5A0007296D /* TextField.swift */; settings = {ASSET_TAGS = (); }; };
 		46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */; };
 		46EFAA8C1BAB874700E5AA40 /* ViewPaletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */; };
 		46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */; };
@@ -99,6 +100,7 @@
 		46BF1F671BAF29AB0095F13B /* DeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		46BF1F6A1BAF45770095F13B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = ../Core.swift; sourceTree = "<group>"; };
 		46D670FC1BC6F1E70007296D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		46D671011BC70F5A0007296D /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPaletController.swift; sourceTree = "<group>"; };
 		46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				46140F671BA90CC900E8CCD2 /* AppDelegate.swift */,
+				46D671001BC70F290007296D /* TextFieldOverride */,
 				4608982E1BAA7269005275AD /* ViewControllers */,
 				460898351BAA7804005275AD /* Animation */,
 				46140F9A1BA9FD0A00E8CCD2 /* PaletTableCell.swift */,
@@ -265,6 +268,14 @@
 			children = (
 			);
 			name = Persistence;
+			sourceTree = "<group>";
+		};
+		46D671001BC70F290007296D /* TextFieldOverride */ = {
+			isa = PBXGroup;
+			children = (
+				46D671011BC70F5A0007296D /* TextField.swift */,
+			);
+			name = TextFieldOverride;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +384,7 @@
 				46140F9E1BA9FFFE00E8CCD2 /* ControlButton.swift in Sources */,
 				46140F931BA9BE3E00E8CCD2 /* PaletController.swift in Sources */,
 				466888E71BAC82DE00495931 /* BaseController.swift in Sources */,
+				46D671021BC70F5A0007296D /* TextField.swift in Sources */,
 				46140F911BA92FC900E8CCD2 /* EncodeImage.swift in Sources */,
 				460898551BAB4895005275AD /* FavoriteButton.swift in Sources */,
 				460898341BAA76C8005275AD /* AnimatedView.swift in Sources */,

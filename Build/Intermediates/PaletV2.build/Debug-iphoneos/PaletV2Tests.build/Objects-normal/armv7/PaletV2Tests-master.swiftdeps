@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "7f65cde389910d20157192ea826496b9"
+build_time: [497652130, 370528000]
+inputs: 
+	"/Users/alexharr/Desktop/PaletV2/PaletV2Tests/PaletV2Tests.swift": [496303285, 0]

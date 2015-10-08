@@ -1,0 +1,228 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TextField"
+provides-nominal:
+- "C7PaletV29TextField"
+provides-member:
+- ["C7PaletV29TextField", ""]
+provides-dynamic-lookup:
+- "text_offset"
+- "set_text_offset"
+- "textRectForBounds"
+- "editingRectForBounds"
+depends-top-level:
+- "TextField"
+- "CGRect"
+- !private "-"
+- "CGFloat"
+- "UITextField"
+depends-member:
+- !private ["PSs9AnyObject", "CGRect"]
+- ["PSs9AnyObject", "editingRectForBounds"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "set_text_offset"]
+- ["PSs9AnyObject", "textRectForBounds"]
+- ["PSs9AnyObject", "text_offset"]
+- ["PSs9AnyObject", ""]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "width"]
+- !private ["PSs11CVarArgType", "CGRect"]
+- ["PSs11CVarArgType", "editingRectForBounds"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "set_text_offset"]
+- ["PSs11CVarArgType", "textRectForBounds"]
+- ["PSs11CVarArgType", "text_offset"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CGRect"]
+- ["PSs23CustomStringConvertible", "editingRectForBounds"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "set_text_offset"]
+- ["PSs23CustomStringConvertible", "textRectForBounds"]
+- ["PSs23CustomStringConvertible", "text_offset"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CGRect"]
+- ["PSs9Equatable", "editingRectForBounds"]
+- !private ["PSs9Equatable", "height"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "set_text_offset"]
+- ["PSs9Equatable", "textRectForBounds"]
+- ["PSs9Equatable", "text_offset"]
+- !private ["PSs9Equatable", "width"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CGRect"]
+- ["PSs8Hashable", "editingRectForBounds"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "set_text_offset"]
+- ["PSs8Hashable", "textRectForBounds"]
+- ["PSs8Hashable", "text_offset"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "CGRect"]
+- ["PSo8NSCoding", "editingRectForBounds"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "set_text_offset"]
+- ["PSo8NSCoding", "textRectForBounds"]
+- ["PSo8NSCoding", "text_offset"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "editingRectForBounds"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "set_text_offset"]
+- ["CSo8NSObject", "textRectForBounds"]
+- ["CSo8NSObject", "text_offset"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
+- ["PSo16NSObjectProtocol", "editingRectForBounds"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "set_text_offset"]
+- ["PSo16NSObjectProtocol", "textRectForBounds"]
+- ["PSo16NSObjectProtocol", "text_offset"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C7PaletV29TextField", "CGFloat"]
+- ["C7PaletV29TextField", "CGRect"]
+- ["C7PaletV29TextField", "deinit"]
+- ["C7PaletV29TextField", "editingRectForBounds"]
+- ["C7PaletV29TextField", "init"]
+- ["C7PaletV29TextField", "set_text_offset"]
+- ["C7PaletV29TextField", "textRectForBounds"]
+- ["C7PaletV29TextField", "text_offset"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRect"]
+- ["PSo29UIAccessibilityIdentification", "editingRectForBounds"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "set_text_offset"]
+- ["PSo29UIAccessibilityIdentification", "textRectForBounds"]
+- ["PSo29UIAccessibilityIdentification", "text_offset"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGRect"]
+- ["PSo12UIAppearance", "editingRectForBounds"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "set_text_offset"]
+- ["PSo12UIAppearance", "textRectForBounds"]
+- ["PSo12UIAppearance", "text_offset"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGRect"]
+- ["PSo21UIAppearanceContainer", "editingRectForBounds"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "set_text_offset"]
+- ["PSo21UIAppearanceContainer", "textRectForBounds"]
+- ["PSo21UIAppearanceContainer", "text_offset"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo9UIControl", "CGFloat"]
+- ["CSo9UIControl", "CGRect"]
+- ["CSo9UIControl", "editingRectForBounds"]
+- ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "set_text_offset"]
+- ["CSo9UIControl", "textRectForBounds"]
+- ["CSo9UIControl", "text_offset"]
+- !private ["PSo17UICoordinateSpace", "CGRect"]
+- ["PSo17UICoordinateSpace", "editingRectForBounds"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "set_text_offset"]
+- ["PSo17UICoordinateSpace", "textRectForBounds"]
+- ["PSo17UICoordinateSpace", "text_offset"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGRect"]
+- ["PSo13UIDynamicItem", "editingRectForBounds"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "set_text_offset"]
+- ["PSo13UIDynamicItem", "textRectForBounds"]
+- ["PSo13UIDynamicItem", "text_offset"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo10UIKeyInput", "CGRect"]
+- ["PSo10UIKeyInput", "editingRectForBounds"]
+- ["PSo10UIKeyInput", "init"]
+- ["PSo10UIKeyInput", "set_text_offset"]
+- ["PSo10UIKeyInput", "textRectForBounds"]
+- ["PSo10UIKeyInput", "text_offset"]
+- ["PSo10UIKeyInput", ""]
+- ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "editingRectForBounds"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "set_text_offset"]
+- ["CSo11UIResponder", "textRectForBounds"]
+- ["CSo11UIResponder", "text_offset"]
+- ["CSo11UITextField", "CGFloat"]
+- ["CSo11UITextField", "CGRect"]
+- ["CSo11UITextField", "editingRectForBounds"]
+- ["CSo11UITextField", "init"]
+- ["CSo11UITextField", "set_text_offset"]
+- ["CSo11UITextField", "textRectForBounds"]
+- ["CSo11UITextField", "text_offset"]
+- ["CSo11UITextField", ""]
+- !private ["PSo11UITextInput", "CGRect"]
+- ["PSo11UITextInput", "editingRectForBounds"]
+- ["PSo11UITextInput", "init"]
+- ["PSo11UITextInput", "set_text_offset"]
+- ["PSo11UITextInput", "textRectForBounds"]
+- ["PSo11UITextInput", "text_offset"]
+- ["PSo11UITextInput", ""]
+- !private ["PSo17UITextInputTraits", "CGRect"]
+- ["PSo17UITextInputTraits", "editingRectForBounds"]
+- ["PSo17UITextInputTraits", "init"]
+- ["PSo17UITextInputTraits", "set_text_offset"]
+- ["PSo17UITextInputTraits", "textRectForBounds"]
+- ["PSo17UITextInputTraits", "text_offset"]
+- ["PSo17UITextInputTraits", ""]
+- !private ["PSo18UITraitEnvironment", "CGRect"]
+- ["PSo18UITraitEnvironment", "editingRectForBounds"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "set_text_offset"]
+- ["PSo18UITraitEnvironment", "textRectForBounds"]
+- ["PSo18UITraitEnvironment", "text_offset"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGFloat"]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "editingRectForBounds"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "set_text_offset"]
+- ["CSo6UIView", "textRectForBounds"]
+- ["CSo6UIView", "text_offset"]
+- !private ["PSs12_Reflectable", "CGRect"]
+- ["PSs12_Reflectable", "editingRectForBounds"]
+- !private ["PSs12_Reflectable", "height"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "set_text_offset"]
+- ["PSs12_Reflectable", "textRectForBounds"]
+- ["PSs12_Reflectable", "text_offset"]
+- !private ["PSs12_Reflectable", "width"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C7PaletV29TextField"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "CSo11UITextField"
+- "PSo11UITextInput"
+- "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "823a8a6b78bf990ce077e7de89bf8ca8"
