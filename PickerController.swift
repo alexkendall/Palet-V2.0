@@ -205,6 +205,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         let margin:CGFloat = super_view.bounds.height * 0.05;
         let entry_y:CGFloat = sliders[sliders.count-1].frame.maxY + margin;
         let entry_height:CGFloat = super_view.bounds.height * 0.07;
+    
         
         
         let hex_label = UILabel();
@@ -212,6 +213,14 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         hex_label.sizeToFit();
         hex_label.frame = CGRect(x: margin, y: entry_y, width: hex_label.frame.width, height: entry_height);
         super_view.addSubview(hex_label);
+        
+        let entry_width:CGFloat = super_view.bounds.width - hex_label.bounds.width - (3.0 * margin);
+        code_entry_field = TextField(frame:CGRect(x: hex_label.frame.maxX + margin, y: entry_y, width: entry_width, height: entry_height));
+        code_entry_field.backgroundColor = UIColor.lightGrayColor();
+        code_entry_field.layer.borderWidth = 1.0;
+        code_entry_field.delegate = self;
+        super_view.addSubview(code_entry_field);
+    
         
     }
     
