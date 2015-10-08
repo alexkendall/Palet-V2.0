@@ -45,30 +45,23 @@ class SelController:AuxillaryController
             container_view.layer.borderColor = UIColor.whiteColor().CGColor;
             container_view.backgroundColor = WOLF_GRAY;
             
-            let scale:CGFloat = 0.7;
+            let scale:CGFloat = 0.5;
             let but_size:CGFloat = icon_dim * scale;
             let but_marg:CGFloat = (icon_dim - (but_size)) * 0.5;
+            
             
             var icon_button:MenuButton!;
             
             if(i == 0)
             {
-                icon_button = AddButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
+                icon_button = AddButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
                 icon_button.set_path_width(3.0);
                 icon_button.addTarget(nav_controller, action: "new_palet", forControlEvents: UIControlEvents.TouchUpInside);
                 
             }
-            /*
             else if(i == 1)
             {
-                icon_button = ViewButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
-                icon_button.set_path_width(3.0);
-                icon_button.addTarget(nav_controller, action: "search_color", forControlEvents: UIControlEvents.TouchUpInside);
-            }
-            */
-            else if(i == 1)
-            {
-                icon_button = FavoriteButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
+                icon_button = FavoriteButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
                 icon_button.set_path_width(3.0);
                 
                 icon_button.addTarget(nav_controller, action: "show_favorites", forControlEvents: UIControlEvents.TouchUpInside);
@@ -76,21 +69,14 @@ class SelController:AuxillaryController
             
             else if(i == 2)
             {
-                icon_button = PickerButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
+                icon_button = PickerButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
                 icon_button.set_path_width(3.0);
                 
                 icon_button.addTarget(nav_controller, action: "show_picker", forControlEvents: UIControlEvents.TouchUpInside);
             }
-            /*
-            else if(i == 4)
-            {
-                icon_button = EmailButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
-                icon_button.set_path_width(3.0);
-            }
-            */
             else
             {
-                icon_button = MenuButton(frame: CGRect(x: but_marg, y: but_marg, width: but_size, height: but_size));
+                icon_button = MenuButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
             }
             
             icon_button.set_unhighlight_color(colors[i]);
@@ -98,7 +84,8 @@ class SelController:AuxillaryController
             icon_button.set_border_color(UIColor.blackColor());
             icon_button.set_border_width(3.0);
             
-            let label:UILabel = UILabel(frame: CGRect(x: icon_dim, y: 0.0, width: label_width, height: label_height));
+            let label_margin:CGFloat = back_view.bounds.width * 0.05;
+            let label:UILabel = UILabel(frame: CGRect(x: icon_button.frame.maxX + label_margin, y: 0.0, width: label_width, height: label_height));
             label.textColor = UIColor.whiteColor();
             label.text = label_texts[i];
             label.font = UIFont(name: "Helvetica Neue", size: 17.0);

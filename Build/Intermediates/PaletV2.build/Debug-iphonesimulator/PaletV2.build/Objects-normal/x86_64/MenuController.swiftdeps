@@ -7,44 +7,44 @@ provides-member:
 - ["C7PaletV213SelController", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
-- "back_view"
 - "nav"
+- "back_view"
+- "prefersStatusBarHidden"
 - "colors"
 - "viewDidLoad"
 - "label_texts"
-- "prefersStatusBarHidden"
 depends-top-level:
-- !private "CGRect"
-- "Bool"
-- !private "*"
-- "SOFT_GREEN"
-- !private "MenuButton"
-- !private "FavoriteButton"
-- !private "UIFont"
-- "CGFloat"
-- !private "/"
-- !private "UIControlEvents"
 - !private "<"
-- !private "PickerButton"
-- !private "BooleanLiteralType"
-- !private "UILabel"
-- "NavButton"
-- "Array"
-- !private "nav_controller"
-- !private "-"
-- "SOFT_ORANGE"
-- !private "=="
-- "MAGENTA"
-- "SelController"
-- !private "++"
-- "StringLiteralType"
 - "LIGHT_BLUE"
-- !private "WOLF_GRAY"
-- !private "+"
-- "UIColor"
-- "AuxillaryController"
-- "UIView"
+- !private "MenuButton"
+- !private "/"
+- !private "-"
 - !private "AddButton"
+- !private "UIFont"
+- "UIColor"
+- !private "FavoriteButton"
+- "SelController"
+- !private "BooleanLiteralType"
+- !private "WOLF_GRAY"
+- "AuxillaryController"
+- !private "*"
+- !private "nav_controller"
+- "Bool"
+- !private "UILabel"
+- !private "=="
+- !private "UIControlEvents"
+- "MAGENTA"
+- !private "PickerButton"
+- "SOFT_ORANGE"
+- !private "+"
+- "NavButton"
+- "UIView"
+- "CGFloat"
+- !private "++"
+- "Array"
+- !private "CGRect"
+- "StringLiteralType"
+- "SOFT_GREEN"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["C7PaletV29AddButton", "init"]
@@ -158,6 +158,7 @@ depends-member:
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "maxX"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "AddButton"]
 - !private ["PSs11CVarArgType", "CGColor"]
@@ -323,6 +324,7 @@ depends-member:
 - !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "lightGrayColor"]
 - ["PSs9Equatable", "margin"]
+- !private ["PSs9Equatable", "maxX"]
 - ["PSs9Equatable", "nav"]
 - !private ["PSs9Equatable", "nav_controller"]
 - ["PSs9Equatable", "prefersStatusBarHidden"]
@@ -415,6 +417,7 @@ depends-member:
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - !private ["C7PaletV210MenuButton", "addTarget"]
+- !private ["C7PaletV210MenuButton", "frame"]
 - !private ["C7PaletV210MenuButton", "init"]
 - !private ["C7PaletV210MenuButton", "set_border_color"]
 - !private ["C7PaletV210MenuButton", "set_border_width"]
@@ -763,6 +766,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "frame"]
 - !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "set_border_color"]
 - !private ["CSo8UIButton", "set_border_width"]
@@ -803,6 +807,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "frame"]
 - !private ["CSo9UIControl", "init"]
 - !private ["CSo9UIControl", "set_border_color"]
 - !private ["CSo9UIControl", "set_border_width"]
@@ -1054,6 +1059,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
+- !private ["PSs12_Reflectable", "maxX"]
 - !private ["PSs12_Reflectable", "set_border_color"]
 - !private ["PSs12_Reflectable", "set_border_width"]
 - !private ["PSs12_Reflectable", "set_highlight_color"]
