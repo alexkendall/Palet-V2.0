@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PickerController:AuxillaryController {
+class PickerController:AuxillaryController, UITextFieldDelegate {
     
     let NUM_COMPONENTS = 3;
     var color_view:AnimatedView!
@@ -34,6 +34,9 @@ class PickerController:AuxillaryController {
     var gradient:CAGradientLayer = CAGradientLayer();
     
     var selected_palet:String = "";
+    
+    // text fielf for entering code directly
+    var code_entry_field:UITextField!;
 
     
     override func viewDidLoad() {
@@ -41,7 +44,7 @@ class PickerController:AuxillaryController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // should take up top 40% of screen
-        let height:CGFloat = super_view.bounds.height * 0.5;
+        let height:CGFloat = super_view.bounds.height * 0.65;
         self.in_frame = CGRect(x: 0.0, y: super_view.frame.origin.y, width: super_view.bounds.width, height: height);
         self.left_frame = CGRect(x: self.view.frame.width, y: self.view.frame.origin.y, width: self.view.frame.width, height: height);
         self.right_frame = CGRect(x: self.view.frame.width, y: self.view.frame.origin.y, width: self.view.frame.width, height: height);
@@ -195,9 +198,21 @@ class PickerController:AuxillaryController {
             gradient.colors = [UIColor.blackColor().CGColor, color_view.backgroundColor!.CGColor, UIColor.whiteColor().CGColor];
             shade_slider.layer.addSublayer(gradient);
             super_view.addSubview(shade_slider);
-    
-            
         }
+        
+        
+        
+        let margin:CGFloat = super_view.bounds.height * 0.05;
+        let entry_y:CGFloat = sliders[sliders.count-1].frame.maxY + margin;
+        let entry_height:CGFloat = super_view.bounds.height * 0.07;
+        
+        
+        let hex_label = UILabel();
+        hex_label.text = "HEX #";
+        hex_label.sizeToFit();
+        hex_label.frame = CGRect(x: margin, y: entry_y, width: hex_label.frame.width, height: entry_height);
+        super_view.addSubview(hex_label);
+        
     }
     
     func add_favorite()
@@ -300,7 +315,36 @@ class PickerController:AuxillaryController {
         selected_palet = "";
     }
     
+    // textfield delegate --------------------------------------------------------------------------------------------------
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        print("began editing");
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        print("did end editing");
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        print("text field should return");
+        return true;
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        print("text field should begin editing");
+        return true;
+    }
+    
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        print("text field should return");
+        return true;
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+        print("text field should end editing");
+        return true;
+    }
+    
+     // end delegate -------------------------------------------------------------------------------------------------------
+    
 }
-
-
-

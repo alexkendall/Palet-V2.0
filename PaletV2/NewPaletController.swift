@@ -20,7 +20,7 @@ class NewPaletController:AuxillaryController, UITextFieldDelegate
     var small_controller_frame:CGRect!;
     var out_controller_frame:CGRect!;
     var add_palet_container:UIView!;
-    var text_entry:UITextField!;
+    var text_entry:TextField!;
     var add_button:AddButton!;
     let INIT_ENTRY = "ENTER NAME";
     let ERROR_ENTRY = "NAME CANNOT BE BLANK";
@@ -41,7 +41,7 @@ class NewPaletController:AuxillaryController, UITextFieldDelegate
         // configure text field
         let text_height:CGFloat = add_palet_container.bounds.height * 0.33;
         let text_width:CGFloat = add_palet_container.bounds.width * 0.7;
-        text_entry = UITextField(frame:CGRect(x: margin, y: text_height, width: text_width, height: text_height));
+        text_entry = TextField(frame:CGRect(x: margin, y: text_height, width: text_width, height: text_height));
         text_entry.backgroundColor = UIColor.whiteColor();
         text_entry.delegate = self;
         text_entry.text = INIT_ENTRY;
