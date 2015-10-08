@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C7PaletV213AnimatedLabel", ""]
 provides-dynamic-lookup:
-- "hide"
 - "show"
+- "hide"
 depends-top-level:
-- !private "fatalError"
-- "AnimatedViewProtocol"
-- !private "UIView"
 - "CGRect"
+- "NSCoder"
+- !private "UIView"
 - "UILabel"
+- !private "StringLiteralType"
+- !private "fatalError"
 - "AnimatedLabel"
 - "NSTimeInterval"
-- !private "StringLiteralType"
-- "NSCoder"
+- "AnimatedViewProtocol"
 depends-member:
 - ["C7PaletV213AnimatedLabel", "CGRect"]
 - ["C7PaletV213AnimatedLabel", "NSCoder"]

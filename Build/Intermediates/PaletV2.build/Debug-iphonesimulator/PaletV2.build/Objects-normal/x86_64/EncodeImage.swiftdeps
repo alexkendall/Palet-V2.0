@@ -5,14 +5,14 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CGRect"
-- !private "CGContextRef"
-- !private "UIGraphicsEndImageContext"
-- !private "UIGraphicsGetCurrentContext"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "UIView"
 - !private "UIGraphicsBeginImageContext"
 - "UIImage"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGRect"
+- "UIView"
+- !private "CGContextRef"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsEndImageContext"
 - "getImageFromView"
 depends-member:
 - !private ["PSs9AnyObject", "bounds"]

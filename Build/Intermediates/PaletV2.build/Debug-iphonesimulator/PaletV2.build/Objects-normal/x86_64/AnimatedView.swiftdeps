@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "show"
 - "hide"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "fatalError"
-- "UIView"
-- "AnimatedView"
-- "CGRect"
 - "NSCoder"
-- "AnimatedViewProtocol"
+- "AnimatedView"
+- !private "StringLiteralType"
 - "NSTimeInterval"
+- "CGRect"
+- "AnimatedViewProtocol"
+- "UIView"
+- !private "fatalError"
 depends-member:
 - ["C7PaletV212AnimatedView", "CGRect"]
 - ["C7PaletV212AnimatedView", "NSCoder"]

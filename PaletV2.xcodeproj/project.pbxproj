@@ -15,7 +15,6 @@
 		4608983B1BAA7B4C005275AD /* AnimatedSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608983A1BAA7B4C005275AD /* AnimatedSlider.swift */; };
 		4608983D1BAA7B7F005275AD /* AnimatedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608983C1BAA7B7F005275AD /* AnimatedLabel.swift */; };
 		4608983F1BAA835F005275AD /* AnimatedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608983E1BAA835F005275AD /* AnimatedTableView.swift */; };
-		460898411BAA9F95005275AD /* SelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460898401BAA9F95005275AD /* SelController.swift */; };
 		460898431BAAA997005275AD /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460898421BAAA997005275AD /* MenuButton.swift */; };
 		460898481BAB2B94005275AD /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460898471BAB2B94005275AD /* AddButton.swift */; };
 		4608984A1BAB38CD005275AD /* ViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460898491BAB38CD005275AD /* ViewButton.swift */; };
@@ -43,6 +42,7 @@
 		46B553191BAB5CB6007D814D /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B553181BAB5CB6007D814D /* EmailButton.swift */; };
 		46BF1F681BAF29AB0095F13B /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F671BAF29AB0095F13B /* DeleteButton.swift */; settings = {ASSET_TAGS = (); }; };
 		46BF1F6B1BAF45770095F13B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F6A1BAF45770095F13B /* Core.swift */; settings = {ASSET_TAGS = (); }; };
+		46D670FD1BC6F1E70007296D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D670FC1BC6F1E70007296D /* MenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */; };
 		46EFAA8C1BAB874700E5AA40 /* ViewPaletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */; };
 		46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */; };
@@ -67,7 +67,6 @@
 		4608983A1BAA7B4C005275AD /* AnimatedSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSlider.swift; sourceTree = "<group>"; };
 		4608983C1BAA7B7F005275AD /* AnimatedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLabel.swift; sourceTree = "<group>"; };
 		4608983E1BAA835F005275AD /* AnimatedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTableView.swift; sourceTree = "<group>"; };
-		460898401BAA9F95005275AD /* SelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelController.swift; sourceTree = "<group>"; };
 		460898421BAAA997005275AD /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		460898471BAB2B94005275AD /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddButton.swift; path = ../AddButton.swift; sourceTree = "<group>"; };
 		460898491BAB38CD005275AD /* ViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewButton.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		46B553181BAB5CB6007D814D /* EmailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		46BF1F671BAF29AB0095F13B /* DeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		46BF1F6A1BAF45770095F13B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = ../Core.swift; sourceTree = "<group>"; };
+		46D670FC1BC6F1E70007296D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPaletController.swift; sourceTree = "<group>"; };
 		46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
@@ -125,11 +125,11 @@
 		4608982E1BAA7269005275AD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				46D670FC1BC6F1E70007296D /* MenuController.swift */,
 				4608982F1BAA7286005275AD /* NavController.swift */,
 				466888E61BAC82DE00495931 /* BaseController.swift */,
 				460898311BAA7478005275AD /* PickerController.swift */,
 				466888E81BAD3E4400495931 /* NewPaletController.swift */,
-				460898401BAA9F95005275AD /* SelController.swift */,
 				46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */,
 				46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */,
 				46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */,
@@ -388,12 +388,12 @@
 				46140F6B1BA90CC900E8CCD2 /* PaletV2.xcdatamodeld in Sources */,
 				46140F681BA90CC900E8CCD2 /* AppDelegate.swift in Sources */,
 				466888EB1BAD5B5E00495931 /* NotificationController.swift in Sources */,
+				46D670FD1BC6F1E70007296D /* MenuController.swift in Sources */,
 				46140F9B1BA9FD0A00E8CCD2 /* PaletTableCell.swift in Sources */,
 				4608983F1BAA835F005275AD /* AnimatedTableView.swift in Sources */,
 				46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */,
 				46140FA51BAA0D4200E8CCD2 /* NavButton.swift in Sources */,
 				460898431BAAA997005275AD /* MenuButton.swift in Sources */,
-				460898411BAA9F95005275AD /* SelController.swift in Sources */,
 				46140F951BA9C18800E8CCD2 /* Color.swift in Sources */,
 				460898481BAB2B94005275AD /* AddButton.swift in Sources */,
 				4608984A1BAB38CD005275AD /* ViewButton.swift in Sources */,

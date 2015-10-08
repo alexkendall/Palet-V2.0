@@ -10,14 +10,14 @@ provides-dynamic-lookup:
 - "hide"
 depends-top-level:
 - "CGRect"
+- "UIButton"
+- !private "UIView"
+- "AnimatedViewProtocol"
+- "NSTimeInterval"
 - "NSCoder"
 - "AnimatedButton"
-- "NSTimeInterval"
-- "UIButton"
-- "AnimatedViewProtocol"
-- !private "StringLiteralType"
-- !private "UIView"
 - !private "fatalError"
+- !private "StringLiteralType"
 depends-member:
 - ["C7PaletV214AnimatedButton", "CGRect"]
 - ["C7PaletV214AnimatedButton", "NSCoder"]

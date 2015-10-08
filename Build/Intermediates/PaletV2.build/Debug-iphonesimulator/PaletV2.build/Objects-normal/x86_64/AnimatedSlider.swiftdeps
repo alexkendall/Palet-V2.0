@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "show"
 - "hide"
 depends-top-level:
-- "AnimatedSlider"
 - "NSCoder"
-- "NSTimeInterval"
-- !private "UIView"
 - "AnimatedViewProtocol"
 - !private "StringLiteralType"
+- "NSTimeInterval"
 - "CGRect"
 - "UISlider"
+- !private "UIView"
 - !private "fatalError"
+- "AnimatedSlider"
 depends-member:
 - ["C7PaletV214AnimatedSlider", "CGRect"]
 - ["C7PaletV214AnimatedSlider", "NSCoder"]

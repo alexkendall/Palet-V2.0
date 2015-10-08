@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
-- "CGRect"
-- !private "*"
-- "MenuButton"
 - "AddButton"
 - !private "CGPoint"
+- !private "*"
+- "MenuButton"
+- "CGRect"
 depends-member:
 - !private ["C7PaletV29AddButton", "CGPoint"]
 - ["C7PaletV29AddButton", "CGRect"]

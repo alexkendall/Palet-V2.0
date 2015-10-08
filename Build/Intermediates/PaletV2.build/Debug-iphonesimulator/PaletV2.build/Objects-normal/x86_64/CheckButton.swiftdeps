@@ -8,19 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
-- !private "CGPoint"
-- "UIColor"
+- !private "UIBezierPath"
+- "ControlButton"
+- !private "!"
+- "CGFloat"
+- "CGRect"
 - !private "BooleanLiteralType"
 - "NSCoder"
-- !private "!"
-- "CheckButton"
-- "ControlButton"
 - !private "fatalError"
+- "UIColor"
 - !private "StringLiteralType"
-- "CGRect"
-- !private "UIBezierPath"
+- !private "CGPoint"
 - !private "*"
-- "CGFloat"
+- "CheckButton"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "UIBezierPath"]

@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C7PaletV214PaletTableCell", ""]
 provides-dynamic-lookup:
-- "go_to_button"
 - "check_button"
+- "go_to_button"
 depends-top-level:
-- "UIButton"
-- "PaletTableCell"
 - "UITableViewCell"
+- "PaletTableCell"
+- "UIButton"
 depends-member:
 - ["PSs9AnyObject", "UIButton"]
 - ["PSs9AnyObject", "check_button"]

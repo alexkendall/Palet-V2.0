@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C7PaletV29NavButton", ""]
 provides-dynamic-lookup:
-- "toggled_on"
 - "select"
+- "toggled_on"
 - "drawRect"
 - "draw_color"
 depends-top-level:
-- "UIColor"
-- !private "CGPoint"
-- !private "*"
-- "BooleanLiteralType"
-- !private "fatalError"
 - "UIButton"
 - "Bool"
 - !private "UIBezierPath"
-- "NSCoder"
-- !private "UIControlEvents"
-- "NavButton"
-- "CGRect"
+- !private "fatalError"
+- "UIColor"
+- !private "CGPoint"
 - !private "StringLiteralType"
+- !private "*"
+- "CGRect"
+- "NavButton"
+- "NSCoder"
+- "BooleanLiteralType"
+- !private "UIControlEvents"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "UIBezierPath"]
