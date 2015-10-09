@@ -6,34 +6,32 @@ provides-nominal:
 provides-member:
 - ["C7PaletV27Stepper", ""]
 provides-dynamic-lookup:
-- "drawRect"
-- "value"
 - "set_value"
 - "increment"
 - "decrement"
-- "decr_button"
 - "incr_button"
+- "drawRect"
+- "value"
+- "decr_button"
 depends-top-level:
-- !private "+"
+- "UInt8"
+- !private "*"
+- !private "fatalError"
+- !private "--"
+- "AddButton"
+- "UIView"
+- !private "++"
+- !private "print"
+- !private ">"
+- !private "UIControlEvents"
+- !private "CGPoint"
+- "NSCoder"
+- !private "StringLiteralType"
 - "SubButton"
 - "Stepper"
-- !private "UIControlEvents"
-- "NSCoder"
-- !private "++"
 - "CGRect"
-- !private "print"
-- "UIView"
-- !private "StringLiteralType"
-- !private "UIColor"
-- !private "-"
-- !private "CGPoint"
-- !private "--"
-- !private "*"
 - !private "UIBezierPath"
-- "AddButton"
-- "UInt8"
-- !private ">"
-- !private "fatalError"
+- !private "UIColor"
 depends-member:
 - !private ["C7PaletV29AddButton", "addTarget"]
 - !private ["C7PaletV29AddButton", "backgroundColor"]
@@ -93,11 +91,8 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC7CGPoint", "init"]
-- !private ["VSC7CGPoint", "x"]
-- !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "init"]
-- !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "AddButton"]
 - !private ["PSs11CVarArgType", "CGPoint"]
@@ -206,7 +201,6 @@ depends-member:
 - !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "lineWidth"]
 - !private ["PSs9Equatable", "moveToPoint"]
-- !private ["PSs9Equatable", "origin"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "setNeedsDisplay"]
 - !private ["PSs9Equatable", "setStroke"]
@@ -219,8 +213,6 @@ depends-member:
 - ["PSs9Equatable", "value"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
-- !private ["PSs9Equatable", "x"]
-- !private ["PSs9Equatable", "y"]
 - ["PSs9Equatable", ""]
 - !private ["PSs8Hashable", "AddButton"]
 - !private ["PSs8Hashable", "CGPoint"]
@@ -715,7 +707,6 @@ depends-member:
 - ["PSs12_Reflectable", "increment"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
-- !private ["PSs12_Reflectable", "origin"]
 - !private ["PSs12_Reflectable", "print"]
 - !private ["PSs12_Reflectable", "setNeedsDisplay"]
 - !private ["PSs12_Reflectable", "set_border_color"]
@@ -725,8 +716,6 @@ depends-member:
 - ["PSs12_Reflectable", "set_value"]
 - ["PSs12_Reflectable", "value"]
 - !private ["PSs12_Reflectable", "width"]
-- !private ["PSs12_Reflectable", "x"]
-- !private ["PSs12_Reflectable", "y"]
 - ["PSs12_Reflectable", ""]
 depends-nominal:
 - !private "C7PaletV29AddButton"

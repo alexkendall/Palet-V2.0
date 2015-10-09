@@ -21,6 +21,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
     
     // sliders
     var sliders = [AnimatedSlider(), AnimatedSlider(),AnimatedSlider()];
+    var steppers = [Stepper(), Stepper(), Stepper()];
     
     // labels
     var labels = [AnimatedLabel(), AnimatedLabel(), AnimatedLabel()];
@@ -150,10 +151,16 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         code_entry_field.text = "#808080";
         super_view.addSubview(code_entry_field);
         
+        
+        // stepper dimensions
+        let stepper_width:CGFloat = super_view.bounds.width * 0.1;
+        let stepper_height:CGFloat = stepper_width;
+        
         // configure rgb labels
         let comp_margin:CGFloat = color_view.frame.origin.x;
         let comp_dim:CGFloat = super_view.bounds.width * 0.075;
-        let slider_width:CGFloat = super_view.bounds.width - (comp_margin * 2.0) - comp_dim;
+        let slider_width:CGFloat = super_view.bounds.width - (comp_margin * 2.0) - comp_dim - stepper_width;
+        print(super_view.bounds.width);
         let slider_height:CGFloat = comp_dim;
         
         for(var i = 0; i < NUM_COMPONENTS; ++i)
@@ -168,6 +175,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             labels[i].layer.borderWidth = 1.0;
             labels[i].textAlignment = NSTextAlignment.Center;
             super_view.addSubview(labels[i]);
+            
             
             // configure sliders to right of labels
             let slider_in_frame = CGRect(x: comp_margin + comp_dim, y: labels[i].frame.origin.y, width: slider_width, height: slider_height);
@@ -202,13 +210,12 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             shade_slider.value = 0.5;
             shade_slider.minimumTrackTintColor = UIColor.clearColor();
             shade_slider.maximumTrackTintColor = UIColor.clearColor();
-            shade_slider.backgroundColor = UIColor.whiteColor();
+            //shade_slider.backgroundColor = UIColor.whiteColor();
             
             // set slider thumb image
             shade_slider.setThumbImage(get_color_image(UIColor.blackColor(), height: 40.0, width: 6.0), forState: UIControlState.Normal);
             shade_slider.addTarget(self, action: "adjust_shade", forControlEvents: UIControlEvents.ValueChanged);
             shade_slider.addTarget(self, action: "change_color", forControlEvents: UIControlEvents.TouchUpInside);
-            
             
             // create gradient layer
             let gradient_margin:CGFloat = shade_slider.bounds.height * 0.2;
@@ -220,8 +227,34 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             gradient.colors = [UIColor.blackColor().CGColor, color_view.backgroundColor!.CGColor, UIColor.whiteColor().CGColor];
             shade_slider.layer.addSublayer(gradient);
             super_view.addSubview(shade_slider);
+            
+            // configure stepper
+            let stepper_offset:CGFloat = 0.5 * (stepper_height - labels[i].bounds.height);
+            steppers[i] = Stepper(frame: CGRect(x: sliders[i].frame.maxX, y: sliders[i].frame.origin.y - stepper_offset, width: stepper_width, height: stepper_height));
+                print(sliders[i].bounds.width);
+            super_view.addSubview(steppers[i]);
+            steppers[i].incr_button.addTarget(self, action: "increment:", forControlEvents: UIControlEvents.TouchDown);
+            steppers[i].decr_button.addTarget(self, action: "decrement:", forControlEvents: UIControlEvents.TouchDown);
+            steppers[i].incr_button.tag = i;
+            steppers[i].decr_button.tag = i;
         }
     }
+    
+    func increment(sender:UIButton)
+    {
+        let increment:Float = 1.0 / 255.0;
+        sliders[sender.tag].value += increment;
+        change_color();
+    }
+    
+    
+    func decrement(sender:UIButton)
+    {
+        let decrement:Float = 1.0 / 255.0;
+        sliders[sender.tag].value -= decrement;
+        change_color();
+    }
+    
     
     func add_favorite()
     {

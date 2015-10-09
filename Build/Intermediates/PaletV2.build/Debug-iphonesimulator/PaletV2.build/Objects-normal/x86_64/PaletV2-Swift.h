@@ -443,6 +443,7 @@ SWIFT_CLASS("_TtC7PaletV212PickerButton")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Stepper;
 @class CAGradientLayer;
 
 SWIFT_CLASS("_TtC7PaletV216PickerController")
@@ -454,6 +455,7 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @property (nonatomic) AnimatedButton * __null_unspecified favorite_button;
 @property (nonatomic) AnimatedButton * __null_unspecified add_button;
 @property (nonatomic, copy) NSArray<AnimatedSlider *> * __nonnull sliders;
+@property (nonatomic, copy) NSArray<Stepper *> * __nonnull steppers;
 @property (nonatomic, copy) NSArray<AnimatedLabel *> * __nonnull labels;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull label_txt;
 @property (nonatomic, copy) NSArray<UIColor *> * __nonnull rgb_colors;
@@ -463,6 +465,8 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @property (nonatomic, copy) NSString * __nonnull selected_palet;
 @property (nonatomic) UITextField * __null_unspecified code_entry_field;
 - (void)viewDidLoad;
+- (void)increment:(UIButton * __nonnull)sender;
+- (void)decrement:(UIButton * __nonnull)sender;
 - (void)add_favorite;
 - (void)add_to_palette;
 - (void)adjust_shade;

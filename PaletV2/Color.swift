@@ -105,3 +105,50 @@ func get_color(hex_code:String)->UIColor
     
     return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b)  / 255.0, alpha: 1.0);
 }
+
+func get_red(color:UIColor)->Int
+{
+    // update rgb
+    var red:CGFloat = 0.0;
+    var green:CGFloat = 0.0;
+    var blue:CGFloat = 0.0;
+    var alpha:CGFloat = 0.0;
+    
+    color.getRed(&red, green: &green, blue: &blue, alpha: &alpha);
+    
+    return Int(255.0 * red);
+}
+
+func get_blue(color:UIColor)->Int
+{
+    // update rgb
+    var red:CGFloat = 0.0;
+    var green:CGFloat = 0.0;
+    var blue:CGFloat = 0.0;
+    var alpha:CGFloat = 0.0;
+    
+    color.getRed(&red, green: &green, blue: &blue, alpha: &alpha);
+    
+    return Int(255.0 * green);
+}
+
+func get_green(color:UIColor)->Int
+{
+    // update rgb
+    var red:CGFloat = 0.0;
+    var green:CGFloat = 0.0;
+    var blue:CGFloat = 0.0;
+    var alpha:CGFloat = 0.0;
+    
+    color.getRed(&red, green: &green, blue: &blue, alpha: &alpha);
+    
+    return Int(255.0 * blue);
+}
+
+
+
+
+
+
+
+

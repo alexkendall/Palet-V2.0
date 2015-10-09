@@ -19,22 +19,22 @@ class Stepper:UIView
     override init(frame:CGRect)
     {
         super.init(frame: frame);
-        incr_button = AddButton(frame: CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.width, height: frame.height * 0.5));
+        incr_button = AddButton(frame: CGRect(x: 0.0, y: 0.0, width: frame.width, height: frame.height * 0.5));
         incr_button.set_square();
         incr_button.layer.borderWidth = 1.0;
         incr_button.backgroundColor = UIColor.whiteColor();
-        incr_button.set_border_width(2.0);
-        incr_button.set_path_width(2.0);
+        incr_button.set_border_width(1.0);
+        incr_button.set_path_width(1.0);
         incr_button.set_border_color(UIColor.blackColor());
         incr_button.setNeedsDisplay();
         incr_button.layer.cornerRadius = incr_button.bounds.height * 0.1;
         incr_button.addTarget(self, action: "increment", forControlEvents: UIControlEvents.TouchDown);
 
-        decr_button = SubButton(frame:CGRect(x: frame.origin.x, y: frame.origin.y + (frame.height * 0.5) - 2.0, width: frame.width, height: frame.height * 0.5));
+        decr_button = SubButton(frame:CGRect(x: 0.0, y:frame.height * 0.5, width: frame.width, height: frame.height * 0.5));
         decr_button.set_square();
         decr_button.set_border_color(UIColor.blackColor());
-        decr_button.set_border_width(2.0);
-        decr_button.set_path_width(2.0);
+        decr_button.set_border_width(1.0);
+        decr_button.set_path_width(1.0);
         decr_button.backgroundColor = UIColor.whiteColor();
         decr_button.layer.cornerRadius = decr_button.bounds.height * 0.1;
         decr_button.addTarget(self, action: "decrement", forControlEvents: UIControlEvents.TouchDown);
@@ -76,7 +76,7 @@ class Stepper:UIView
         let inc_path:UIBezierPath = UIBezierPath();
         inc_path.moveToPoint(CGPoint(x: rect.width * 0.2, y: rect.height * 0.25));
         inc_path.addLineToPoint(CGPoint(x: rect.width * 0.8, y: rect.height * 0.25));
-        inc_path.lineWidth = 2.0;
+        inc_path.lineWidth = 1.0;
         UIColor.blackColor().setStroke();
         inc_path.stroke();
     }

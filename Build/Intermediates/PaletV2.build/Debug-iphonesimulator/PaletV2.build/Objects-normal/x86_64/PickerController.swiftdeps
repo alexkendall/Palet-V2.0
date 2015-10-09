@@ -6,87 +6,96 @@ provides-nominal:
 provides-member:
 - ["C7PaletV216PickerController", ""]
 provides-dynamic-lookup:
+- "labels"
+- "selected_palet"
 - "add_to_palette"
-- "push_left"
+- "textFieldDidBeginEditing"
+- "textFieldShouldReturn"
+- "favorite_button"
+- "decrement"
+- "color_view"
+- "textFieldShouldEndEditing"
+- "gradient_view"
+- "sliders"
+- "NUM_COMPONENTS"
 - "add_button"
 - "reset_shade"
-- "gradient"
-- "favorite_button"
-- "rgb_label"
-- "labels"
-- "viewDidLoad"
-- "push_right"
-- "rgb_colors"
-- "color_view"
-- "shade_slider"
-- "textFieldDidBeginEditing"
-- "sliders"
-- "textFieldShouldReturn"
-- "add_favorite"
 - "adjust_shade"
-- "textFieldDidEndEditing"
-- "selected_palet"
-- "update_code"
+- "viewDidLoad"
+- "shade_slider"
 - "didReceiveMemoryWarning"
-- "textFieldShouldBeginEditing"
-- "textFieldShouldClear"
-- "NUM_COMPONENTS"
-- "gradient_view"
-- "change_color"
-- "textFieldShouldEndEditing"
-- "label_txt"
+- "push_right"
 - "current_color"
+- "textFieldDidEndEditing"
+- "rgb_label"
+- "gradient"
+- "update_code"
+- "textFieldShouldBeginEditing"
+- "increment"
+- "label_txt"
+- "textFieldShouldClear"
 - "code_entry_field"
+- "change_color"
+- "add_favorite"
+- "steppers"
+- "push_left"
+- "rgb_colors"
 depends-top-level:
-- "UIColor"
-- !private "CGFloat"
-- !private "UIImage"
-- !private "nav_controller"
 - "AnimatedButton"
-- "String"
-- "NSTimeInterval"
-- !private "CGRect"
-- !private "*"
-- !private "/"
-- !private "<"
-- !private "UITextAutocapitalizationType"
-- !private "get_color"
-- !private "++"
-- !private "NSTextAlignment"
-- !private "+"
-- "Array"
-- !private "get_hex"
-- !private "print"
-- !private "get_rgb"
-- !private "store_color"
-- !private "UILabel"
-- "PickerController"
-- "AnimatedLabel"
-- !private "CGPointMake"
-- !private "get_color_image"
-- !private "CGAffineTransformMakeRotation"
-- !private "Float"
-- !private "BooleanLiteralType"
-- !private "!="
-- "Bool"
-- !private "M_PI"
 - !private "-"
+- "NSTimeInterval"
+- !private "++"
+- "UITextFieldDelegate"
+- "CAGradientLayer"
+- !private "get_color_image"
+- !private "CGPointMake"
+- "PickerController"
+- !private "BooleanLiteralType"
 - !private "UIControlState"
-- "AnimatedSlider"
-- !private "UIFont"
-- "AnimatedView"
-- !private "UIControlEvents"
-- !private "TextField"
-- "StringLiteralType"
+- !private "store_color"
 - !private "FAVORITE_GROUP_NAME"
 - "UITextField"
+- !private "!="
+- !private "M_PI"
+- !private "Float"
+- !private "CGRect"
+- "AnimatedLabel"
+- !private "<"
+- !private "CGFloat"
+- !private "/"
+- "UIButton"
+- !private "UIControlEvents"
 - !private "is_valid"
-- "AuxillaryController"
-- "CAGradientLayer"
+- "AnimatedView"
+- !private "print"
+- !private "UITextAutocapitalizationType"
+- "UIColor"
 - "UnicodeScalarType"
-- "UITextFieldDelegate"
+- !private "+"
+- "Stepper"
+- "AnimatedSlider"
+- !private "TextField"
+- "AuxillaryController"
+- !private "CGAffineTransformMakeRotation"
+- !private "UILabel"
+- !private "get_rgb"
+- !private "get_color"
+- !private "NSTextAlignment"
+- "String"
+- "StringLiteralType"
+- "Bool"
+- !private "-="
+- !private "*"
+- "Array"
+- !private "get_hex"
+- !private "UIFont"
+- !private "+="
+- !private "UIImage"
+- !private "nav_controller"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
+- !private ["C7PaletV29AddButton", "addTarget"]
+- !private ["C7PaletV29AddButton", "tag"]
 - !private ["C7PaletV214AnimatedButton", "addTarget"]
 - !private ["C7PaletV214AnimatedButton", "backgroundColor"]
 - !private ["C7PaletV214AnimatedButton", "bounds"]
@@ -96,6 +105,7 @@ depends-member:
 - !private ["C7PaletV214AnimatedButton", "setTitle"]
 - !private ["C7PaletV214AnimatedButton", "setTitleColor"]
 - !private ["C7PaletV214AnimatedButton", "titleLabel"]
+- !private ["C7PaletV213AnimatedLabel", "bounds"]
 - !private ["C7PaletV213AnimatedLabel", "font"]
 - !private ["C7PaletV213AnimatedLabel", "frame"]
 - ["C7PaletV213AnimatedLabel", "init"]
@@ -103,7 +113,6 @@ depends-member:
 - !private ["C7PaletV213AnimatedLabel", "text"]
 - !private ["C7PaletV213AnimatedLabel", "textAlignment"]
 - !private ["C7PaletV214AnimatedSlider", "addTarget"]
-- !private ["C7PaletV214AnimatedSlider", "backgroundColor"]
 - !private ["C7PaletV214AnimatedSlider", "bounds"]
 - !private ["C7PaletV214AnimatedSlider", "deinit"]
 - !private ["C7PaletV214AnimatedSlider", "frame"]
@@ -161,6 +170,7 @@ depends-member:
 - !private ["PSs9AnyObject", "M_PI"]
 - !private ["PSs9AnyObject", "NSTextAlignment"]
 - ["PSs9AnyObject", "NUM_COMPONENTS"]
+- ["PSs9AnyObject", "Stepper"]
 - !private ["PSs9AnyObject", "TextField"]
 - ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
@@ -191,6 +201,8 @@ depends-member:
 - !private ["PSs9AnyObject", "colors"]
 - !private ["PSs9AnyObject", "cornerRadius"]
 - ["PSs9AnyObject", "current_color"]
+- !private ["PSs9AnyObject", "decr_button"]
+- ["PSs9AnyObject", "decrement"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "endPoint"]
@@ -208,6 +220,8 @@ depends-member:
 - !private ["PSs9AnyObject", "grayColor"]
 - ["PSs9AnyObject", "greenColor"]
 - !private ["PSs9AnyObject", "in_frame"]
+- !private ["PSs9AnyObject", "incr_button"]
+- ["PSs9AnyObject", "increment"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "is_valid"]
 - ["PSs9AnyObject", "label_txt"]
@@ -243,11 +257,13 @@ depends-member:
 - !private ["PSs9AnyObject", "sizeToFit"]
 - ["PSs9AnyObject", "sliders"]
 - !private ["PSs9AnyObject", "startPoint"]
+- ["PSs9AnyObject", "steppers"]
 - !private ["PSs9AnyObject", "store_color"]
 - !private ["PSs9AnyObject", "stretchableImageWithLeftCapWidth"]
 - !private ["PSs9AnyObject", "super_view"]
 - !private ["PSs9AnyObject", "systemFontOfSize"]
 - !private ["PSs9AnyObject", "table"]
+- !private ["PSs9AnyObject", "tag"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textAlignment"]
 - ["PSs9AnyObject", "textField"]
@@ -280,6 +296,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "Normal"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "TouchDown"]
 - !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["PSs23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
@@ -303,8 +320,10 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "NSTextAlignment"]
 - ["C7PaletV219AuxillaryController", "NSTimeInterval"]
 - ["C7PaletV219AuxillaryController", "NUM_COMPONENTS"]
+- ["C7PaletV219AuxillaryController", "Stepper"]
 - ["C7PaletV219AuxillaryController", "String"]
 - !private ["C7PaletV219AuxillaryController", "TextField"]
+- ["C7PaletV219AuxillaryController", "UIButton"]
 - ["C7PaletV219AuxillaryController", "UIColor"]
 - !private ["C7PaletV219AuxillaryController", "UIControlEvents"]
 - !private ["C7PaletV219AuxillaryController", "UIControlState"]
@@ -323,6 +342,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "color_view"]
 - !private ["C7PaletV219AuxillaryController", "colors"]
 - ["C7PaletV219AuxillaryController", "current_color"]
+- ["C7PaletV219AuxillaryController", "decrement"]
 - ["C7PaletV219AuxillaryController", "didReceiveMemoryWarning"]
 - ["C7PaletV219AuxillaryController", "favorite_button"]
 - !private ["C7PaletV219AuxillaryController", "get_color"]
@@ -332,6 +352,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "gradient"]
 - ["C7PaletV219AuxillaryController", "gradient_view"]
 - !private ["C7PaletV219AuxillaryController", "in_frame"]
+- ["C7PaletV219AuxillaryController", "increment"]
 - ["C7PaletV219AuxillaryController", "init"]
 - !private ["C7PaletV219AuxillaryController", "is_valid"]
 - ["C7PaletV219AuxillaryController", "label_txt"]
@@ -349,6 +370,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "selected_palet"]
 - ["C7PaletV219AuxillaryController", "shade_slider"]
 - ["C7PaletV219AuxillaryController", "sliders"]
+- ["C7PaletV219AuxillaryController", "steppers"]
 - !private ["C7PaletV219AuxillaryController", "store_color"]
 - !private ["C7PaletV219AuxillaryController", "super_view"]
 - !private ["C7PaletV219AuxillaryController", "table"]
@@ -424,6 +446,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "M_PI"]
 - !private ["PSs11CVarArgType", "NSTextAlignment"]
 - ["PSs11CVarArgType", "NUM_COMPONENTS"]
+- ["PSs11CVarArgType", "Stepper"]
 - !private ["PSs11CVarArgType", "TextField"]
 - ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
@@ -454,6 +477,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "colors"]
 - !private ["PSs11CVarArgType", "cornerRadius"]
 - ["PSs11CVarArgType", "current_color"]
+- !private ["PSs11CVarArgType", "decr_button"]
+- ["PSs11CVarArgType", "decrement"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["PSs11CVarArgType", "endPoint"]
@@ -471,6 +496,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "grayColor"]
 - ["PSs11CVarArgType", "greenColor"]
 - !private ["PSs11CVarArgType", "in_frame"]
+- !private ["PSs11CVarArgType", "incr_button"]
+- ["PSs11CVarArgType", "increment"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "is_valid"]
 - ["PSs11CVarArgType", "label_txt"]
@@ -506,11 +533,13 @@ depends-member:
 - !private ["PSs11CVarArgType", "sizeToFit"]
 - ["PSs11CVarArgType", "sliders"]
 - !private ["PSs11CVarArgType", "startPoint"]
+- ["PSs11CVarArgType", "steppers"]
 - !private ["PSs11CVarArgType", "store_color"]
 - !private ["PSs11CVarArgType", "stretchableImageWithLeftCapWidth"]
 - !private ["PSs11CVarArgType", "super_view"]
 - !private ["PSs11CVarArgType", "systemFontOfSize"]
 - !private ["PSs11CVarArgType", "table"]
+- !private ["PSs11CVarArgType", "tag"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textAlignment"]
 - ["PSs11CVarArgType", "textField"]
@@ -566,6 +595,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "M_PI"]
 - !private ["PSs23CustomStringConvertible", "NSTextAlignment"]
 - ["PSs23CustomStringConvertible", "NUM_COMPONENTS"]
+- ["PSs23CustomStringConvertible", "Stepper"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "TextField"]
 - ["PSs23CustomStringConvertible", "UIColor"]
@@ -600,6 +630,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "colors"]
 - !private ["PSs23CustomStringConvertible", "cornerRadius"]
 - ["PSs23CustomStringConvertible", "current_color"]
+- !private ["PSs23CustomStringConvertible", "decr_button"]
+- ["PSs23CustomStringConvertible", "decrement"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["PSs23CustomStringConvertible", "endPoint"]
@@ -617,6 +649,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "grayColor"]
 - ["PSs23CustomStringConvertible", "greenColor"]
 - !private ["PSs23CustomStringConvertible", "in_frame"]
+- !private ["PSs23CustomStringConvertible", "incr_button"]
+- ["PSs23CustomStringConvertible", "increment"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "is_valid"]
 - ["PSs23CustomStringConvertible", "label_txt"]
@@ -652,12 +686,14 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "sizeToFit"]
 - ["PSs23CustomStringConvertible", "sliders"]
 - !private ["PSs23CustomStringConvertible", "startPoint"]
+- ["PSs23CustomStringConvertible", "steppers"]
 - !private ["PSs23CustomStringConvertible", "store_color"]
 - !private ["PSs23CustomStringConvertible", "stretchableImageWithLeftCapWidth"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "super_view"]
 - !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
 - !private ["PSs23CustomStringConvertible", "table"]
+- !private ["PSs23CustomStringConvertible", "tag"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textAlignment"]
 - ["PSs23CustomStringConvertible", "textField"]
@@ -697,7 +733,9 @@ depends-member:
 - !private ["PSs9Equatable", "NSTextAlignment"]
 - ["PSs9Equatable", "NUM_COMPONENTS"]
 - !private ["PSs9Equatable", "Normal"]
+- ["PSs9Equatable", "Stepper"]
 - !private ["PSs9Equatable", "TextField"]
+- !private ["PSs9Equatable", "TouchDown"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIControlEvents"]
@@ -730,6 +768,8 @@ depends-member:
 - !private ["PSs9Equatable", "colors"]
 - !private ["PSs9Equatable", "cornerRadius"]
 - ["PSs9Equatable", "current_color"]
+- !private ["PSs9Equatable", "decr_button"]
+- ["PSs9Equatable", "decrement"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - !private ["PSs9Equatable", "endPoint"]
@@ -748,6 +788,8 @@ depends-member:
 - ["PSs9Equatable", "greenColor"]
 - !private ["PSs9Equatable", "height"]
 - !private ["PSs9Equatable", "in_frame"]
+- !private ["PSs9Equatable", "incr_button"]
+- ["PSs9Equatable", "increment"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "is_valid"]
 - ["PSs9Equatable", "label_txt"]
@@ -787,11 +829,13 @@ depends-member:
 - !private ["PSs9Equatable", "sizeToFit"]
 - ["PSs9Equatable", "sliders"]
 - !private ["PSs9Equatable", "startPoint"]
+- ["PSs9Equatable", "steppers"]
 - !private ["PSs9Equatable", "store_color"]
 - !private ["PSs9Equatable", "stretchableImageWithLeftCapWidth"]
 - !private ["PSs9Equatable", "super_view"]
 - !private ["PSs9Equatable", "systemFontOfSize"]
 - !private ["PSs9Equatable", "table"]
+- !private ["PSs9Equatable", "tag"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textAlignment"]
 - ["PSs9Equatable", "textField"]
@@ -839,6 +883,7 @@ depends-member:
 - !private ["PSs8Hashable", "M_PI"]
 - !private ["PSs8Hashable", "NSTextAlignment"]
 - ["PSs8Hashable", "NUM_COMPONENTS"]
+- ["PSs8Hashable", "Stepper"]
 - !private ["PSs8Hashable", "TextField"]
 - ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
@@ -870,6 +915,8 @@ depends-member:
 - !private ["PSs8Hashable", "colors"]
 - !private ["PSs8Hashable", "cornerRadius"]
 - ["PSs8Hashable", "current_color"]
+- !private ["PSs8Hashable", "decr_button"]
+- ["PSs8Hashable", "decrement"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - !private ["PSs8Hashable", "endPoint"]
@@ -887,6 +934,8 @@ depends-member:
 - !private ["PSs8Hashable", "grayColor"]
 - ["PSs8Hashable", "greenColor"]
 - !private ["PSs8Hashable", "in_frame"]
+- !private ["PSs8Hashable", "incr_button"]
+- ["PSs8Hashable", "increment"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "is_valid"]
 - ["PSs8Hashable", "label_txt"]
@@ -922,11 +971,13 @@ depends-member:
 - !private ["PSs8Hashable", "sizeToFit"]
 - ["PSs8Hashable", "sliders"]
 - !private ["PSs8Hashable", "startPoint"]
+- ["PSs8Hashable", "steppers"]
 - !private ["PSs8Hashable", "store_color"]
 - !private ["PSs8Hashable", "stretchableImageWithLeftCapWidth"]
 - !private ["PSs8Hashable", "super_view"]
 - !private ["PSs8Hashable", "systemFontOfSize"]
 - !private ["PSs8Hashable", "table"]
+- !private ["PSs8Hashable", "tag"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textAlignment"]
 - ["PSs8Hashable", "textField"]
@@ -962,6 +1013,8 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C7PaletV210MenuButton", "addTarget"]
+- !private ["C7PaletV210MenuButton", "tag"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - ["PSs21MutableCollectionType", "Element"]
@@ -1000,6 +1053,7 @@ depends-member:
 - !private ["PSo8NSCoding", "M_PI"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - ["PSo8NSCoding", "NUM_COMPONENTS"]
+- ["PSo8NSCoding", "Stepper"]
 - !private ["PSo8NSCoding", "TextField"]
 - ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
@@ -1030,6 +1084,8 @@ depends-member:
 - !private ["PSo8NSCoding", "colors"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "current_color"]
+- !private ["PSo8NSCoding", "decr_button"]
+- ["PSo8NSCoding", "decrement"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "endPoint"]
@@ -1047,6 +1103,8 @@ depends-member:
 - !private ["PSo8NSCoding", "grayColor"]
 - ["PSo8NSCoding", "greenColor"]
 - !private ["PSo8NSCoding", "in_frame"]
+- !private ["PSo8NSCoding", "incr_button"]
+- ["PSo8NSCoding", "increment"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "is_valid"]
 - ["PSo8NSCoding", "label_txt"]
@@ -1082,10 +1140,12 @@ depends-member:
 - !private ["PSo8NSCoding", "sizeToFit"]
 - ["PSo8NSCoding", "sliders"]
 - !private ["PSo8NSCoding", "startPoint"]
+- ["PSo8NSCoding", "steppers"]
 - !private ["PSo8NSCoding", "store_color"]
 - !private ["PSo8NSCoding", "stretchableImageWithLeftCapWidth"]
 - !private ["PSo8NSCoding", "super_view"]
 - !private ["PSo8NSCoding", "table"]
+- !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
 - ["PSo8NSCoding", "textField"]
@@ -1130,6 +1190,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "M_PI"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - ["PSo26NSExtensionRequestHandling", "NUM_COMPONENTS"]
+- ["PSo26NSExtensionRequestHandling", "Stepper"]
 - !private ["PSo26NSExtensionRequestHandling", "TextField"]
 - ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
@@ -1148,6 +1209,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "color_view"]
 - !private ["PSo26NSExtensionRequestHandling", "colors"]
 - ["PSo26NSExtensionRequestHandling", "current_color"]
+- ["PSo26NSExtensionRequestHandling", "decrement"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "favorite_button"]
 - !private ["PSo26NSExtensionRequestHandling", "favorites_controller"]
@@ -1158,6 +1220,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "gradient"]
 - ["PSo26NSExtensionRequestHandling", "gradient_view"]
 - !private ["PSo26NSExtensionRequestHandling", "in_frame"]
+- ["PSo26NSExtensionRequestHandling", "increment"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "is_valid"]
 - ["PSo26NSExtensionRequestHandling", "label_txt"]
@@ -1177,6 +1240,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "shade_slider"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "sliders"]
+- ["PSo26NSExtensionRequestHandling", "steppers"]
 - !private ["PSo26NSExtensionRequestHandling", "store_color"]
 - !private ["PSo26NSExtensionRequestHandling", "super_view"]
 - !private ["PSo26NSExtensionRequestHandling", "table"]
@@ -1210,8 +1274,10 @@ depends-member:
 - !private ["CSo8NSObject", "NSTextAlignment"]
 - ["CSo8NSObject", "NSTimeInterval"]
 - ["CSo8NSObject", "NUM_COMPONENTS"]
+- ["CSo8NSObject", "Stepper"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "TextField"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
@@ -1242,6 +1308,8 @@ depends-member:
 - !private ["CSo8NSObject", "colors"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "current_color"]
+- !private ["CSo8NSObject", "decr_button"]
+- ["CSo8NSObject", "decrement"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "endPoint"]
@@ -1259,6 +1327,8 @@ depends-member:
 - !private ["CSo8NSObject", "grayColor"]
 - ["CSo8NSObject", "greenColor"]
 - !private ["CSo8NSObject", "in_frame"]
+- !private ["CSo8NSObject", "incr_button"]
+- ["CSo8NSObject", "increment"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "is_valid"]
 - ["CSo8NSObject", "label_txt"]
@@ -1294,11 +1364,13 @@ depends-member:
 - !private ["CSo8NSObject", "sizeToFit"]
 - ["CSo8NSObject", "sliders"]
 - !private ["CSo8NSObject", "startPoint"]
+- ["CSo8NSObject", "steppers"]
 - !private ["CSo8NSObject", "store_color"]
 - !private ["CSo8NSObject", "stretchableImageWithLeftCapWidth"]
 - !private ["CSo8NSObject", "super_view"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "table"]
+- !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
 - ["CSo8NSObject", "textField"]
@@ -1331,6 +1403,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "M_PI"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - ["PSo16NSObjectProtocol", "NUM_COMPONENTS"]
+- ["PSo16NSObjectProtocol", "Stepper"]
 - !private ["PSo16NSObjectProtocol", "TextField"]
 - ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
@@ -1361,6 +1434,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "colors"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "current_color"]
+- !private ["PSo16NSObjectProtocol", "decr_button"]
+- ["PSo16NSObjectProtocol", "decrement"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "endPoint"]
@@ -1378,6 +1453,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "grayColor"]
 - ["PSo16NSObjectProtocol", "greenColor"]
 - !private ["PSo16NSObjectProtocol", "in_frame"]
+- !private ["PSo16NSObjectProtocol", "incr_button"]
+- ["PSo16NSObjectProtocol", "increment"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "is_valid"]
 - ["PSo16NSObjectProtocol", "label_txt"]
@@ -1413,11 +1490,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
 - ["PSo16NSObjectProtocol", "sliders"]
 - !private ["PSo16NSObjectProtocol", "startPoint"]
+- ["PSo16NSObjectProtocol", "steppers"]
 - !private ["PSo16NSObjectProtocol", "store_color"]
 - !private ["PSo16NSObjectProtocol", "stretchableImageWithLeftCapWidth"]
 - !private ["PSo16NSObjectProtocol", "super_view"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "table"]
+- !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - ["PSo16NSObjectProtocol", "textField"]
@@ -1455,6 +1534,7 @@ depends-member:
 - !private ["C7PaletV222NotificationController", "show"]
 - !private ["PSs13OptionSetType", "Highlighted"]
 - !private ["PSs13OptionSetType", "Normal"]
+- !private ["PSs13OptionSetType", "TouchDown"]
 - !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
@@ -1474,8 +1554,10 @@ depends-member:
 - !private ["C7PaletV216PickerController", "NSTextAlignment"]
 - ["C7PaletV216PickerController", "NSTimeInterval"]
 - ["C7PaletV216PickerController", "NUM_COMPONENTS"]
+- ["C7PaletV216PickerController", "Stepper"]
 - ["C7PaletV216PickerController", "String"]
 - !private ["C7PaletV216PickerController", "TextField"]
+- ["C7PaletV216PickerController", "UIButton"]
 - ["C7PaletV216PickerController", "UIColor"]
 - !private ["C7PaletV216PickerController", "UIControlEvents"]
 - !private ["C7PaletV216PickerController", "UIControlState"]
@@ -1492,6 +1574,7 @@ depends-member:
 - ["C7PaletV216PickerController", "code_entry_field"]
 - ["C7PaletV216PickerController", "color_view"]
 - ["C7PaletV216PickerController", "current_color"]
+- ["C7PaletV216PickerController", "decrement"]
 - ["C7PaletV216PickerController", "deinit"]
 - ["C7PaletV216PickerController", "didReceiveMemoryWarning"]
 - ["C7PaletV216PickerController", "favorite_button"]
@@ -1502,6 +1585,7 @@ depends-member:
 - ["C7PaletV216PickerController", "gradient"]
 - ["C7PaletV216PickerController", "gradient_view"]
 - !private ["C7PaletV216PickerController", "in_frame"]
+- ["C7PaletV216PickerController", "increment"]
 - ["C7PaletV216PickerController", "init"]
 - !private ["C7PaletV216PickerController", "is_valid"]
 - ["C7PaletV216PickerController", "label_txt"]
@@ -1518,6 +1602,7 @@ depends-member:
 - ["C7PaletV216PickerController", "selected_palet"]
 - ["C7PaletV216PickerController", "shade_slider"]
 - ["C7PaletV216PickerController", "sliders"]
+- ["C7PaletV216PickerController", "steppers"]
 - !private ["C7PaletV216PickerController", "store_color"]
 - !private ["C7PaletV216PickerController", "super_view"]
 - ["C7PaletV216PickerController", "textField"]
@@ -1543,6 +1628,7 @@ depends-member:
 - !private ["PSs16RawRepresentable", "Center"]
 - !private ["PSs16RawRepresentable", "Highlighted"]
 - !private ["PSs16RawRepresentable", "Normal"]
+- !private ["PSs16RawRepresentable", "TouchDown"]
 - !private ["PSs16RawRepresentable", "TouchUpInside"]
 - !private ["PSs16RawRepresentable", "ValueChanged"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
@@ -1555,6 +1641,7 @@ depends-member:
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "Highlighted"]
 - !private ["PSs14SetAlgebraType", "Normal"]
+- !private ["PSs14SetAlgebraType", "TouchDown"]
 - !private ["PSs14SetAlgebraType", "TouchUpInside"]
 - !private ["PSs14SetAlgebraType", "ValueChanged"]
 - !private ["PSs17SignedIntegerType", "Distance"]
@@ -1566,20 +1653,27 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
+- !private ["C7PaletV27Stepper", "decr_button"]
+- !private ["C7PaletV27Stepper", "incr_button"]
+- ["C7PaletV27Stepper", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSs10Strideable", "init"]
 - !private ["SS", "deinit"]
+- !private ["C7PaletV29SubButton", "addTarget"]
+- !private ["C7PaletV29SubButton", "tag"]
 - !private ["C7PaletV29TextField", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "autocapitalizationType"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "decr_button"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "in_frame"]
+- !private ["PSo29UIAccessibilityIdentification", "incr_button"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "maximumTrackTintColor"]
@@ -1594,6 +1688,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
 - !private ["PSo29UIAccessibilityIdentification", "stretchableImageWithLeftCapWidth"]
+- !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
@@ -1604,10 +1699,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "autocapitalizationType"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "decr_button"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "in_frame"]
+- !private ["PSo12UIAppearance", "incr_button"]
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "maximumTrackTintColor"]
@@ -1621,6 +1718,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "setTitleColor"]
 - !private ["PSo12UIAppearance", "sizeToFit"]
+- !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "titleLabel"]
@@ -1640,6 +1738,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "M_PI"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - ["PSo21UIAppearanceContainer", "NUM_COMPONENTS"]
+- ["PSo21UIAppearanceContainer", "Stepper"]
 - !private ["PSo21UIAppearanceContainer", "TextField"]
 - ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
@@ -1663,6 +1762,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "color_view"]
 - !private ["PSo21UIAppearanceContainer", "colors"]
 - ["PSo21UIAppearanceContainer", "current_color"]
+- !private ["PSo21UIAppearanceContainer", "decr_button"]
+- ["PSo21UIAppearanceContainer", "decrement"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "favorite_button"]
@@ -1676,6 +1777,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "gradient"]
 - ["PSo21UIAppearanceContainer", "gradient_view"]
 - !private ["PSo21UIAppearanceContainer", "in_frame"]
+- !private ["PSo21UIAppearanceContainer", "incr_button"]
+- ["PSo21UIAppearanceContainer", "increment"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "is_valid"]
 - ["PSo21UIAppearanceContainer", "label_txt"]
@@ -1707,9 +1810,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "show"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
 - ["PSo21UIAppearanceContainer", "sliders"]
+- ["PSo21UIAppearanceContainer", "steppers"]
 - !private ["PSo21UIAppearanceContainer", "store_color"]
 - !private ["PSo21UIAppearanceContainer", "super_view"]
 - !private ["PSo21UIAppearanceContainer", "table"]
+- !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - ["PSo21UIAppearanceContainer", "textField"]
@@ -1734,6 +1839,7 @@ depends-member:
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo8UIButton", "setTitleColor"]
+- !private ["CSo8UIButton", "tag"]
 - !private ["CSo8UIButton", "titleLabel"]
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["PSo26UICollectionViewDataSource", "color_colection"]
@@ -1770,6 +1876,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "M_PI"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - ["PSo18UIContentContainer", "NUM_COMPONENTS"]
+- ["PSo18UIContentContainer", "Stepper"]
 - !private ["PSo18UIContentContainer", "TextField"]
 - ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
@@ -1788,6 +1895,7 @@ depends-member:
 - ["PSo18UIContentContainer", "color_view"]
 - !private ["PSo18UIContentContainer", "colors"]
 - ["PSo18UIContentContainer", "current_color"]
+- ["PSo18UIContentContainer", "decrement"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "favorite_button"]
 - !private ["PSo18UIContentContainer", "favorites_controller"]
@@ -1798,6 +1906,7 @@ depends-member:
 - ["PSo18UIContentContainer", "gradient"]
 - ["PSo18UIContentContainer", "gradient_view"]
 - !private ["PSo18UIContentContainer", "in_frame"]
+- ["PSo18UIContentContainer", "increment"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "is_valid"]
 - ["PSo18UIContentContainer", "label_txt"]
@@ -1817,6 +1926,7 @@ depends-member:
 - ["PSo18UIContentContainer", "shade_slider"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "sliders"]
+- ["PSo18UIContentContainer", "steppers"]
 - !private ["PSo18UIContentContainer", "store_color"]
 - !private ["PSo18UIContentContainer", "super_view"]
 - !private ["PSo18UIContentContainer", "table"]
@@ -1850,10 +1960,12 @@ depends-member:
 - !private ["CSo9UIControl", "setThumbImage"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "setTitleColor"]
+- !private ["CSo9UIControl", "tag"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "titleLabel"]
 - !private ["CSo9UIControl", "transform"]
 - !private ["CSo9UIControl", "value"]
+- !private ["VSC15UIControlEvents", "TouchDown"]
 - !private ["VSC15UIControlEvents", "TouchUpInside"]
 - !private ["VSC15UIControlEvents", "ValueChanged"]
 - !private ["VSC14UIControlState", "Highlighted"]
@@ -1863,10 +1975,12 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "autocapitalizationType"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "decr_button"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "in_frame"]
+- !private ["PSo17UICoordinateSpace", "incr_button"]
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "maximumTrackTintColor"]
@@ -1880,6 +1994,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "setTitleColor"]
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
+- !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
@@ -1890,10 +2005,12 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "autocapitalizationType"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "decr_button"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "in_frame"]
+- !private ["PSo13UIDynamicItem", "incr_button"]
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "maximumTrackTintColor"]
@@ -1907,6 +2024,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
 - !private ["PSo13UIDynamicItem", "sizeToFit"]
+- !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
@@ -1923,6 +2041,7 @@ depends-member:
 - !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "bounds"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "init"]
@@ -1946,8 +2065,10 @@ depends-member:
 - !private ["CSo11UIResponder", "NSTextAlignment"]
 - ["CSo11UIResponder", "NSTimeInterval"]
 - ["CSo11UIResponder", "NUM_COMPONENTS"]
+- ["CSo11UIResponder", "Stepper"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "TextField"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
@@ -1971,6 +2092,8 @@ depends-member:
 - ["CSo11UIResponder", "color_view"]
 - !private ["CSo11UIResponder", "colors"]
 - ["CSo11UIResponder", "current_color"]
+- !private ["CSo11UIResponder", "decr_button"]
+- ["CSo11UIResponder", "decrement"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "favorite_button"]
@@ -1984,6 +2107,8 @@ depends-member:
 - ["CSo11UIResponder", "gradient"]
 - ["CSo11UIResponder", "gradient_view"]
 - !private ["CSo11UIResponder", "in_frame"]
+- !private ["CSo11UIResponder", "incr_button"]
+- ["CSo11UIResponder", "increment"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "is_valid"]
 - ["CSo11UIResponder", "label_txt"]
@@ -2015,9 +2140,11 @@ depends-member:
 - !private ["CSo11UIResponder", "show"]
 - !private ["CSo11UIResponder", "sizeToFit"]
 - ["CSo11UIResponder", "sliders"]
+- ["CSo11UIResponder", "steppers"]
 - !private ["CSo11UIResponder", "store_color"]
 - !private ["CSo11UIResponder", "super_view"]
 - !private ["CSo11UIResponder", "table"]
+- !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - ["CSo11UIResponder", "textField"]
@@ -2040,7 +2167,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "palet_name"]
 - !private ["PSo20UIScrollViewDelegate", "table"]
 - !private ["CSo8UISlider", "addTarget"]
-- !private ["CSo8UISlider", "backgroundColor"]
 - !private ["CSo8UISlider", "bounds"]
 - !private ["CSo8UISlider", "frame"]
 - !private ["CSo8UISlider", "in_frame"]
@@ -2067,6 +2193,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "M_PI"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - ["PSo16UIStateRestoring", "NUM_COMPONENTS"]
+- ["PSo16UIStateRestoring", "Stepper"]
 - !private ["PSo16UIStateRestoring", "TextField"]
 - ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
@@ -2085,6 +2212,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "color_view"]
 - !private ["PSo16UIStateRestoring", "colors"]
 - ["PSo16UIStateRestoring", "current_color"]
+- ["PSo16UIStateRestoring", "decrement"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "favorite_button"]
 - !private ["PSo16UIStateRestoring", "favorites_controller"]
@@ -2095,6 +2223,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "gradient"]
 - ["PSo16UIStateRestoring", "gradient_view"]
 - !private ["PSo16UIStateRestoring", "in_frame"]
+- ["PSo16UIStateRestoring", "increment"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "is_valid"]
 - ["PSo16UIStateRestoring", "label_txt"]
@@ -2114,6 +2243,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "shade_slider"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "sliders"]
+- ["PSo16UIStateRestoring", "steppers"]
 - !private ["PSo16UIStateRestoring", "store_color"]
 - !private ["PSo16UIStateRestoring", "super_view"]
 - !private ["PSo16UIStateRestoring", "table"]
@@ -2155,6 +2285,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "M_PI"]
 - !private ["PSo19UITextFieldDelegate", "NSTextAlignment"]
 - !private ["PSo19UITextFieldDelegate", "NUM_COMPONENTS"]
+- ["PSo19UITextFieldDelegate", "Stepper"]
 - !private ["PSo19UITextFieldDelegate", "TextField"]
 - ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
@@ -2188,6 +2319,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "selected_palet"]
 - !private ["PSo19UITextFieldDelegate", "shade_slider"]
 - !private ["PSo19UITextFieldDelegate", "sliders"]
+- !private ["PSo19UITextFieldDelegate", "steppers"]
 - !private ["PSo19UITextFieldDelegate", "store_color"]
 - !private ["PSo19UITextFieldDelegate", "super_view"]
 - ["PSo19UITextFieldDelegate", "textField"]
@@ -2230,6 +2362,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "M_PI"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - ["PSo18UITraitEnvironment", "NUM_COMPONENTS"]
+- ["PSo18UITraitEnvironment", "Stepper"]
 - !private ["PSo18UITraitEnvironment", "TextField"]
 - ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
@@ -2253,6 +2386,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "color_view"]
 - !private ["PSo18UITraitEnvironment", "colors"]
 - ["PSo18UITraitEnvironment", "current_color"]
+- !private ["PSo18UITraitEnvironment", "decr_button"]
+- ["PSo18UITraitEnvironment", "decrement"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "favorite_button"]
@@ -2266,6 +2401,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "gradient"]
 - ["PSo18UITraitEnvironment", "gradient_view"]
 - !private ["PSo18UITraitEnvironment", "in_frame"]
+- !private ["PSo18UITraitEnvironment", "incr_button"]
+- ["PSo18UITraitEnvironment", "increment"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "is_valid"]
 - ["PSo18UITraitEnvironment", "label_txt"]
@@ -2297,9 +2434,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "show"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
 - ["PSo18UITraitEnvironment", "sliders"]
+- ["PSo18UITraitEnvironment", "steppers"]
 - !private ["PSo18UITraitEnvironment", "store_color"]
 - !private ["PSo18UITraitEnvironment", "super_view"]
 - !private ["PSo18UITraitEnvironment", "table"]
+- !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - ["PSo18UITraitEnvironment", "textField"]
@@ -2322,11 +2461,13 @@ depends-member:
 - !private ["CSo6UIView", "autocapitalizationType"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "decr_button"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "in_frame"]
-- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "incr_button"]
+- ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "maximumTrackTintColor"]
 - !private ["CSo6UIView", "maximumValue"]
@@ -2339,6 +2480,7 @@ depends-member:
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "setTitleColor"]
 - !private ["CSo6UIView", "sizeToFit"]
+- !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "titleLabel"]
@@ -2360,8 +2502,10 @@ depends-member:
 - !private ["CSo16UIViewController", "NSTextAlignment"]
 - ["CSo16UIViewController", "NSTimeInterval"]
 - ["CSo16UIViewController", "NUM_COMPONENTS"]
+- ["CSo16UIViewController", "Stepper"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "TextField"]
+- ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
@@ -2380,6 +2524,7 @@ depends-member:
 - ["CSo16UIViewController", "color_view"]
 - !private ["CSo16UIViewController", "colors"]
 - ["CSo16UIViewController", "current_color"]
+- ["CSo16UIViewController", "decrement"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "favorite_button"]
 - !private ["CSo16UIViewController", "favorites_controller"]
@@ -2390,6 +2535,7 @@ depends-member:
 - ["CSo16UIViewController", "gradient"]
 - ["CSo16UIViewController", "gradient_view"]
 - !private ["CSo16UIViewController", "in_frame"]
+- ["CSo16UIViewController", "increment"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "is_valid"]
 - ["CSo16UIViewController", "label_txt"]
@@ -2409,6 +2555,7 @@ depends-member:
 - ["CSo16UIViewController", "shade_slider"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "sliders"]
+- ["CSo16UIViewController", "steppers"]
 - !private ["CSo16UIViewController", "store_color"]
 - !private ["CSo16UIViewController", "super_view"]
 - !private ["CSo16UIViewController", "table"]
@@ -2481,11 +2628,13 @@ depends-member:
 - !private ["PSs12_Reflectable", "autocapitalizationType"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "bounds"]
+- !private ["PSs12_Reflectable", "decr_button"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
 - !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "in_frame"]
+- !private ["PSs12_Reflectable", "incr_button"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "maxX"]
@@ -2504,6 +2653,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "setTitleColor"]
 - !private ["PSs12_Reflectable", "sizeToFit"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textAlignment"]
 - !private ["PSs12_Reflectable", "titleLabel"]
@@ -2519,6 +2669,7 @@ depends-member:
 - !private ["PSs11_Strideable", "init"]
 depends-nominal:
 - !private "PSs16AbsoluteValuable"
+- !private "C7PaletV29AddButton"
 - !private "C7PaletV214AnimatedButton"
 - "C7PaletV213AnimatedLabel"
 - "C7PaletV214AnimatedSlider"
@@ -2559,6 +2710,7 @@ depends-nominal:
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
+- !private "C7PaletV210MenuButton"
 - !private "PSs14MirrorPathType"
 - "PSs21MutableCollectionType"
 - "PSs16MutableIndexable"
@@ -2585,8 +2737,10 @@ depends-nominal:
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
+- "C7PaletV27Stepper"
 - !private "PSs10Strideable"
 - !private "SS"
+- !private "C7PaletV29SubButton"
 - !private "C7PaletV29TextField"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
@@ -2621,7 +2775,7 @@ depends-nominal:
 - !private "PSo11UITextInput"
 - !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
-- !private "CSo6UIView"
+- "CSo6UIView"
 - "CSo16UIViewController"
 - !private "C7PaletV219ViewPaletController"
 - "PSs10_ArrayType"
@@ -2651,4 +2805,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "722e7eb167338339b45a81b4d822da5a"
+interface-hash: "5a218e57391a65ef0beede8c4f3174c1"
