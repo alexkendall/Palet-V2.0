@@ -80,8 +80,11 @@ func is_valid(hex_code:String)->Bool
 
     let r = UInt8(strtoul(substr1, nil, 16));
     let g = UInt8(strtoul(substr2, nil, 16));
-    let b = UInt8(strtoul(substr1, nil, 16));
+    let b = UInt8(strtoul(substr3, nil, 16));
     
+    print(r);
+    print(g);
+    print(b);
     if((r <= 255) && (g <= 255) && (b <= 255))
     {
         return true;
@@ -98,7 +101,7 @@ func get_color(hex_code:String)->UIColor
     
     let r = UInt8(strtoul(substr1, nil, 16));
     let g = UInt8(strtoul(substr2, nil, 16));
-    let b = UInt8(strtoul(substr1, nil, 16));
+    let b = UInt8(strtoul(substr3, nil, 16));
     
     return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b)  / 255.0, alpha: 1.0);
 }

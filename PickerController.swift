@@ -367,6 +367,8 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             sliders[1].value = Float(g);
             sliders[2].value = Float(b);            
             update_code();
+            gradient.colors = [UIColor.blackColor().CGColor, color_view.backgroundColor!.CGColor, UIColor.whiteColor().CGColor];
+            
         }
         else
         {
