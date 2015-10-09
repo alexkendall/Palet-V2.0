@@ -6,53 +6,53 @@ provides-nominal:
 provides-member:
 - ["C7PaletV213NavController", ""]
 provides-dynamic-lookup:
-- "favorites_controller"
 - "nav_but"
-- "palet_controller"
+- "show_picker"
 - "handle_selection"
-- "view_colors"
-- "prefersStatusBarHidden"
-- "controller_label"
+- "favorites_controller"
 - "show_label"
 - "hide_label"
-- "new_palet"
-- "new_palet_controller"
-- "picker_controller"
+- "notification_controller"
+- "didReceiveMemoryWarning"
+- "show_favorites"
+- "palet_controller"
 - "menu_controller"
 - "operation_controller"
-- "show_picker"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "notification_controller"
-- "show_favorites"
 - "search_color"
-- "view_palet_controller"
+- "new_palet_controller"
+- "viewDidLoad"
+- "picker_controller"
+- "view_colors"
+- "prefersStatusBarHidden"
 - "view_palet"
+- "new_palet"
+- "controller_label"
+- "view_palet_controller"
 depends-top-level:
-- "FavoritesController"
-- "ViewPaletController"
-- "NewPaletController"
-- "PickerController"
-- !private "BooleanLiteralType"
-- "NavButton"
 - !private "-"
-- !private "UIView"
-- !private "=="
-- "CGRect"
-- "OperationController"
-- !private "UIControlEvents"
-- "Bool"
-- !private "NSTextAlignment"
 - "PaletController"
+- !private "NSTextAlignment"
+- "NavButton"
+- "Bool"
+- "PickerController"
+- "NewPaletController"
+- !private "UIControlEvents"
+- !private "StringLiteralType"
+- !private "=="
+- "FavoritesController"
+- "String"
+- "UILabel"
+- "NotificationController"
+- "OperationController"
 - "SelController"
 - !private "CGFloat"
-- "UILabel"
+- "CGRect"
+- !private "UIView"
+- "ViewPaletController"
 - !private "print"
 - "NavController"
-- "NotificationController"
-- "String"
+- !private "BooleanLiteralType"
 - "UIViewController"
-- !private "StringLiteralType"
 depends-member:
 - ["PSs9AnyObject", "CGRect"]
 - ["PSs9AnyObject", "FavoritesController"]
@@ -91,11 +91,10 @@ depends-member:
 - ["PSs9AnyObject", "palet_controller"]
 - !private ["PSs9AnyObject", "palet_name"]
 - ["PSs9AnyObject", "picker_controller"]
+- !private ["PSs9AnyObject", "place_left"]
 - !private ["PSs9AnyObject", "place_right"]
 - ["PSs9AnyObject", "prefersStatusBarHidden"]
 - !private ["PSs9AnyObject", "print"]
-- !private ["PSs9AnyObject", "push_left"]
-- !private ["PSs9AnyObject", "push_right"]
 - !private ["PSs9AnyObject", "reloadData"]
 - ["PSs9AnyObject", "search_color"]
 - !private ["PSs9AnyObject", "show"]
@@ -114,9 +113,8 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "color_colection"]
 - ["C7PaletV219AuxillaryController", "init"]
 - !private ["C7PaletV219AuxillaryController", "palet_name"]
+- !private ["C7PaletV219AuxillaryController", "place_left"]
 - !private ["C7PaletV219AuxillaryController", "place_right"]
-- !private ["C7PaletV219AuxillaryController", "push_left"]
-- !private ["C7PaletV219AuxillaryController", "push_right"]
 - !private ["C7PaletV219AuxillaryController", "show"]
 - !private ["C7PaletV219AuxillaryController", "view"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -163,11 +161,10 @@ depends-member:
 - ["PSs11CVarArgType", "palet_controller"]
 - !private ["PSs11CVarArgType", "palet_name"]
 - ["PSs11CVarArgType", "picker_controller"]
+- !private ["PSs11CVarArgType", "place_left"]
 - !private ["PSs11CVarArgType", "place_right"]
 - ["PSs11CVarArgType", "prefersStatusBarHidden"]
 - !private ["PSs11CVarArgType", "print"]
-- !private ["PSs11CVarArgType", "push_left"]
-- !private ["PSs11CVarArgType", "push_right"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - ["PSs11CVarArgType", "search_color"]
 - !private ["PSs11CVarArgType", "show"]
@@ -220,11 +217,10 @@ depends-member:
 - ["PSs23CustomStringConvertible", "palet_controller"]
 - !private ["PSs23CustomStringConvertible", "palet_name"]
 - ["PSs23CustomStringConvertible", "picker_controller"]
+- !private ["PSs23CustomStringConvertible", "place_left"]
 - !private ["PSs23CustomStringConvertible", "place_right"]
 - ["PSs23CustomStringConvertible", "prefersStatusBarHidden"]
 - !private ["PSs23CustomStringConvertible", "print"]
-- !private ["PSs23CustomStringConvertible", "push_left"]
-- !private ["PSs23CustomStringConvertible", "push_right"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - ["PSs23CustomStringConvertible", "search_color"]
 - !private ["PSs23CustomStringConvertible", "show"]
@@ -280,11 +276,10 @@ depends-member:
 - ["PSs9Equatable", "palet_controller"]
 - !private ["PSs9Equatable", "palet_name"]
 - ["PSs9Equatable", "picker_controller"]
+- !private ["PSs9Equatable", "place_left"]
 - !private ["PSs9Equatable", "place_right"]
 - ["PSs9Equatable", "prefersStatusBarHidden"]
 - !private ["PSs9Equatable", "print"]
-- !private ["PSs9Equatable", "push_left"]
-- !private ["PSs9Equatable", "push_right"]
 - !private ["PSs9Equatable", "reloadData"]
 - ["PSs9Equatable", "search_color"]
 - !private ["PSs9Equatable", "show"]
@@ -302,7 +297,6 @@ depends-member:
 - ["PSs9Equatable", ""]
 - ["C7PaletV219FavoritesController", "init"]
 - !private ["C7PaletV219FavoritesController", "place_right"]
-- !private ["C7PaletV219FavoritesController", "push_right"]
 - !private ["C7PaletV219FavoritesController", "show"]
 - !private ["C7PaletV219FavoritesController", "view"]
 - ["PSs8Hashable", "CGRect"]
@@ -344,11 +338,10 @@ depends-member:
 - ["PSs8Hashable", "palet_controller"]
 - !private ["PSs8Hashable", "palet_name"]
 - ["PSs8Hashable", "picker_controller"]
+- !private ["PSs8Hashable", "place_left"]
 - !private ["PSs8Hashable", "place_right"]
 - ["PSs8Hashable", "prefersStatusBarHidden"]
 - !private ["PSs8Hashable", "print"]
-- !private ["PSs8Hashable", "push_left"]
-- !private ["PSs8Hashable", "push_right"]
 - !private ["PSs8Hashable", "reloadData"]
 - ["PSs8Hashable", "search_color"]
 - !private ["PSs8Hashable", "show"]
@@ -401,11 +394,10 @@ depends-member:
 - ["PSo8NSCoding", "palet_controller"]
 - !private ["PSo8NSCoding", "palet_name"]
 - ["PSo8NSCoding", "picker_controller"]
+- !private ["PSo8NSCoding", "place_left"]
 - !private ["PSo8NSCoding", "place_right"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - !private ["PSo8NSCoding", "print"]
-- !private ["PSo8NSCoding", "push_left"]
-- !private ["PSo8NSCoding", "push_right"]
 - !private ["PSo8NSCoding", "reloadData"]
 - ["PSo8NSCoding", "search_color"]
 - !private ["PSo8NSCoding", "show"]
@@ -451,11 +443,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "palet_controller"]
 - !private ["PSo26NSExtensionRequestHandling", "palet_name"]
 - ["PSo26NSExtensionRequestHandling", "picker_controller"]
+- !private ["PSo26NSExtensionRequestHandling", "place_left"]
 - !private ["PSo26NSExtensionRequestHandling", "place_right"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
-- !private ["PSo26NSExtensionRequestHandling", "push_left"]
-- !private ["PSo26NSExtensionRequestHandling", "push_right"]
 - ["PSo26NSExtensionRequestHandling", "search_color"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "show_favorites"]
@@ -507,11 +498,10 @@ depends-member:
 - ["CSo8NSObject", "palet_controller"]
 - !private ["CSo8NSObject", "palet_name"]
 - ["CSo8NSObject", "picker_controller"]
+- !private ["CSo8NSObject", "place_left"]
 - !private ["CSo8NSObject", "place_right"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - !private ["CSo8NSObject", "print"]
-- !private ["CSo8NSObject", "push_left"]
-- !private ["CSo8NSObject", "push_right"]
 - !private ["CSo8NSObject", "reloadData"]
 - ["CSo8NSObject", "search_color"]
 - !private ["CSo8NSObject", "show"]
@@ -562,11 +552,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "palet_controller"]
 - !private ["PSo16NSObjectProtocol", "palet_name"]
 - ["PSo16NSObjectProtocol", "picker_controller"]
+- !private ["PSo16NSObjectProtocol", "place_left"]
 - !private ["PSo16NSObjectProtocol", "place_right"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - !private ["PSo16NSObjectProtocol", "print"]
-- !private ["PSo16NSObjectProtocol", "push_left"]
-- !private ["PSo16NSObjectProtocol", "push_right"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - ["PSo16NSObjectProtocol", "search_color"]
 - !private ["PSo16NSObjectProtocol", "show"]
@@ -630,7 +619,6 @@ depends-member:
 - ["C7PaletV213NavController", "view_palet_controller"]
 - ["C7PaletV218NewPaletController", "init"]
 - !private ["C7PaletV218NewPaletController", "place_right"]
-- !private ["C7PaletV218NewPaletController", "push_right"]
 - !private ["C7PaletV218NewPaletController", "show"]
 - !private ["C7PaletV218NewPaletController", "view"]
 - !private ["C7PaletV222NotificationController", "delete_button"]
@@ -643,18 +631,16 @@ depends-member:
 - !private ["Sq", "deinit"]
 - ["C7PaletV215PaletController", "init"]
 - !private ["C7PaletV215PaletController", "place_right"]
-- !private ["C7PaletV215PaletController", "push_right"]
 - !private ["C7PaletV215PaletController", "show"]
 - !private ["C7PaletV215PaletController", "view"]
 - ["C7PaletV216PickerController", "init"]
 - !private ["C7PaletV216PickerController", "place_right"]
-- !private ["C7PaletV216PickerController", "push_right"]
 - !private ["C7PaletV216PickerController", "show"]
 - !private ["C7PaletV216PickerController", "view"]
 - !private ["PSs16RawRepresentable", "Right"]
 - !private ["PSs16RawRepresentable", "TouchUpInside"]
 - ["C7PaletV213SelController", "init"]
-- !private ["C7PaletV213SelController", "push_left"]
+- !private ["C7PaletV213SelController", "place_left"]
 - !private ["C7PaletV213SelController", "show"]
 - !private ["C7PaletV213SelController", "view"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
@@ -716,11 +702,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "palet_controller"]
 - !private ["PSo21UIAppearanceContainer", "palet_name"]
 - ["PSo21UIAppearanceContainer", "picker_controller"]
+- !private ["PSo21UIAppearanceContainer", "place_left"]
 - !private ["PSo21UIAppearanceContainer", "place_right"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "print"]
-- !private ["PSo21UIAppearanceContainer", "push_left"]
-- !private ["PSo21UIAppearanceContainer", "push_right"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "search_color"]
 - !private ["PSo21UIAppearanceContainer", "show"]
@@ -743,21 +728,18 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "init"]
 - !private ["PSo26UICollectionViewDataSource", "palet_name"]
 - !private ["PSo26UICollectionViewDataSource", "place_right"]
-- !private ["PSo26UICollectionViewDataSource", "push_right"]
 - !private ["PSo26UICollectionViewDataSource", "show"]
 - !private ["PSo26UICollectionViewDataSource", "view"]
 - !private ["PSo24UICollectionViewDelegate", "color_colection"]
 - ["PSo24UICollectionViewDelegate", "init"]
 - !private ["PSo24UICollectionViewDelegate", "palet_name"]
 - !private ["PSo24UICollectionViewDelegate", "place_right"]
-- !private ["PSo24UICollectionViewDelegate", "push_right"]
 - !private ["PSo24UICollectionViewDelegate", "show"]
 - !private ["PSo24UICollectionViewDelegate", "view"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "color_colection"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "init"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "palet_name"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "place_right"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "push_right"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "show"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
 - ["PSo18UIContentContainer", "CGRect"]
@@ -791,11 +773,10 @@ depends-member:
 - ["PSo18UIContentContainer", "palet_controller"]
 - !private ["PSo18UIContentContainer", "palet_name"]
 - ["PSo18UIContentContainer", "picker_controller"]
+- !private ["PSo18UIContentContainer", "place_left"]
 - !private ["PSo18UIContentContainer", "place_right"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - !private ["PSo18UIContentContainer", "print"]
-- !private ["PSo18UIContentContainer", "push_left"]
-- !private ["PSo18UIContentContainer", "push_right"]
 - ["PSo18UIContentContainer", "search_color"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "show_favorites"]
@@ -875,11 +856,10 @@ depends-member:
 - ["CSo11UIResponder", "palet_controller"]
 - !private ["CSo11UIResponder", "palet_name"]
 - ["CSo11UIResponder", "picker_controller"]
+- !private ["CSo11UIResponder", "place_left"]
 - !private ["CSo11UIResponder", "place_right"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - !private ["CSo11UIResponder", "print"]
-- !private ["CSo11UIResponder", "push_left"]
-- !private ["CSo11UIResponder", "push_right"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "search_color"]
 - !private ["CSo11UIResponder", "show"]
@@ -898,7 +878,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "palet_name"]
 - !private ["PSo20UIScrollViewDelegate", "place_right"]
-- !private ["PSo20UIScrollViewDelegate", "push_right"]
 - !private ["PSo20UIScrollViewDelegate", "show"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo16UIStateRestoring", "CGRect"]
@@ -932,11 +911,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "palet_controller"]
 - !private ["PSo16UIStateRestoring", "palet_name"]
 - ["PSo16UIStateRestoring", "picker_controller"]
+- !private ["PSo16UIStateRestoring", "place_left"]
 - !private ["PSo16UIStateRestoring", "place_right"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - !private ["PSo16UIStateRestoring", "print"]
-- !private ["PSo16UIStateRestoring", "push_left"]
-- !private ["PSo16UIStateRestoring", "push_right"]
 - ["PSo16UIStateRestoring", "search_color"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "show_favorites"]
@@ -950,17 +928,14 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo21UITableViewDataSource", "place_right"]
-- !private ["PSo21UITableViewDataSource", "push_right"]
 - !private ["PSo21UITableViewDataSource", "show"]
 - !private ["PSo21UITableViewDataSource", "view"]
 - ["PSo19UITableViewDelegate", "init"]
 - !private ["PSo19UITableViewDelegate", "place_right"]
-- !private ["PSo19UITableViewDelegate", "push_right"]
 - !private ["PSo19UITableViewDelegate", "show"]
 - !private ["PSo19UITableViewDelegate", "view"]
 - ["PSo19UITextFieldDelegate", "init"]
 - !private ["PSo19UITextFieldDelegate", "place_right"]
-- !private ["PSo19UITextFieldDelegate", "push_right"]
 - !private ["PSo19UITextFieldDelegate", "show"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo18UITraitEnvironment", "CGRect"]
@@ -1000,11 +975,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "palet_controller"]
 - !private ["PSo18UITraitEnvironment", "palet_name"]
 - ["PSo18UITraitEnvironment", "picker_controller"]
+- !private ["PSo18UITraitEnvironment", "place_left"]
 - !private ["PSo18UITraitEnvironment", "place_right"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "print"]
-- !private ["PSo18UITraitEnvironment", "push_left"]
-- !private ["PSo18UITraitEnvironment", "push_right"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "search_color"]
 - !private ["PSo18UITraitEnvironment", "show"]
@@ -1063,11 +1037,10 @@ depends-member:
 - ["CSo16UIViewController", "palet_controller"]
 - !private ["CSo16UIViewController", "palet_name"]
 - ["CSo16UIViewController", "picker_controller"]
+- !private ["CSo16UIViewController", "place_left"]
 - !private ["CSo16UIViewController", "place_right"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - !private ["CSo16UIViewController", "print"]
-- !private ["CSo16UIViewController", "push_left"]
-- !private ["CSo16UIViewController", "push_right"]
 - ["CSo16UIViewController", "search_color"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "show_favorites"]
@@ -1083,7 +1056,6 @@ depends-member:
 - ["C7PaletV219ViewPaletController", "init"]
 - !private ["C7PaletV219ViewPaletController", "palet_name"]
 - !private ["C7PaletV219ViewPaletController", "place_right"]
-- !private ["C7PaletV219ViewPaletController", "push_right"]
 - !private ["C7PaletV219ViewPaletController", "show"]
 - !private ["C7PaletV219ViewPaletController", "view"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]

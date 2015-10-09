@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219AuxillaryController", ""]
 provides-dynamic-lookup:
-- "show"
-- "place_left"
-- "push_left"
 - "super_view"
-- "place_right"
+- "place_left"
 - "push_right"
+- "place_right"
+- "push_left"
 - "viewDidLoad"
+- "show"
 depends-top-level:
 - "UIView"
-- !private "CGFloat"
-- "CGRect"
+- "NSTimeInterval"
 - !private "-"
 - "UIViewController"
-- "NSTimeInterval"
+- "CGRect"
 - "AuxillaryController"
+- !private "CGFloat"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "UIView"]

@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C7PaletV213ControlButton", ""]
 provides-dynamic-lookup:
-- "highlight_color"
 - "drawRect"
+- "highlight_color"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "ControlButton"
-- !private "fatalError"
-- "MenuButton"
-- "CGRect"
-- "CGFloat"
-- !private "*"
-- !private "Float"
-- "UIColor"
-- !private "StringLiteralType"
-- !private "UIControlEvents"
 - "NSCoder"
+- !private "UIControlEvents"
+- !private "BooleanLiteralType"
+- "UIColor"
+- "CGFloat"
+- "CGRect"
+- !private "*"
+- "MenuButton"
+- !private "Float"
+- !private "fatalError"
+- "ControlButton"
 - !private "CGSize"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGColor"]

@@ -70,11 +70,11 @@ class NavController: UIViewController
     
     func handle_selection()
     {
-        picker_controller.push_right(0.5);
-        favorites_controller.push_right(0.5);
-        view_palet_controller.push_right(0.5);
-        palet_controller.push_right(0.5);
-        new_palet_controller.push_right(0.5);
+        picker_controller.place_right();
+        favorites_controller.place_right();
+        view_palet_controller.place_right();
+        palet_controller.place_right();
+        new_palet_controller.place_right();
         menu_controller.show(0.5);
         show_label("MENU");
         
@@ -83,7 +83,7 @@ class NavController: UIViewController
     func show_picker()
     {
         
-        menu_controller.push_left(0.5);
+        menu_controller.place_left();
         picker_controller.show(0.5);
         palet_controller.show(0.5);
         hide_label();
@@ -91,7 +91,7 @@ class NavController: UIViewController
     
     func show_favorites()
     {
-        menu_controller.push_left(0.5);
+        menu_controller.place_left();
         favorites_controller.show(0.5);
         show_label("FAVORITES");
     }
@@ -99,7 +99,7 @@ class NavController: UIViewController
     func view_palet()
     {
         
-        menu_controller.push_left(0.5);
+        menu_controller.place_left();
         view_palet_controller.show(0.5);
         let name = view_palet_controller.palet_name;
         if(name == "")
@@ -119,16 +119,16 @@ class NavController: UIViewController
         
         show_label(view_palet_controller.palet_name);
         view_palet_controller.color_colection.reloadData();
-        picker_controller.push_right(0.5);
-        favorites_controller.push_right(0.5);
+        picker_controller.place_right();
+        favorites_controller.place_right();
         view_palet_controller.show(0.5);
-        palet_controller.push_right(0.5);
-        new_palet_controller.push_right(0.5);
+        palet_controller.place_right();
+        new_palet_controller.place_right();
     }
     
     func new_palet()
     {
-        menu_controller.push_left(0.5);
+        menu_controller.place_left();
         new_palet_controller.show(0.5);
         show_label("PALETS");
     }

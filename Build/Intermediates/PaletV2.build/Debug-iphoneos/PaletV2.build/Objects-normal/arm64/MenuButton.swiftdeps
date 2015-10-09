@@ -6,42 +6,45 @@ provides-nominal:
 provides-member:
 - ["C7PaletV210MenuButton", ""]
 provides-dynamic-lookup:
-- "border_width"
-- "set_unhighlight_color"
-- "unhighlight_color"
-- "un_high_color"
-- "line_width"
-- "set_border_color"
-- "drawRect"
-- "set_border_width"
-- "set_image_color"
-- "active_flag"
-- "set_path_width"
-- "icon_color"
 - "border_color"
-- "high_color"
-- "set_highlight_color"
-- "path"
+- "set_path_width"
+- "set_unhighlight_color"
+- "line_width"
 - "set_not_active"
+- "unhighlight_color"
+- "high_color"
+- "set_border_color"
 - "highlight_color"
 - "set_active"
+- "border_width"
+- "is_square"
+- "icon_color"
+- "un_high_color"
+- "set_highlight_color"
+- "set_image_color"
+- "drawRect"
+- "path"
+- "set_square"
+- "set_border_width"
+- "active_flag"
 depends-top-level:
-- "MenuButton"
-- "CGRect"
-- "NSCoder"
-- "CGFloat"
+- !private "!"
 - "UIBezierPath"
+- !private "*"
+- "UIButton"
+- !private "=="
+- !private "Float"
+- !private "fatalError"
+- "CGFloat"
+- "CGRect"
+- !private "CGSize"
+- !private "StringLiteralType"
+- "MenuButton"
+- "UIColor"
+- "NSCoder"
 - !private "UIControlEvents"
 - "Bool"
 - "BooleanLiteralType"
-- !private "*"
-- !private "=="
-- !private "Float"
-- !private "StringLiteralType"
-- "UIButton"
-- !private "fatalError"
-- "UIColor"
-- !private "CGSize"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGColor"]
@@ -66,6 +69,7 @@ depends-member:
 - ["PSs9AnyObject", "highlight_color"]
 - ["PSs9AnyObject", "icon_color"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "is_square"]
 - !private ["PSs9AnyObject", "layer"]
 - ["PSs9AnyObject", "lightGrayColor"]
 - ["PSs9AnyObject", "line_width"]
@@ -78,6 +82,7 @@ depends-member:
 - ["PSs9AnyObject", "set_image_color"]
 - ["PSs9AnyObject", "set_not_active"]
 - ["PSs9AnyObject", "set_path_width"]
+- ["PSs9AnyObject", "set_square"]
 - ["PSs9AnyObject", "set_unhighlight_color"]
 - !private ["PSs9AnyObject", "shadowColor"]
 - !private ["PSs9AnyObject", "shadowOffset"]
@@ -129,6 +134,7 @@ depends-member:
 - ["PSs11CVarArgType", "highlight_color"]
 - ["PSs11CVarArgType", "icon_color"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "is_square"]
 - !private ["PSs11CVarArgType", "layer"]
 - ["PSs11CVarArgType", "lightGrayColor"]
 - ["PSs11CVarArgType", "line_width"]
@@ -141,6 +147,7 @@ depends-member:
 - ["PSs11CVarArgType", "set_image_color"]
 - ["PSs11CVarArgType", "set_not_active"]
 - ["PSs11CVarArgType", "set_path_width"]
+- ["PSs11CVarArgType", "set_square"]
 - ["PSs11CVarArgType", "set_unhighlight_color"]
 - !private ["PSs11CVarArgType", "shadowColor"]
 - !private ["PSs11CVarArgType", "shadowOffset"]
@@ -173,6 +180,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "highlight_color"]
 - ["PSs23CustomStringConvertible", "icon_color"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "is_square"]
 - !private ["PSs23CustomStringConvertible", "layer"]
 - ["PSs23CustomStringConvertible", "lightGrayColor"]
 - ["PSs23CustomStringConvertible", "line_width"]
@@ -185,6 +193,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "set_image_color"]
 - ["PSs23CustomStringConvertible", "set_not_active"]
 - ["PSs23CustomStringConvertible", "set_path_width"]
+- ["PSs23CustomStringConvertible", "set_square"]
 - ["PSs23CustomStringConvertible", "set_unhighlight_color"]
 - !private ["PSs23CustomStringConvertible", "shadowColor"]
 - !private ["PSs23CustomStringConvertible", "shadowOffset"]
@@ -219,6 +228,7 @@ depends-member:
 - ["PSs9Equatable", "highlight_color"]
 - ["PSs9Equatable", "icon_color"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "is_square"]
 - !private ["PSs9Equatable", "layer"]
 - ["PSs9Equatable", "lightGrayColor"]
 - ["PSs9Equatable", "line_width"]
@@ -231,6 +241,7 @@ depends-member:
 - ["PSs9Equatable", "set_image_color"]
 - ["PSs9Equatable", "set_not_active"]
 - ["PSs9Equatable", "set_path_width"]
+- ["PSs9Equatable", "set_square"]
 - ["PSs9Equatable", "set_unhighlight_color"]
 - !private ["PSs9Equatable", "shadowColor"]
 - !private ["PSs9Equatable", "shadowOffset"]
@@ -266,6 +277,7 @@ depends-member:
 - ["PSs8Hashable", "highlight_color"]
 - ["PSs8Hashable", "icon_color"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "is_square"]
 - !private ["PSs8Hashable", "layer"]
 - ["PSs8Hashable", "lightGrayColor"]
 - ["PSs8Hashable", "line_width"]
@@ -278,6 +290,7 @@ depends-member:
 - ["PSs8Hashable", "set_image_color"]
 - ["PSs8Hashable", "set_not_active"]
 - ["PSs8Hashable", "set_path_width"]
+- ["PSs8Hashable", "set_square"]
 - ["PSs8Hashable", "set_unhighlight_color"]
 - !private ["PSs8Hashable", "shadowColor"]
 - !private ["PSs8Hashable", "shadowOffset"]
@@ -310,6 +323,7 @@ depends-member:
 - ["C7PaletV210MenuButton", "highlight_color"]
 - ["C7PaletV210MenuButton", "icon_color"]
 - ["C7PaletV210MenuButton", "init"]
+- ["C7PaletV210MenuButton", "is_square"]
 - !private ["C7PaletV210MenuButton", "layer"]
 - ["C7PaletV210MenuButton", "line_width"]
 - ["C7PaletV210MenuButton", "path"]
@@ -321,6 +335,7 @@ depends-member:
 - ["C7PaletV210MenuButton", "set_image_color"]
 - ["C7PaletV210MenuButton", "set_not_active"]
 - ["C7PaletV210MenuButton", "set_path_width"]
+- ["C7PaletV210MenuButton", "set_square"]
 - ["C7PaletV210MenuButton", "set_unhighlight_color"]
 - ["C7PaletV210MenuButton", "un_high_color"]
 - ["C7PaletV210MenuButton", "unhighlight_color"]
@@ -346,6 +361,7 @@ depends-member:
 - ["PSo8NSCoding", "highlight_color"]
 - ["PSo8NSCoding", "icon_color"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "is_square"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "lightGrayColor"]
 - ["PSo8NSCoding", "line_width"]
@@ -358,6 +374,7 @@ depends-member:
 - ["PSo8NSCoding", "set_image_color"]
 - ["PSo8NSCoding", "set_not_active"]
 - ["PSo8NSCoding", "set_path_width"]
+- ["PSo8NSCoding", "set_square"]
 - ["PSo8NSCoding", "set_unhighlight_color"]
 - !private ["PSo8NSCoding", "shadowColor"]
 - !private ["PSo8NSCoding", "shadowOffset"]
@@ -397,6 +414,7 @@ depends-member:
 - ["CSo8NSObject", "highlight_color"]
 - ["CSo8NSObject", "icon_color"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "is_square"]
 - !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "lightGrayColor"]
 - ["CSo8NSObject", "line_width"]
@@ -409,6 +427,7 @@ depends-member:
 - ["CSo8NSObject", "set_image_color"]
 - ["CSo8NSObject", "set_not_active"]
 - ["CSo8NSObject", "set_path_width"]
+- ["CSo8NSObject", "set_square"]
 - ["CSo8NSObject", "set_unhighlight_color"]
 - !private ["CSo8NSObject", "shadowColor"]
 - !private ["CSo8NSObject", "shadowOffset"]
@@ -438,6 +457,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "highlight_color"]
 - ["PSo16NSObjectProtocol", "icon_color"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "is_square"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "lightGrayColor"]
 - ["PSo16NSObjectProtocol", "line_width"]
@@ -450,6 +470,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "set_image_color"]
 - ["PSo16NSObjectProtocol", "set_not_active"]
 - ["PSo16NSObjectProtocol", "set_path_width"]
+- ["PSo16NSObjectProtocol", "set_square"]
 - ["PSo16NSObjectProtocol", "set_unhighlight_color"]
 - !private ["PSo16NSObjectProtocol", "shadowColor"]
 - !private ["PSo16NSObjectProtocol", "shadowOffset"]
@@ -492,6 +513,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "highlight_color"]
 - ["PSo29UIAccessibilityIdentification", "icon_color"]
 - ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "is_square"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "line_width"]
 - ["PSo29UIAccessibilityIdentification", "path"]
@@ -503,6 +525,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "set_image_color"]
 - ["PSo29UIAccessibilityIdentification", "set_not_active"]
 - ["PSo29UIAccessibilityIdentification", "set_path_width"]
+- ["PSo29UIAccessibilityIdentification", "set_square"]
 - ["PSo29UIAccessibilityIdentification", "set_unhighlight_color"]
 - ["PSo29UIAccessibilityIdentification", "un_high_color"]
 - ["PSo29UIAccessibilityIdentification", "unhighlight_color"]
@@ -524,6 +547,7 @@ depends-member:
 - ["PSo12UIAppearance", "highlight_color"]
 - ["PSo12UIAppearance", "icon_color"]
 - ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "is_square"]
 - !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "line_width"]
 - ["PSo12UIAppearance", "path"]
@@ -535,6 +559,7 @@ depends-member:
 - ["PSo12UIAppearance", "set_image_color"]
 - ["PSo12UIAppearance", "set_not_active"]
 - ["PSo12UIAppearance", "set_path_width"]
+- ["PSo12UIAppearance", "set_square"]
 - ["PSo12UIAppearance", "set_unhighlight_color"]
 - ["PSo12UIAppearance", "un_high_color"]
 - ["PSo12UIAppearance", "unhighlight_color"]
@@ -556,6 +581,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "highlight_color"]
 - ["PSo21UIAppearanceContainer", "icon_color"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "is_square"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "line_width"]
 - ["PSo21UIAppearanceContainer", "path"]
@@ -567,6 +593,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "set_image_color"]
 - ["PSo21UIAppearanceContainer", "set_not_active"]
 - ["PSo21UIAppearanceContainer", "set_path_width"]
+- ["PSo21UIAppearanceContainer", "set_square"]
 - ["PSo21UIAppearanceContainer", "set_unhighlight_color"]
 - ["PSo21UIAppearanceContainer", "un_high_color"]
 - ["PSo21UIAppearanceContainer", "unhighlight_color"]
@@ -593,6 +620,7 @@ depends-member:
 - ["CSo8UIButton", "highlight_color"]
 - ["CSo8UIButton", "icon_color"]
 - ["CSo8UIButton", "init"]
+- ["CSo8UIButton", "is_square"]
 - !private ["CSo8UIButton", "layer"]
 - ["CSo8UIButton", "line_width"]
 - ["CSo8UIButton", "path"]
@@ -604,6 +632,7 @@ depends-member:
 - ["CSo8UIButton", "set_image_color"]
 - ["CSo8UIButton", "set_not_active"]
 - ["CSo8UIButton", "set_path_width"]
+- ["CSo8UIButton", "set_square"]
 - ["CSo8UIButton", "set_unhighlight_color"]
 - ["CSo8UIButton", "un_high_color"]
 - ["CSo8UIButton", "unhighlight_color"]
@@ -633,6 +662,7 @@ depends-member:
 - ["CSo9UIControl", "highlight_color"]
 - ["CSo9UIControl", "icon_color"]
 - ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "is_square"]
 - !private ["CSo9UIControl", "layer"]
 - ["CSo9UIControl", "line_width"]
 - ["CSo9UIControl", "path"]
@@ -644,6 +674,7 @@ depends-member:
 - ["CSo9UIControl", "set_image_color"]
 - ["CSo9UIControl", "set_not_active"]
 - ["CSo9UIControl", "set_path_width"]
+- ["CSo9UIControl", "set_square"]
 - ["CSo9UIControl", "set_unhighlight_color"]
 - ["CSo9UIControl", "un_high_color"]
 - ["CSo9UIControl", "unhighlight_color"]
@@ -667,6 +698,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "highlight_color"]
 - ["PSo17UICoordinateSpace", "icon_color"]
 - ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "is_square"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "line_width"]
 - ["PSo17UICoordinateSpace", "path"]
@@ -678,6 +710,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "set_image_color"]
 - ["PSo17UICoordinateSpace", "set_not_active"]
 - ["PSo17UICoordinateSpace", "set_path_width"]
+- ["PSo17UICoordinateSpace", "set_square"]
 - ["PSo17UICoordinateSpace", "set_unhighlight_color"]
 - ["PSo17UICoordinateSpace", "un_high_color"]
 - ["PSo17UICoordinateSpace", "unhighlight_color"]
@@ -699,6 +732,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "highlight_color"]
 - ["PSo13UIDynamicItem", "icon_color"]
 - ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "is_square"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "line_width"]
 - ["PSo13UIDynamicItem", "path"]
@@ -710,6 +744,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "set_image_color"]
 - ["PSo13UIDynamicItem", "set_not_active"]
 - ["PSo13UIDynamicItem", "set_path_width"]
+- ["PSo13UIDynamicItem", "set_square"]
 - ["PSo13UIDynamicItem", "set_unhighlight_color"]
 - ["PSo13UIDynamicItem", "un_high_color"]
 - ["PSo13UIDynamicItem", "unhighlight_color"]
@@ -735,6 +770,7 @@ depends-member:
 - ["CSo11UIResponder", "highlight_color"]
 - ["CSo11UIResponder", "icon_color"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "is_square"]
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "line_width"]
 - ["CSo11UIResponder", "path"]
@@ -746,6 +782,7 @@ depends-member:
 - ["CSo11UIResponder", "set_image_color"]
 - ["CSo11UIResponder", "set_not_active"]
 - ["CSo11UIResponder", "set_path_width"]
+- ["CSo11UIResponder", "set_square"]
 - ["CSo11UIResponder", "set_unhighlight_color"]
 - ["CSo11UIResponder", "un_high_color"]
 - ["CSo11UIResponder", "unhighlight_color"]
@@ -766,6 +803,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "highlight_color"]
 - ["PSo18UITraitEnvironment", "icon_color"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "is_square"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "line_width"]
 - ["PSo18UITraitEnvironment", "path"]
@@ -777,6 +815,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "set_image_color"]
 - ["PSo18UITraitEnvironment", "set_not_active"]
 - ["PSo18UITraitEnvironment", "set_path_width"]
+- ["PSo18UITraitEnvironment", "set_square"]
 - ["PSo18UITraitEnvironment", "set_unhighlight_color"]
 - ["PSo18UITraitEnvironment", "un_high_color"]
 - ["PSo18UITraitEnvironment", "unhighlight_color"]
@@ -802,6 +841,7 @@ depends-member:
 - ["CSo6UIView", "highlight_color"]
 - ["CSo6UIView", "icon_color"]
 - ["CSo6UIView", "init"]
+- ["CSo6UIView", "is_square"]
 - !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "line_width"]
 - ["CSo6UIView", "path"]
@@ -813,6 +853,7 @@ depends-member:
 - ["CSo6UIView", "set_image_color"]
 - ["CSo6UIView", "set_not_active"]
 - ["CSo6UIView", "set_path_width"]
+- ["CSo6UIView", "set_square"]
 - ["CSo6UIView", "set_unhighlight_color"]
 - ["CSo6UIView", "un_high_color"]
 - ["CSo6UIView", "unhighlight_color"]
@@ -841,6 +882,7 @@ depends-member:
 - ["PSs12_Reflectable", "highlight_color"]
 - ["PSs12_Reflectable", "icon_color"]
 - ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "is_square"]
 - !private ["PSs12_Reflectable", "layer"]
 - ["PSs12_Reflectable", "line_width"]
 - ["PSs12_Reflectable", "path"]
@@ -852,6 +894,7 @@ depends-member:
 - ["PSs12_Reflectable", "set_image_color"]
 - ["PSs12_Reflectable", "set_not_active"]
 - ["PSs12_Reflectable", "set_path_width"]
+- ["PSs12_Reflectable", "set_square"]
 - ["PSs12_Reflectable", "set_unhighlight_color"]
 - ["PSs12_Reflectable", "un_high_color"]
 - ["PSs12_Reflectable", "unhighlight_color"]
@@ -925,4 +968,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "33dafb56e4c49d6e8ca84d6b50a6e3fe"
+interface-hash: "7a9d1cf7dae44d6c8066e6018d658c9c"

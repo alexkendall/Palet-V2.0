@@ -108,7 +108,9 @@ SWIFT_CLASS("_TtC7PaletV210MenuButton")
 @property (nonatomic) BOOL active_flag;
 @property (nonatomic) CGFloat border_width;
 @property (nonatomic) UIColor * __nonnull border_color;
+@property (nonatomic) BOOL is_square;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)set_square;
 - (void)set_border_width:(CGFloat)width;
 - (void)set_border_color:(UIColor * __nonnull)color;
 - (void)set_highlight_color:(UIColor * __nonnull)color;
@@ -441,6 +443,7 @@ SWIFT_CLASS("_TtC7PaletV212PickerButton")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Stepper;
 @class CAGradientLayer;
 
 SWIFT_CLASS("_TtC7PaletV216PickerController")
@@ -452,6 +455,7 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @property (nonatomic) AnimatedButton * __null_unspecified favorite_button;
 @property (nonatomic) AnimatedButton * __null_unspecified add_button;
 @property (nonatomic, copy) NSArray<AnimatedSlider *> * __nonnull sliders;
+@property (nonatomic, copy) NSArray<Stepper *> * __nonnull steppers;
 @property (nonatomic, copy) NSArray<AnimatedLabel *> * __nonnull labels;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull label_txt;
 @property (nonatomic, copy) NSArray<UIColor *> * __nonnull rgb_colors;
@@ -461,6 +465,8 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @property (nonatomic, copy) NSString * __nonnull selected_palet;
 @property (nonatomic) UITextField * __null_unspecified code_entry_field;
 - (void)viewDidLoad;
+- (void)increment:(UIButton * __nonnull)sender;
+- (void)decrement:(UIButton * __nonnull)sender;
 - (void)add_favorite;
 - (void)add_to_palette;
 - (void)adjust_shade;
@@ -491,6 +497,29 @@ SWIFT_CLASS("_TtC7PaletV213SelController")
 - (void)didReceiveMemoryWarning;
 - (BOOL)prefersStatusBarHidden;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class SubButton;
+
+SWIFT_CLASS("_TtC7PaletV27Stepper")
+@interface Stepper : UIView
+@property (nonatomic) AddButton * __null_unspecified incr_button;
+@property (nonatomic) SubButton * __null_unspecified decr_button;
+@property (nonatomic) uint8_t value;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)set_value:(uint8_t)in_value;
+- (void)increment;
+- (void)decrement;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+@end
+
+
+SWIFT_CLASS("_TtC7PaletV29SubButton")
+@interface SubButton : MenuButton
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -7,24 +7,24 @@ provides-member:
 - ["C7PaletV212PickerButton", ""]
 provides-dynamic-lookup:
 - "highlight_color"
-- "circle1"
-- "drawRect"
-- "circle3"
 - "rgb"
 - "circle2"
+- "drawRect"
 - "unhighlight_color"
+- "circle3"
+- "circle1"
 depends-top-level:
-- "UIColor"
-- !private "<"
-- !private "*"
-- "UIBezierPath"
-- !private "++"
-- "Array"
-- !private "-"
-- "MenuButton"
 - !private "CGFloat"
+- "MenuButton"
+- !private "*"
+- !private "-"
+- !private "++"
+- !private "<"
+- "UIBezierPath"
 - "PickerButton"
+- "Array"
 - "CGRect"
+- "UIColor"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - ["PSs9AnyObject", "UIBezierPath"]

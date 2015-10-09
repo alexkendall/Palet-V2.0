@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
-- "MenuButton"
 - "ViewButton"
 - "CGRect"
 - !private "UIBezierPath"
+- "MenuButton"
 - !private "*"
 - !private "CGPoint"
 depends-member:

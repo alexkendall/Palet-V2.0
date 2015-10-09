@@ -56,10 +56,13 @@ class AuxillaryController:UIViewController
     
     func show(duration:NSTimeInterval)
     {
+        self.super_view.frame = self.in_frame;
+        /*
         UIView.animateWithDuration(duration, animations: {
             self.super_view.frame = self.in_frame;
             self.super_view.alpha = 1.0;    // dissolve
         });
+        */
     }
     
     func place_left()

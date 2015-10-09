@@ -206,7 +206,6 @@
 				46BF1F6A1BAF45770095F13B /* Core.swift */,
 				460898441BAB2B1B005275AD /* Menu */,
 				46140F9C1BA9FFD900E8CCD2 /* ControlButtons */,
-				46140F8A1BA90FD800E8CCD2 /* ViewControllers */,
 				46140F6E1BA90CC900E8CCD2 /* Main.storyboard */,
 				46140F8E1BA9231300E8CCD2 /* thumb.svg */,
 				46140F711BA90CC900E8CCD2 /* Images.xcassets */,
@@ -240,13 +239,6 @@
 				46140F7F1BA90CC900E8CCD2 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		46140F8A1BA90FD800E8CCD2 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		46140F9C1BA9FFD900E8CCD2 /* ControlButtons */ = {

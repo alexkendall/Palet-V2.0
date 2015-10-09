@@ -48,6 +48,8 @@ func fetch_colors(group:String)->[NSManagedObject]?
     let managedContext = appDelegate.managedObjectContext;
     let fetchRequest = NSFetchRequest(entityName: "Color");
     let predicate = NSPredicate(format:"group like[cd] %@", group);
+    let sortDescriptor = NSSortDescriptor(key: "date", ascending: true);
+    fetchRequest.sortDescriptors = [sortDescriptor];
     fetchRequest.predicate = predicate;
     
     do {
@@ -68,6 +70,7 @@ func store_color(color:UIColor, group:String)
     var green:CGFloat = 0;
     var blue:CGFloat = 0;
     var alpha:CGFloat = 0;
+    let date = NSDate();
     
     color.getRed(&red, green: &green, blue: &blue, alpha: &alpha);
     
@@ -84,14 +87,10 @@ func store_color(color:UIColor, group:String)
     color_data.setValue(Double(green), forKey: "green");
     color_data.setValue(Double(blue), forKey: "blue");
     color_data.setValue(group, forKey: "group");
-    
+    color_data.setValue(date, forKey: "date");
     //4
-    // here's the sugar
-    do {
-        try managedContext.save()
-    } catch let fetchError as NSError {
-        print("Unable to save color: \(fetchError.localizedDescription)")
-    }
+
+    save_context();
 }
 
 // deletes color from group
@@ -112,6 +111,7 @@ func delete_color(color:UIColor, group:String)
             managedContext?.deleteObject(color_data);
         }
     }
+    save_context();
     
 }
 
@@ -132,11 +132,7 @@ func delete_group(group:String)
             let color_data = color_objects![i] as NSManagedObject;
             managedContext?.deleteObject(color_data);
         }
-        do {
-            try managedContext!.save()
-        } catch let fetchError as NSError {
-            print("Unable to save palet: \(fetchError.localizedDescription)")
-        }
+        save_context();
     }
     
 }
@@ -158,7 +154,8 @@ func fetch_palets()->[NSManagedObject]?
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
     let managedContext = appDelegate.managedObjectContext;
     let fetchRequest = NSFetchRequest(entityName: "Palet");
-
+    let sort_descriptor = NSSortDescriptor(key: "palet_name", ascending: true);  // sort alphabetically
+    fetchRequest.sortDescriptors = [sort_descriptor];
     do {
         let fetchedResults = try managedContext?.executeFetchRequest(fetchRequest) as? [NSManagedObject]
         print("PALETS STORED COUNT: " + String(fetchedResults?.count));
@@ -187,7 +184,6 @@ func fetch_palet(name:String)->[NSManagedObject]?
         print("fetch error: \(fetchError.localizedDescription)")
         return nil;
     }
-    
 }
 
 func get_palet(palet_data:NSManagedObject)->String
@@ -204,11 +200,7 @@ func store_palet(name:String)
     let palet_data = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
     palet_data.setValue(name, forKey: "palet_name");
     // here's the sugar
-    do {
-        try managedContext.save()
-    } catch let fetchError as NSError {
-        print("Unable to save palet: \(fetchError.localizedDescription)")
-    }
+    save_context();
 }
 
 
@@ -229,13 +221,19 @@ func remove_palet(name:String)
             let palet = palets![i] as NSManagedObject;
             managedContext?.deleteObject(palet);
         }
-        
-        do {
-            try managedContext!.save()
-        } catch let fetchError as NSError {
-            print("Unable to save palet: \(fetchError.localizedDescription)")
-        }
-
+        save_context();
     }
+}
+
+func save_context()
+{
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    let managedContext = appDelegate.managedObjectContext;
+    do {
+        try managedContext!.save()
+    } catch let fetchError as NSError {
+        print("Unable to save palet: \(fetchError.localizedDescription)")
+    }
+
 }
 
