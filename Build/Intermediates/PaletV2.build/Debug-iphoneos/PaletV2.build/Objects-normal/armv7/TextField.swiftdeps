@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C7PaletV29TextField", ""]
 provides-dynamic-lookup:
-- "text_offset"
-- "editingRectForBounds"
 - "set_text_offset"
+- "editingRectForBounds"
+- "text_offset"
 - "textRectForBounds"
 depends-top-level:
-- !private "-"
-- "CGRect"
 - "UITextField"
+- !private "-"
 - "CGFloat"
+- "CGRect"
 - "TextField"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]

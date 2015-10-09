@@ -44,6 +44,8 @@
 		46BF1F6B1BAF45770095F13B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F6A1BAF45770095F13B /* Core.swift */; settings = {ASSET_TAGS = (); }; };
 		46D670FD1BC6F1E70007296D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D670FC1BC6F1E70007296D /* MenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		46D671021BC70F5A0007296D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D671011BC70F5A0007296D /* TextField.swift */; settings = {ASSET_TAGS = (); }; };
+		46D671041BC7770B0007296D /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D671031BC7770B0007296D /* Stepper.swift */; settings = {ASSET_TAGS = (); }; };
+		46D671061BC77C820007296D /* SubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D671051BC77C820007296D /* SubButton.swift */; settings = {ASSET_TAGS = (); }; };
 		46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */; };
 		46EFAA8C1BAB874700E5AA40 /* ViewPaletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */; };
 		46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */; };
@@ -101,6 +103,8 @@
 		46BF1F6A1BAF45770095F13B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = ../Core.swift; sourceTree = "<group>"; };
 		46D670FC1BC6F1E70007296D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		46D671011BC70F5A0007296D /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		46D671031BC7770B0007296D /* Stepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		46D671051BC77C820007296D /* SubButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubButton.swift; sourceTree = "<group>"; };
 		46EFAA891BAB67A300E5AA40 /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		46EFAA8B1BAB874700E5AA40 /* ViewPaletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPaletController.swift; sourceTree = "<group>"; };
 		46EFAA8D1BAB9B4E00E5AA40 /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				460898421BAAA997005275AD /* MenuButton.swift */,
 				460898471BAB2B94005275AD /* AddButton.swift */,
+				46D671051BC77C820007296D /* SubButton.swift */,
 				46BF1F671BAF29AB0095F13B /* DeleteButton.swift */,
 				460898491BAB38CD005275AD /* ViewButton.swift */,
 				460898501BAB4261005275AD /* PickerButton.swift */,
@@ -250,6 +255,7 @@
 				46140F9D1BA9FFFE00E8CCD2 /* ControlButton.swift */,
 				46140F9F1BAA027400E8CCD2 /* CheckButton.swift */,
 				46140FA41BAA0D4200E8CCD2 /* NavButton.swift */,
+				46D671031BC7770B0007296D /* Stepper.swift */,
 			);
 			name = ControlButtons;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				46140F911BA92FC900E8CCD2 /* EncodeImage.swift in Sources */,
 				460898551BAB4895005275AD /* FavoriteButton.swift in Sources */,
 				460898341BAA76C8005275AD /* AnimatedView.swift in Sources */,
+				46D671041BC7770B0007296D /* Stepper.swift in Sources */,
 				46EFAA8A1BAB67A300E5AA40 /* FavoritesController.swift in Sources */,
 				46B553191BAB5CB6007D814D /* EmailButton.swift in Sources */,
 				4608983D1BAA7B7F005275AD /* AnimatedLabel.swift in Sources */,
@@ -400,6 +407,7 @@
 				46140F6B1BA90CC900E8CCD2 /* PaletV2.xcdatamodeld in Sources */,
 				46140F681BA90CC900E8CCD2 /* AppDelegate.swift in Sources */,
 				466888EB1BAD5B5E00495931 /* NotificationController.swift in Sources */,
+				46D671061BC77C820007296D /* SubButton.swift in Sources */,
 				46D670FD1BC6F1E70007296D /* MenuController.swift in Sources */,
 				46140F9B1BA9FD0A00E8CCD2 /* PaletTableCell.swift in Sources */,
 				4608983F1BAA835F005275AD /* AnimatedTableView.swift in Sources */,

@@ -7,81 +7,84 @@ provides-member:
 - ["C7PaletV216PickerController", ""]
 provides-dynamic-lookup:
 - "change_color"
-- "label_txt"
-- "textFieldShouldReturn"
-- "textFieldDidEndEditing"
-- "add_favorite"
-- "current_color"
-- "push_left"
-- "NUM_COMPONENTS"
-- "code_entry_field"
-- "viewDidLoad"
-- "textFieldShouldBeginEditing"
-- "labels"
-- "textFieldShouldClear"
-- "selected_palet"
-- "rgb_label"
-- "add_button"
-- "color_view"
-- "gradient"
-- "update_code"
-- "sliders"
-- "push_right"
-- "shade_slider"
-- "rgb_colors"
-- "textFieldShouldEndEditing"
-- "add_to_palette"
-- "gradient_view"
-- "adjust_shade"
 - "favorite_button"
 - "didReceiveMemoryWarning"
+- "code_entry_field"
+- "push_left"
+- "textFieldDidEndEditing"
+- "color_view"
+- "gradient"
 - "reset_shade"
+- "sliders"
+- "textFieldShouldReturn"
 - "textFieldDidBeginEditing"
+- "rgb_colors"
+- "add_favorite"
+- "labels"
+- "NUM_COMPONENTS"
+- "textFieldShouldBeginEditing"
+- "push_right"
+- "shade_slider"
+- "rgb_label"
+- "add_button"
+- "viewDidLoad"
+- "textFieldShouldEndEditing"
+- "adjust_shade"
+- "current_color"
+- "update_code"
+- "label_txt"
+- "gradient_view"
+- "selected_palet"
+- "add_to_palette"
+- "textFieldShouldClear"
 depends-top-level:
+- "Bool"
+- !private "++"
+- "PickerController"
+- !private "get_hex"
+- "CAGradientLayer"
+- !private "NSTextAlignment"
+- !private "Float"
+- !private "*"
+- !private "is_valid"
+- !private "get_color"
+- !private "BooleanLiteralType"
+- "AnimatedSlider"
+- !private "UILabel"
+- !private "get_color_image"
+- "AuxillaryController"
+- "AnimatedLabel"
+- !private "nav_controller"
+- "UIColor"
+- "UnicodeScalarType"
+- !private "UIImage"
+- "NSTimeInterval"
+- !private "-"
+- !private "+"
+- !private "TextField"
 - !private "CGFloat"
-- !private "UIControlState"
+- "StringLiteralType"
+- "UITextField"
+- !private "CGPointMake"
+- !private "CGRect"
+- "Array"
 - !private "<"
 - !private "M_PI"
-- "UIColor"
-- "AnimatedLabel"
-- "CAGradientLayer"
-- "AuxillaryController"
-- "Array"
-- "StringLiteralType"
-- "UITextFieldDelegate"
-- !private "-"
-- !private "CGPointMake"
-- "AnimatedButton"
-- !private "!="
-- !private "UIImage"
-- !private "*"
 - !private "CGAffineTransformMakeRotation"
-- !private "store_color"
-- !private "get_rgb"
-- "AnimatedView"
-- !private "/"
-- !private "print"
-- "NSTimeInterval"
-- !private "BooleanLiteralType"
-- "UITextField"
+- !private "UIControlState"
+- !private "UITextAutocapitalizationType"
 - !private "UIControlEvents"
-- "String"
-- !private "NSTextAlignment"
-- !private "++"
-- !private "UILabel"
+- !private "get_rgb"
+- !private "store_color"
+- !private "!="
+- !private "/"
+- "UITextFieldDelegate"
 - !private "FAVORITE_GROUP_NAME"
-- !private "get_color_image"
-- !private "get_hex"
-- !private "CGRect"
-- !private "TextField"
-- "PickerController"
+- !private "print"
+- "AnimatedButton"
+- "String"
 - !private "UIFont"
-- !private "Float"
-- !private "nav_controller"
-- !private "+"
-- "AnimatedSlider"
-- "UnicodeScalarType"
-- "Bool"
+- "AnimatedView"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["C7PaletV214AnimatedButton", "addTarget"]
@@ -165,6 +168,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UILabel"]
+- !private ["PSs9AnyObject", "UITextAutocapitalizationType"]
 - !private ["PSs9AnyObject", "addSublayer"]
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "addTarget"]
@@ -172,6 +176,7 @@ depends-member:
 - ["PSs9AnyObject", "add_favorite"]
 - ["PSs9AnyObject", "add_to_palette"]
 - ["PSs9AnyObject", "adjust_shade"]
+- !private ["PSs9AnyObject", "autocapitalizationType"]
 - !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "blackColor"]
 - ["PSs9AnyObject", "blueColor"]
@@ -194,6 +199,7 @@ depends-member:
 - !private ["PSs9AnyObject", "font"]
 - !private ["PSs9AnyObject", "frame"]
 - !private ["PSs9AnyObject", "getRed"]
+- !private ["PSs9AnyObject", "get_color"]
 - !private ["PSs9AnyObject", "get_color_image"]
 - !private ["PSs9AnyObject", "get_hex"]
 - !private ["PSs9AnyObject", "get_rgb"]
@@ -203,6 +209,7 @@ depends-member:
 - ["PSs9AnyObject", "greenColor"]
 - !private ["PSs9AnyObject", "in_frame"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "is_valid"]
 - ["PSs9AnyObject", "label_txt"]
 - ["PSs9AnyObject", "labels"]
 - !private ["PSs9AnyObject", "layer"]
@@ -223,6 +230,7 @@ depends-member:
 - ["PSs9AnyObject", "redColor"]
 - !private ["PSs9AnyObject", "reloadData"]
 - ["PSs9AnyObject", "reset_shade"]
+- !private ["PSs9AnyObject", "resignFirstResponder"]
 - ["PSs9AnyObject", "rgb_colors"]
 - ["PSs9AnyObject", "rgb_label"]
 - !private ["PSs9AnyObject", "right_frame"]
@@ -264,7 +272,6 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
 - ["PSs23ArrayLiteralConvertible", "Element"]
@@ -277,12 +284,9 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
-- !private ["PSs23ArrayLiteralConvertible", "count"]
-- !private ["PSs23ArrayLiteralConvertible", "frame"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
-- !private ["VSs10ArraySlice", "frame"]
 - ["C7PaletV219AuxillaryController", "AnimatedButton"]
 - ["C7PaletV219AuxillaryController", "AnimatedLabel"]
 - ["C7PaletV219AuxillaryController", "AnimatedSlider"]
@@ -307,6 +311,7 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "UIFont"]
 - !private ["C7PaletV219AuxillaryController", "UIImage"]
 - !private ["C7PaletV219AuxillaryController", "UILabel"]
+- !private ["C7PaletV219AuxillaryController", "UITextAutocapitalizationType"]
 - ["C7PaletV219AuxillaryController", "UITextField"]
 - ["C7PaletV219AuxillaryController", "add_button"]
 - ["C7PaletV219AuxillaryController", "add_favorite"]
@@ -320,6 +325,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "current_color"]
 - ["C7PaletV219AuxillaryController", "didReceiveMemoryWarning"]
 - ["C7PaletV219AuxillaryController", "favorite_button"]
+- !private ["C7PaletV219AuxillaryController", "get_color"]
 - !private ["C7PaletV219AuxillaryController", "get_color_image"]
 - !private ["C7PaletV219AuxillaryController", "get_hex"]
 - !private ["C7PaletV219AuxillaryController", "get_rgb"]
@@ -327,6 +333,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "gradient_view"]
 - !private ["C7PaletV219AuxillaryController", "in_frame"]
 - ["C7PaletV219AuxillaryController", "init"]
+- !private ["C7PaletV219AuxillaryController", "is_valid"]
 - ["C7PaletV219AuxillaryController", "label_txt"]
 - ["C7PaletV219AuxillaryController", "labels"]
 - !private ["C7PaletV219AuxillaryController", "left_frame"]
@@ -424,6 +431,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UILabel"]
+- !private ["PSs11CVarArgType", "UITextAutocapitalizationType"]
 - !private ["PSs11CVarArgType", "addSublayer"]
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "addTarget"]
@@ -431,6 +439,7 @@ depends-member:
 - ["PSs11CVarArgType", "add_favorite"]
 - ["PSs11CVarArgType", "add_to_palette"]
 - ["PSs11CVarArgType", "adjust_shade"]
+- !private ["PSs11CVarArgType", "autocapitalizationType"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "blackColor"]
 - ["PSs11CVarArgType", "blueColor"]
@@ -453,6 +462,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "font"]
 - !private ["PSs11CVarArgType", "frame"]
 - !private ["PSs11CVarArgType", "getRed"]
+- !private ["PSs11CVarArgType", "get_color"]
 - !private ["PSs11CVarArgType", "get_color_image"]
 - !private ["PSs11CVarArgType", "get_hex"]
 - !private ["PSs11CVarArgType", "get_rgb"]
@@ -462,6 +472,7 @@ depends-member:
 - ["PSs11CVarArgType", "greenColor"]
 - !private ["PSs11CVarArgType", "in_frame"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "is_valid"]
 - ["PSs11CVarArgType", "label_txt"]
 - ["PSs11CVarArgType", "labels"]
 - !private ["PSs11CVarArgType", "layer"]
@@ -482,6 +493,7 @@ depends-member:
 - ["PSs11CVarArgType", "redColor"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - ["PSs11CVarArgType", "reset_shade"]
+- !private ["PSs11CVarArgType", "resignFirstResponder"]
 - ["PSs11CVarArgType", "rgb_colors"]
 - ["PSs11CVarArgType", "rgb_label"]
 - !private ["PSs11CVarArgType", "right_frame"]
@@ -523,8 +535,6 @@ depends-member:
 - !private ["PSs14CollectionType", "SubSequence"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
-- !private ["PSs14CollectionType", "count"]
-- !private ["PSs14CollectionType", "frame"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
@@ -535,8 +545,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
-- !private ["PSs28CustomDebugStringConvertible", "count"]
-- !private ["PSs28CustomDebugStringConvertible", "frame"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "AnimatedButton"]
 - ["PSs23CustomStringConvertible", "AnimatedLabel"]
@@ -566,6 +574,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UILabel"]
+- !private ["PSs23CustomStringConvertible", "UITextAutocapitalizationType"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSublayer"]
@@ -576,6 +585,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "add_to_palette"]
 - ["PSs23CustomStringConvertible", "adjust_shade"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "autocapitalizationType"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "blackColor"]
 - ["PSs23CustomStringConvertible", "blueColor"]
@@ -589,7 +599,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "color_view"]
 - !private ["PSs23CustomStringConvertible", "colors"]
 - !private ["PSs23CustomStringConvertible", "cornerRadius"]
-- !private ["PSs23CustomStringConvertible", "count"]
 - ["PSs23CustomStringConvertible", "current_color"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -599,6 +608,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "font"]
 - !private ["PSs23CustomStringConvertible", "frame"]
 - !private ["PSs23CustomStringConvertible", "getRed"]
+- !private ["PSs23CustomStringConvertible", "get_color"]
 - !private ["PSs23CustomStringConvertible", "get_color_image"]
 - !private ["PSs23CustomStringConvertible", "get_hex"]
 - !private ["PSs23CustomStringConvertible", "get_rgb"]
@@ -608,6 +618,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "greenColor"]
 - !private ["PSs23CustomStringConvertible", "in_frame"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "is_valid"]
 - ["PSs23CustomStringConvertible", "label_txt"]
 - ["PSs23CustomStringConvertible", "labels"]
 - !private ["PSs23CustomStringConvertible", "layer"]
@@ -628,6 +639,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "redColor"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - ["PSs23CustomStringConvertible", "reset_shade"]
+- !private ["PSs23CustomStringConvertible", "resignFirstResponder"]
 - ["PSs23CustomStringConvertible", "rgb_colors"]
 - ["PSs23CustomStringConvertible", "rgb_label"]
 - !private ["PSs23CustomStringConvertible", "right_frame"]
@@ -664,6 +676,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "view_palet_controller"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "AllCharacters"]
 - !private ["PSs9Equatable", "AnimatedButton"]
 - ["PSs9Equatable", "AnimatedLabel"]
 - ["PSs9Equatable", "AnimatedSlider"]
@@ -692,6 +705,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UILabel"]
+- !private ["PSs9Equatable", "UITextAutocapitalizationType"]
 - !private ["PSs9Equatable", "ValueChanged"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addSublayer"]
@@ -701,6 +715,7 @@ depends-member:
 - ["PSs9Equatable", "add_favorite"]
 - ["PSs9Equatable", "add_to_palette"]
 - ["PSs9Equatable", "adjust_shade"]
+- !private ["PSs9Equatable", "autocapitalizationType"]
 - !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "blackColor"]
 - ["PSs9Equatable", "blueColor"]
@@ -723,6 +738,7 @@ depends-member:
 - !private ["PSs9Equatable", "font"]
 - !private ["PSs9Equatable", "frame"]
 - !private ["PSs9Equatable", "getRed"]
+- !private ["PSs9Equatable", "get_color"]
 - !private ["PSs9Equatable", "get_color_image"]
 - !private ["PSs9Equatable", "get_hex"]
 - !private ["PSs9Equatable", "get_rgb"]
@@ -733,6 +749,7 @@ depends-member:
 - !private ["PSs9Equatable", "height"]
 - !private ["PSs9Equatable", "in_frame"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "is_valid"]
 - ["PSs9Equatable", "label_txt"]
 - ["PSs9Equatable", "labels"]
 - !private ["PSs9Equatable", "layer"]
@@ -757,6 +774,7 @@ depends-member:
 - ["PSs9Equatable", "redColor"]
 - !private ["PSs9Equatable", "reloadData"]
 - ["PSs9Equatable", "reset_shade"]
+- !private ["PSs9Equatable", "resignFirstResponder"]
 - ["PSs9Equatable", "rgb_colors"]
 - ["PSs9Equatable", "rgb_label"]
 - !private ["PSs9Equatable", "right_frame"]
@@ -802,6 +820,7 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "AllCharacters"]
 - !private ["PSs8Hashable", "AnimatedButton"]
 - ["PSs8Hashable", "AnimatedLabel"]
 - ["PSs8Hashable", "AnimatedSlider"]
@@ -827,6 +846,7 @@ depends-member:
 - !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UILabel"]
+- !private ["PSs8Hashable", "UITextAutocapitalizationType"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addSublayer"]
 - !private ["PSs8Hashable", "addSubview"]
@@ -835,6 +855,7 @@ depends-member:
 - ["PSs8Hashable", "add_favorite"]
 - ["PSs8Hashable", "add_to_palette"]
 - ["PSs8Hashable", "adjust_shade"]
+- !private ["PSs8Hashable", "autocapitalizationType"]
 - !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "blackColor"]
 - ["PSs8Hashable", "blueColor"]
@@ -857,6 +878,7 @@ depends-member:
 - !private ["PSs8Hashable", "font"]
 - !private ["PSs8Hashable", "frame"]
 - !private ["PSs8Hashable", "getRed"]
+- !private ["PSs8Hashable", "get_color"]
 - !private ["PSs8Hashable", "get_color_image"]
 - !private ["PSs8Hashable", "get_hex"]
 - !private ["PSs8Hashable", "get_rgb"]
@@ -866,6 +888,7 @@ depends-member:
 - ["PSs8Hashable", "greenColor"]
 - !private ["PSs8Hashable", "in_frame"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "is_valid"]
 - ["PSs8Hashable", "label_txt"]
 - ["PSs8Hashable", "labels"]
 - !private ["PSs8Hashable", "layer"]
@@ -886,6 +909,7 @@ depends-member:
 - ["PSs8Hashable", "redColor"]
 - !private ["PSs8Hashable", "reloadData"]
 - ["PSs8Hashable", "reset_shade"]
+- !private ["PSs8Hashable", "resignFirstResponder"]
 - ["PSs8Hashable", "rgb_colors"]
 - ["PSs8Hashable", "rgb_label"]
 - !private ["PSs8Hashable", "right_frame"]
@@ -927,8 +951,6 @@ depends-member:
 - !private ["PSs9Indexable", "SubSequence"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
-- !private ["PSs9Indexable", "count"]
-- !private ["PSs9Indexable", "frame"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -948,8 +970,6 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
-- !private ["PSs21MutableCollectionType", "count"]
-- !private ["PSs21MutableCollectionType", "frame"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
@@ -957,18 +977,13 @@ depends-member:
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
-- !private ["PSs16MutableIndexable", "count"]
-- !private ["PSs16MutableIndexable", "frame"]
 - !private ["PSs16MutableIndexable", "subscript"]
-- !private ["VSs12MutableSlice", "frame"]
 - ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
-- !private ["PSs16MutableSliceable", "count"]
-- !private ["PSs16MutableSliceable", "frame"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "AnimatedButton"]
 - ["PSo8NSCoding", "AnimatedLabel"]
@@ -992,6 +1007,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UILabel"]
+- !private ["PSo8NSCoding", "UITextAutocapitalizationType"]
 - !private ["PSo8NSCoding", "addSublayer"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -999,6 +1015,7 @@ depends-member:
 - ["PSo8NSCoding", "add_favorite"]
 - ["PSo8NSCoding", "add_to_palette"]
 - ["PSo8NSCoding", "adjust_shade"]
+- !private ["PSo8NSCoding", "autocapitalizationType"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
 - ["PSo8NSCoding", "blueColor"]
@@ -1021,6 +1038,7 @@ depends-member:
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "getRed"]
+- !private ["PSo8NSCoding", "get_color"]
 - !private ["PSo8NSCoding", "get_color_image"]
 - !private ["PSo8NSCoding", "get_hex"]
 - !private ["PSo8NSCoding", "get_rgb"]
@@ -1030,6 +1048,7 @@ depends-member:
 - ["PSo8NSCoding", "greenColor"]
 - !private ["PSo8NSCoding", "in_frame"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "is_valid"]
 - ["PSo8NSCoding", "label_txt"]
 - ["PSo8NSCoding", "labels"]
 - !private ["PSo8NSCoding", "layer"]
@@ -1050,6 +1069,7 @@ depends-member:
 - ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "reloadData"]
 - ["PSo8NSCoding", "reset_shade"]
+- !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "rgb_colors"]
 - ["PSo8NSCoding", "rgb_label"]
 - !private ["PSo8NSCoding", "right_frame"]
@@ -1117,6 +1137,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UILabel"]
+- !private ["PSo26NSExtensionRequestHandling", "UITextAutocapitalizationType"]
 - ["PSo26NSExtensionRequestHandling", "add_button"]
 - ["PSo26NSExtensionRequestHandling", "add_favorite"]
 - ["PSo26NSExtensionRequestHandling", "add_to_palette"]
@@ -1130,6 +1151,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "favorite_button"]
 - !private ["PSo26NSExtensionRequestHandling", "favorites_controller"]
+- !private ["PSo26NSExtensionRequestHandling", "get_color"]
 - !private ["PSo26NSExtensionRequestHandling", "get_color_image"]
 - !private ["PSo26NSExtensionRequestHandling", "get_hex"]
 - !private ["PSo26NSExtensionRequestHandling", "get_rgb"]
@@ -1137,6 +1159,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "gradient_view"]
 - !private ["PSo26NSExtensionRequestHandling", "in_frame"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "is_valid"]
 - ["PSo26NSExtensionRequestHandling", "label_txt"]
 - ["PSo26NSExtensionRequestHandling", "labels"]
 - !private ["PSo26NSExtensionRequestHandling", "left_frame"]
@@ -1195,6 +1218,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UITextAutocapitalizationType"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "addSublayer"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -1203,6 +1227,7 @@ depends-member:
 - ["CSo8NSObject", "add_favorite"]
 - ["CSo8NSObject", "add_to_palette"]
 - ["CSo8NSObject", "adjust_shade"]
+- !private ["CSo8NSObject", "autocapitalizationType"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
 - ["CSo8NSObject", "blueColor"]
@@ -1225,6 +1250,7 @@ depends-member:
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "getRed"]
+- !private ["CSo8NSObject", "get_color"]
 - !private ["CSo8NSObject", "get_color_image"]
 - !private ["CSo8NSObject", "get_hex"]
 - !private ["CSo8NSObject", "get_rgb"]
@@ -1234,6 +1260,7 @@ depends-member:
 - ["CSo8NSObject", "greenColor"]
 - !private ["CSo8NSObject", "in_frame"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "is_valid"]
 - ["CSo8NSObject", "label_txt"]
 - ["CSo8NSObject", "labels"]
 - !private ["CSo8NSObject", "layer"]
@@ -1254,6 +1281,7 @@ depends-member:
 - ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "reloadData"]
 - ["CSo8NSObject", "reset_shade"]
+- !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "rgb_colors"]
 - ["CSo8NSObject", "rgb_label"]
 - !private ["CSo8NSObject", "right_frame"]
@@ -1310,6 +1338,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
+- !private ["PSo16NSObjectProtocol", "UITextAutocapitalizationType"]
 - !private ["PSo16NSObjectProtocol", "addSublayer"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
@@ -1317,6 +1346,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "add_favorite"]
 - ["PSo16NSObjectProtocol", "add_to_palette"]
 - ["PSo16NSObjectProtocol", "adjust_shade"]
+- !private ["PSo16NSObjectProtocol", "autocapitalizationType"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - ["PSo16NSObjectProtocol", "blueColor"]
@@ -1339,6 +1369,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "getRed"]
+- !private ["PSo16NSObjectProtocol", "get_color"]
 - !private ["PSo16NSObjectProtocol", "get_color_image"]
 - !private ["PSo16NSObjectProtocol", "get_hex"]
 - !private ["PSo16NSObjectProtocol", "get_rgb"]
@@ -1348,6 +1379,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "greenColor"]
 - !private ["PSo16NSObjectProtocol", "in_frame"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "is_valid"]
 - ["PSo16NSObjectProtocol", "label_txt"]
 - ["PSo16NSObjectProtocol", "labels"]
 - !private ["PSo16NSObjectProtocol", "layer"]
@@ -1368,6 +1400,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - ["PSo16NSObjectProtocol", "reset_shade"]
+- !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "rgb_colors"]
 - ["PSo16NSObjectProtocol", "rgb_label"]
 - !private ["PSo16NSObjectProtocol", "right_frame"]
@@ -1449,6 +1482,7 @@ depends-member:
 - !private ["C7PaletV216PickerController", "UIFont"]
 - !private ["C7PaletV216PickerController", "UIImage"]
 - !private ["C7PaletV216PickerController", "UILabel"]
+- !private ["C7PaletV216PickerController", "UITextAutocapitalizationType"]
 - ["C7PaletV216PickerController", "UITextField"]
 - ["C7PaletV216PickerController", "add_button"]
 - ["C7PaletV216PickerController", "add_favorite"]
@@ -1461,6 +1495,7 @@ depends-member:
 - ["C7PaletV216PickerController", "deinit"]
 - ["C7PaletV216PickerController", "didReceiveMemoryWarning"]
 - ["C7PaletV216PickerController", "favorite_button"]
+- !private ["C7PaletV216PickerController", "get_color"]
 - !private ["C7PaletV216PickerController", "get_color_image"]
 - !private ["C7PaletV216PickerController", "get_hex"]
 - !private ["C7PaletV216PickerController", "get_rgb"]
@@ -1468,6 +1503,7 @@ depends-member:
 - ["C7PaletV216PickerController", "gradient_view"]
 - !private ["C7PaletV216PickerController", "in_frame"]
 - ["C7PaletV216PickerController", "init"]
+- !private ["C7PaletV216PickerController", "is_valid"]
 - ["C7PaletV216PickerController", "label_txt"]
 - ["C7PaletV216PickerController", "labels"]
 - !private ["C7PaletV216PickerController", "left_frame"]
@@ -1502,9 +1538,8 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
-- !private ["PSs30RangeReplaceableCollectionType", "count"]
-- !private ["PSs30RangeReplaceableCollectionType", "frame"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "AllCharacters"]
 - !private ["PSs16RawRepresentable", "Center"]
 - !private ["PSs16RawRepresentable", "Highlighted"]
 - !private ["PSs16RawRepresentable", "Normal"]
@@ -1517,8 +1552,6 @@ depends-member:
 - !private ["PSs12SequenceType", "SubSequence"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
-- !private ["PSs12SequenceType", "count"]
-- !private ["PSs12SequenceType", "frame"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "Highlighted"]
 - !private ["PSs14SetAlgebraType", "Normal"]
@@ -1540,6 +1573,7 @@ depends-member:
 - !private ["C7PaletV29TextField", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "autocapitalizationType"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
@@ -1554,6 +1588,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "out_frame"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setThumbImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
@@ -1566,6 +1601,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "autocapitalizationType"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "delegate"]
@@ -1580,6 +1616,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "minimumValue"]
 - !private ["PSo12UIAppearance", "out_frame"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setThumbImage"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "setTitleColor"]
@@ -1610,12 +1647,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
+- !private ["PSo21UIAppearanceContainer", "UITextAutocapitalizationType"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - ["PSo21UIAppearanceContainer", "add_button"]
 - ["PSo21UIAppearanceContainer", "add_favorite"]
 - ["PSo21UIAppearanceContainer", "add_to_palette"]
 - ["PSo21UIAppearanceContainer", "adjust_shade"]
+- !private ["PSo21UIAppearanceContainer", "autocapitalizationType"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "change_color"]
@@ -1630,6 +1669,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "favorites_controller"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "get_color"]
 - !private ["PSo21UIAppearanceContainer", "get_color_image"]
 - !private ["PSo21UIAppearanceContainer", "get_hex"]
 - !private ["PSo21UIAppearanceContainer", "get_rgb"]
@@ -1637,6 +1677,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "gradient_view"]
 - !private ["PSo21UIAppearanceContainer", "in_frame"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "is_valid"]
 - ["PSo21UIAppearanceContainer", "label_txt"]
 - ["PSo21UIAppearanceContainer", "labels"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
@@ -1654,6 +1695,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "push_right"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "reset_shade"]
+- !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "rgb_colors"]
 - ["PSo21UIAppearanceContainer", "rgb_label"]
 - !private ["PSo21UIAppearanceContainer", "right_frame"]
@@ -1735,6 +1777,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UILabel"]
+- !private ["PSo18UIContentContainer", "UITextAutocapitalizationType"]
 - ["PSo18UIContentContainer", "add_button"]
 - ["PSo18UIContentContainer", "add_favorite"]
 - ["PSo18UIContentContainer", "add_to_palette"]
@@ -1748,6 +1791,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "favorite_button"]
 - !private ["PSo18UIContentContainer", "favorites_controller"]
+- !private ["PSo18UIContentContainer", "get_color"]
 - !private ["PSo18UIContentContainer", "get_color_image"]
 - !private ["PSo18UIContentContainer", "get_hex"]
 - !private ["PSo18UIContentContainer", "get_rgb"]
@@ -1755,6 +1799,7 @@ depends-member:
 - ["PSo18UIContentContainer", "gradient_view"]
 - !private ["PSo18UIContentContainer", "in_frame"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "is_valid"]
 - ["PSo18UIContentContainer", "label_txt"]
 - ["PSo18UIContentContainer", "labels"]
 - !private ["PSo18UIContentContainer", "left_frame"]
@@ -1788,6 +1833,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view_palet_controller"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "autocapitalizationType"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "bounds"]
 - !private ["CSo9UIControl", "delegate"]
@@ -1800,9 +1846,11 @@ depends-member:
 - !private ["CSo9UIControl", "minimumTrackTintColor"]
 - !private ["CSo9UIControl", "minimumValue"]
 - !private ["CSo9UIControl", "out_frame"]
+- !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "setThumbImage"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "setTitleColor"]
+- !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "titleLabel"]
 - !private ["CSo9UIControl", "transform"]
 - !private ["CSo9UIControl", "value"]
@@ -1812,6 +1860,7 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "autocapitalizationType"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
@@ -1826,6 +1875,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
 - !private ["PSo17UICoordinateSpace", "out_frame"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setThumbImage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "setTitleColor"]
@@ -1837,6 +1887,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "autocapitalizationType"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "delegate"]
@@ -1851,6 +1902,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "minimumValue"]
 - !private ["PSo13UIDynamicItem", "out_frame"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setThumbImage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
@@ -1863,11 +1915,14 @@ depends-member:
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UIImage", "stretchableImageWithLeftCapWidth"]
+- !private ["PSo10UIKeyInput", "autocapitalizationType"]
 - !private ["PSo10UIKeyInput", "backgroundColor"]
 - !private ["PSo10UIKeyInput", "delegate"]
+- !private ["PSo10UIKeyInput", "frame"]
 - !private ["PSo10UIKeyInput", "init"]
 - !private ["PSo10UIKeyInput", "layer"]
-- !private ["CSo7UILabel", "bounds"]
+- !private ["PSo10UIKeyInput", "resignFirstResponder"]
+- !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "init"]
@@ -1899,6 +1954,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UITextAutocapitalizationType"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
@@ -1906,6 +1962,7 @@ depends-member:
 - ["CSo11UIResponder", "add_favorite"]
 - ["CSo11UIResponder", "add_to_palette"]
 - ["CSo11UIResponder", "adjust_shade"]
+- !private ["CSo11UIResponder", "autocapitalizationType"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "change_color"]
@@ -1920,6 +1977,7 @@ depends-member:
 - !private ["CSo11UIResponder", "favorites_controller"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
+- !private ["CSo11UIResponder", "get_color"]
 - !private ["CSo11UIResponder", "get_color_image"]
 - !private ["CSo11UIResponder", "get_hex"]
 - !private ["CSo11UIResponder", "get_rgb"]
@@ -1927,6 +1985,7 @@ depends-member:
 - ["CSo11UIResponder", "gradient_view"]
 - !private ["CSo11UIResponder", "in_frame"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "is_valid"]
 - ["CSo11UIResponder", "label_txt"]
 - ["CSo11UIResponder", "labels"]
 - !private ["CSo11UIResponder", "layer"]
@@ -1944,6 +2003,7 @@ depends-member:
 - ["CSo11UIResponder", "push_right"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "reset_shade"]
+- !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "rgb_colors"]
 - ["CSo11UIResponder", "rgb_label"]
 - !private ["CSo11UIResponder", "right_frame"]
@@ -2014,6 +2074,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UILabel"]
+- !private ["PSo16UIStateRestoring", "UITextAutocapitalizationType"]
 - ["PSo16UIStateRestoring", "add_button"]
 - ["PSo16UIStateRestoring", "add_favorite"]
 - ["PSo16UIStateRestoring", "add_to_palette"]
@@ -2027,6 +2088,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "favorite_button"]
 - !private ["PSo16UIStateRestoring", "favorites_controller"]
+- !private ["PSo16UIStateRestoring", "get_color"]
 - !private ["PSo16UIStateRestoring", "get_color_image"]
 - !private ["PSo16UIStateRestoring", "get_hex"]
 - !private ["PSo16UIStateRestoring", "get_rgb"]
@@ -2034,6 +2096,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "gradient_view"]
 - !private ["PSo16UIStateRestoring", "in_frame"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "is_valid"]
 - ["PSo16UIStateRestoring", "label_txt"]
 - ["PSo16UIStateRestoring", "labels"]
 - !private ["PSo16UIStateRestoring", "left_frame"]
@@ -2069,10 +2132,15 @@ depends-member:
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["PSo21UITableViewDataSource", "table"]
 - !private ["PSo19UITableViewDelegate", "table"]
+- !private ["OSC28UITextAutocapitalizationType", "AllCharacters"]
+- !private ["CSo11UITextField", "autocapitalizationType"]
 - !private ["CSo11UITextField", "backgroundColor"]
 - !private ["CSo11UITextField", "delegate"]
+- !private ["CSo11UITextField", "frame"]
 - !private ["CSo11UITextField", "init"]
 - !private ["CSo11UITextField", "layer"]
+- !private ["CSo11UITextField", "resignFirstResponder"]
+- !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "AnimatedButton"]
 - ["PSo19UITextFieldDelegate", "AnimatedLabel"]
 - ["PSo19UITextFieldDelegate", "AnimatedSlider"]
@@ -2094,16 +2162,20 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIFont"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UILabel"]
+- !private ["PSo19UITextFieldDelegate", "UITextAutocapitalizationType"]
 - !private ["PSo19UITextFieldDelegate", "add_button"]
+- !private ["PSo19UITextFieldDelegate", "change_color"]
 - !private ["PSo19UITextFieldDelegate", "code_entry_field"]
 - !private ["PSo19UITextFieldDelegate", "color_view"]
 - !private ["PSo19UITextFieldDelegate", "current_color"]
 - !private ["PSo19UITextFieldDelegate", "favorite_button"]
+- !private ["PSo19UITextFieldDelegate", "get_color"]
 - !private ["PSo19UITextFieldDelegate", "get_color_image"]
 - !private ["PSo19UITextFieldDelegate", "get_hex"]
 - !private ["PSo19UITextFieldDelegate", "get_rgb"]
 - !private ["PSo19UITextFieldDelegate", "gradient"]
 - !private ["PSo19UITextFieldDelegate", "in_frame"]
+- !private ["PSo19UITextFieldDelegate", "is_valid"]
 - !private ["PSo19UITextFieldDelegate", "label_txt"]
 - !private ["PSo19UITextFieldDelegate", "labels"]
 - !private ["PSo19UITextFieldDelegate", "left_frame"]
@@ -2128,14 +2200,22 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "update_code"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
+- !private ["PSo11UITextInput", "autocapitalizationType"]
 - !private ["PSo11UITextInput", "backgroundColor"]
 - !private ["PSo11UITextInput", "delegate"]
+- !private ["PSo11UITextInput", "frame"]
 - !private ["PSo11UITextInput", "init"]
 - !private ["PSo11UITextInput", "layer"]
+- !private ["PSo11UITextInput", "resignFirstResponder"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "autocapitalizationType"]
 - !private ["PSo17UITextInputTraits", "backgroundColor"]
 - !private ["PSo17UITextInputTraits", "delegate"]
+- !private ["PSo17UITextInputTraits", "frame"]
 - !private ["PSo17UITextInputTraits", "init"]
 - !private ["PSo17UITextInputTraits", "layer"]
+- !private ["PSo17UITextInputTraits", "resignFirstResponder"]
+- !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "AnimatedButton"]
 - ["PSo18UITraitEnvironment", "AnimatedLabel"]
 - ["PSo18UITraitEnvironment", "AnimatedSlider"]
@@ -2157,12 +2237,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
+- !private ["PSo18UITraitEnvironment", "UITextAutocapitalizationType"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - ["PSo18UITraitEnvironment", "add_button"]
 - ["PSo18UITraitEnvironment", "add_favorite"]
 - ["PSo18UITraitEnvironment", "add_to_palette"]
 - ["PSo18UITraitEnvironment", "adjust_shade"]
+- !private ["PSo18UITraitEnvironment", "autocapitalizationType"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "change_color"]
@@ -2177,6 +2259,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "favorites_controller"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "get_color"]
 - !private ["PSo18UITraitEnvironment", "get_color_image"]
 - !private ["PSo18UITraitEnvironment", "get_hex"]
 - !private ["PSo18UITraitEnvironment", "get_rgb"]
@@ -2184,6 +2267,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "gradient_view"]
 - !private ["PSo18UITraitEnvironment", "in_frame"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "is_valid"]
 - ["PSo18UITraitEnvironment", "label_txt"]
 - ["PSo18UITraitEnvironment", "labels"]
 - !private ["PSo18UITraitEnvironment", "layer"]
@@ -2201,6 +2285,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "push_right"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "reset_shade"]
+- !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "rgb_colors"]
 - ["PSo18UITraitEnvironment", "rgb_label"]
 - !private ["PSo18UITraitEnvironment", "right_frame"]
@@ -2234,6 +2319,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "autocapitalizationType"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "delegate"]
@@ -2248,6 +2334,7 @@ depends-member:
 - !private ["CSo6UIView", "minimumValue"]
 - !private ["CSo6UIView", "out_frame"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "setThumbImage"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "setTitleColor"]
@@ -2281,6 +2368,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UITextAutocapitalizationType"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "add_button"]
 - ["CSo16UIViewController", "add_favorite"]
@@ -2295,6 +2383,7 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "favorite_button"]
 - !private ["CSo16UIViewController", "favorites_controller"]
+- !private ["CSo16UIViewController", "get_color"]
 - !private ["CSo16UIViewController", "get_color_image"]
 - !private ["CSo16UIViewController", "get_hex"]
 - !private ["CSo16UIViewController", "get_rgb"]
@@ -2302,6 +2391,7 @@ depends-member:
 - ["CSo16UIViewController", "gradient_view"]
 - !private ["CSo16UIViewController", "in_frame"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "is_valid"]
 - ["CSo16UIViewController", "label_txt"]
 - ["CSo16UIViewController", "labels"]
 - !private ["CSo16UIViewController", "left_frame"]
@@ -2342,8 +2432,6 @@ depends-member:
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
-- !private ["PSs10_ArrayType", "count"]
-- !private ["PSs10_ArrayType", "frame"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "init"]
@@ -2358,8 +2446,6 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
-- !private ["PSs24_DestructorSafeContainer", "count"]
-- !private ["PSs24_DestructorSafeContainer", "frame"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
@@ -2376,7 +2462,6 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
-- !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
@@ -2393,9 +2478,9 @@ depends-member:
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "autocapitalizationType"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "bounds"]
-- !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
@@ -2413,6 +2498,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "origin"]
 - !private ["PSs12_Reflectable", "out_frame"]
 - !private ["PSs12_Reflectable", "reloadData"]
+- !private ["PSs12_Reflectable", "resignFirstResponder"]
 - !private ["PSs12_Reflectable", "setThumbImage"]
 - !private ["PSs12_Reflectable", "setTitle"]
 - !private ["PSs12_Reflectable", "setTitleColor"]
@@ -2476,7 +2562,6 @@ depends-nominal:
 - !private "PSs14MirrorPathType"
 - "PSs21MutableCollectionType"
 - "PSs16MutableIndexable"
-- !private "VSs12MutableSlice"
 - "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
@@ -2530,6 +2615,7 @@ depends-nominal:
 - !private "CSo11UITableView"
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
+- !private "OSC28UITextAutocapitalizationType"
 - !private "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"

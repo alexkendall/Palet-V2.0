@@ -6,96 +6,87 @@ provides-nominal:
 provides-member:
 - ["C7PaletV216PickerController", ""]
 provides-dynamic-lookup:
-- "favorite_button"
-- "code_entry_field"
-- "add_favorite"
-- "color_view"
-- "label_txt"
-- "textFieldShouldReturn"
-- "update_code"
-- "textFieldShouldBeginEditing"
-- "gradient_view"
 - "add_to_palette"
-- "change_color"
-- "adjust_shade"
-- "rgb_label"
-- "sliders"
-- "textFieldDidBeginEditing"
-- "textFieldShouldEndEditing"
-- "textFieldShouldClear"
-- "textFieldDidEndEditing"
-- "push_right"
-- "selected_palet"
-- "labels"
-- "rgb_colors"
-- "shade_slider"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "push_left"
-- "current_color"
-- "NUM_COMPONENTS"
-- "gradient"
-- "reset_shade"
 - "add_button"
+- "reset_shade"
+- "gradient"
+- "favorite_button"
+- "rgb_label"
+- "labels"
+- "viewDidLoad"
+- "push_right"
+- "rgb_colors"
+- "color_view"
+- "shade_slider"
+- "textFieldDidBeginEditing"
+- "sliders"
+- "textFieldShouldReturn"
+- "add_favorite"
+- "adjust_shade"
+- "textFieldDidEndEditing"
+- "selected_palet"
+- "update_code"
+- "didReceiveMemoryWarning"
+- "textFieldShouldBeginEditing"
+- "textFieldShouldClear"
+- "NUM_COMPONENTS"
+- "gradient_view"
+- "change_color"
+- "textFieldShouldEndEditing"
+- "label_txt"
+- "current_color"
+- "code_entry_field"
 depends-top-level:
+- "UIColor"
+- !private "CGFloat"
 - !private "UIImage"
+- !private "nav_controller"
+- "AnimatedButton"
+- "String"
+- "NSTimeInterval"
+- !private "CGRect"
+- !private "*"
+- !private "/"
+- !private "<"
+- !private "UITextAutocapitalizationType"
+- !private "get_color"
+- !private "++"
+- !private "NSTextAlignment"
+- !private "+"
+- "Array"
+- !private "get_hex"
+- !private "print"
+- !private "get_rgb"
+- !private "store_color"
+- !private "UILabel"
+- "PickerController"
+- "AnimatedLabel"
+- !private "CGPointMake"
+- !private "get_color_image"
+- !private "CGAffineTransformMakeRotation"
+- !private "Float"
+- !private "BooleanLiteralType"
+- !private "!="
+- "Bool"
+- !private "M_PI"
+- !private "-"
+- !private "UIControlState"
+- "AnimatedSlider"
+- !private "UIFont"
+- "AnimatedView"
+- !private "UIControlEvents"
+- !private "TextField"
+- "StringLiteralType"
+- !private "FAVORITE_GROUP_NAME"
+- "UITextField"
+- !private "is_valid"
 - "AuxillaryController"
 - "CAGradientLayer"
-- !private "UILabel"
-- !private "++"
-- "UIColor"
-- !private "get_hex"
-- !private "BooleanLiteralType"
-- !private "AddButton"
-- "AnimatedSlider"
-- !private "SOFT_GREEN"
-- !private "CGPointMake"
-- !private "CGRect"
-- !private "TextField"
-- !private "<"
-- !private "get_color_image"
-- !private "Float"
-- "UITextField"
-- !private "!="
-- !private "CGFloat"
-- !private "M_PI"
-- !private "store_color"
-- "String"
 - "UnicodeScalarType"
-- !private "NSTextAlignment"
-- !private "SOFT_ORANGE"
-- !private "+"
-- !private "CGAffineTransformMakeRotation"
-- "AnimatedButton"
-- !private "get_color"
-- "NSTimeInterval"
-- !private "print"
-- !private "-"
-- "Array"
-- "AnimatedView"
-- "PickerController"
-- !private "*"
-- !private "UIFont"
-- "AnimatedLabel"
-- !private "UIControlState"
-- !private "is_valid"
-- !private "get_rgb"
-- "StringLiteralType"
 - "UITextFieldDelegate"
-- !private "UIControlEvents"
-- !private "nav_controller"
-- "Bool"
-- !private "/"
-- !private "FAVORITE_GROUP_NAME"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
-- !private ["C7PaletV29AddButton", "addTarget"]
-- !private ["C7PaletV29AddButton", "frame"]
-- !private ["C7PaletV29AddButton", "init"]
-- !private ["C7PaletV29AddButton", "set_border_color"]
-- !private ["C7PaletV29AddButton", "set_border_width"]
-- !private ["C7PaletV29AddButton", "set_highlight_color"]
-- !private ["C7PaletV29AddButton", "set_unhighlight_color"]
 - !private ["C7PaletV214AnimatedButton", "addTarget"]
 - !private ["C7PaletV214AnimatedButton", "backgroundColor"]
 - !private ["C7PaletV214AnimatedButton", "bounds"]
@@ -155,7 +146,6 @@ depends-member:
 - !private ["P7PaletV220AnimatedViewProtocol", "titleLabel"]
 - !private ["P7PaletV220AnimatedViewProtocol", "transform"]
 - !private ["P7PaletV220AnimatedViewProtocol", "value"]
-- !private ["PSs9AnyObject", "AddButton"]
 - !private ["PSs9AnyObject", "AnimatedButton"]
 - ["PSs9AnyObject", "AnimatedLabel"]
 - ["PSs9AnyObject", "AnimatedSlider"]
@@ -171,8 +161,6 @@ depends-member:
 - !private ["PSs9AnyObject", "M_PI"]
 - !private ["PSs9AnyObject", "NSTextAlignment"]
 - ["PSs9AnyObject", "NUM_COMPONENTS"]
-- !private ["PSs9AnyObject", "SOFT_GREEN"]
-- !private ["PSs9AnyObject", "SOFT_ORANGE"]
 - !private ["PSs9AnyObject", "TextField"]
 - ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
@@ -180,6 +168,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UILabel"]
+- !private ["PSs9AnyObject", "UITextAutocapitalizationType"]
 - !private ["PSs9AnyObject", "addSublayer"]
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "addTarget"]
@@ -187,6 +176,7 @@ depends-member:
 - ["PSs9AnyObject", "add_favorite"]
 - ["PSs9AnyObject", "add_to_palette"]
 - ["PSs9AnyObject", "adjust_shade"]
+- !private ["PSs9AnyObject", "autocapitalizationType"]
 - !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "blackColor"]
 - ["PSs9AnyObject", "blueColor"]
@@ -248,10 +238,6 @@ depends-member:
 - !private ["PSs9AnyObject", "setThumbImage"]
 - !private ["PSs9AnyObject", "setTitle"]
 - !private ["PSs9AnyObject", "setTitleColor"]
-- !private ["PSs9AnyObject", "set_border_color"]
-- !private ["PSs9AnyObject", "set_border_width"]
-- !private ["PSs9AnyObject", "set_highlight_color"]
-- !private ["PSs9AnyObject", "set_unhighlight_color"]
 - ["PSs9AnyObject", "shade_slider"]
 - !private ["PSs9AnyObject", "show"]
 - !private ["PSs9AnyObject", "sizeToFit"]
@@ -301,7 +287,6 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
-- !private ["C7PaletV219AuxillaryController", "AddButton"]
 - ["C7PaletV219AuxillaryController", "AnimatedButton"]
 - ["C7PaletV219AuxillaryController", "AnimatedLabel"]
 - ["C7PaletV219AuxillaryController", "AnimatedSlider"]
@@ -318,8 +303,6 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "NSTextAlignment"]
 - ["C7PaletV219AuxillaryController", "NSTimeInterval"]
 - ["C7PaletV219AuxillaryController", "NUM_COMPONENTS"]
-- !private ["C7PaletV219AuxillaryController", "SOFT_GREEN"]
-- !private ["C7PaletV219AuxillaryController", "SOFT_ORANGE"]
 - ["C7PaletV219AuxillaryController", "String"]
 - !private ["C7PaletV219AuxillaryController", "TextField"]
 - ["C7PaletV219AuxillaryController", "UIColor"]
@@ -328,6 +311,7 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "UIFont"]
 - !private ["C7PaletV219AuxillaryController", "UIImage"]
 - !private ["C7PaletV219AuxillaryController", "UILabel"]
+- !private ["C7PaletV219AuxillaryController", "UITextAutocapitalizationType"]
 - ["C7PaletV219AuxillaryController", "UITextField"]
 - ["C7PaletV219AuxillaryController", "add_button"]
 - ["C7PaletV219AuxillaryController", "add_favorite"]
@@ -423,7 +407,6 @@ depends-member:
 - !private ["VSC6CGRect", "minY"]
 - !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "width"]
-- !private ["PSs11CVarArgType", "AddButton"]
 - !private ["PSs11CVarArgType", "AnimatedButton"]
 - ["PSs11CVarArgType", "AnimatedLabel"]
 - ["PSs11CVarArgType", "AnimatedSlider"]
@@ -441,8 +424,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "M_PI"]
 - !private ["PSs11CVarArgType", "NSTextAlignment"]
 - ["PSs11CVarArgType", "NUM_COMPONENTS"]
-- !private ["PSs11CVarArgType", "SOFT_GREEN"]
-- !private ["PSs11CVarArgType", "SOFT_ORANGE"]
 - !private ["PSs11CVarArgType", "TextField"]
 - ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
@@ -450,6 +431,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UILabel"]
+- !private ["PSs11CVarArgType", "UITextAutocapitalizationType"]
 - !private ["PSs11CVarArgType", "addSublayer"]
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "addTarget"]
@@ -457,6 +439,7 @@ depends-member:
 - ["PSs11CVarArgType", "add_favorite"]
 - ["PSs11CVarArgType", "add_to_palette"]
 - ["PSs11CVarArgType", "adjust_shade"]
+- !private ["PSs11CVarArgType", "autocapitalizationType"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "blackColor"]
 - ["PSs11CVarArgType", "blueColor"]
@@ -518,10 +501,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "setThumbImage"]
 - !private ["PSs11CVarArgType", "setTitle"]
 - !private ["PSs11CVarArgType", "setTitleColor"]
-- !private ["PSs11CVarArgType", "set_border_color"]
-- !private ["PSs11CVarArgType", "set_border_width"]
-- !private ["PSs11CVarArgType", "set_highlight_color"]
-- !private ["PSs11CVarArgType", "set_unhighlight_color"]
 - ["PSs11CVarArgType", "shade_slider"]
 - !private ["PSs11CVarArgType", "show"]
 - !private ["PSs11CVarArgType", "sizeToFit"]
@@ -567,7 +546,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "AddButton"]
 - !private ["PSs23CustomStringConvertible", "AnimatedButton"]
 - ["PSs23CustomStringConvertible", "AnimatedLabel"]
 - ["PSs23CustomStringConvertible", "AnimatedSlider"]
@@ -588,8 +566,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "M_PI"]
 - !private ["PSs23CustomStringConvertible", "NSTextAlignment"]
 - ["PSs23CustomStringConvertible", "NUM_COMPONENTS"]
-- !private ["PSs23CustomStringConvertible", "SOFT_GREEN"]
-- !private ["PSs23CustomStringConvertible", "SOFT_ORANGE"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "TextField"]
 - ["PSs23CustomStringConvertible", "UIColor"]
@@ -598,6 +574,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UILabel"]
+- !private ["PSs23CustomStringConvertible", "UITextAutocapitalizationType"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSublayer"]
@@ -608,6 +585,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "add_to_palette"]
 - ["PSs23CustomStringConvertible", "adjust_shade"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "autocapitalizationType"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "blackColor"]
 - ["PSs23CustomStringConvertible", "blueColor"]
@@ -669,10 +647,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "setThumbImage"]
 - !private ["PSs23CustomStringConvertible", "setTitle"]
 - !private ["PSs23CustomStringConvertible", "setTitleColor"]
-- !private ["PSs23CustomStringConvertible", "set_border_color"]
-- !private ["PSs23CustomStringConvertible", "set_border_width"]
-- !private ["PSs23CustomStringConvertible", "set_highlight_color"]
-- !private ["PSs23CustomStringConvertible", "set_unhighlight_color"]
 - ["PSs23CustomStringConvertible", "shade_slider"]
 - !private ["PSs23CustomStringConvertible", "show"]
 - !private ["PSs23CustomStringConvertible", "sizeToFit"]
@@ -702,7 +676,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "view_palet_controller"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "AddButton"]
+- !private ["PSs9Equatable", "AllCharacters"]
 - !private ["PSs9Equatable", "AnimatedButton"]
 - ["PSs9Equatable", "AnimatedLabel"]
 - ["PSs9Equatable", "AnimatedSlider"]
@@ -723,8 +697,6 @@ depends-member:
 - !private ["PSs9Equatable", "NSTextAlignment"]
 - ["PSs9Equatable", "NUM_COMPONENTS"]
 - !private ["PSs9Equatable", "Normal"]
-- !private ["PSs9Equatable", "SOFT_GREEN"]
-- !private ["PSs9Equatable", "SOFT_ORANGE"]
 - !private ["PSs9Equatable", "TextField"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - ["PSs9Equatable", "UIColor"]
@@ -733,6 +705,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UILabel"]
+- !private ["PSs9Equatable", "UITextAutocapitalizationType"]
 - !private ["PSs9Equatable", "ValueChanged"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addSublayer"]
@@ -742,6 +715,7 @@ depends-member:
 - ["PSs9Equatable", "add_favorite"]
 - ["PSs9Equatable", "add_to_palette"]
 - ["PSs9Equatable", "adjust_shade"]
+- !private ["PSs9Equatable", "autocapitalizationType"]
 - !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "blackColor"]
 - ["PSs9Equatable", "blueColor"]
@@ -808,10 +782,6 @@ depends-member:
 - !private ["PSs9Equatable", "setThumbImage"]
 - !private ["PSs9Equatable", "setTitle"]
 - !private ["PSs9Equatable", "setTitleColor"]
-- !private ["PSs9Equatable", "set_border_color"]
-- !private ["PSs9Equatable", "set_border_width"]
-- !private ["PSs9Equatable", "set_highlight_color"]
-- !private ["PSs9Equatable", "set_unhighlight_color"]
 - ["PSs9Equatable", "shade_slider"]
 - !private ["PSs9Equatable", "show"]
 - !private ["PSs9Equatable", "sizeToFit"]
@@ -850,7 +820,7 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "AddButton"]
+- !private ["PSs8Hashable", "AllCharacters"]
 - !private ["PSs8Hashable", "AnimatedButton"]
 - ["PSs8Hashable", "AnimatedLabel"]
 - ["PSs8Hashable", "AnimatedSlider"]
@@ -869,8 +839,6 @@ depends-member:
 - !private ["PSs8Hashable", "M_PI"]
 - !private ["PSs8Hashable", "NSTextAlignment"]
 - ["PSs8Hashable", "NUM_COMPONENTS"]
-- !private ["PSs8Hashable", "SOFT_GREEN"]
-- !private ["PSs8Hashable", "SOFT_ORANGE"]
 - !private ["PSs8Hashable", "TextField"]
 - ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
@@ -878,6 +846,7 @@ depends-member:
 - !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UILabel"]
+- !private ["PSs8Hashable", "UITextAutocapitalizationType"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addSublayer"]
 - !private ["PSs8Hashable", "addSubview"]
@@ -886,6 +855,7 @@ depends-member:
 - ["PSs8Hashable", "add_favorite"]
 - ["PSs8Hashable", "add_to_palette"]
 - ["PSs8Hashable", "adjust_shade"]
+- !private ["PSs8Hashable", "autocapitalizationType"]
 - !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "blackColor"]
 - ["PSs8Hashable", "blueColor"]
@@ -947,10 +917,6 @@ depends-member:
 - !private ["PSs8Hashable", "setThumbImage"]
 - !private ["PSs8Hashable", "setTitle"]
 - !private ["PSs8Hashable", "setTitleColor"]
-- !private ["PSs8Hashable", "set_border_color"]
-- !private ["PSs8Hashable", "set_border_width"]
-- !private ["PSs8Hashable", "set_highlight_color"]
-- !private ["PSs8Hashable", "set_unhighlight_color"]
 - ["PSs8Hashable", "shade_slider"]
 - !private ["PSs8Hashable", "show"]
 - !private ["PSs8Hashable", "sizeToFit"]
@@ -996,13 +962,6 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["C7PaletV210MenuButton", "addTarget"]
-- !private ["C7PaletV210MenuButton", "frame"]
-- !private ["C7PaletV210MenuButton", "init"]
-- !private ["C7PaletV210MenuButton", "set_border_color"]
-- !private ["C7PaletV210MenuButton", "set_border_width"]
-- !private ["C7PaletV210MenuButton", "set_highlight_color"]
-- !private ["C7PaletV210MenuButton", "set_unhighlight_color"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - ["PSs21MutableCollectionType", "Element"]
@@ -1026,7 +985,6 @@ depends-member:
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "subscript"]
-- !private ["PSo8NSCoding", "AddButton"]
 - !private ["PSo8NSCoding", "AnimatedButton"]
 - ["PSo8NSCoding", "AnimatedLabel"]
 - ["PSo8NSCoding", "AnimatedSlider"]
@@ -1042,8 +1000,6 @@ depends-member:
 - !private ["PSo8NSCoding", "M_PI"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - ["PSo8NSCoding", "NUM_COMPONENTS"]
-- !private ["PSo8NSCoding", "SOFT_GREEN"]
-- !private ["PSo8NSCoding", "SOFT_ORANGE"]
 - !private ["PSo8NSCoding", "TextField"]
 - ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
@@ -1051,6 +1007,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UILabel"]
+- !private ["PSo8NSCoding", "UITextAutocapitalizationType"]
 - !private ["PSo8NSCoding", "addSublayer"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -1058,6 +1015,7 @@ depends-member:
 - ["PSo8NSCoding", "add_favorite"]
 - ["PSo8NSCoding", "add_to_palette"]
 - ["PSo8NSCoding", "adjust_shade"]
+- !private ["PSo8NSCoding", "autocapitalizationType"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
 - ["PSo8NSCoding", "blueColor"]
@@ -1119,10 +1077,6 @@ depends-member:
 - !private ["PSo8NSCoding", "setThumbImage"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "setTitleColor"]
-- !private ["PSo8NSCoding", "set_border_color"]
-- !private ["PSo8NSCoding", "set_border_width"]
-- !private ["PSo8NSCoding", "set_highlight_color"]
-- !private ["PSo8NSCoding", "set_unhighlight_color"]
 - ["PSo8NSCoding", "shade_slider"]
 - !private ["PSo8NSCoding", "show"]
 - !private ["PSo8NSCoding", "sizeToFit"]
@@ -1162,7 +1116,6 @@ depends-member:
 - ["PSo9NSCopying", "redColor"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo9NSCopying", "whiteColor"]
-- !private ["PSo26NSExtensionRequestHandling", "AddButton"]
 - !private ["PSo26NSExtensionRequestHandling", "AnimatedButton"]
 - ["PSo26NSExtensionRequestHandling", "AnimatedLabel"]
 - ["PSo26NSExtensionRequestHandling", "AnimatedSlider"]
@@ -1177,8 +1130,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "M_PI"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - ["PSo26NSExtensionRequestHandling", "NUM_COMPONENTS"]
-- !private ["PSo26NSExtensionRequestHandling", "SOFT_GREEN"]
-- !private ["PSo26NSExtensionRequestHandling", "SOFT_ORANGE"]
 - !private ["PSo26NSExtensionRequestHandling", "TextField"]
 - ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
@@ -1186,6 +1137,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UILabel"]
+- !private ["PSo26NSExtensionRequestHandling", "UITextAutocapitalizationType"]
 - ["PSo26NSExtensionRequestHandling", "add_button"]
 - ["PSo26NSExtensionRequestHandling", "add_favorite"]
 - ["PSo26NSExtensionRequestHandling", "add_to_palette"]
@@ -1241,7 +1193,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view_palet_controller"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSNumber", "deinit"]
-- !private ["CSo8NSObject", "AddButton"]
 - ["CSo8NSObject", "AnimatedButton"]
 - ["CSo8NSObject", "AnimatedLabel"]
 - ["CSo8NSObject", "AnimatedSlider"]
@@ -1259,8 +1210,6 @@ depends-member:
 - !private ["CSo8NSObject", "NSTextAlignment"]
 - ["CSo8NSObject", "NSTimeInterval"]
 - ["CSo8NSObject", "NUM_COMPONENTS"]
-- !private ["CSo8NSObject", "SOFT_GREEN"]
-- !private ["CSo8NSObject", "SOFT_ORANGE"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "TextField"]
 - ["CSo8NSObject", "UIColor"]
@@ -1269,6 +1218,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UITextAutocapitalizationType"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "addSublayer"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -1277,6 +1227,7 @@ depends-member:
 - ["CSo8NSObject", "add_favorite"]
 - ["CSo8NSObject", "add_to_palette"]
 - ["CSo8NSObject", "adjust_shade"]
+- !private ["CSo8NSObject", "autocapitalizationType"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
 - ["CSo8NSObject", "blueColor"]
@@ -1338,10 +1289,6 @@ depends-member:
 - !private ["CSo8NSObject", "setThumbImage"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "setTitleColor"]
-- !private ["CSo8NSObject", "set_border_color"]
-- !private ["CSo8NSObject", "set_border_width"]
-- !private ["CSo8NSObject", "set_highlight_color"]
-- !private ["CSo8NSObject", "set_unhighlight_color"]
 - ["CSo8NSObject", "shade_slider"]
 - !private ["CSo8NSObject", "show"]
 - !private ["CSo8NSObject", "sizeToFit"]
@@ -1369,7 +1316,6 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "view_palet_controller"]
 - !private ["CSo8NSObject", "whiteColor"]
-- !private ["PSo16NSObjectProtocol", "AddButton"]
 - !private ["PSo16NSObjectProtocol", "AnimatedButton"]
 - ["PSo16NSObjectProtocol", "AnimatedLabel"]
 - ["PSo16NSObjectProtocol", "AnimatedSlider"]
@@ -1385,8 +1331,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "M_PI"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - ["PSo16NSObjectProtocol", "NUM_COMPONENTS"]
-- !private ["PSo16NSObjectProtocol", "SOFT_GREEN"]
-- !private ["PSo16NSObjectProtocol", "SOFT_ORANGE"]
 - !private ["PSo16NSObjectProtocol", "TextField"]
 - ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
@@ -1394,6 +1338,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
+- !private ["PSo16NSObjectProtocol", "UITextAutocapitalizationType"]
 - !private ["PSo16NSObjectProtocol", "addSublayer"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
@@ -1401,6 +1346,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "add_favorite"]
 - ["PSo16NSObjectProtocol", "add_to_palette"]
 - ["PSo16NSObjectProtocol", "adjust_shade"]
+- !private ["PSo16NSObjectProtocol", "autocapitalizationType"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - ["PSo16NSObjectProtocol", "blueColor"]
@@ -1462,10 +1408,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setThumbImage"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "setTitleColor"]
-- !private ["PSo16NSObjectProtocol", "set_border_color"]
-- !private ["PSo16NSObjectProtocol", "set_border_width"]
-- !private ["PSo16NSObjectProtocol", "set_highlight_color"]
-- !private ["PSo16NSObjectProtocol", "set_unhighlight_color"]
 - ["PSo16NSObjectProtocol", "shade_slider"]
 - !private ["PSo16NSObjectProtocol", "show"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
@@ -1516,7 +1458,6 @@ depends-member:
 - !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
-- !private ["C7PaletV216PickerController", "AddButton"]
 - ["C7PaletV216PickerController", "AnimatedButton"]
 - ["C7PaletV216PickerController", "AnimatedLabel"]
 - ["C7PaletV216PickerController", "AnimatedSlider"]
@@ -1533,8 +1474,6 @@ depends-member:
 - !private ["C7PaletV216PickerController", "NSTextAlignment"]
 - ["C7PaletV216PickerController", "NSTimeInterval"]
 - ["C7PaletV216PickerController", "NUM_COMPONENTS"]
-- !private ["C7PaletV216PickerController", "SOFT_GREEN"]
-- !private ["C7PaletV216PickerController", "SOFT_ORANGE"]
 - ["C7PaletV216PickerController", "String"]
 - !private ["C7PaletV216PickerController", "TextField"]
 - ["C7PaletV216PickerController", "UIColor"]
@@ -1543,6 +1482,7 @@ depends-member:
 - !private ["C7PaletV216PickerController", "UIFont"]
 - !private ["C7PaletV216PickerController", "UIImage"]
 - !private ["C7PaletV216PickerController", "UILabel"]
+- !private ["C7PaletV216PickerController", "UITextAutocapitalizationType"]
 - ["C7PaletV216PickerController", "UITextField"]
 - ["C7PaletV216PickerController", "add_button"]
 - ["C7PaletV216PickerController", "add_favorite"]
@@ -1599,6 +1539,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "AllCharacters"]
 - !private ["PSs16RawRepresentable", "Center"]
 - !private ["PSs16RawRepresentable", "Highlighted"]
 - !private ["PSs16RawRepresentable", "Normal"]
@@ -1632,6 +1573,7 @@ depends-member:
 - !private ["C7PaletV29TextField", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "autocapitalizationType"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
@@ -1650,10 +1592,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "setThumbImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
-- !private ["PSo29UIAccessibilityIdentification", "set_border_color"]
-- !private ["PSo29UIAccessibilityIdentification", "set_border_width"]
-- !private ["PSo29UIAccessibilityIdentification", "set_highlight_color"]
-- !private ["PSo29UIAccessibilityIdentification", "set_unhighlight_color"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
 - !private ["PSo29UIAccessibilityIdentification", "stretchableImageWithLeftCapWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -1663,6 +1601,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "autocapitalizationType"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "delegate"]
@@ -1681,17 +1620,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "setThumbImage"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "setTitleColor"]
-- !private ["PSo12UIAppearance", "set_border_color"]
-- !private ["PSo12UIAppearance", "set_border_width"]
-- !private ["PSo12UIAppearance", "set_highlight_color"]
-- !private ["PSo12UIAppearance", "set_unhighlight_color"]
 - !private ["PSo12UIAppearance", "sizeToFit"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo12UIAppearance", "transform"]
 - !private ["PSo12UIAppearance", "value"]
-- !private ["PSo21UIAppearanceContainer", "AddButton"]
 - !private ["PSo21UIAppearanceContainer", "AnimatedButton"]
 - ["PSo21UIAppearanceContainer", "AnimatedLabel"]
 - ["PSo21UIAppearanceContainer", "AnimatedSlider"]
@@ -1706,8 +1640,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "M_PI"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - ["PSo21UIAppearanceContainer", "NUM_COMPONENTS"]
-- !private ["PSo21UIAppearanceContainer", "SOFT_GREEN"]
-- !private ["PSo21UIAppearanceContainer", "SOFT_ORANGE"]
 - !private ["PSo21UIAppearanceContainer", "TextField"]
 - ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
@@ -1715,12 +1647,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
+- !private ["PSo21UIAppearanceContainer", "UITextAutocapitalizationType"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - ["PSo21UIAppearanceContainer", "add_button"]
 - ["PSo21UIAppearanceContainer", "add_favorite"]
 - ["PSo21UIAppearanceContainer", "add_to_palette"]
 - ["PSo21UIAppearanceContainer", "adjust_shade"]
+- !private ["PSo21UIAppearanceContainer", "autocapitalizationType"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "change_color"]
@@ -1769,10 +1703,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setThumbImage"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "setTitleColor"]
-- !private ["PSo21UIAppearanceContainer", "set_border_color"]
-- !private ["PSo21UIAppearanceContainer", "set_border_width"]
-- !private ["PSo21UIAppearanceContainer", "set_highlight_color"]
-- !private ["PSo21UIAppearanceContainer", "set_unhighlight_color"]
 - ["PSo21UIAppearanceContainer", "shade_slider"]
 - !private ["PSo21UIAppearanceContainer", "show"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
@@ -1801,14 +1731,9 @@ depends-member:
 - !private ["CSo8UIButton", "backgroundColor"]
 - !private ["CSo8UIButton", "bounds"]
 - !private ["CSo8UIButton", "frame"]
-- !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo8UIButton", "setTitleColor"]
-- !private ["CSo8UIButton", "set_border_color"]
-- !private ["CSo8UIButton", "set_border_width"]
-- !private ["CSo8UIButton", "set_highlight_color"]
-- !private ["CSo8UIButton", "set_unhighlight_color"]
 - !private ["CSo8UIButton", "titleLabel"]
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["PSo26UICollectionViewDataSource", "color_colection"]
@@ -1831,7 +1756,6 @@ depends-member:
 - !private ["CSo7UIColor", "lightGrayColor"]
 - ["CSo7UIColor", "redColor"]
 - !private ["CSo7UIColor", "whiteColor"]
-- !private ["PSo18UIContentContainer", "AddButton"]
 - !private ["PSo18UIContentContainer", "AnimatedButton"]
 - ["PSo18UIContentContainer", "AnimatedLabel"]
 - ["PSo18UIContentContainer", "AnimatedSlider"]
@@ -1846,8 +1770,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "M_PI"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - ["PSo18UIContentContainer", "NUM_COMPONENTS"]
-- !private ["PSo18UIContentContainer", "SOFT_GREEN"]
-- !private ["PSo18UIContentContainer", "SOFT_ORANGE"]
 - !private ["PSo18UIContentContainer", "TextField"]
 - ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
@@ -1855,6 +1777,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UILabel"]
+- !private ["PSo18UIContentContainer", "UITextAutocapitalizationType"]
 - ["PSo18UIContentContainer", "add_button"]
 - ["PSo18UIContentContainer", "add_favorite"]
 - ["PSo18UIContentContainer", "add_to_palette"]
@@ -1910,6 +1833,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view_palet_controller"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "autocapitalizationType"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "bounds"]
 - !private ["CSo9UIControl", "delegate"]
@@ -1926,10 +1850,6 @@ depends-member:
 - !private ["CSo9UIControl", "setThumbImage"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "setTitleColor"]
-- !private ["CSo9UIControl", "set_border_color"]
-- !private ["CSo9UIControl", "set_border_width"]
-- !private ["CSo9UIControl", "set_highlight_color"]
-- !private ["CSo9UIControl", "set_unhighlight_color"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "titleLabel"]
 - !private ["CSo9UIControl", "transform"]
@@ -1940,6 +1860,7 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "autocapitalizationType"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
@@ -1958,10 +1879,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "setThumbImage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "setTitleColor"]
-- !private ["PSo17UICoordinateSpace", "set_border_color"]
-- !private ["PSo17UICoordinateSpace", "set_border_width"]
-- !private ["PSo17UICoordinateSpace", "set_highlight_color"]
-- !private ["PSo17UICoordinateSpace", "set_unhighlight_color"]
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
@@ -1970,6 +1887,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "autocapitalizationType"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "delegate"]
@@ -1988,10 +1906,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setThumbImage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
-- !private ["PSo13UIDynamicItem", "set_border_color"]
-- !private ["PSo13UIDynamicItem", "set_border_width"]
-- !private ["PSo13UIDynamicItem", "set_highlight_color"]
-- !private ["PSo13UIDynamicItem", "set_unhighlight_color"]
 - !private ["PSo13UIDynamicItem", "sizeToFit"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
@@ -2001,8 +1915,10 @@ depends-member:
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UIImage", "stretchableImageWithLeftCapWidth"]
+- !private ["PSo10UIKeyInput", "autocapitalizationType"]
 - !private ["PSo10UIKeyInput", "backgroundColor"]
 - !private ["PSo10UIKeyInput", "delegate"]
+- !private ["PSo10UIKeyInput", "frame"]
 - !private ["PSo10UIKeyInput", "init"]
 - !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
@@ -2014,7 +1930,6 @@ depends-member:
 - !private ["CSo7UILabel", "sizeToFit"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
-- !private ["CSo11UIResponder", "AddButton"]
 - ["CSo11UIResponder", "AnimatedButton"]
 - ["CSo11UIResponder", "AnimatedLabel"]
 - ["CSo11UIResponder", "AnimatedSlider"]
@@ -2031,8 +1946,6 @@ depends-member:
 - !private ["CSo11UIResponder", "NSTextAlignment"]
 - ["CSo11UIResponder", "NSTimeInterval"]
 - ["CSo11UIResponder", "NUM_COMPONENTS"]
-- !private ["CSo11UIResponder", "SOFT_GREEN"]
-- !private ["CSo11UIResponder", "SOFT_ORANGE"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "TextField"]
 - ["CSo11UIResponder", "UIColor"]
@@ -2041,6 +1954,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UITextAutocapitalizationType"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
@@ -2048,6 +1962,7 @@ depends-member:
 - ["CSo11UIResponder", "add_favorite"]
 - ["CSo11UIResponder", "add_to_palette"]
 - ["CSo11UIResponder", "adjust_shade"]
+- !private ["CSo11UIResponder", "autocapitalizationType"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "change_color"]
@@ -2096,10 +2011,6 @@ depends-member:
 - !private ["CSo11UIResponder", "setThumbImage"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "setTitleColor"]
-- !private ["CSo11UIResponder", "set_border_color"]
-- !private ["CSo11UIResponder", "set_border_width"]
-- !private ["CSo11UIResponder", "set_highlight_color"]
-- !private ["CSo11UIResponder", "set_unhighlight_color"]
 - ["CSo11UIResponder", "shade_slider"]
 - !private ["CSo11UIResponder", "show"]
 - !private ["CSo11UIResponder", "sizeToFit"]
@@ -2142,7 +2053,6 @@ depends-member:
 - !private ["CSo8UISlider", "setThumbImage"]
 - !private ["CSo8UISlider", "transform"]
 - !private ["CSo8UISlider", "value"]
-- !private ["PSo16UIStateRestoring", "AddButton"]
 - !private ["PSo16UIStateRestoring", "AnimatedButton"]
 - ["PSo16UIStateRestoring", "AnimatedLabel"]
 - ["PSo16UIStateRestoring", "AnimatedSlider"]
@@ -2157,8 +2067,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "M_PI"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - ["PSo16UIStateRestoring", "NUM_COMPONENTS"]
-- !private ["PSo16UIStateRestoring", "SOFT_GREEN"]
-- !private ["PSo16UIStateRestoring", "SOFT_ORANGE"]
 - !private ["PSo16UIStateRestoring", "TextField"]
 - ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
@@ -2166,6 +2074,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UILabel"]
+- !private ["PSo16UIStateRestoring", "UITextAutocapitalizationType"]
 - ["PSo16UIStateRestoring", "add_button"]
 - ["PSo16UIStateRestoring", "add_favorite"]
 - ["PSo16UIStateRestoring", "add_to_palette"]
@@ -2223,13 +2132,15 @@ depends-member:
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["PSo21UITableViewDataSource", "table"]
 - !private ["PSo19UITableViewDelegate", "table"]
+- !private ["OSC28UITextAutocapitalizationType", "AllCharacters"]
+- !private ["CSo11UITextField", "autocapitalizationType"]
 - !private ["CSo11UITextField", "backgroundColor"]
 - !private ["CSo11UITextField", "delegate"]
+- !private ["CSo11UITextField", "frame"]
 - !private ["CSo11UITextField", "init"]
 - !private ["CSo11UITextField", "layer"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
-- !private ["PSo19UITextFieldDelegate", "AddButton"]
 - !private ["PSo19UITextFieldDelegate", "AnimatedButton"]
 - ["PSo19UITextFieldDelegate", "AnimatedLabel"]
 - ["PSo19UITextFieldDelegate", "AnimatedSlider"]
@@ -2244,8 +2155,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "M_PI"]
 - !private ["PSo19UITextFieldDelegate", "NSTextAlignment"]
 - !private ["PSo19UITextFieldDelegate", "NUM_COMPONENTS"]
-- !private ["PSo19UITextFieldDelegate", "SOFT_GREEN"]
-- !private ["PSo19UITextFieldDelegate", "SOFT_ORANGE"]
 - !private ["PSo19UITextFieldDelegate", "TextField"]
 - ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
@@ -2253,7 +2162,9 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIFont"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UILabel"]
+- !private ["PSo19UITextFieldDelegate", "UITextAutocapitalizationType"]
 - !private ["PSo19UITextFieldDelegate", "add_button"]
+- !private ["PSo19UITextFieldDelegate", "change_color"]
 - !private ["PSo19UITextFieldDelegate", "code_entry_field"]
 - !private ["PSo19UITextFieldDelegate", "color_view"]
 - !private ["PSo19UITextFieldDelegate", "current_color"]
@@ -2289,19 +2200,22 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "update_code"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
+- !private ["PSo11UITextInput", "autocapitalizationType"]
 - !private ["PSo11UITextInput", "backgroundColor"]
 - !private ["PSo11UITextInput", "delegate"]
+- !private ["PSo11UITextInput", "frame"]
 - !private ["PSo11UITextInput", "init"]
 - !private ["PSo11UITextInput", "layer"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "autocapitalizationType"]
 - !private ["PSo17UITextInputTraits", "backgroundColor"]
 - !private ["PSo17UITextInputTraits", "delegate"]
+- !private ["PSo17UITextInputTraits", "frame"]
 - !private ["PSo17UITextInputTraits", "init"]
 - !private ["PSo17UITextInputTraits", "layer"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
-- !private ["PSo18UITraitEnvironment", "AddButton"]
 - !private ["PSo18UITraitEnvironment", "AnimatedButton"]
 - ["PSo18UITraitEnvironment", "AnimatedLabel"]
 - ["PSo18UITraitEnvironment", "AnimatedSlider"]
@@ -2316,8 +2230,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "M_PI"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - ["PSo18UITraitEnvironment", "NUM_COMPONENTS"]
-- !private ["PSo18UITraitEnvironment", "SOFT_GREEN"]
-- !private ["PSo18UITraitEnvironment", "SOFT_ORANGE"]
 - !private ["PSo18UITraitEnvironment", "TextField"]
 - ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
@@ -2325,12 +2237,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
+- !private ["PSo18UITraitEnvironment", "UITextAutocapitalizationType"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - ["PSo18UITraitEnvironment", "add_button"]
 - ["PSo18UITraitEnvironment", "add_favorite"]
 - ["PSo18UITraitEnvironment", "add_to_palette"]
 - ["PSo18UITraitEnvironment", "adjust_shade"]
+- !private ["PSo18UITraitEnvironment", "autocapitalizationType"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "change_color"]
@@ -2379,10 +2293,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setThumbImage"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "setTitleColor"]
-- !private ["PSo18UITraitEnvironment", "set_border_color"]
-- !private ["PSo18UITraitEnvironment", "set_border_width"]
-- !private ["PSo18UITraitEnvironment", "set_highlight_color"]
-- !private ["PSo18UITraitEnvironment", "set_unhighlight_color"]
 - ["PSo18UITraitEnvironment", "shade_slider"]
 - !private ["PSo18UITraitEnvironment", "show"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
@@ -2409,6 +2319,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "autocapitalizationType"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "delegate"]
@@ -2427,17 +2338,12 @@ depends-member:
 - !private ["CSo6UIView", "setThumbImage"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "setTitleColor"]
-- !private ["CSo6UIView", "set_border_color"]
-- !private ["CSo6UIView", "set_border_width"]
-- !private ["CSo6UIView", "set_highlight_color"]
-- !private ["CSo6UIView", "set_unhighlight_color"]
 - !private ["CSo6UIView", "sizeToFit"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "titleLabel"]
 - !private ["CSo6UIView", "transform"]
 - !private ["CSo6UIView", "value"]
-- !private ["CSo16UIViewController", "AddButton"]
 - ["CSo16UIViewController", "AnimatedButton"]
 - ["CSo16UIViewController", "AnimatedLabel"]
 - ["CSo16UIViewController", "AnimatedSlider"]
@@ -2454,8 +2360,6 @@ depends-member:
 - !private ["CSo16UIViewController", "NSTextAlignment"]
 - ["CSo16UIViewController", "NSTimeInterval"]
 - ["CSo16UIViewController", "NUM_COMPONENTS"]
-- !private ["CSo16UIViewController", "SOFT_GREEN"]
-- !private ["CSo16UIViewController", "SOFT_ORANGE"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "TextField"]
 - ["CSo16UIViewController", "UIColor"]
@@ -2464,6 +2368,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UITextAutocapitalizationType"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "add_button"]
 - ["CSo16UIViewController", "add_favorite"]
@@ -2573,6 +2478,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "autocapitalizationType"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "bounds"]
 - !private ["PSs12_Reflectable", "delegate"]
@@ -2596,10 +2502,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "setThumbImage"]
 - !private ["PSs12_Reflectable", "setTitle"]
 - !private ["PSs12_Reflectable", "setTitleColor"]
-- !private ["PSs12_Reflectable", "set_border_color"]
-- !private ["PSs12_Reflectable", "set_border_width"]
-- !private ["PSs12_Reflectable", "set_highlight_color"]
-- !private ["PSs12_Reflectable", "set_unhighlight_color"]
 - !private ["PSs12_Reflectable", "sizeToFit"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
@@ -2617,7 +2519,6 @@ depends-member:
 - !private ["PSs11_Strideable", "init"]
 depends-nominal:
 - !private "PSs16AbsoluteValuable"
-- !private "C7PaletV29AddButton"
 - !private "C7PaletV214AnimatedButton"
 - "C7PaletV213AnimatedLabel"
 - "C7PaletV214AnimatedSlider"
@@ -2658,7 +2559,6 @@ depends-nominal:
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
-- !private "C7PaletV210MenuButton"
 - !private "PSs14MirrorPathType"
 - "PSs21MutableCollectionType"
 - "PSs16MutableIndexable"
@@ -2715,6 +2615,7 @@ depends-nominal:
 - !private "CSo11UITableView"
 - !private "PSo21UITableViewDataSource"
 - !private "PSo19UITableViewDelegate"
+- !private "OSC28UITextAutocapitalizationType"
 - !private "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"

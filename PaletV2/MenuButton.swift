@@ -21,6 +21,7 @@ class MenuButton:UIButton
     var active_flag:Bool = false;
     var border_width:CGFloat = 0.0;
     var border_color:UIColor = UIColor.blackColor();
+    var is_square:Bool = false;
     
     
     override init(frame:CGRect)
@@ -32,8 +33,15 @@ class MenuButton:UIButton
         addTarget(self, action: "unhighlight_color", forControlEvents: UIControlEvents.TouchUpInside);
         addTarget(self, action: "unhighlight_color", forControlEvents: UIControlEvents.TouchUpOutside);
     }
+
     
     // SETTERS FOR CUSTOMIZING APPEARANCE
+    
+    func set_square()
+    {
+        is_square = true;
+        self.setNeedsDisplay();
+    }
     func set_border_width(width:CGFloat)
     {
         self.border_width = width;
@@ -77,7 +85,10 @@ class MenuButton:UIButton
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect);
-        self.layer.cornerRadius = rect.width * 0.5;
+        if(!is_square)
+        {
+            self.layer.cornerRadius = rect.width * 0.5;
+        }
         self.layer.shadowOffset = CGSize(width: 2.0, height: 2.0);
         self.layer.shadowOpacity = Float(0.5);
         self.layer.shadowColor = UIColor.blackColor().CGColor;
