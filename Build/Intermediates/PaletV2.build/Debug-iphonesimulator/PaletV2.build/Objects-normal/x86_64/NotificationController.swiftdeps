@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C7PaletV222NotificationController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "show"
 - "hide"
 - "label"
+- "show"
+- "viewDidLoad"
 depends-top-level:
-- "CGRect"
-- !private "-"
-- "NotificationController"
-- "UILabel"
-- !private "nav_controller"
-- "String"
-- !private "UIView"
-- "UIViewController"
 - !private "UIColor"
+- !private "nav_controller"
 - !private "UIViewAnimationOptions"
+- "NotificationController"
+- !private "-"
+- !private "UIView"
+- "UILabel"
+- "CGRect"
+- "UIViewController"
+- "String"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "UIColor"]

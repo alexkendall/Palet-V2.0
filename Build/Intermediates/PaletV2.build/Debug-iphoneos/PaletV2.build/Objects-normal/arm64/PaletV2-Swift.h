@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC7PaletV213NavController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TextField;
 @class UITextField;
 
 SWIFT_CLASS("_TtC7PaletV218NewPaletController")
@@ -356,7 +357,7 @@ SWIFT_CLASS("_TtC7PaletV218NewPaletController")
 @property (nonatomic) CGFloat margin;
 @property (nonatomic) UITableView * __null_unspecified table;
 @property (nonatomic) UIView * __null_unspecified add_palet_container;
-@property (nonatomic) UITextField * __null_unspecified text_entry;
+@property (nonatomic) TextField * __null_unspecified text_entry;
 @property (nonatomic) AddButton * __null_unspecified add_button;
 @property (nonatomic, readonly, copy) NSString * __nonnull INIT_ENTRY;
 @property (nonatomic, readonly, copy) NSString * __nonnull ERROR_ENTRY;
@@ -443,7 +444,7 @@ SWIFT_CLASS("_TtC7PaletV212PickerButton")
 @class CAGradientLayer;
 
 SWIFT_CLASS("_TtC7PaletV216PickerController")
-@interface PickerController : AuxillaryController
+@interface PickerController : AuxillaryController <UITextFieldDelegate>
 @property (nonatomic, readonly) NSInteger NUM_COMPONENTS;
 @property (nonatomic) AnimatedView * __null_unspecified color_view;
 @property (nonatomic) AnimatedLabel * __null_unspecified rgb_label;
@@ -458,6 +459,7 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @property (nonatomic) AnimatedView * __null_unspecified gradient_view;
 @property (nonatomic) CAGradientLayer * __nonnull gradient;
 @property (nonatomic, copy) NSString * __nonnull selected_palet;
+@property (nonatomic) UITextField * __null_unspecified code_entry_field;
 - (void)viewDidLoad;
 - (void)add_favorite;
 - (void)add_to_palette;
@@ -468,6 +470,12 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 - (void)didReceiveMemoryWarning;
 - (void)push_left:(NSTimeInterval)duration;
 - (void)push_right:(NSTimeInterval)duration;
+- (void)textFieldDidBeginEditing:(UITextField * __nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldClear:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldEndEditing:(UITextField * __nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -483,6 +491,17 @@ SWIFT_CLASS("_TtC7PaletV213SelController")
 - (void)didReceiveMemoryWarning;
 - (BOOL)prefersStatusBarHidden;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7PaletV29TextField")
+@interface TextField : UITextField
+@property (nonatomic) CGFloat text_offset;
+- (CGRect)textRectForBounds:(CGRect)bounds;
+- (CGRect)editingRectForBounds:(CGRect)bounds;
+- (void)set_text_offset:(CGFloat)offset_x;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

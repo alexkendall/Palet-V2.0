@@ -6,52 +6,53 @@ provides-nominal:
 provides-member:
 - ["C7PaletV218NewPaletController", ""]
 provides-dynamic-lookup:
-- "push_right"
-- "prefersStatusBarHidden"
-- "INIT_ENTRY"
-- "didReceiveMemoryWarning"
+- "push_left"
 - "table"
+- "textFieldDidBeginEditing"
+- "INIT_ENTRY"
+- "textFieldShouldReturn"
+- "selected_index"
+- "new_palet_container"
+- "ERROR_ENTRY"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "text_entry"
 - "margin"
 - "enter_palet"
-- "textFieldShouldReturn"
-- "add_palet_container"
-- "push_left"
-- "selected_index"
-- "text_entry"
-- "textFieldDidBeginEditing"
-- "viewDidLoad"
-- "ERROR_ENTRY"
-- "new_palet_container"
+- "push_right"
 - "add_button"
+- "add_palet_container"
+- "prefersStatusBarHidden"
 depends-top-level:
-- !private "UITableViewCellSeparatorStyle"
-- "AddButton"
-- !private "!="
-- "Int"
-- !private "nav_controller"
-- "AuxillaryController"
-- !private "-"
-- "UITextField"
 - !private "+"
-- "CGRect"
 - !private "LIGHT_GRAY"
 - "StringLiteralType"
-- !private "store_palet"
-- !private "WOLF_GRAY"
-- !private "UIControlEvents"
-- "Bool"
-- "CGFloat"
-- "UIView"
-- "UITextFieldDelegate"
-- "AnimatedView"
-- "NewPaletController"
 - !private "UIColor"
-- !private "&&"
-- !private "SOFT_GREEN"
-- "UITableView"
-- !private "BooleanLiteralType"
+- !private "store_palet"
+- "NewPaletController"
+- "TextField"
+- "AuxillaryController"
+- !private "nav_controller"
 - !private "*"
+- "AddButton"
 - "NSTimeInterval"
+- "Int"
+- !private "UITableViewCellSeparatorStyle"
+- !private "-"
+- !private "WOLF_GRAY"
+- !private "BooleanLiteralType"
+- !private "UIControlEvents"
+- "UITextField"
+- "UITableView"
+- "Bool"
+- "UITextFieldDelegate"
+- !private "SOFT_GREEN"
+- !private "!="
+- "AnimatedView"
+- "CGFloat"
+- "CGRect"
+- !private "&&"
+- "UIView"
 depends-member:
 - !private ["C7PaletV29AddButton", "addTarget"]
 - !private ["C7PaletV29AddButton", "init"]
@@ -65,11 +66,11 @@ depends-member:
 - ["PSs9AnyObject", "INIT_ENTRY"]
 - !private ["PSs9AnyObject", "LIGHT_GRAY"]
 - !private ["PSs9AnyObject", "SOFT_GREEN"]
+- !private ["PSs9AnyObject", "TextField"]
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UITableView"]
 - !private ["PSs9AnyObject", "UITableViewCellSeparatorStyle"]
-- !private ["PSs9AnyObject", "UITextField"]
 - !private ["PSs9AnyObject", "UIView"]
 - !private ["PSs9AnyObject", "WOLF_GRAY"]
 - !private ["PSs9AnyObject", "addSubview"]
@@ -134,6 +135,7 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "LIGHT_GRAY"]
 - ["C7PaletV219AuxillaryController", "NSTimeInterval"]
 - !private ["C7PaletV219AuxillaryController", "SOFT_GREEN"]
+- ["C7PaletV219AuxillaryController", "TextField"]
 - !private ["C7PaletV219AuxillaryController", "UIColor"]
 - !private ["C7PaletV219AuxillaryController", "UIControlEvents"]
 - ["C7PaletV219AuxillaryController", "UITableView"]
@@ -186,11 +188,11 @@ depends-member:
 - ["PSs11CVarArgType", "INIT_ENTRY"]
 - !private ["PSs11CVarArgType", "LIGHT_GRAY"]
 - !private ["PSs11CVarArgType", "SOFT_GREEN"]
+- !private ["PSs11CVarArgType", "TextField"]
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UITableView"]
 - !private ["PSs11CVarArgType", "UITableViewCellSeparatorStyle"]
-- !private ["PSs11CVarArgType", "UITextField"]
 - !private ["PSs11CVarArgType", "UIView"]
 - !private ["PSs11CVarArgType", "WOLF_GRAY"]
 - !private ["PSs11CVarArgType", "addSubview"]
@@ -249,11 +251,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "INIT_ENTRY"]
 - !private ["PSs23CustomStringConvertible", "LIGHT_GRAY"]
 - !private ["PSs23CustomStringConvertible", "SOFT_GREEN"]
+- !private ["PSs23CustomStringConvertible", "TextField"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UITableView"]
 - !private ["PSs23CustomStringConvertible", "UITableViewCellSeparatorStyle"]
-- !private ["PSs23CustomStringConvertible", "UITextField"]
 - !private ["PSs23CustomStringConvertible", "UIView"]
 - !private ["PSs23CustomStringConvertible", "WOLF_GRAY"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -314,12 +316,12 @@ depends-member:
 - !private ["PSs9Equatable", "LIGHT_GRAY"]
 - !private ["PSs9Equatable", "None"]
 - !private ["PSs9Equatable", "SOFT_GREEN"]
+- !private ["PSs9Equatable", "TextField"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UITableView"]
 - !private ["PSs9Equatable", "UITableViewCellSeparatorStyle"]
-- !private ["PSs9Equatable", "UITextField"]
 - !private ["PSs9Equatable", "UIView"]
 - !private ["PSs9Equatable", "WOLF_GRAY"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -384,11 +386,11 @@ depends-member:
 - !private ["PSs8Hashable", "LIGHT_GRAY"]
 - !private ["PSs8Hashable", "None"]
 - !private ["PSs8Hashable", "SOFT_GREEN"]
+- !private ["PSs8Hashable", "TextField"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UITableView"]
 - !private ["PSs8Hashable", "UITableViewCellSeparatorStyle"]
-- !private ["PSs8Hashable", "UITextField"]
 - !private ["PSs8Hashable", "UIView"]
 - !private ["PSs8Hashable", "WOLF_GRAY"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -454,11 +456,11 @@ depends-member:
 - ["PSo8NSCoding", "INIT_ENTRY"]
 - !private ["PSo8NSCoding", "LIGHT_GRAY"]
 - !private ["PSo8NSCoding", "SOFT_GREEN"]
+- !private ["PSo8NSCoding", "TextField"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UITableView"]
 - !private ["PSo8NSCoding", "UITableViewCellSeparatorStyle"]
-- !private ["PSo8NSCoding", "UITextField"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "WOLF_GRAY"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -520,11 +522,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "INIT_ENTRY"]
 - !private ["PSo26NSExtensionRequestHandling", "LIGHT_GRAY"]
 - !private ["PSo26NSExtensionRequestHandling", "SOFT_GREEN"]
+- !private ["PSo26NSExtensionRequestHandling", "TextField"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCellSeparatorStyle"]
-- !private ["PSo26NSExtensionRequestHandling", "UITextField"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "WOLF_GRAY"]
 - ["PSo26NSExtensionRequestHandling", "add_button"]
@@ -567,6 +569,7 @@ depends-member:
 - !private ["CSo8NSObject", "LIGHT_GRAY"]
 - ["CSo8NSObject", "NSTimeInterval"]
 - !private ["CSo8NSObject", "SOFT_GREEN"]
+- ["CSo8NSObject", "TextField"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - ["CSo8NSObject", "UITableView"]
@@ -629,11 +632,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "INIT_ENTRY"]
 - !private ["PSo16NSObjectProtocol", "LIGHT_GRAY"]
 - !private ["PSo16NSObjectProtocol", "SOFT_GREEN"]
+- !private ["PSo16NSObjectProtocol", "TextField"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UITableView"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCellSeparatorStyle"]
-- !private ["PSo16NSObjectProtocol", "UITextField"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "WOLF_GRAY"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -701,6 +704,7 @@ depends-member:
 - !private ["C7PaletV218NewPaletController", "LIGHT_GRAY"]
 - ["C7PaletV218NewPaletController", "NSTimeInterval"]
 - !private ["C7PaletV218NewPaletController", "SOFT_GREEN"]
+- ["C7PaletV218NewPaletController", "TextField"]
 - !private ["C7PaletV218NewPaletController", "UIColor"]
 - !private ["C7PaletV218NewPaletController", "UIControlEvents"]
 - ["C7PaletV218NewPaletController", "UITableView"]
@@ -745,6 +749,14 @@ depends-member:
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["PSs14SetAlgebraType", "TouchUpInside"]
 - !private ["SS", "deinit"]
+- !private ["C7PaletV29TextField", "backgroundColor"]
+- !private ["C7PaletV29TextField", "bounds"]
+- !private ["C7PaletV29TextField", "delegate"]
+- !private ["C7PaletV29TextField", "frame"]
+- !private ["C7PaletV29TextField", "init"]
+- !private ["C7PaletV29TextField", "resignFirstResponder"]
+- !private ["C7PaletV29TextField", "text"]
+- !private ["C7PaletV29TextField", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -787,11 +799,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "INIT_ENTRY"]
 - !private ["PSo21UIAppearanceContainer", "LIGHT_GRAY"]
 - !private ["PSo21UIAppearanceContainer", "SOFT_GREEN"]
+- !private ["PSo21UIAppearanceContainer", "TextField"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UITableView"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCellSeparatorStyle"]
-- !private ["PSo21UIAppearanceContainer", "UITextField"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "WOLF_GRAY"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -855,11 +867,11 @@ depends-member:
 - ["PSo18UIContentContainer", "INIT_ENTRY"]
 - !private ["PSo18UIContentContainer", "LIGHT_GRAY"]
 - !private ["PSo18UIContentContainer", "SOFT_GREEN"]
+- !private ["PSo18UIContentContainer", "TextField"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UITableView"]
 - !private ["PSo18UIContentContainer", "UITableViewCellSeparatorStyle"]
-- !private ["PSo18UIContentContainer", "UITextField"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "WOLF_GRAY"]
 - ["PSo18UIContentContainer", "add_button"]
@@ -960,6 +972,7 @@ depends-member:
 - !private ["CSo11UIResponder", "LIGHT_GRAY"]
 - ["CSo11UIResponder", "NSTimeInterval"]
 - !private ["CSo11UIResponder", "SOFT_GREEN"]
+- ["CSo11UIResponder", "TextField"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - ["CSo11UIResponder", "UITableView"]
@@ -1026,11 +1039,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "INIT_ENTRY"]
 - !private ["PSo16UIStateRestoring", "LIGHT_GRAY"]
 - !private ["PSo16UIStateRestoring", "SOFT_GREEN"]
+- !private ["PSo16UIStateRestoring", "TextField"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UITableView"]
 - !private ["PSo16UIStateRestoring", "UITableViewCellSeparatorStyle"]
-- !private ["PSo16UIStateRestoring", "UITextField"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "WOLF_GRAY"]
 - ["PSo16UIStateRestoring", "add_button"]
@@ -1086,11 +1099,11 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "INIT_ENTRY"]
 - !private ["PSo19UITextFieldDelegate", "LIGHT_GRAY"]
 - !private ["PSo19UITextFieldDelegate", "SOFT_GREEN"]
+- !private ["PSo19UITextFieldDelegate", "TextField"]
 - !private ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
 - !private ["PSo19UITextFieldDelegate", "UITableView"]
 - !private ["PSo19UITextFieldDelegate", "UITableViewCellSeparatorStyle"]
-- !private ["PSo19UITextFieldDelegate", "UITextField"]
 - !private ["PSo19UITextFieldDelegate", "UIView"]
 - !private ["PSo19UITextFieldDelegate", "WOLF_GRAY"]
 - !private ["PSo19UITextFieldDelegate", "add_button"]
@@ -1133,11 +1146,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "INIT_ENTRY"]
 - !private ["PSo18UITraitEnvironment", "LIGHT_GRAY"]
 - !private ["PSo18UITraitEnvironment", "SOFT_GREEN"]
+- !private ["PSo18UITraitEnvironment", "TextField"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UITableView"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCellSeparatorStyle"]
-- !private ["PSo18UITraitEnvironment", "UITextField"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "WOLF_GRAY"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -1215,6 +1228,7 @@ depends-member:
 - !private ["CSo16UIViewController", "LIGHT_GRAY"]
 - ["CSo16UIViewController", "NSTimeInterval"]
 - !private ["CSo16UIViewController", "SOFT_GREEN"]
+- ["CSo16UIViewController", "TextField"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - ["CSo16UIViewController", "UITableView"]
@@ -1308,6 +1322,7 @@ depends-nominal:
 - !private "V10ObjectiveC8Selector"
 - !private "PSs14SetAlgebraType"
 - !private "SS"
+- !private "C7PaletV29TextField"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1349,4 +1364,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "9976bbf26085cbe5197b07d157639b57"
+interface-hash: "6d9bfa85db890f31d13a46c4fd2b68d4"

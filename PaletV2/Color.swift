@@ -65,3 +65,40 @@ func get_hex(color:UIColor)->String
     let b:Int = Int(255.0 * blue);
     return NSString(format:"#%02X%02X%02X", r, g, b) as String;
 }
+
+func is_valid(hex_code:String)->Bool
+{
+    if(hex_code.characters.count != 7)
+    {
+        return false;
+    }
+    
+    // check substrings of length 2 for valid number
+    let substr1 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(1), end: hex_code.endIndex.advancedBy(-4)));
+    let substr2 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(3), end: hex_code.endIndex.advancedBy(-2)));
+    let substr3 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(5), end: hex_code.endIndex));
+
+    let r = UInt8(strtoul(substr1, nil, 16));
+    let g = UInt8(strtoul(substr2, nil, 16));
+    let b = UInt8(strtoul(substr1, nil, 16));
+    
+    if((r <= 255) && (g <= 255) && (b <= 255))
+    {
+        return true;
+    }
+    return false;
+}
+
+func get_color(hex_code:String)->UIColor
+{
+    // check substrings of length 2 for valid number
+    let substr1 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(1), end: hex_code.endIndex.advancedBy(-4)));
+    let substr2 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(3), end: hex_code.endIndex.advancedBy(-2)));
+    let substr3 = hex_code.substringWithRange(Range<String.Index>(start: hex_code.startIndex.advancedBy(5), end: hex_code.endIndex));
+    
+    let r = UInt8(strtoul(substr1, nil, 16));
+    let g = UInt8(strtoul(substr2, nil, 16));
+    let b = UInt8(strtoul(substr1, nil, 16));
+    
+    return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b)  / 255.0, alpha: 1.0);
+}

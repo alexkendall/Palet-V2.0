@@ -11,16 +11,16 @@ provides-dynamic-lookup:
 - "label"
 - "hide"
 depends-top-level:
-- "UILabel"
-- !private "UIColor"
 - !private "-"
-- "UIViewController"
-- !private "nav_controller"
-- !private "UIViewAnimationOptions"
-- "NotificationController"
-- "String"
-- !private "UIView"
 - "CGRect"
+- !private "UIViewAnimationOptions"
+- "UILabel"
+- "NotificationController"
+- !private "nav_controller"
+- !private "UIView"
+- "String"
+- !private "UIColor"
+- "UIViewController"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "UIColor"]

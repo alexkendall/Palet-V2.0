@@ -201,25 +201,40 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         }
         
         
-        
+        // set up for direct hex code entry
         let margin:CGFloat = super_view.bounds.height * 0.05;
         let entry_y:CGFloat = sliders[sliders.count-1].frame.maxY + margin;
         let entry_height:CGFloat = super_view.bounds.height * 0.07;
     
         
-        
+        // configure label for prompt
         let hex_label = UILabel();
         hex_label.text = "HEX #";
         hex_label.sizeToFit();
         hex_label.frame = CGRect(x: margin, y: entry_y, width: hex_label.frame.width, height: entry_height);
         super_view.addSubview(hex_label);
         
+        // configre text entry
         let entry_width:CGFloat = super_view.bounds.width - hex_label.bounds.width - (3.0 * margin);
         code_entry_field = TextField(frame:CGRect(x: hex_label.frame.maxX + margin, y: entry_y, width: entry_width, height: entry_height));
         code_entry_field.backgroundColor = UIColor.lightGrayColor();
         code_entry_field.layer.borderWidth = 1.0;
         code_entry_field.delegate = self;
         super_view.addSubview(code_entry_field);
+        
+        // configure entry button which can be used in addition to user pressing enter on keyboard
+        let but_dim:CGFloat = entry_height * 0.7;
+        let button_margin:CGFloat = 0.5 * (entry_height - but_dim);
+        let but_x:CGFloat = code_entry_field.frame.width - button_margin - but_dim;
+        let entry_button = AddButton(frame:CGRect(x: but_x, y: button_margin, width: but_dim, height: but_dim));
+        entry_button.set_highlight_color(UIColor.lightGrayColor());
+        entry_button.set_unhighlight_color(SOFT_GREEN);
+        entry_button.set_border_width(1.0);
+        entry_button.set_border_color(UIColor.blackColor());
+        code_entry_field.addSubview(entry_button);
+        
+        
+        
     
         
     }
@@ -306,7 +321,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         let hex = get_hex(color_view.backgroundColor!);
         let rgb = get_rgb(color_view.backgroundColor!);
         rgb_label.text = hex + "  " + rgb;
-        
+        code_entry_field.text = hex;
     }
     
     override func didReceiveMemoryWarning() {
@@ -335,7 +350,31 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        print("text field should return");
+        print("text field should return...");
+        
+        let hex_code = code_entry_field.text;
+        if(is_valid(hex_code!))
+        {
+            print("valid text... will change");
+            color_view.backgroundColor = get_color(hex_code!);
+       
+            var r:CGFloat = 0.0;
+            var g:CGFloat = 0.0;
+            var b:CGFloat = 0.0;
+            var a:CGFloat = 0.0;
+            color_view.backgroundColor!.getRed(&r, green: &g, blue: &b, alpha: &a);
+            sliders[0].value = Float(r);
+            sliders[1].value = Float(g);
+            sliders[2].value = Float(b);            
+            update_code();
+        }
+        else
+        {
+            print("entry not valid...");
+        }
+        
+        code_entry_field.resignFirstResponder();
+        
         return true;
     }
     
