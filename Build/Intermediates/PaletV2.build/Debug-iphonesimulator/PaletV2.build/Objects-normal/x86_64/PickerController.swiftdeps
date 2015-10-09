@@ -6,88 +6,91 @@ provides-nominal:
 provides-member:
 - ["C7PaletV216PickerController", ""]
 provides-dynamic-lookup:
-- "adjust_shade"
-- "code_entry_field"
-- "textFieldShouldEndEditing"
-- "add_favorite"
 - "favorite_button"
-- "change_color"
-- "textFieldShouldBeginEditing"
-- "label_txt"
-- "gradient_view"
-- "push_left"
-- "update_code"
-- "didReceiveMemoryWarning"
-- "sliders"
-- "textFieldDidEndEditing"
-- "textFieldShouldReturn"
-- "textFieldShouldClear"
-- "textFieldDidBeginEditing"
-- "selected_palet"
-- "push_right"
-- "reset_shade"
-- "shade_slider"
-- "NUM_COMPONENTS"
-- "labels"
-- "rgb_label"
-- "rgb_colors"
+- "code_entry_field"
+- "add_favorite"
 - "color_view"
-- "current_color"
-- "viewDidLoad"
+- "label_txt"
+- "textFieldShouldReturn"
+- "update_code"
+- "textFieldShouldBeginEditing"
+- "gradient_view"
 - "add_to_palette"
-- "add_button"
+- "change_color"
+- "adjust_shade"
+- "rgb_label"
+- "sliders"
+- "textFieldDidBeginEditing"
+- "textFieldShouldEndEditing"
+- "textFieldShouldClear"
+- "textFieldDidEndEditing"
+- "push_right"
+- "selected_palet"
+- "labels"
+- "rgb_colors"
+- "shade_slider"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "push_left"
+- "current_color"
+- "NUM_COMPONENTS"
 - "gradient"
+- "reset_shade"
+- "add_button"
 depends-top-level:
-- "PickerController"
-- "UITextField"
-- !private "NSTextAlignment"
-- "AnimatedButton"
-- !private "get_color_image"
-- !private "SOFT_GREEN"
+- !private "UIImage"
+- "AuxillaryController"
+- "CAGradientLayer"
+- !private "UILabel"
 - !private "++"
 - "UIColor"
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "FAVORITE_GROUP_NAME"
-- !private "UILabel"
-- !private "CGRect"
-- !private "M_PI"
-- !private "<"
-- !private "Float"
-- !private "CGAffineTransformMakeRotation"
-- !private "CGFloat"
 - !private "get_hex"
-- "NSTimeInterval"
+- !private "BooleanLiteralType"
 - !private "AddButton"
-- "AuxillaryController"
-- !private "CGPointMake"
-- !private "+"
-- "String"
-- !private "TextField"
-- "CAGradientLayer"
-- !private "get_color"
-- "AnimatedView"
-- !private "UIFont"
-- !private "store_color"
-- !private "!="
-- !private "print"
 - "AnimatedSlider"
-- !private "UIControlState"
-- !private "get_rgb"
-- "Array"
-- !private "*"
+- !private "SOFT_GREEN"
+- !private "CGPointMake"
+- !private "CGRect"
+- !private "TextField"
+- !private "<"
+- !private "get_color_image"
+- !private "Float"
+- "UITextField"
+- !private "!="
+- !private "CGFloat"
+- !private "M_PI"
+- !private "store_color"
+- "String"
+- "UnicodeScalarType"
+- !private "NSTextAlignment"
+- !private "SOFT_ORANGE"
+- !private "+"
+- !private "CGAffineTransformMakeRotation"
+- "AnimatedButton"
+- !private "get_color"
+- "NSTimeInterval"
+- !private "print"
 - !private "-"
+- "Array"
+- "AnimatedView"
+- "PickerController"
+- !private "*"
+- !private "UIFont"
 - "AnimatedLabel"
+- !private "UIControlState"
 - !private "is_valid"
-- !private "UIImage"
-- "UITextFieldDelegate"
+- !private "get_rgb"
 - "StringLiteralType"
-- !private "/"
+- "UITextFieldDelegate"
 - !private "UIControlEvents"
 - !private "nav_controller"
-- "UnicodeScalarType"
+- "Bool"
+- !private "/"
+- !private "FAVORITE_GROUP_NAME"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
+- !private ["C7PaletV29AddButton", "addTarget"]
+- !private ["C7PaletV29AddButton", "frame"]
 - !private ["C7PaletV29AddButton", "init"]
 - !private ["C7PaletV29AddButton", "set_border_color"]
 - !private ["C7PaletV29AddButton", "set_border_width"]
@@ -169,6 +172,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSTextAlignment"]
 - ["PSs9AnyObject", "NUM_COMPONENTS"]
 - !private ["PSs9AnyObject", "SOFT_GREEN"]
+- !private ["PSs9AnyObject", "SOFT_ORANGE"]
 - !private ["PSs9AnyObject", "TextField"]
 - ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
@@ -282,7 +286,6 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
 - ["PSs23ArrayLiteralConvertible", "Element"]
@@ -295,12 +298,9 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
-- !private ["PSs23ArrayLiteralConvertible", "count"]
-- !private ["PSs23ArrayLiteralConvertible", "frame"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
-- !private ["VSs10ArraySlice", "frame"]
 - !private ["C7PaletV219AuxillaryController", "AddButton"]
 - ["C7PaletV219AuxillaryController", "AnimatedButton"]
 - ["C7PaletV219AuxillaryController", "AnimatedLabel"]
@@ -319,6 +319,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "NSTimeInterval"]
 - ["C7PaletV219AuxillaryController", "NUM_COMPONENTS"]
 - !private ["C7PaletV219AuxillaryController", "SOFT_GREEN"]
+- !private ["C7PaletV219AuxillaryController", "SOFT_ORANGE"]
 - ["C7PaletV219AuxillaryController", "String"]
 - !private ["C7PaletV219AuxillaryController", "TextField"]
 - ["C7PaletV219AuxillaryController", "UIColor"]
@@ -441,6 +442,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSTextAlignment"]
 - ["PSs11CVarArgType", "NUM_COMPONENTS"]
 - !private ["PSs11CVarArgType", "SOFT_GREEN"]
+- !private ["PSs11CVarArgType", "SOFT_ORANGE"]
 - !private ["PSs11CVarArgType", "TextField"]
 - ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
@@ -554,8 +556,6 @@ depends-member:
 - !private ["PSs14CollectionType", "SubSequence"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
-- !private ["PSs14CollectionType", "count"]
-- !private ["PSs14CollectionType", "frame"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
@@ -566,8 +566,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
-- !private ["PSs28CustomDebugStringConvertible", "count"]
-- !private ["PSs28CustomDebugStringConvertible", "frame"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "AddButton"]
 - !private ["PSs23CustomStringConvertible", "AnimatedButton"]
@@ -591,6 +589,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSTextAlignment"]
 - ["PSs23CustomStringConvertible", "NUM_COMPONENTS"]
 - !private ["PSs23CustomStringConvertible", "SOFT_GREEN"]
+- !private ["PSs23CustomStringConvertible", "SOFT_ORANGE"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "TextField"]
 - ["PSs23CustomStringConvertible", "UIColor"]
@@ -622,7 +621,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "color_view"]
 - !private ["PSs23CustomStringConvertible", "colors"]
 - !private ["PSs23CustomStringConvertible", "cornerRadius"]
-- !private ["PSs23CustomStringConvertible", "count"]
 - ["PSs23CustomStringConvertible", "current_color"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -726,6 +724,7 @@ depends-member:
 - ["PSs9Equatable", "NUM_COMPONENTS"]
 - !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "SOFT_GREEN"]
+- !private ["PSs9Equatable", "SOFT_ORANGE"]
 - !private ["PSs9Equatable", "TextField"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - ["PSs9Equatable", "UIColor"]
@@ -871,6 +870,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSTextAlignment"]
 - ["PSs8Hashable", "NUM_COMPONENTS"]
 - !private ["PSs8Hashable", "SOFT_GREEN"]
+- !private ["PSs8Hashable", "SOFT_ORANGE"]
 - !private ["PSs8Hashable", "TextField"]
 - ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
@@ -985,8 +985,6 @@ depends-member:
 - !private ["PSs9Indexable", "SubSequence"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
-- !private ["PSs9Indexable", "count"]
-- !private ["PSs9Indexable", "frame"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -998,6 +996,8 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C7PaletV210MenuButton", "addTarget"]
+- !private ["C7PaletV210MenuButton", "frame"]
 - !private ["C7PaletV210MenuButton", "init"]
 - !private ["C7PaletV210MenuButton", "set_border_color"]
 - !private ["C7PaletV210MenuButton", "set_border_width"]
@@ -1011,8 +1011,6 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
-- !private ["PSs21MutableCollectionType", "count"]
-- !private ["PSs21MutableCollectionType", "frame"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
@@ -1020,18 +1018,13 @@ depends-member:
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
-- !private ["PSs16MutableIndexable", "count"]
-- !private ["PSs16MutableIndexable", "frame"]
 - !private ["PSs16MutableIndexable", "subscript"]
-- !private ["VSs12MutableSlice", "frame"]
 - ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
-- !private ["PSs16MutableSliceable", "count"]
-- !private ["PSs16MutableSliceable", "frame"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "AddButton"]
 - !private ["PSo8NSCoding", "AnimatedButton"]
@@ -1050,6 +1043,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - ["PSo8NSCoding", "NUM_COMPONENTS"]
 - !private ["PSo8NSCoding", "SOFT_GREEN"]
+- !private ["PSo8NSCoding", "SOFT_ORANGE"]
 - !private ["PSo8NSCoding", "TextField"]
 - ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
@@ -1184,6 +1178,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - ["PSo26NSExtensionRequestHandling", "NUM_COMPONENTS"]
 - !private ["PSo26NSExtensionRequestHandling", "SOFT_GREEN"]
+- !private ["PSo26NSExtensionRequestHandling", "SOFT_ORANGE"]
 - !private ["PSo26NSExtensionRequestHandling", "TextField"]
 - ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
@@ -1265,6 +1260,7 @@ depends-member:
 - ["CSo8NSObject", "NSTimeInterval"]
 - ["CSo8NSObject", "NUM_COMPONENTS"]
 - !private ["CSo8NSObject", "SOFT_GREEN"]
+- !private ["CSo8NSObject", "SOFT_ORANGE"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "TextField"]
 - ["CSo8NSObject", "UIColor"]
@@ -1390,6 +1386,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - ["PSo16NSObjectProtocol", "NUM_COMPONENTS"]
 - !private ["PSo16NSObjectProtocol", "SOFT_GREEN"]
+- !private ["PSo16NSObjectProtocol", "SOFT_ORANGE"]
 - !private ["PSo16NSObjectProtocol", "TextField"]
 - ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
@@ -1537,6 +1534,7 @@ depends-member:
 - ["C7PaletV216PickerController", "NSTimeInterval"]
 - ["C7PaletV216PickerController", "NUM_COMPONENTS"]
 - !private ["C7PaletV216PickerController", "SOFT_GREEN"]
+- !private ["C7PaletV216PickerController", "SOFT_ORANGE"]
 - ["C7PaletV216PickerController", "String"]
 - !private ["C7PaletV216PickerController", "TextField"]
 - ["C7PaletV216PickerController", "UIColor"]
@@ -1600,8 +1598,6 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
-- !private ["PSs30RangeReplaceableCollectionType", "count"]
-- !private ["PSs30RangeReplaceableCollectionType", "frame"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Center"]
 - !private ["PSs16RawRepresentable", "Highlighted"]
@@ -1615,8 +1611,6 @@ depends-member:
 - !private ["PSs12SequenceType", "SubSequence"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
-- !private ["PSs12SequenceType", "count"]
-- !private ["PSs12SequenceType", "frame"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "Highlighted"]
 - !private ["PSs14SetAlgebraType", "Normal"]
@@ -1713,6 +1707,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - ["PSo21UIAppearanceContainer", "NUM_COMPONENTS"]
 - !private ["PSo21UIAppearanceContainer", "SOFT_GREEN"]
+- !private ["PSo21UIAppearanceContainer", "SOFT_ORANGE"]
 - !private ["PSo21UIAppearanceContainer", "TextField"]
 - ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
@@ -1852,6 +1847,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - ["PSo18UIContentContainer", "NUM_COMPONENTS"]
 - !private ["PSo18UIContentContainer", "SOFT_GREEN"]
+- !private ["PSo18UIContentContainer", "SOFT_ORANGE"]
 - !private ["PSo18UIContentContainer", "TextField"]
 - ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
@@ -1913,7 +1909,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - !private ["PSo18UIContentContainer", "view_palet_controller"]
 - ["PSo18UIContentContainer", ""]
-- !private ["CSo9UIControl", "addSubview"]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "bounds"]
@@ -2006,15 +2001,12 @@ depends-member:
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UIImage", "stretchableImageWithLeftCapWidth"]
-- !private ["PSo10UIKeyInput", "addSubview"]
 - !private ["PSo10UIKeyInput", "backgroundColor"]
 - !private ["PSo10UIKeyInput", "delegate"]
-- !private ["PSo10UIKeyInput", "frame"]
 - !private ["PSo10UIKeyInput", "init"]
 - !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
-- !private ["CSo7UILabel", "bounds"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "init"]
@@ -2040,6 +2032,7 @@ depends-member:
 - ["CSo11UIResponder", "NSTimeInterval"]
 - ["CSo11UIResponder", "NUM_COMPONENTS"]
 - !private ["CSo11UIResponder", "SOFT_GREEN"]
+- !private ["CSo11UIResponder", "SOFT_ORANGE"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "TextField"]
 - ["CSo11UIResponder", "UIColor"]
@@ -2165,6 +2158,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - ["PSo16UIStateRestoring", "NUM_COMPONENTS"]
 - !private ["PSo16UIStateRestoring", "SOFT_GREEN"]
+- !private ["PSo16UIStateRestoring", "SOFT_ORANGE"]
 - !private ["PSo16UIStateRestoring", "TextField"]
 - ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
@@ -2229,10 +2223,8 @@ depends-member:
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["PSo21UITableViewDataSource", "table"]
 - !private ["PSo19UITableViewDelegate", "table"]
-- !private ["CSo11UITextField", "addSubview"]
 - !private ["CSo11UITextField", "backgroundColor"]
 - !private ["CSo11UITextField", "delegate"]
-- !private ["CSo11UITextField", "frame"]
 - !private ["CSo11UITextField", "init"]
 - !private ["CSo11UITextField", "layer"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
@@ -2253,6 +2245,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "NSTextAlignment"]
 - !private ["PSo19UITextFieldDelegate", "NUM_COMPONENTS"]
 - !private ["PSo19UITextFieldDelegate", "SOFT_GREEN"]
+- !private ["PSo19UITextFieldDelegate", "SOFT_ORANGE"]
 - !private ["PSo19UITextFieldDelegate", "TextField"]
 - ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
@@ -2296,18 +2289,14 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "update_code"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
-- !private ["PSo11UITextInput", "addSubview"]
 - !private ["PSo11UITextInput", "backgroundColor"]
 - !private ["PSo11UITextInput", "delegate"]
-- !private ["PSo11UITextInput", "frame"]
 - !private ["PSo11UITextInput", "init"]
 - !private ["PSo11UITextInput", "layer"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
-- !private ["PSo17UITextInputTraits", "addSubview"]
 - !private ["PSo17UITextInputTraits", "backgroundColor"]
 - !private ["PSo17UITextInputTraits", "delegate"]
-- !private ["PSo17UITextInputTraits", "frame"]
 - !private ["PSo17UITextInputTraits", "init"]
 - !private ["PSo17UITextInputTraits", "layer"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
@@ -2328,6 +2317,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - ["PSo18UITraitEnvironment", "NUM_COMPONENTS"]
 - !private ["PSo18UITraitEnvironment", "SOFT_GREEN"]
+- !private ["PSo18UITraitEnvironment", "SOFT_ORANGE"]
 - !private ["PSo18UITraitEnvironment", "TextField"]
 - ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
@@ -2465,6 +2455,7 @@ depends-member:
 - ["CSo16UIViewController", "NSTimeInterval"]
 - ["CSo16UIViewController", "NUM_COMPONENTS"]
 - !private ["CSo16UIViewController", "SOFT_GREEN"]
+- !private ["CSo16UIViewController", "SOFT_ORANGE"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "TextField"]
 - ["CSo16UIViewController", "UIColor"]
@@ -2536,8 +2527,6 @@ depends-member:
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
-- !private ["PSs10_ArrayType", "count"]
-- !private ["PSs10_ArrayType", "frame"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "init"]
@@ -2552,8 +2541,6 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
-- !private ["PSs24_DestructorSafeContainer", "count"]
-- !private ["PSs24_DestructorSafeContainer", "frame"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
@@ -2570,7 +2557,6 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
-- !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
@@ -2589,7 +2575,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "append"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "bounds"]
-- !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
@@ -2677,7 +2662,6 @@ depends-nominal:
 - !private "PSs14MirrorPathType"
 - "PSs21MutableCollectionType"
 - "PSs16MutableIndexable"
-- !private "VSs12MutableSlice"
 - "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"

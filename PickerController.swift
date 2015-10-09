@@ -128,6 +128,38 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         add_button.layer.borderColor = button_border_color;
         color_view.addSubview(add_button);
         
+        // set up for direct hex code entry
+        let margin:CGFloat = super_view.bounds.height * 0.05;
+        let entry_y:CGFloat = color_view.frame.maxY + margin;
+        let entry_height:CGFloat = super_view.bounds.height * 0.07;
+        
+        // configure label for prompt
+        let hex_label = UILabel();
+        hex_label.text = "HEX";
+        hex_label.sizeToFit();
+        hex_label.frame = CGRect(x: margin, y: entry_y, width: hex_label.frame.width, height: entry_height);
+        super_view.addSubview(hex_label);
+        
+        // configure entry button which can be used in addition to user pressing enter on keyboard
+        let but_dim:CGFloat = entry_height;
+        let but_x:CGFloat = super_view.frame.width - margin - but_dim;
+        let entry_button = AddButton(frame:CGRect(x: but_x, y: entry_y, width: but_dim, height: but_dim));
+        entry_button.set_highlight_color(SOFT_ORANGE);
+        entry_button.set_unhighlight_color(SOFT_GREEN);
+        entry_button.set_border_width(1.0);
+        entry_button.set_border_color(UIColor.blackColor());
+        entry_button.addTarget(self, action: "textFieldShouldReturn:", forControlEvents: UIControlEvents.TouchUpInside);
+        super_view.addSubview(entry_button);
+        
+        
+        // configre text entry
+        let entry_width:CGFloat = super_view.bounds.width - hex_label.frame.maxX - (2.0 * (but_dim + but_margin));
+        code_entry_field = TextField(frame:CGRect(x: hex_label.frame.maxX + margin, y: entry_y, width: entry_width, height: entry_height));
+        code_entry_field.backgroundColor = UIColor.lightGrayColor();
+        code_entry_field.layer.borderWidth = 1.0;
+        code_entry_field.delegate = self;
+        super_view.addSubview(code_entry_field);
+        
         // configure rgb labels
         let comp_margin:CGFloat = color_view.frame.origin.x;
         let comp_dim:CGFloat = super_view.bounds.width * 0.075;
@@ -137,7 +169,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
         for(var i = 0; i < NUM_COMPONENTS; ++i)
         {
             // configure labels
-            let offset_y:CGFloat = color_view.frame.maxY + comp_margin + ((comp_margin + comp_dim) * CGFloat(i));
+            let offset_y:CGFloat = entry_button.frame.maxY + comp_margin + ((comp_margin + comp_dim) * CGFloat(i));
             let label_in_frame = CGRect(x: comp_margin, y: offset_y, width: comp_dim, height: comp_dim);
             let label_out_frame = CGRect(x: super_view.bounds.width, y: offset_y, width: comp_dim, height: comp_dim);
             labels[i] = AnimatedLabel(in_frame: label_in_frame, out_frame: label_out_frame);
@@ -200,43 +232,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             super_view.addSubview(shade_slider);
         }
         
-        
-        // set up for direct hex code entry
-        let margin:CGFloat = super_view.bounds.height * 0.05;
-        let entry_y:CGFloat = sliders[sliders.count-1].frame.maxY + margin;
-        let entry_height:CGFloat = super_view.bounds.height * 0.07;
-    
-        
-        // configure label for prompt
-        let hex_label = UILabel();
-        hex_label.text = "HEX #";
-        hex_label.sizeToFit();
-        hex_label.frame = CGRect(x: margin, y: entry_y, width: hex_label.frame.width, height: entry_height);
-        super_view.addSubview(hex_label);
-        
-        // configre text entry
-        let entry_width:CGFloat = super_view.bounds.width - hex_label.bounds.width - (3.0 * margin);
-        code_entry_field = TextField(frame:CGRect(x: hex_label.frame.maxX + margin, y: entry_y, width: entry_width, height: entry_height));
-        code_entry_field.backgroundColor = UIColor.lightGrayColor();
-        code_entry_field.layer.borderWidth = 1.0;
-        code_entry_field.delegate = self;
-        super_view.addSubview(code_entry_field);
-        
-        // configure entry button which can be used in addition to user pressing enter on keyboard
-        let but_dim:CGFloat = entry_height * 0.7;
-        let button_margin:CGFloat = 0.5 * (entry_height - but_dim);
-        let but_x:CGFloat = code_entry_field.frame.width - button_margin - but_dim;
-        let entry_button = AddButton(frame:CGRect(x: but_x, y: button_margin, width: but_dim, height: but_dim));
-        entry_button.set_highlight_color(UIColor.lightGrayColor());
-        entry_button.set_unhighlight_color(SOFT_GREEN);
-        entry_button.set_border_width(1.0);
-        entry_button.set_border_color(UIColor.blackColor());
-        code_entry_field.addSubview(entry_button);
-        
-        
-        
-    
-        
+
     }
     
     func add_favorite()
