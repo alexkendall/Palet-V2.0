@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219OperationController", ""]
 provides-dynamic-lookup:
-- "copy_button"
 - "show"
 - "delete_button"
+- "copy_button"
 - "viewDidLoad"
 depends-top-level:
-- !private "CGRect"
-- !private "SOFT_RED"
-- !private "/"
-- "NotificationController"
-- !private "CGFloat"
-- !private "-"
-- !private "+"
-- "String"
-- "OperationController"
 - !private "UIColor"
-- !private "StringLiteralType"
-- "UIButton"
-- !private "UIView"
-- !private "SOFT_GREEN"
-- !private "UIControlState"
+- !private "CGFloat"
+- !private "+"
+- !private "-"
 - !private "*"
+- !private "UIControlState"
+- !private "StringLiteralType"
+- "OperationController"
+- "String"
+- !private "UIView"
+- "UIButton"
+- !private "SOFT_RED"
+- "NotificationController"
+- !private "/"
+- !private "CGRect"
+- !private "SOFT_GREEN"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "SOFT_GREEN"]

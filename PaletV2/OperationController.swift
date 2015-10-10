@@ -19,7 +19,7 @@ class OperationController:NotificationController
 
         super.viewDidLoad();
         self.label.removeFromSuperview();
-        self.view.backgroundColor = UIColor.blackColor();
+        self.view.backgroundColor = UIColor.whiteColor();
         
         let button_width:CGFloat = self.view.bounds.width * 0.25;
         let button_margin:CGFloat = (self.view.bounds.width - (2.0 * button_width)) / 3.0;

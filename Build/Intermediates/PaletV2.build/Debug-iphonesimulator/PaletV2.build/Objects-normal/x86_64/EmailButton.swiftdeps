@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
 - !private "UIBezierPath"
+- "EmailButton"
 - "CGRect"
 - "MenuButton"
 - !private "CGPoint"
-- "EmailButton"
 - !private "*"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]

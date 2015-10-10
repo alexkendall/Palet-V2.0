@@ -39,10 +39,10 @@ class NavButton:UIButton
         draw_color.setStroke();
         path.stroke();
         
-        self.addTarget(self, action: "select", forControlEvents: UIControlEvents.TouchUpInside);
+        //self.addTarget(self, action: "select", forControlEvents: UIControlEvents.TouchUpInside);
         
     }
-    
+    /*
     func select()
     {
         if(toggled_on)
@@ -60,7 +60,23 @@ class NavButton:UIButton
             setNeedsDisplay();
         }
     }
+    */
     
+    func toggle_on()
+    {
+        draw_color = UIColor.blackColor();
+        toggled_on = false;
+        setNeedsLayout();
+        setNeedsDisplay();
+    }
+    
+    func toggle_off()
+    {
+        draw_color = UIColor.lightGrayColor();
+        toggled_on = true;
+        setNeedsLayout();
+        setNeedsDisplay();
+    }
     
     
     required init?(coder aDecoder: NSCoder) {

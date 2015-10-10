@@ -20,6 +20,7 @@ class NavController: UIViewController
     var nav_but = NavButton(frame: CGRect(x: 15.0, y: 15.0, width: 40.0, height: 40.0));
     let notification_controller = NotificationController();
     let operation_controller = OperationController();
+    let copy_controller = CopyController();
     
     
     override func viewDidLoad() {
@@ -34,7 +35,9 @@ class NavController: UIViewController
         self.view.addSubview(new_palet_controller.view);
         self.view.addSubview(notification_controller.view);
         self.view.addSubview(operation_controller.view);
+        self.view.addSubview(copy_controller.view);
         operation_controller.delete_button.addTarget(favorites_controller, action: "delete_colors", forControlEvents: UIControlEvents.TouchUpInside);
+        operation_controller.copy_button.addTarget(copy_controller, action: "show", forControlEvents: UIControlEvents.TouchUpInside);
         
         let label_width:CGFloat = self.view.bounds.width - nav_but.frame.maxX;
         controller_label = UILabel(frame: CGRect(x: nav_but.frame.maxX, y: 15.0, width: label_width - 15.0, height: 40.0));
@@ -49,6 +52,11 @@ class NavController: UIViewController
         palet_controller.place_right();
         new_palet_controller.place_right();
         nav_but.addTarget(self, action: "handle_selection", forControlEvents: UIControlEvents.TouchUpInside);
+    }
+    
+    func copy_favorites()
+    {
+        print("copying favorites");
     }
     
     func show_label(text:String)
@@ -77,6 +85,7 @@ class NavController: UIViewController
         new_palet_controller.place_right();
         menu_controller.show(0.5);
         show_label("MENU");
+        nav_but.toggle_on();
         
     }
     
@@ -87,6 +96,7 @@ class NavController: UIViewController
         picker_controller.show(0.5);
         palet_controller.show(0.5);
         hide_label();
+        nav_but.toggle_off();
     }
     
     func show_favorites()
@@ -94,6 +104,7 @@ class NavController: UIViewController
         menu_controller.place_left();
         favorites_controller.show(0.5);
         show_label("FAVORITES");
+        nav_but.toggle_off();
     }
     
     func view_palet()
@@ -110,6 +121,7 @@ class NavController: UIViewController
         {
             show_label(name);
         }
+        nav_but.toggle_off();
         
     }
     
@@ -124,6 +136,7 @@ class NavController: UIViewController
         view_palet_controller.show(0.5);
         palet_controller.place_right();
         new_palet_controller.place_right();
+        nav_but.toggle_off();
     }
     
     func new_palet()
@@ -131,12 +144,9 @@ class NavController: UIViewController
         menu_controller.place_left();
         new_palet_controller.show(0.5);
         show_label("PALETS");
+        nav_but.toggle_off();
     }
-    
-    func search_color()
-    {
-        
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

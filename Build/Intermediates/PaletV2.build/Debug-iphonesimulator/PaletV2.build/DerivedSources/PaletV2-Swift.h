@@ -241,6 +241,25 @@ SWIFT_CLASS("_TtC7PaletV211CheckButton")
 @end
 
 
+@class ExitButton;
+@class NSIndexPath;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC7PaletV214CopyController")
+@interface CopyController : AuxillaryController <UITableViewDataSource>
+@property (nonatomic) UITableView * __null_unspecified table;
+@property (nonatomic) UIView * __null_unspecified selected_label;
+@property (nonatomic) ExitButton * __null_unspecified exit_button;
+- (void)viewDidLoad;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)copy_colors:(UIButton * __nonnull)sender;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)hide;
+- (void)show;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7PaletV212DeleteButton")
 @interface DeleteButton : MenuButton
@@ -269,6 +288,14 @@ SWIFT_CLASS("_TtC7PaletV215EmailController")
 @end
 
 
+SWIFT_CLASS("_TtC7PaletV210ExitButton")
+@interface ExitButton : MenuButton
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7PaletV214FavoriteButton")
 @interface FavoriteButton : MenuButton
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -276,8 +303,6 @@ SWIFT_CLASS("_TtC7PaletV214FavoriteButton")
 - (void)drawRect:(CGRect)rect;
 @end
 
-@class NSIndexPath;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC7PaletV219FavoritesController")
 @interface FavoritesController : AuxillaryController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -288,15 +313,18 @@ SWIFT_CLASS("_TtC7PaletV219FavoritesController")
 @property (nonatomic, copy) NSSet<NSNumber *> * __nonnull selected_colors;
 @property (nonatomic, copy) NSArray<NSNumber *> * __nonnull sorted_colors;
 - (void)load_favorites;
+- (void)reset_table;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)clicked:(CheckButton * __nonnull)sender;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (void)delete_colors;
+- (void)copy_colors;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)viewDidLoad;
 - (BOOL)prefersStatusBarHidden;
 - (void)push_left:(NSTimeInterval)duration;
 - (void)push_right:(NSTimeInterval)duration;
+- (void)place_right;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -309,7 +337,8 @@ SWIFT_CLASS("_TtC7PaletV29NavButton")
 @property (nonatomic) UIColor * __nonnull draw_color;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)drawRect:(CGRect)rect;
-- (void)select;
+- (void)toggle_on;
+- (void)toggle_off;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -333,7 +362,9 @@ SWIFT_CLASS("_TtC7PaletV213NavController")
 @property (nonatomic) NavButton * __nonnull nav_but;
 @property (nonatomic, readonly) NotificationController * __nonnull notification_controller;
 @property (nonatomic, readonly) OperationController * __nonnull operation_controller;
+@property (nonatomic, readonly) CopyController * __nonnull copy_controller;
 - (void)viewDidLoad;
+- (void)copy_favorites;
 - (void)show_label:(NSString * __nonnull)text;
 - (void)hide_label;
 - (void)handle_selection;
@@ -342,7 +373,6 @@ SWIFT_CLASS("_TtC7PaletV213NavController")
 - (void)view_palet;
 - (void)view_colors;
 - (void)new_palet;
-- (void)search_color;
 - (void)didReceiveMemoryWarning;
 - (BOOL)prefersStatusBarHidden;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -487,6 +517,14 @@ SWIFT_CLASS("_TtC7PaletV216PickerController")
 @end
 
 
+SWIFT_CLASS("_TtC7PaletV210SaveButton")
+@interface SaveButton : MenuButton
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7PaletV213SelController")
 @interface SelController : AuxillaryController
 @property (nonatomic) NavButton * __null_unspecified nav;
@@ -561,6 +599,7 @@ SWIFT_CLASS("_TtC7PaletV219ViewPaletController")
 - (BOOL)prefersStatusBarHidden;
 - (NSInteger)collectionView:(UICollectionView * __nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)delete_selected:(UIButton * __nonnull)sender;
 - (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (UIEdgeInsets)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
 - (CGFloat)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
@@ -569,7 +608,10 @@ SWIFT_CLASS("_TtC7PaletV219ViewPaletController")
 - (void)selected_color;
 - (void)push_left:(NSTimeInterval)duration;
 - (void)push_right:(NSTimeInterval)duration;
+- (void)place_right;
+- (void)place_left;
 - (void)show:(NSTimeInterval)duration;
+- (void)reset_table;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

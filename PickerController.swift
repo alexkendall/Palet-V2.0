@@ -210,7 +210,7 @@ class PickerController:AuxillaryController, UITextFieldDelegate {
             shade_slider.value = 0.5;
             shade_slider.minimumTrackTintColor = UIColor.clearColor();
             shade_slider.maximumTrackTintColor = UIColor.clearColor();
-            //shade_slider.backgroundColor = UIColor.whiteColor();
+            shade_slider.backgroundColor = UIColor.whiteColor();
             
             // set slider thumb image
             shade_slider.setThumbImage(get_color_image(UIColor.blackColor(), height: 40.0, width: 6.0), forState: UIControlState.Normal);

@@ -7,9 +7,9 @@ provides-member:
 - ["P7PaletV220AnimatedViewProtocol", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AnimatedViewProtocol"
 - "CGRect"
 - "NSTimeInterval"
-- "AnimatedViewProtocol"
 depends-member:
 - ["P7PaletV220AnimatedViewProtocol", "CGRect"]
 - ["P7PaletV220AnimatedViewProtocol", "NSTimeInterval"]

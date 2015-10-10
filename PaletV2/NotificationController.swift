@@ -18,16 +18,11 @@ class NotificationController:UIViewController
         super.viewDidLoad();
         
         in_frame = CGRect(x: 0.0, y: nav_controller.view.bounds.height - 50.0, width: nav_controller.view.bounds.width, height: 50.0);
-        
         out_frame = CGRect(x: 0.0, y: nav_controller.view.bounds.height, width: nav_controller.view.bounds.width, height: 50.0);
-        
         self.view.frame = out_frame;
         self.view.backgroundColor = UIColor.whiteColor();
-        
-        
         label = UILabel(frame: CGRect(x: 15.0, y: 0.0, width: self.view.bounds.width - 15.0, height: self.view.bounds.height));
         self.view.addSubview(label);
-        
         label.textColor = UIColor.blackColor();
     }
     

@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
+- !private "*"
+- !private "CGPoint"
 - "CGRect"
 - "MenuButton"
-- !private "CGPoint"
-- !private "*"
 - "SubButton"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]

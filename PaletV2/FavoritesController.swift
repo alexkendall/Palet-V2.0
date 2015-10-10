@@ -31,6 +31,13 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         }
     }
     
+    func reset_table()
+    {
+        selected_colors.removeAll();
+        sorted_colors.removeAll();
+        table.reloadData();
+    }
+    
     // START UITABLEVIEWDATASOURCE PROTOCOL IMPLEMENTATION------------------------
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -129,6 +136,11 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         nav_controller.operation_controller.hide();
     }
     
+    func copy_colors()
+    {
+        print("implement copy colors");
+    }
+    
     
     // END UITABLEVIEWDATASOURCE PROTOCOL IMPLEMENTATION--------------------------
     
@@ -142,10 +154,10 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         super_view.frame = left_frame;
-        margin = 15.0;
+        margin = super_view.bounds.width * 0.05;
         
         // configure back view
-        let table_frame = CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin), height: super_view.bounds.height - (2.0 * margin));
+        let table_frame = CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin) + 0.5, height: super_view.bounds.height - (2.0 * margin));
         table = UITableView(frame: table_frame, style: UITableViewStyle.Plain);
         table.backgroundColor = DARK_GRAY;
         super_view.addSubview(table);
@@ -175,5 +187,12 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         table.reloadData();
         nav_controller.operation_controller.hide();
         selected_colors.removeAll();
+    }
+    
+    override func place_right() {
+        super.place_right();
+        print("placing right");
+        reset_table();
+        nav_controller.operation_controller.hide();
     }
 }

@@ -14,7 +14,7 @@ class SelController:AuxillaryController
     var margin:CGFloat!;
     var nav:NavButton!;
     var back_view:UIView!;
-    var label_texts = ["NEW PALETTE", "VIEW FAVORITES", "COLOR PICKER"];
+    var label_texts = ["PALETTES", "FAVORITES", "PICKER"];
     var colors = [SOFT_GREEN, SOFT_ORANGE, MAGENTA, LIGHT_BLUE, UIColor.yellowColor()];
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class SelController:AuxillaryController
         margin = super_view.bounds.width * 0.05;
         
         // configure back view
-        back_view = UIView(frame: CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin), height: (super_view.bounds.height - 2.0 * margin)));
+        back_view = UIView(frame: CGRect(x: margin + 0.5, y: margin, width: super_view.frame.width - (2.0 * margin) - 2.5, height: (super_view.bounds.height - 2.0 * margin)));
         super_view.addSubview(back_view);
         
         // 
@@ -42,7 +42,7 @@ class SelController:AuxillaryController
             let offset_y:CGFloat = (CGFloat(i) * icon_dim);
             let container_view = UIView(frame: CGRect(x: 0.0, y: offset_y, width: back_view.bounds.width + 2.0, height: icon_dim));
             container_view.layer.borderWidth = 1.0;
-            container_view.layer.borderColor = UIColor.whiteColor().CGColor;
+            //container_view.layer.borderColor = UIColor.whiteColor().CGColor;
             container_view.backgroundColor = WOLF_GRAY;
             
             let scale:CGFloat = 0.5;

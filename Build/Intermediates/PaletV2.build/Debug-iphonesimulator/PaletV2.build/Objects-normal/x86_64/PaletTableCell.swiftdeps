@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "go_to_button"
 depends-top-level:
 - "UITableViewCell"
-- "PaletTableCell"
 - "UIButton"
+- "PaletTableCell"
 depends-member:
 - ["PSs9AnyObject", "UIButton"]
 - ["PSs9AnyObject", "check_button"]

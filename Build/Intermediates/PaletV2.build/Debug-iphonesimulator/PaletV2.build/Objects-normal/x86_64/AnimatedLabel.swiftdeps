@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "show"
 - "hide"
 depends-top-level:
-- "CGRect"
+- "AnimatedLabel"
 - "NSCoder"
+- "CGRect"
 - !private "UIView"
 - "UILabel"
-- !private "StringLiteralType"
-- !private "fatalError"
-- "AnimatedLabel"
 - "NSTimeInterval"
+- !private "StringLiteralType"
 - "AnimatedViewProtocol"
+- !private "fatalError"
 depends-member:
 - ["C7PaletV213AnimatedLabel", "CGRect"]
 - ["C7PaletV213AnimatedLabel", "NSCoder"]
