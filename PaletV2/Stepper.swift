@@ -22,7 +22,9 @@ class Stepper:UIView
         incr_button = AddButton(frame: CGRect(x: 0.0, y: 0.0, width: frame.width, height: frame.height * 0.5));
         incr_button.set_square();
         incr_button.layer.borderWidth = 1.0;
-        incr_button.backgroundColor = UIColor.whiteColor();
+        incr_button.set_unhighlight_color(UIColor.whiteColor());
+        incr_button.set_image_color(UIColor.blackColor());
+        incr_button.set_highlight_color(UIColor.lightGrayColor());
         incr_button.set_border_width(1.0);
         incr_button.set_path_width(1.0);
         incr_button.set_border_color(UIColor.blackColor());
@@ -33,9 +35,11 @@ class Stepper:UIView
         decr_button = SubButton(frame:CGRect(x: 0.0, y:frame.height * 0.5, width: frame.width, height: frame.height * 0.5));
         decr_button.set_square();
         decr_button.set_border_color(UIColor.blackColor());
+        decr_button.set_unhighlight_color(UIColor.whiteColor());
+        decr_button.set_highlight_color(UIColor.lightGrayColor());
+        decr_button.set_image_color(UIColor.blackColor());
         decr_button.set_border_width(1.0);
         decr_button.set_path_width(1.0);
-        decr_button.backgroundColor = UIColor.whiteColor();
         decr_button.layer.cornerRadius = decr_button.bounds.height * 0.1;
         decr_button.addTarget(self, action: "decrement", forControlEvents: UIControlEvents.TouchDown);
         

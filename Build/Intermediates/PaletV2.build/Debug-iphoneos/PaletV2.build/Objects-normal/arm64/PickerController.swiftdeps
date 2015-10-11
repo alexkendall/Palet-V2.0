@@ -6,92 +6,96 @@ provides-nominal:
 provides-member:
 - ["C7PaletV216PickerController", ""]
 provides-dynamic-lookup:
-- "selected_palet"
-- "textFieldDidBeginEditing"
-- "textFieldShouldEndEditing"
-- "textFieldShouldReturn"
-- "textFieldShouldBeginEditing"
-- "steppers"
-- "rgb_colors"
-- "labels"
-- "adjust_shade"
-- "color_view"
-- "reset_shade"
-- "favorite_button"
-- "code_entry_field"
-- "didReceiveMemoryWarning"
-- "add_to_palette"
-- "sliders"
-- "viewDidLoad"
-- "gradient"
-- "push_right"
-- "textFieldDidEndEditing"
-- "update_code"
-- "NUM_COMPONENTS"
-- "change_color"
-- "decrement"
-- "add_favorite"
-- "add_button"
-- "textFieldShouldClear"
-- "shade_slider"
-- "increment"
-- "rgb_label"
-- "current_color"
-- "push_left"
 - "gradient_view"
+- "push_left"
+- "increment"
+- "NUM_COMPONENTS"
+- "rgb_label"
+- "add_button"
+- "update_code"
+- "shade_slider"
+- "sliders"
+- "selected_palet"
+- "textFieldShouldClear"
+- "didReceiveMemoryWarning"
+- "color_view"
+- "textFieldShouldReturn"
+- "current_color"
+- "textFieldDidBeginEditing"
 - "label_txt"
+- "gradient"
+- "add_favorite"
+- "change_color"
+- "code_entry_field"
+- "textFieldShouldEndEditing"
+- "textFieldShouldBeginEditing"
+- "rgb_colors"
+- "steppers"
+- "viewDidLoad"
+- "decrement"
+- "push_right"
+- "add_to_palette"
+- "adjust_shade"
+- "favorite_button"
+- "labels"
+- "reset_shade"
+- "textFieldDidEndEditing"
 depends-top-level:
-- !private "TextField"
-- "NSTimeInterval"
-- "UIButton"
-- !private "UIFont"
-- !private "UILabel"
-- !private "print"
-- "CAGradientLayer"
-- "Stepper"
-- !private "store_color"
+- !private "M_PI"
+- !private "get_rgb"
 - !private "!="
-- !private "UIImage"
+- !private "UIControlState"
+- !private "CGAffineTransformMakeRotation"
+- "Stepper"
+- !private "CGFloat"
+- !private "CGRect"
+- "NSTimeInterval"
+- !private "store_color"
+- !private "UILabel"
+- !private "-"
+- !private "print"
+- "AnimatedLabel"
+- !private "CGPointMake"
+- "CAGradientLayer"
+- !private "FAVORITE_GROUP_NAME"
 - !private "UITextAutocapitalizationType"
-- !private "get_color_image"
+- !private "get_hex"
+- !private "=="
+- !private "NSTextAlignment"
+- "UIButton"
+- "AnimatedSlider"
+- "Array"
+- "UIColor"
+- "String"
+- "UITextField"
+- !private "nav_controller"
+- !private "TextField"
+- !private "*"
+- "AnimatedView"
 - !private "BooleanLiteralType"
+- !private "+="
+- !private "get_color"
+- !private "UIControlEvents"
+- "AuxillaryController"
+- !private "get_color_image"
+- !private "-="
+- !private "is_valid"
+- !private "setDeviceInfo"
+- !private "++"
+- "Bool"
+- !private "/"
+- "PickerController"
+- "UnicodeScalarType"
+- !private "DEVICE_TYPE"
+- !private "+"
+- "UITextFieldDelegate"
+- !private "UIFont"
+- "AnimatedButton"
+- !private "DEVICE_VERSION"
 - !private "<"
 - !private "Float"
-- !private "CGRect"
-- !private "/"
-- !private "get_color"
-- "UITextFieldDelegate"
-- "Array"
-- !private "CGFloat"
-- "AnimatedButton"
-- "PickerController"
-- !private "++"
-- !private "UIControlState"
-- "String"
-- !private "-="
-- !private "+="
-- "AnimatedView"
-- !private "get_rgb"
-- "AuxillaryController"
-- !private "CGPointMake"
-- "UITextField"
-- "UIColor"
-- !private "is_valid"
-- !private "+"
-- !private "*"
-- !private "FAVORITE_GROUP_NAME"
-- !private "-"
-- "AnimatedLabel"
-- !private "NSTextAlignment"
-- !private "UIControlEvents"
 - "StringLiteralType"
-- !private "CGAffineTransformMakeRotation"
-- !private "nav_controller"
-- "UnicodeScalarType"
-- "AnimatedSlider"
-- "Bool"
-- !private "M_PI"
-- !private "get_hex"
+- !private "UIImage"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["C7PaletV29AddButton", "addTarget"]
@@ -166,6 +170,8 @@ depends-member:
 - !private ["PSs9AnyObject", "CGFloat"]
 - !private ["PSs9AnyObject", "CGPointMake"]
 - !private ["PSs9AnyObject", "CGRect"]
+- !private ["PSs9AnyObject", "DEVICE_TYPE"]
+- !private ["PSs9AnyObject", "DEVICE_VERSION"]
 - !private ["PSs9AnyObject", "FAVORITE_GROUP_NAME"]
 - !private ["PSs9AnyObject", "Float"]
 - !private ["PSs9AnyObject", "M_PI"]
@@ -238,6 +244,7 @@ depends-member:
 - !private ["PSs9AnyObject", "nav_controller"]
 - !private ["PSs9AnyObject", "notification_controller"]
 - !private ["PSs9AnyObject", "out_frame"]
+- !private ["PSs9AnyObject", "palet_controller"]
 - !private ["PSs9AnyObject", "palet_name"]
 - !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "push_left"]
@@ -250,6 +257,7 @@ depends-member:
 - ["PSs9AnyObject", "rgb_label"]
 - !private ["PSs9AnyObject", "right_frame"]
 - ["PSs9AnyObject", "selected_palet"]
+- !private ["PSs9AnyObject", "setDeviceInfo"]
 - !private ["PSs9AnyObject", "setThumbImage"]
 - !private ["PSs9AnyObject", "setTitle"]
 - !private ["PSs9AnyObject", "setTitleColor"]
@@ -315,6 +323,8 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "CGFloat"]
 - !private ["C7PaletV219AuxillaryController", "CGPointMake"]
 - !private ["C7PaletV219AuxillaryController", "CGRect"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_TYPE"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_VERSION"]
 - !private ["C7PaletV219AuxillaryController", "FAVORITE_GROUP_NAME"]
 - !private ["C7PaletV219AuxillaryController", "Float"]
 - !private ["C7PaletV219AuxillaryController", "M_PI"]
@@ -369,6 +379,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "rgb_label"]
 - !private ["C7PaletV219AuxillaryController", "right_frame"]
 - ["C7PaletV219AuxillaryController", "selected_palet"]
+- !private ["C7PaletV219AuxillaryController", "setDeviceInfo"]
 - ["C7PaletV219AuxillaryController", "shade_slider"]
 - ["C7PaletV219AuxillaryController", "sliders"]
 - ["C7PaletV219AuxillaryController", "steppers"]
@@ -440,6 +451,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "CGFloat"]
 - !private ["PSs11CVarArgType", "CGPointMake"]
 - !private ["PSs11CVarArgType", "CGRect"]
+- !private ["PSs11CVarArgType", "DEVICE_TYPE"]
+- !private ["PSs11CVarArgType", "DEVICE_VERSION"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "FAVORITE_GROUP_NAME"]
 - !private ["PSs11CVarArgType", "Float"]
@@ -514,6 +527,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "nav_controller"]
 - !private ["PSs11CVarArgType", "notification_controller"]
 - !private ["PSs11CVarArgType", "out_frame"]
+- !private ["PSs11CVarArgType", "palet_controller"]
 - !private ["PSs11CVarArgType", "palet_name"]
 - !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "push_left"]
@@ -526,6 +540,7 @@ depends-member:
 - ["PSs11CVarArgType", "rgb_label"]
 - !private ["PSs11CVarArgType", "right_frame"]
 - ["PSs11CVarArgType", "selected_palet"]
+- !private ["PSs11CVarArgType", "setDeviceInfo"]
 - !private ["PSs11CVarArgType", "setThumbImage"]
 - !private ["PSs11CVarArgType", "setTitle"]
 - !private ["PSs11CVarArgType", "setTitleColor"]
@@ -586,6 +601,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "CGFloat"]
 - !private ["PSs23CustomStringConvertible", "CGPointMake"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_TYPE"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_VERSION"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "FAVORITE_GROUP_NAME"]
@@ -667,6 +684,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "nav_controller"]
 - !private ["PSs23CustomStringConvertible", "notification_controller"]
 - !private ["PSs23CustomStringConvertible", "out_frame"]
+- !private ["PSs23CustomStringConvertible", "palet_controller"]
 - !private ["PSs23CustomStringConvertible", "palet_name"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "push_left"]
@@ -679,6 +697,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "rgb_label"]
 - !private ["PSs23CustomStringConvertible", "right_frame"]
 - ["PSs23CustomStringConvertible", "selected_palet"]
+- !private ["PSs23CustomStringConvertible", "setDeviceInfo"]
 - !private ["PSs23CustomStringConvertible", "setThumbImage"]
 - !private ["PSs23CustomStringConvertible", "setTitle"]
 - !private ["PSs23CustomStringConvertible", "setTitleColor"]
@@ -713,6 +732,12 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "view_palet_controller"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["O7PaletV211DEVICE_TYPE", "IPAD"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_4"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_5"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_6"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_6_PLUS"]
+- !private ["O7PaletV211DEVICE_TYPE", "deinit"]
 - !private ["PSs9Equatable", "AllCharacters"]
 - !private ["PSs9Equatable", "AnimatedButton"]
 - ["PSs9Equatable", "AnimatedLabel"]
@@ -725,10 +750,17 @@ depends-member:
 - !private ["PSs9Equatable", "CGPointMake"]
 - !private ["PSs9Equatable", "CGRect"]
 - !private ["PSs9Equatable", "Center"]
+- !private ["PSs9Equatable", "DEVICE_TYPE"]
+- !private ["PSs9Equatable", "DEVICE_VERSION"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "FAVORITE_GROUP_NAME"]
 - !private ["PSs9Equatable", "Float"]
 - !private ["PSs9Equatable", "Highlighted"]
+- !private ["PSs9Equatable", "IPAD"]
+- !private ["PSs9Equatable", "IPHONE_4"]
+- !private ["PSs9Equatable", "IPHONE_5"]
+- !private ["PSs9Equatable", "IPHONE_6"]
+- !private ["PSs9Equatable", "IPHONE_6_PLUS"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "M_PI"]
 - !private ["PSs9Equatable", "NSTextAlignment"]
@@ -810,6 +842,7 @@ depends-member:
 - !private ["PSs9Equatable", "notification_controller"]
 - !private ["PSs9Equatable", "origin"]
 - !private ["PSs9Equatable", "out_frame"]
+- !private ["PSs9Equatable", "palet_controller"]
 - !private ["PSs9Equatable", "palet_name"]
 - !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "push_left"]
@@ -822,6 +855,7 @@ depends-member:
 - ["PSs9Equatable", "rgb_label"]
 - !private ["PSs9Equatable", "right_frame"]
 - ["PSs9Equatable", "selected_palet"]
+- !private ["PSs9Equatable", "setDeviceInfo"]
 - !private ["PSs9Equatable", "setThumbImage"]
 - !private ["PSs9Equatable", "setTitle"]
 - !private ["PSs9Equatable", "setTitleColor"]
@@ -877,9 +911,16 @@ depends-member:
 - !private ["PSs8Hashable", "CGPointMake"]
 - !private ["PSs8Hashable", "CGRect"]
 - !private ["PSs8Hashable", "Center"]
+- !private ["PSs8Hashable", "DEVICE_TYPE"]
+- !private ["PSs8Hashable", "DEVICE_VERSION"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "FAVORITE_GROUP_NAME"]
 - !private ["PSs8Hashable", "Float"]
+- !private ["PSs8Hashable", "IPAD"]
+- !private ["PSs8Hashable", "IPHONE_4"]
+- !private ["PSs8Hashable", "IPHONE_5"]
+- !private ["PSs8Hashable", "IPHONE_6"]
+- !private ["PSs8Hashable", "IPHONE_6_PLUS"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "M_PI"]
 - !private ["PSs8Hashable", "NSTextAlignment"]
@@ -952,6 +993,7 @@ depends-member:
 - !private ["PSs8Hashable", "nav_controller"]
 - !private ["PSs8Hashable", "notification_controller"]
 - !private ["PSs8Hashable", "out_frame"]
+- !private ["PSs8Hashable", "palet_controller"]
 - !private ["PSs8Hashable", "palet_name"]
 - !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "push_left"]
@@ -964,6 +1006,7 @@ depends-member:
 - ["PSs8Hashable", "rgb_label"]
 - !private ["PSs8Hashable", "right_frame"]
 - ["PSs8Hashable", "selected_palet"]
+- !private ["PSs8Hashable", "setDeviceInfo"]
 - !private ["PSs8Hashable", "setThumbImage"]
 - !private ["PSs8Hashable", "setTitle"]
 - !private ["PSs8Hashable", "setTitleColor"]
@@ -1049,6 +1092,8 @@ depends-member:
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGPointMake"]
 - !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "DEVICE_TYPE"]
+- !private ["PSo8NSCoding", "DEVICE_VERSION"]
 - !private ["PSo8NSCoding", "FAVORITE_GROUP_NAME"]
 - !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "M_PI"]
@@ -1121,6 +1166,7 @@ depends-member:
 - !private ["PSo8NSCoding", "nav_controller"]
 - !private ["PSo8NSCoding", "notification_controller"]
 - !private ["PSo8NSCoding", "out_frame"]
+- !private ["PSo8NSCoding", "palet_controller"]
 - !private ["PSo8NSCoding", "palet_name"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "push_left"]
@@ -1133,6 +1179,7 @@ depends-member:
 - ["PSo8NSCoding", "rgb_label"]
 - !private ["PSo8NSCoding", "right_frame"]
 - ["PSo8NSCoding", "selected_palet"]
+- !private ["PSo8NSCoding", "setDeviceInfo"]
 - !private ["PSo8NSCoding", "setThumbImage"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "setTitleColor"]
@@ -1186,6 +1233,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPointMake"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_TYPE"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_VERSION"]
 - !private ["PSo26NSExtensionRequestHandling", "FAVORITE_GROUP_NAME"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "M_PI"]
@@ -1229,6 +1278,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "left_frame"]
 - !private ["PSo26NSExtensionRequestHandling", "nav_controller"]
 - !private ["PSo26NSExtensionRequestHandling", "notification_controller"]
+- !private ["PSo26NSExtensionRequestHandling", "palet_controller"]
 - !private ["PSo26NSExtensionRequestHandling", "palet_name"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "push_left"]
@@ -1238,6 +1288,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "rgb_label"]
 - !private ["PSo26NSExtensionRequestHandling", "right_frame"]
 - ["PSo26NSExtensionRequestHandling", "selected_palet"]
+- !private ["PSo26NSExtensionRequestHandling", "setDeviceInfo"]
 - ["PSo26NSExtensionRequestHandling", "shade_slider"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "sliders"]
@@ -1269,6 +1320,8 @@ depends-member:
 - !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGPointMake"]
 - !private ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "DEVICE_TYPE"]
+- !private ["CSo8NSObject", "DEVICE_VERSION"]
 - !private ["CSo8NSObject", "FAVORITE_GROUP_NAME"]
 - !private ["CSo8NSObject", "Float"]
 - !private ["CSo8NSObject", "M_PI"]
@@ -1345,6 +1398,7 @@ depends-member:
 - !private ["CSo8NSObject", "nav_controller"]
 - !private ["CSo8NSObject", "notification_controller"]
 - !private ["CSo8NSObject", "out_frame"]
+- !private ["CSo8NSObject", "palet_controller"]
 - !private ["CSo8NSObject", "palet_name"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "push_left"]
@@ -1357,6 +1411,7 @@ depends-member:
 - ["CSo8NSObject", "rgb_label"]
 - !private ["CSo8NSObject", "right_frame"]
 - ["CSo8NSObject", "selected_palet"]
+- !private ["CSo8NSObject", "setDeviceInfo"]
 - !private ["CSo8NSObject", "setThumbImage"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "setTitleColor"]
@@ -1399,6 +1454,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGPointMake"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_TYPE"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_VERSION"]
 - !private ["PSo16NSObjectProtocol", "FAVORITE_GROUP_NAME"]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "M_PI"]
@@ -1471,6 +1528,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "nav_controller"]
 - !private ["PSo16NSObjectProtocol", "notification_controller"]
 - !private ["PSo16NSObjectProtocol", "out_frame"]
+- !private ["PSo16NSObjectProtocol", "palet_controller"]
 - !private ["PSo16NSObjectProtocol", "palet_name"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "push_left"]
@@ -1483,6 +1541,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "rgb_label"]
 - !private ["PSo16NSObjectProtocol", "right_frame"]
 - ["PSo16NSObjectProtocol", "selected_palet"]
+- !private ["PSo16NSObjectProtocol", "setDeviceInfo"]
 - !private ["PSo16NSObjectProtocol", "setThumbImage"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "setTitleColor"]
@@ -1531,6 +1590,7 @@ depends-member:
 - !private ["OSC15NSTextAlignment", "Center"]
 - !private ["C7PaletV213NavController", "favorites_controller"]
 - !private ["C7PaletV213NavController", "notification_controller"]
+- !private ["C7PaletV213NavController", "palet_controller"]
 - !private ["C7PaletV213NavController", "view_palet_controller"]
 - !private ["C7PaletV222NotificationController", "show"]
 - !private ["PSs13OptionSetType", "Highlighted"]
@@ -1539,6 +1599,7 @@ depends-member:
 - !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
+- !private ["C7PaletV215PaletController", "view"]
 - ["C7PaletV216PickerController", "AnimatedButton"]
 - ["C7PaletV216PickerController", "AnimatedLabel"]
 - ["C7PaletV216PickerController", "AnimatedSlider"]
@@ -1549,6 +1610,8 @@ depends-member:
 - !private ["C7PaletV216PickerController", "CGFloat"]
 - !private ["C7PaletV216PickerController", "CGPointMake"]
 - !private ["C7PaletV216PickerController", "CGRect"]
+- !private ["C7PaletV216PickerController", "DEVICE_TYPE"]
+- !private ["C7PaletV216PickerController", "DEVICE_VERSION"]
 - !private ["C7PaletV216PickerController", "FAVORITE_GROUP_NAME"]
 - !private ["C7PaletV216PickerController", "Float"]
 - !private ["C7PaletV216PickerController", "M_PI"]
@@ -1601,6 +1664,7 @@ depends-member:
 - ["C7PaletV216PickerController", "rgb_label"]
 - !private ["C7PaletV216PickerController", "right_frame"]
 - ["C7PaletV216PickerController", "selected_palet"]
+- !private ["C7PaletV216PickerController", "setDeviceInfo"]
 - ["C7PaletV216PickerController", "shade_slider"]
 - ["C7PaletV216PickerController", "sliders"]
 - ["C7PaletV216PickerController", "steppers"]
@@ -1734,6 +1798,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGPointMake"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_TYPE"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_VERSION"]
 - !private ["PSo21UIAppearanceContainer", "FAVORITE_GROUP_NAME"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "M_PI"]
@@ -1793,6 +1859,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "nav_controller"]
 - !private ["PSo21UIAppearanceContainer", "notification_controller"]
 - !private ["PSo21UIAppearanceContainer", "out_frame"]
+- !private ["PSo21UIAppearanceContainer", "palet_controller"]
 - !private ["PSo21UIAppearanceContainer", "palet_name"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "push_left"]
@@ -1804,6 +1871,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "rgb_label"]
 - !private ["PSo21UIAppearanceContainer", "right_frame"]
 - ["PSo21UIAppearanceContainer", "selected_palet"]
+- !private ["PSo21UIAppearanceContainer", "setDeviceInfo"]
 - !private ["PSo21UIAppearanceContainer", "setThumbImage"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "setTitleColor"]
@@ -1872,6 +1940,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGPointMake"]
 - !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "DEVICE_TYPE"]
+- !private ["PSo18UIContentContainer", "DEVICE_VERSION"]
 - !private ["PSo18UIContentContainer", "FAVORITE_GROUP_NAME"]
 - !private ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "M_PI"]
@@ -1915,6 +1985,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "left_frame"]
 - !private ["PSo18UIContentContainer", "nav_controller"]
 - !private ["PSo18UIContentContainer", "notification_controller"]
+- !private ["PSo18UIContentContainer", "palet_controller"]
 - !private ["PSo18UIContentContainer", "palet_name"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "push_left"]
@@ -1924,6 +1995,7 @@ depends-member:
 - ["PSo18UIContentContainer", "rgb_label"]
 - !private ["PSo18UIContentContainer", "right_frame"]
 - ["PSo18UIContentContainer", "selected_palet"]
+- !private ["PSo18UIContentContainer", "setDeviceInfo"]
 - ["PSo18UIContentContainer", "shade_slider"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "sliders"]
@@ -2060,6 +2132,8 @@ depends-member:
 - !private ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGPointMake"]
 - !private ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "DEVICE_TYPE"]
+- !private ["CSo11UIResponder", "DEVICE_VERSION"]
 - !private ["CSo11UIResponder", "FAVORITE_GROUP_NAME"]
 - !private ["CSo11UIResponder", "Float"]
 - !private ["CSo11UIResponder", "M_PI"]
@@ -2123,6 +2197,7 @@ depends-member:
 - !private ["CSo11UIResponder", "nav_controller"]
 - !private ["CSo11UIResponder", "notification_controller"]
 - !private ["CSo11UIResponder", "out_frame"]
+- !private ["CSo11UIResponder", "palet_controller"]
 - !private ["CSo11UIResponder", "palet_name"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "push_left"]
@@ -2134,6 +2209,7 @@ depends-member:
 - ["CSo11UIResponder", "rgb_label"]
 - !private ["CSo11UIResponder", "right_frame"]
 - ["CSo11UIResponder", "selected_palet"]
+- !private ["CSo11UIResponder", "setDeviceInfo"]
 - !private ["CSo11UIResponder", "setThumbImage"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "setTitleColor"]
@@ -2167,6 +2243,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "colors"]
 - !private ["PSo20UIScrollViewDelegate", "palet_name"]
 - !private ["PSo20UIScrollViewDelegate", "table"]
+- !private ["PSo20UIScrollViewDelegate", "view"]
 - !private ["CSo8UISlider", "addTarget"]
 - !private ["CSo8UISlider", "backgroundColor"]
 - !private ["CSo8UISlider", "bounds"]
@@ -2190,6 +2267,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGPointMake"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "DEVICE_TYPE"]
+- !private ["PSo16UIStateRestoring", "DEVICE_VERSION"]
 - !private ["PSo16UIStateRestoring", "FAVORITE_GROUP_NAME"]
 - !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "M_PI"]
@@ -2233,6 +2312,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "left_frame"]
 - !private ["PSo16UIStateRestoring", "nav_controller"]
 - !private ["PSo16UIStateRestoring", "notification_controller"]
+- !private ["PSo16UIStateRestoring", "palet_controller"]
 - !private ["PSo16UIStateRestoring", "palet_name"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "push_left"]
@@ -2242,6 +2322,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "rgb_label"]
 - !private ["PSo16UIStateRestoring", "right_frame"]
 - ["PSo16UIStateRestoring", "selected_palet"]
+- !private ["PSo16UIStateRestoring", "setDeviceInfo"]
 - ["PSo16UIStateRestoring", "shade_slider"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "sliders"]
@@ -2263,7 +2344,9 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["PSo21UITableViewDataSource", "table"]
+- !private ["PSo21UITableViewDataSource", "view"]
 - !private ["PSo19UITableViewDelegate", "table"]
+- !private ["PSo19UITableViewDelegate", "view"]
 - !private ["OSC28UITextAutocapitalizationType", "AllCharacters"]
 - !private ["CSo11UITextField", "autocapitalizationType"]
 - !private ["CSo11UITextField", "backgroundColor"]
@@ -2282,6 +2365,8 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "CGFloat"]
 - !private ["PSo19UITextFieldDelegate", "CGPointMake"]
 - !private ["PSo19UITextFieldDelegate", "CGRect"]
+- !private ["PSo19UITextFieldDelegate", "DEVICE_TYPE"]
+- !private ["PSo19UITextFieldDelegate", "DEVICE_VERSION"]
 - !private ["PSo19UITextFieldDelegate", "FAVORITE_GROUP_NAME"]
 - !private ["PSo19UITextFieldDelegate", "Float"]
 - !private ["PSo19UITextFieldDelegate", "M_PI"]
@@ -2319,6 +2404,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "rgb_label"]
 - !private ["PSo19UITextFieldDelegate", "right_frame"]
 - !private ["PSo19UITextFieldDelegate", "selected_palet"]
+- !private ["PSo19UITextFieldDelegate", "setDeviceInfo"]
 - !private ["PSo19UITextFieldDelegate", "shade_slider"]
 - !private ["PSo19UITextFieldDelegate", "sliders"]
 - !private ["PSo19UITextFieldDelegate", "steppers"]
@@ -2359,6 +2445,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGPointMake"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_TYPE"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_VERSION"]
 - !private ["PSo18UITraitEnvironment", "FAVORITE_GROUP_NAME"]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "M_PI"]
@@ -2418,6 +2506,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "nav_controller"]
 - !private ["PSo18UITraitEnvironment", "notification_controller"]
 - !private ["PSo18UITraitEnvironment", "out_frame"]
+- !private ["PSo18UITraitEnvironment", "palet_controller"]
 - !private ["PSo18UITraitEnvironment", "palet_name"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "push_left"]
@@ -2429,6 +2518,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "rgb_label"]
 - !private ["PSo18UITraitEnvironment", "right_frame"]
 - ["PSo18UITraitEnvironment", "selected_palet"]
+- !private ["PSo18UITraitEnvironment", "setDeviceInfo"]
 - !private ["PSo18UITraitEnvironment", "setThumbImage"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "setTitleColor"]
@@ -2498,6 +2588,8 @@ depends-member:
 - !private ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGPointMake"]
 - !private ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "DEVICE_TYPE"]
+- !private ["CSo16UIViewController", "DEVICE_VERSION"]
 - !private ["CSo16UIViewController", "FAVORITE_GROUP_NAME"]
 - !private ["CSo16UIViewController", "Float"]
 - !private ["CSo16UIViewController", "M_PI"]
@@ -2545,6 +2637,7 @@ depends-member:
 - !private ["CSo16UIViewController", "left_frame"]
 - !private ["CSo16UIViewController", "nav_controller"]
 - !private ["CSo16UIViewController", "notification_controller"]
+- !private ["CSo16UIViewController", "palet_controller"]
 - !private ["CSo16UIViewController", "palet_name"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "push_left"]
@@ -2554,6 +2647,7 @@ depends-member:
 - ["CSo16UIViewController", "rgb_label"]
 - !private ["CSo16UIViewController", "right_frame"]
 - ["CSo16UIViewController", "selected_palet"]
+- !private ["CSo16UIViewController", "setDeviceInfo"]
 - ["CSo16UIViewController", "shade_slider"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "sliders"]
@@ -2698,6 +2792,7 @@ depends-nominal:
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "O7PaletV211DEVICE_TYPE"
 - "PSs9Equatable"
 - !private "C7PaletV219FavoritesController"
 - !private "Sf"
@@ -2729,6 +2824,7 @@ depends-nominal:
 - !private "C7PaletV222NotificationController"
 - !private "PSs13OptionSetType"
 - !private "Sq"
+- !private "C7PaletV215PaletController"
 - "C7PaletV216PickerController"
 - !private "PSs21RandomAccessIndexType"
 - "PSs30RangeReplaceableCollectionType"
@@ -2807,4 +2903,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 interface-hash: "5a218e57391a65ef0beede8c4f3174c1"

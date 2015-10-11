@@ -32,7 +32,7 @@ class CopyController:AuxillaryController, UITableViewDataSource
         
         
         selected_label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: super_view.bounds.width, height: label_height));
-        selected_label.backgroundColor = UIColor.whiteColor();
+        selected_label.backgroundColor = UIColor.lightGrayColor();
         super_view.addSubview(selected_label);
         
         //
@@ -143,13 +143,14 @@ class CopyController:AuxillaryController, UITableViewDataSource
     
     func hide()
     {
-        
+        nav_controller.favorites_controller.maximize_table(0.25);
         place_right();
         
     }
     
     func show()
     {
+        nav_controller.favorites_controller.minimize_table(0.25);
         show(0.5);
     }
     

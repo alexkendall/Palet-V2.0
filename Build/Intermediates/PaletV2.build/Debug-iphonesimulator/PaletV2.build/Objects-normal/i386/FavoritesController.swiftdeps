@@ -6,76 +6,82 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219FavoritesController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "selected_colors"
-- "colors"
 - "push_right"
-- "copy_colors"
-- "push_left"
 - "prefersStatusBarHidden"
-- "load_favorites"
-- "delete_colors"
-- "clicked"
 - "place_right"
-- "reset_table"
-- "tableView"
-- "tableView"
-- "tableView"
-- "label_texts"
-- "sorted_colors"
+- "selected_colors"
 - "table"
+- "push_left"
+- "clicked"
+- "label_texts"
 - "selected_index"
+- "reset_table"
+- "sorted_colors"
+- "delete_colors"
+- "load_favorites"
+- "copy_colors"
+- "colors"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
 depends-top-level:
-- "NSTimeInterval"
-- !private "!"
-- !private "UIControlEvents"
-- !private "=="
-- "Set"
-- !private "++"
-- !private "SOFT_GREEN"
-- !private "CGRect"
-- "Array"
-- "UITableViewCell"
 - !private "get_hex"
-- "StringLiteralType"
-- !private "get_color"
+- !private "BooleanLiteralType"
+- "UITableView"
+- "Array"
+- !private "SOFT_GREEN"
+- !private "++"
 - "CheckButton"
-- !private "fetch_colors"
-- !private "UITableViewCellSelectionStyle"
 - !private "UITableViewStyle"
-- "CGFloat"
+- !private "DARK_GRAY"
+- "NSTimeInterval"
+- "UITableViewCell"
+- !private "WOLF_GRAY"
+- !private "fetch_colors"
+- !private "get_rgb"
 - !private "FAVORITE_GROUP_NAME"
-- "FavoritesController"
+- !private "=="
+- "UITableViewDataSource"
+- "AuxillaryController"
+- !private "UITableViewCellSeparatorStyle"
+- !private "UIControlEvents"
+- !private "!"
 - !private "<"
-- !private "UIFont"
+- "Set"
 - "UITableViewDelegate"
 - "UIColor"
-- "NSIndexPath"
-- !private "UIView"
-- "UITableViewDataSource"
-- !private "WOLF_GRAY"
-- !private "%"
-- "AuxillaryController"
-- !private "+"
-- !private "-"
-- !private "*"
-- !private "UITableViewCellSeparatorStyle"
-- !private "get_rgb"
-- !private "DARK_GRAY"
-- "Int"
-- "UITableView"
-- "Bool"
-- !private "print"
-- !private "BooleanLiteralType"
-- !private "UILabel"
 - !private ">"
-- !private "nav_controller"
 - !private "delete_color"
+- !private "setDeviceInfo"
+- "NSIndexPath"
+- !private "UITableViewCellSelectionStyle"
+- !private "UIView"
+- !private "DEVICE_TYPE"
+- !private "*"
+- !private "DEVICE_VERSION"
+- "FavoritesController"
+- !private "%"
+- !private "+"
+- !private "||"
+- !private "UIFont"
+- !private "-"
+- !private "print"
+- !private "UILabel"
+- "StringLiteralType"
+- "Int"
+- "Bool"
+- !private "get_color"
+- "CGFloat"
+- !private "CGRect"
+- !private "nav_controller"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "CheckButton"]
 - !private ["PSs9AnyObject", "DARK_GRAY"]
+- !private ["PSs9AnyObject", "DEVICE_TYPE"]
+- !private ["PSs9AnyObject", "DEVICE_VERSION"]
 - !private ["PSs9AnyObject", "FAVORITE_GROUP_NAME"]
 - ["PSs9AnyObject", "Int"]
 - !private ["PSs9AnyObject", "SOFT_GREEN"]
@@ -147,6 +153,7 @@ depends-member:
 - ["PSs9AnyObject", "selected_index"]
 - !private ["PSs9AnyObject", "selectionStyle"]
 - !private ["PSs9AnyObject", "separatorStyle"]
+- !private ["PSs9AnyObject", "setDeviceInfo"]
 - !private ["PSs9AnyObject", "set_border_color"]
 - !private ["PSs9AnyObject", "set_border_width"]
 - !private ["PSs9AnyObject", "set_highlight_color"]
@@ -200,6 +207,8 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "CGRect"]
 - ["C7PaletV219AuxillaryController", "CheckButton"]
 - !private ["C7PaletV219AuxillaryController", "DARK_GRAY"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_TYPE"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_VERSION"]
 - !private ["C7PaletV219AuxillaryController", "FAVORITE_GROUP_NAME"]
 - ["C7PaletV219AuxillaryController", "Int"]
 - ["C7PaletV219AuxillaryController", "NSIndexPath"]
@@ -254,6 +263,7 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "sectionIndexTitlesForTableView"]
 - ["C7PaletV219AuxillaryController", "selected_colors"]
 - ["C7PaletV219AuxillaryController", "selected_index"]
+- !private ["C7PaletV219AuxillaryController", "setDeviceInfo"]
 - ["C7PaletV219AuxillaryController", "sorted_colors"]
 - !private ["C7PaletV219AuxillaryController", "super_view"]
 - ["C7PaletV219AuxillaryController", "table"]
@@ -284,6 +294,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "CGRect"]
 - !private ["PSs11CVarArgType", "CheckButton"]
 - !private ["PSs11CVarArgType", "DARK_GRAY"]
+- !private ["PSs11CVarArgType", "DEVICE_TYPE"]
+- !private ["PSs11CVarArgType", "DEVICE_VERSION"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "FAVORITE_GROUP_NAME"]
 - ["PSs11CVarArgType", "Int"]
@@ -357,6 +369,7 @@ depends-member:
 - ["PSs11CVarArgType", "selected_index"]
 - !private ["PSs11CVarArgType", "selectionStyle"]
 - !private ["PSs11CVarArgType", "separatorStyle"]
+- !private ["PSs11CVarArgType", "setDeviceInfo"]
 - !private ["PSs11CVarArgType", "set_border_color"]
 - !private ["PSs11CVarArgType", "set_border_width"]
 - !private ["PSs11CVarArgType", "set_highlight_color"]
@@ -431,6 +444,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "CGRect"]
 - !private ["PSs23CustomStringConvertible", "CheckButton"]
 - !private ["PSs23CustomStringConvertible", "DARK_GRAY"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_TYPE"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_VERSION"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "FAVORITE_GROUP_NAME"]
@@ -516,6 +531,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "selected_index"]
 - !private ["PSs23CustomStringConvertible", "selectionStyle"]
 - !private ["PSs23CustomStringConvertible", "separatorStyle"]
+- !private ["PSs23CustomStringConvertible", "setDeviceInfo"]
 - !private ["PSs23CustomStringConvertible", "set_border_color"]
 - !private ["PSs23CustomStringConvertible", "set_border_width"]
 - !private ["PSs23CustomStringConvertible", "set_highlight_color"]
@@ -537,13 +553,26 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["O7PaletV211DEVICE_TYPE", "IPAD"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_4"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_5"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_6"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPHONE_6_PLUS"]
+- !private ["O7PaletV211DEVICE_TYPE", "deinit"]
 - !private ["PSs9Equatable", "CGColor"]
 - !private ["PSs9Equatable", "CGRect"]
 - !private ["PSs9Equatable", "CheckButton"]
 - !private ["PSs9Equatable", "DARK_GRAY"]
+- !private ["PSs9Equatable", "DEVICE_TYPE"]
+- !private ["PSs9Equatable", "DEVICE_VERSION"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "FAVORITE_GROUP_NAME"]
 - !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "IPAD"]
+- !private ["PSs9Equatable", "IPHONE_4"]
+- !private ["PSs9Equatable", "IPHONE_5"]
+- !private ["PSs9Equatable", "IPHONE_6"]
+- !private ["PSs9Equatable", "IPHONE_6_PLUS"]
 - !private ["PSs9Equatable", "Index"]
 - ["PSs9Equatable", "Int"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
@@ -630,6 +659,7 @@ depends-member:
 - ["PSs9Equatable", "selected_index"]
 - !private ["PSs9Equatable", "selectionStyle"]
 - !private ["PSs9Equatable", "separatorStyle"]
+- !private ["PSs9Equatable", "setDeviceInfo"]
 - !private ["PSs9Equatable", "set_border_color"]
 - !private ["PSs9Equatable", "set_border_width"]
 - !private ["PSs9Equatable", "set_highlight_color"]
@@ -658,6 +688,8 @@ depends-member:
 - !private ["C7PaletV219FavoritesController", "CGRect"]
 - ["C7PaletV219FavoritesController", "CheckButton"]
 - !private ["C7PaletV219FavoritesController", "DARK_GRAY"]
+- !private ["C7PaletV219FavoritesController", "DEVICE_TYPE"]
+- !private ["C7PaletV219FavoritesController", "DEVICE_VERSION"]
 - !private ["C7PaletV219FavoritesController", "FAVORITE_GROUP_NAME"]
 - ["C7PaletV219FavoritesController", "Int"]
 - ["C7PaletV219FavoritesController", "NSIndexPath"]
@@ -713,6 +745,7 @@ depends-member:
 - ["C7PaletV219FavoritesController", "sectionIndexTitlesForTableView"]
 - ["C7PaletV219FavoritesController", "selected_colors"]
 - ["C7PaletV219FavoritesController", "selected_index"]
+- !private ["C7PaletV219FavoritesController", "setDeviceInfo"]
 - ["C7PaletV219FavoritesController", "sorted_colors"]
 - !private ["C7PaletV219FavoritesController", "super_view"]
 - ["C7PaletV219FavoritesController", "table"]
@@ -727,9 +760,16 @@ depends-member:
 - !private ["PSs8Hashable", "CGRect"]
 - !private ["PSs8Hashable", "CheckButton"]
 - !private ["PSs8Hashable", "DARK_GRAY"]
+- !private ["PSs8Hashable", "DEVICE_TYPE"]
+- !private ["PSs8Hashable", "DEVICE_VERSION"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "FAVORITE_GROUP_NAME"]
 - !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "IPAD"]
+- !private ["PSs8Hashable", "IPHONE_4"]
+- !private ["PSs8Hashable", "IPHONE_5"]
+- !private ["PSs8Hashable", "IPHONE_6"]
+- !private ["PSs8Hashable", "IPHONE_6_PLUS"]
 - !private ["PSs8Hashable", "Index"]
 - ["PSs8Hashable", "Int"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
@@ -811,6 +851,7 @@ depends-member:
 - ["PSs8Hashable", "selected_index"]
 - !private ["PSs8Hashable", "selectionStyle"]
 - !private ["PSs8Hashable", "separatorStyle"]
+- !private ["PSs8Hashable", "setDeviceInfo"]
 - !private ["PSs8Hashable", "set_border_color"]
 - !private ["PSs8Hashable", "set_border_width"]
 - !private ["PSs8Hashable", "set_highlight_color"]
@@ -902,6 +943,8 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "CheckButton"]
 - !private ["PSo8NSCoding", "DARK_GRAY"]
+- !private ["PSo8NSCoding", "DEVICE_TYPE"]
+- !private ["PSo8NSCoding", "DEVICE_VERSION"]
 - !private ["PSo8NSCoding", "FAVORITE_GROUP_NAME"]
 - ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "SOFT_GREEN"]
@@ -973,6 +1016,7 @@ depends-member:
 - ["PSo8NSCoding", "selected_index"]
 - !private ["PSo8NSCoding", "selectionStyle"]
 - !private ["PSo8NSCoding", "separatorStyle"]
+- !private ["PSo8NSCoding", "setDeviceInfo"]
 - !private ["PSo8NSCoding", "set_border_color"]
 - !private ["PSo8NSCoding", "set_border_width"]
 - !private ["PSo8NSCoding", "set_highlight_color"]
@@ -999,6 +1043,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CheckButton"]
 - !private ["PSo26NSExtensionRequestHandling", "DARK_GRAY"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_TYPE"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_VERSION"]
 - !private ["PSo26NSExtensionRequestHandling", "FAVORITE_GROUP_NAME"]
 - ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "SOFT_GREEN"]
@@ -1053,6 +1099,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "selected_colors"]
 - ["PSo26NSExtensionRequestHandling", "selected_index"]
+- !private ["PSo26NSExtensionRequestHandling", "setDeviceInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "sorted_colors"]
 - !private ["PSo26NSExtensionRequestHandling", "super_view"]
@@ -1068,6 +1115,8 @@ depends-member:
 - !private ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CheckButton"]
 - !private ["CSo8NSObject", "DARK_GRAY"]
+- !private ["CSo8NSObject", "DEVICE_TYPE"]
+- !private ["CSo8NSObject", "DEVICE_VERSION"]
 - !private ["CSo8NSObject", "FAVORITE_GROUP_NAME"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
@@ -1141,6 +1190,7 @@ depends-member:
 - ["CSo8NSObject", "selected_index"]
 - !private ["CSo8NSObject", "selectionStyle"]
 - !private ["CSo8NSObject", "separatorStyle"]
+- !private ["CSo8NSObject", "setDeviceInfo"]
 - !private ["CSo8NSObject", "set_border_color"]
 - !private ["CSo8NSObject", "set_border_width"]
 - !private ["CSo8NSObject", "set_highlight_color"]
@@ -1163,6 +1213,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CheckButton"]
 - !private ["PSo16NSObjectProtocol", "DARK_GRAY"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_TYPE"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_VERSION"]
 - !private ["PSo16NSObjectProtocol", "FAVORITE_GROUP_NAME"]
 - ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "SOFT_GREEN"]
@@ -1234,6 +1286,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "selected_index"]
 - !private ["PSo16NSObjectProtocol", "selectionStyle"]
 - !private ["PSo16NSObjectProtocol", "separatorStyle"]
+- !private ["PSo16NSObjectProtocol", "setDeviceInfo"]
 - !private ["PSo16NSObjectProtocol", "set_border_color"]
 - !private ["PSo16NSObjectProtocol", "set_border_width"]
 - !private ["PSo16NSObjectProtocol", "set_highlight_color"]
@@ -1367,6 +1420,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CheckButton"]
 - !private ["PSo21UIAppearanceContainer", "DARK_GRAY"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_TYPE"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_VERSION"]
 - !private ["PSo21UIAppearanceContainer", "FAVORITE_GROUP_NAME"]
 - ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "SOFT_GREEN"]
@@ -1434,6 +1489,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "selected_index"]
 - !private ["PSo21UIAppearanceContainer", "selectionStyle"]
 - !private ["PSo21UIAppearanceContainer", "separatorStyle"]
+- !private ["PSo21UIAppearanceContainer", "setDeviceInfo"]
 - !private ["PSo21UIAppearanceContainer", "set_border_color"]
 - !private ["PSo21UIAppearanceContainer", "set_border_width"]
 - !private ["PSo21UIAppearanceContainer", "set_highlight_color"]
@@ -1466,6 +1522,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "CheckButton"]
 - !private ["PSo18UIContentContainer", "DARK_GRAY"]
+- !private ["PSo18UIContentContainer", "DEVICE_TYPE"]
+- !private ["PSo18UIContentContainer", "DEVICE_VERSION"]
 - !private ["PSo18UIContentContainer", "FAVORITE_GROUP_NAME"]
 - ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "SOFT_GREEN"]
@@ -1520,6 +1578,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "selected_colors"]
 - ["PSo18UIContentContainer", "selected_index"]
+- !private ["PSo18UIContentContainer", "setDeviceInfo"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "sorted_colors"]
 - !private ["PSo18UIContentContainer", "super_view"]
@@ -1600,6 +1659,8 @@ depends-member:
 - !private ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CheckButton"]
 - !private ["CSo11UIResponder", "DARK_GRAY"]
+- !private ["CSo11UIResponder", "DEVICE_TYPE"]
+- !private ["CSo11UIResponder", "DEVICE_VERSION"]
 - !private ["CSo11UIResponder", "FAVORITE_GROUP_NAME"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
@@ -1669,6 +1730,7 @@ depends-member:
 - ["CSo11UIResponder", "selected_index"]
 - !private ["CSo11UIResponder", "selectionStyle"]
 - !private ["CSo11UIResponder", "separatorStyle"]
+- !private ["CSo11UIResponder", "setDeviceInfo"]
 - !private ["CSo11UIResponder", "set_border_color"]
 - !private ["CSo11UIResponder", "set_border_width"]
 - !private ["CSo11UIResponder", "set_highlight_color"]
@@ -1695,6 +1757,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "CheckButton"]
 - !private ["PSo20UIScrollViewDelegate", "DARK_GRAY"]
+- !private ["PSo20UIScrollViewDelegate", "DEVICE_TYPE"]
+- !private ["PSo20UIScrollViewDelegate", "DEVICE_VERSION"]
 - !private ["PSo20UIScrollViewDelegate", "FAVORITE_GROUP_NAME"]
 - ["PSo20UIScrollViewDelegate", "Int"]
 - !private ["PSo20UIScrollViewDelegate", "SOFT_GREEN"]
@@ -1738,6 +1802,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo20UIScrollViewDelegate", "selected_colors"]
 - !private ["PSo20UIScrollViewDelegate", "selected_index"]
+- !private ["PSo20UIScrollViewDelegate", "setDeviceInfo"]
 - !private ["PSo20UIScrollViewDelegate", "sorted_colors"]
 - !private ["PSo20UIScrollViewDelegate", "super_view"]
 - !private ["PSo20UIScrollViewDelegate", "table"]
@@ -1747,6 +1812,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CheckButton"]
 - !private ["PSo16UIStateRestoring", "DARK_GRAY"]
+- !private ["PSo16UIStateRestoring", "DEVICE_TYPE"]
+- !private ["PSo16UIStateRestoring", "DEVICE_VERSION"]
 - !private ["PSo16UIStateRestoring", "FAVORITE_GROUP_NAME"]
 - ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "SOFT_GREEN"]
@@ -1801,6 +1868,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "selected_colors"]
 - ["PSo16UIStateRestoring", "selected_index"]
+- !private ["PSo16UIStateRestoring", "setDeviceInfo"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "sorted_colors"]
 - !private ["PSo16UIStateRestoring", "super_view"]
@@ -1827,6 +1895,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "CGRect"]
 - !private ["PSo21UITableViewDataSource", "CheckButton"]
 - !private ["PSo21UITableViewDataSource", "DARK_GRAY"]
+- !private ["PSo21UITableViewDataSource", "DEVICE_TYPE"]
+- !private ["PSo21UITableViewDataSource", "DEVICE_VERSION"]
 - !private ["PSo21UITableViewDataSource", "FAVORITE_GROUP_NAME"]
 - ["PSo21UITableViewDataSource", "Int"]
 - !private ["PSo21UITableViewDataSource", "SOFT_GREEN"]
@@ -1870,6 +1940,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UITableViewDataSource", "selected_colors"]
 - !private ["PSo21UITableViewDataSource", "selected_index"]
+- !private ["PSo21UITableViewDataSource", "setDeviceInfo"]
 - !private ["PSo21UITableViewDataSource", "sorted_colors"]
 - !private ["PSo21UITableViewDataSource", "super_view"]
 - !private ["PSo21UITableViewDataSource", "table"]
@@ -1879,6 +1950,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "CGRect"]
 - !private ["PSo19UITableViewDelegate", "CheckButton"]
 - !private ["PSo19UITableViewDelegate", "DARK_GRAY"]
+- !private ["PSo19UITableViewDelegate", "DEVICE_TYPE"]
+- !private ["PSo19UITableViewDelegate", "DEVICE_VERSION"]
 - !private ["PSo19UITableViewDelegate", "FAVORITE_GROUP_NAME"]
 - ["PSo19UITableViewDelegate", "Int"]
 - !private ["PSo19UITableViewDelegate", "SOFT_GREEN"]
@@ -1922,6 +1995,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITableViewDelegate", "selected_colors"]
 - !private ["PSo19UITableViewDelegate", "selected_index"]
+- !private ["PSo19UITableViewDelegate", "setDeviceInfo"]
 - !private ["PSo19UITableViewDelegate", "sorted_colors"]
 - !private ["PSo19UITableViewDelegate", "super_view"]
 - !private ["PSo19UITableViewDelegate", "table"]
@@ -1932,6 +2006,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "CheckButton"]
 - !private ["PSo18UITraitEnvironment", "DARK_GRAY"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_TYPE"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_VERSION"]
 - !private ["PSo18UITraitEnvironment", "FAVORITE_GROUP_NAME"]
 - ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "SOFT_GREEN"]
@@ -1999,6 +2075,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "selected_index"]
 - !private ["PSo18UITraitEnvironment", "selectionStyle"]
 - !private ["PSo18UITraitEnvironment", "separatorStyle"]
+- !private ["PSo18UITraitEnvironment", "setDeviceInfo"]
 - !private ["PSo18UITraitEnvironment", "set_border_color"]
 - !private ["PSo18UITraitEnvironment", "set_border_width"]
 - !private ["PSo18UITraitEnvironment", "set_highlight_color"]
@@ -2044,6 +2121,8 @@ depends-member:
 - !private ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CheckButton"]
 - !private ["CSo16UIViewController", "DARK_GRAY"]
+- !private ["CSo16UIViewController", "DEVICE_TYPE"]
+- !private ["CSo16UIViewController", "DEVICE_VERSION"]
 - !private ["CSo16UIViewController", "FAVORITE_GROUP_NAME"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
@@ -2100,6 +2179,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "selected_colors"]
 - ["CSo16UIViewController", "selected_index"]
+- !private ["CSo16UIViewController", "setDeviceInfo"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "sorted_colors"]
 - !private ["CSo16UIViewController", "super_view"]
@@ -2230,6 +2310,7 @@ depends-nominal:
 - !private "C7PaletV213ControlButton"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "O7PaletV211DEVICE_TYPE"
 - "PSs9Equatable"
 - "C7PaletV219FavoritesController"
 - !private "PSs16ForwardIndexType"

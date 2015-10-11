@@ -7,44 +7,42 @@ provides-member:
 - ["C7PaletV213SelController", ""]
 provides-dynamic-lookup:
 - "colors"
-- "back_view"
-- "prefersStatusBarHidden"
 - "viewDidLoad"
-- "label_texts"
-- "nav"
 - "didReceiveMemoryWarning"
+- "prefersStatusBarHidden"
+- "back_view"
+- "label_texts"
 depends-top-level:
-- "SelController"
-- !private "/"
-- !private "nav_controller"
-- "MAGENTA"
-- !private "*"
-- !private "=="
-- "SOFT_ORANGE"
-- "StringLiteralType"
-- "LIGHT_BLUE"
-- !private "PickerButton"
-- !private "+"
-- "UIColor"
-- !private "UILabel"
+- !private "WOLF_GRAY"
 - !private "MenuButton"
 - "UIView"
+- !private "*"
 - "AuxillaryController"
 - !private "CGRect"
-- !private "<"
-- !private "WOLF_GRAY"
-- !private "UIControlEvents"
+- !private "=="
+- !private "nav_controller"
+- !private "PickerButton"
 - "CGFloat"
-- !private "-"
-- !private "UIFont"
-- "SOFT_GREEN"
-- "Bool"
-- !private "++"
-- !private "AddButton"
+- !private "+"
 - !private "FavoriteButton"
-- "NavButton"
+- !private "UIControlEvents"
+- "Bool"
+- "StringLiteralType"
+- !private "-"
 - "Array"
+- !private "/"
+- "SOFT_GREEN"
+- !private "++"
+- "SOFT_ORANGE"
+- "SelController"
+- !private "<"
+- !private "UILabel"
+- !private "UIFont"
 - !private "BooleanLiteralType"
+- "LIGHT_BLUE"
+- "UIColor"
+- !private "AddButton"
+- "MAGENTA"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["C7PaletV29AddButton", "init"]
@@ -80,7 +78,6 @@ depends-member:
 - !private ["PSs9AnyObject", "layer"]
 - !private ["PSs9AnyObject", "lightGrayColor"]
 - ["PSs9AnyObject", "margin"]
-- ["PSs9AnyObject", "nav"]
 - !private ["PSs9AnyObject", "nav_controller"]
 - ["PSs9AnyObject", "prefersStatusBarHidden"]
 - !private ["PSs9AnyObject", "set_border_color"]
@@ -119,7 +116,6 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "LIGHT_BLUE"]
 - ["C7PaletV219AuxillaryController", "MAGENTA"]
 - !private ["C7PaletV219AuxillaryController", "MenuButton"]
-- ["C7PaletV219AuxillaryController", "NavButton"]
 - !private ["C7PaletV219AuxillaryController", "PickerButton"]
 - ["C7PaletV219AuxillaryController", "SOFT_GREEN"]
 - ["C7PaletV219AuxillaryController", "SOFT_ORANGE"]
@@ -135,7 +131,6 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "init"]
 - ["C7PaletV219AuxillaryController", "label_texts"]
 - ["C7PaletV219AuxillaryController", "margin"]
-- ["C7PaletV219AuxillaryController", "nav"]
 - !private ["C7PaletV219AuxillaryController", "nav_controller"]
 - ["C7PaletV219AuxillaryController", "prefersStatusBarHidden"]
 - !private ["C7PaletV219AuxillaryController", "super_view"]
@@ -190,7 +185,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "layer"]
 - !private ["PSs11CVarArgType", "lightGrayColor"]
 - ["PSs11CVarArgType", "margin"]
-- ["PSs11CVarArgType", "nav"]
 - !private ["PSs11CVarArgType", "nav_controller"]
 - ["PSs11CVarArgType", "prefersStatusBarHidden"]
 - !private ["PSs11CVarArgType", "set_border_color"]
@@ -261,7 +255,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "layer"]
 - !private ["PSs23CustomStringConvertible", "lightGrayColor"]
 - ["PSs23CustomStringConvertible", "margin"]
-- ["PSs23CustomStringConvertible", "nav"]
 - !private ["PSs23CustomStringConvertible", "nav_controller"]
 - ["PSs23CustomStringConvertible", "prefersStatusBarHidden"]
 - !private ["PSs23CustomStringConvertible", "set_border_color"]
@@ -315,7 +308,6 @@ depends-member:
 - !private ["PSs9Equatable", "lightGrayColor"]
 - ["PSs9Equatable", "margin"]
 - !private ["PSs9Equatable", "maxX"]
-- ["PSs9Equatable", "nav"]
 - !private ["PSs9Equatable", "nav_controller"]
 - ["PSs9Equatable", "prefersStatusBarHidden"]
 - !private ["PSs9Equatable", "set_border_color"]
@@ -372,7 +364,6 @@ depends-member:
 - !private ["PSs8Hashable", "layer"]
 - !private ["PSs8Hashable", "lightGrayColor"]
 - ["PSs8Hashable", "margin"]
-- ["PSs8Hashable", "nav"]
 - !private ["PSs8Hashable", "nav_controller"]
 - ["PSs8Hashable", "prefersStatusBarHidden"]
 - !private ["PSs8Hashable", "set_border_color"]
@@ -464,7 +455,6 @@ depends-member:
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lightGrayColor"]
 - ["PSo8NSCoding", "margin"]
-- ["PSo8NSCoding", "nav"]
 - !private ["PSo8NSCoding", "nav_controller"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - !private ["PSo8NSCoding", "set_border_color"]
@@ -506,7 +496,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "label_texts"]
 - ["PSo26NSExtensionRequestHandling", "margin"]
-- ["PSo26NSExtensionRequestHandling", "nav"]
 - !private ["PSo26NSExtensionRequestHandling", "nav_controller"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "super_view"]
@@ -520,7 +509,6 @@ depends-member:
 - ["CSo8NSObject", "LIGHT_BLUE"]
 - ["CSo8NSObject", "MAGENTA"]
 - !private ["CSo8NSObject", "MenuButton"]
-- ["CSo8NSObject", "NavButton"]
 - !private ["CSo8NSObject", "PickerButton"]
 - ["CSo8NSObject", "SOFT_GREEN"]
 - ["CSo8NSObject", "SOFT_ORANGE"]
@@ -546,7 +534,6 @@ depends-member:
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "lightGrayColor"]
 - ["CSo8NSObject", "margin"]
-- ["CSo8NSObject", "nav"]
 - !private ["CSo8NSObject", "nav_controller"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - !private ["CSo8NSObject", "set_border_color"]
@@ -592,7 +579,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "lightGrayColor"]
 - ["PSo16NSObjectProtocol", "margin"]
-- ["PSo16NSObjectProtocol", "nav"]
 - !private ["PSo16NSObjectProtocol", "nav_controller"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - !private ["PSo16NSObjectProtocol", "set_border_color"]
@@ -630,7 +616,6 @@ depends-member:
 - ["C7PaletV213SelController", "LIGHT_BLUE"]
 - ["C7PaletV213SelController", "MAGENTA"]
 - !private ["C7PaletV213SelController", "MenuButton"]
-- ["C7PaletV213SelController", "NavButton"]
 - !private ["C7PaletV213SelController", "PickerButton"]
 - ["C7PaletV213SelController", "SOFT_GREEN"]
 - ["C7PaletV213SelController", "SOFT_ORANGE"]
@@ -647,7 +632,6 @@ depends-member:
 - ["C7PaletV213SelController", "init"]
 - ["C7PaletV213SelController", "label_texts"]
 - ["C7PaletV213SelController", "margin"]
-- ["C7PaletV213SelController", "nav"]
 - !private ["C7PaletV213SelController", "nav_controller"]
 - ["C7PaletV213SelController", "prefersStatusBarHidden"]
 - !private ["C7PaletV213SelController", "super_view"]
@@ -732,7 +716,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "label_texts"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "margin"]
-- ["PSo21UIAppearanceContainer", "nav"]
 - !private ["PSo21UIAppearanceContainer", "nav_controller"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "set_border_color"]
@@ -779,7 +762,6 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "label_texts"]
 - ["PSo18UIContentContainer", "margin"]
-- ["PSo18UIContentContainer", "nav"]
 - !private ["PSo18UIContentContainer", "nav_controller"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - !private ["PSo18UIContentContainer", "super_view"]
@@ -837,7 +819,6 @@ depends-member:
 - ["CSo11UIResponder", "LIGHT_BLUE"]
 - ["CSo11UIResponder", "MAGENTA"]
 - !private ["CSo11UIResponder", "MenuButton"]
-- ["CSo11UIResponder", "NavButton"]
 - !private ["CSo11UIResponder", "PickerButton"]
 - ["CSo11UIResponder", "SOFT_GREEN"]
 - ["CSo11UIResponder", "SOFT_ORANGE"]
@@ -860,7 +841,6 @@ depends-member:
 - ["CSo11UIResponder", "label_texts"]
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "margin"]
-- ["CSo11UIResponder", "nav"]
 - !private ["CSo11UIResponder", "nav_controller"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - !private ["CSo11UIResponder", "set_border_color"]
@@ -894,7 +874,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "label_texts"]
 - ["PSo16UIStateRestoring", "margin"]
-- ["PSo16UIStateRestoring", "nav"]
 - !private ["PSo16UIStateRestoring", "nav_controller"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - !private ["PSo16UIStateRestoring", "super_view"]
@@ -929,7 +908,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "label_texts"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "margin"]
-- ["PSo18UITraitEnvironment", "nav"]
 - !private ["PSo18UITraitEnvironment", "nav_controller"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "set_border_color"]
@@ -965,7 +943,6 @@ depends-member:
 - ["CSo16UIViewController", "LIGHT_BLUE"]
 - ["CSo16UIViewController", "MAGENTA"]
 - !private ["CSo16UIViewController", "MenuButton"]
-- ["CSo16UIViewController", "NavButton"]
 - !private ["CSo16UIViewController", "PickerButton"]
 - ["CSo16UIViewController", "SOFT_GREEN"]
 - ["CSo16UIViewController", "SOFT_ORANGE"]
@@ -981,7 +958,6 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "label_texts"]
 - ["CSo16UIViewController", "margin"]
-- ["CSo16UIViewController", "nav"]
 - !private ["CSo16UIViewController", "nav_controller"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - !private ["CSo16UIViewController", "super_view"]
@@ -1154,4 +1130,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "c95e5d01413561e59bffad75a7124230"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "ebd72d0e8246a29ac3e07a86623b1905"

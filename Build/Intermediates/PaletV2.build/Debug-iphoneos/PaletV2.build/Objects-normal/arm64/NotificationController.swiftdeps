@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C7PaletV222NotificationController", ""]
 provides-dynamic-lookup:
-- "label"
-- "hide"
 - "viewDidLoad"
+- "hide"
 - "show"
+- "label"
 depends-top-level:
-- !private "-"
-- !private "UIViewAnimationOptions"
-- !private "UIView"
-- !private "nav_controller"
-- "UIViewController"
-- "CGRect"
-- !private "UIColor"
-- "String"
 - "NotificationController"
 - "UILabel"
+- !private "-"
+- !private "UIView"
+- "CGRect"
+- !private "UIColor"
+- "UIViewController"
+- "String"
+- !private "nav_controller"
+- !private "UIViewAnimationOptions"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "UIColor"]
@@ -475,4 +475,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 interface-hash: "aeb44fc0172d2f0d0bf199367e4238de"

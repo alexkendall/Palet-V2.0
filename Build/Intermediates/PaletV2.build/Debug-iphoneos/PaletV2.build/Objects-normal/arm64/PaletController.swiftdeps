@@ -6,66 +6,66 @@ provides-nominal:
 provides-member:
 - ["C7PaletV215PaletController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "margin"
-- "didReceiveMemoryWarning"
-- "add_palet_container"
+- "table"
 - "palette_names"
+- "tableView"
+- "tableView"
+- "tableView"
+- "delete_palet"
+- "set_name"
+- "didReceiveMemoryWarning"
 - "selected_label"
 - "viewDidLoad"
 - "push_left"
-- "delete_palet"
 - "selected_index"
-- "push_right"
+- "margin"
 - "prefersStatusBarHidden"
-- "set_name"
-- "table"
+- "push_right"
+- "add_palet_container"
 depends-top-level:
+- !private "remove_palet"
+- "UITableViewCell"
+- !private "WOLF_GRAY"
+- "UITableViewDelegate"
+- !private "get_palet"
 - !private "+"
 - !private "UIControlEvents"
-- "AnimatedView"
-- "DeleteButton"
-- !private "StringLiteralType"
-- "UITableViewDelegate"
-- "Bool"
-- !private "ViewButton"
-- !private "-"
-- "CGFloat"
-- "CGRect"
-- "Int"
-- "UIButton"
-- "NSIndexPath"
-- "UITableViewDataSource"
-- !private "SOFT_GREEN"
-- !private "LIGHT_GRAY"
-- !private "print"
-- "AuxillaryController"
-- !private "UITableViewCellSeparatorStyle"
-- !private "fetch_palets"
-- !private "++"
-- "UILabel"
-- "PaletController"
-- "NSTimeInterval"
-- !private "=="
-- !private "nav_controller"
-- !private "WOLF_GRAY"
-- "UITableViewCell"
-- !private "BooleanLiteralType"
 - !private "%"
 - !private "SOFT_RED"
+- !private "BooleanLiteralType"
+- !private "ViewButton"
+- "UITableViewDataSource"
+- "Int"
+- "CGFloat"
+- "CGRect"
+- "AuxillaryController"
+- "Bool"
+- !private "-"
+- !private "=="
+- "NSTimeInterval"
+- "PaletController"
 - !private "UIColor"
-- !private "UIView"
-- !private "get_palet"
-- "String"
-- !private "<"
-- !private "*"
-- "UITableView"
+- !private "LIGHT_GRAY"
+- !private "SOFT_GREEN"
+- !private "UITableViewCellSeparatorStyle"
 - !private "delete_group"
+- !private "fetch_palets"
+- "UITableView"
+- !private "*"
+- !private "<"
+- "UILabel"
 - !private "UITableViewCellSelectionStyle"
+- "String"
+- "AnimatedView"
+- !private "nav_controller"
+- "NSIndexPath"
 - !private "DARK_GRAY"
-- !private "remove_palet"
+- !private "print"
+- !private "UIView"
+- "DeleteButton"
+- "UIButton"
+- !private "StringLiteralType"
+- !private "++"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -261,10 +261,13 @@ depends-member:
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "maxY"]
 - !private ["VSC6CGRect", "minX"]
+- !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "CGRect"]
 - !private ["PSs11CVarArgType", "DARK_GRAY"]
@@ -543,6 +546,7 @@ depends-member:
 - !private ["PSs9Equatable", "nav_controller"]
 - !private ["PSs9Equatable", "new_palet_controller"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "origin"]
 - ["PSs9Equatable", "out_controller_frame"]
 - ["PSs9Equatable", "palette_names"]
 - !private ["PSs9Equatable", "picker_controller"]
@@ -589,6 +593,8 @@ depends-member:
 - !private ["PSs9Equatable", "view_palet_controller"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
+- !private ["PSs9Equatable", "x"]
+- !private ["PSs9Equatable", "y"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs23FloatLiteralConvertible", "IntegerLiteralType"]
@@ -1465,6 +1471,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "addSubview"]
 - !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "bounds"]
+- !private ["PSo27UIGestureRecognizerDelegate", "frame"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "selectedBackgroundView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "selectionStyle"]
@@ -1566,6 +1573,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
+- !private ["CSo12UIScrollView", "frame"]
 - !private ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "layer"]
 - !private ["CSo12UIScrollView", "reloadData"]
@@ -1686,6 +1694,7 @@ depends-member:
 - !private ["CSo11UITableView", "backgroundColor"]
 - !private ["CSo11UITableView", "dataSource"]
 - !private ["CSo11UITableView", "delegate"]
+- !private ["CSo11UITableView", "frame"]
 - !private ["CSo11UITableView", "init"]
 - !private ["CSo11UITableView", "layer"]
 - !private ["CSo11UITableView", "reloadData"]
@@ -1693,6 +1702,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "addSubview"]
 - !private ["CSo15UITableViewCell", "backgroundColor"]
 - !private ["CSo15UITableViewCell", "bounds"]
+- !private ["CSo15UITableViewCell", "frame"]
 - !private ["CSo15UITableViewCell", "init"]
 - !private ["CSo15UITableViewCell", "selectedBackgroundView"]
 - !private ["CSo15UITableViewCell", "selectionStyle"]
@@ -2060,6 +2070,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "maxY"]
 - !private ["PSs12_Reflectable", "minX"]
+- !private ["PSs12_Reflectable", "origin"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "removeAll"]
 - !private ["PSs12_Reflectable", "removeAtIndex"]
@@ -2074,6 +2085,8 @@ depends-member:
 - !private ["PSs12_Reflectable", "textColor"]
 - !private ["PSs12_Reflectable", "textLabel"]
 - !private ["PSs12_Reflectable", "width"]
+- !private ["PSs12_Reflectable", "x"]
+- !private ["PSs12_Reflectable", "y"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs18_SignedIntegerType", "Stride"]
@@ -2095,6 +2108,7 @@ depends-nominal:
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
 - !private "VSC6CGRect"
 - "PSs11CVarArgType"
 - "PSs14CollectionType"
@@ -2208,4 +2222,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 interface-hash: "9eacf7c25f0bedfc50fdbeb2f7721c36"

@@ -6,23 +6,29 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219AuxillaryController", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "push_left"
 - "show"
 - "push_right"
-- "push_left"
 - "super_view"
-- "viewDidLoad"
 - "place_left"
 - "place_right"
 depends-top-level:
-- "UIViewController"
 - "NSTimeInterval"
 - "AuxillaryController"
 - !private "-"
-- "UIView"
+- !private "=="
+- !private "DEVICE_TYPE"
+- !private "DEVICE_VERSION"
+- "UIViewController"
 - !private "CGFloat"
+- !private "setDeviceInfo"
 - "CGRect"
+- "UIView"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
+- !private ["PSs9AnyObject", "DEVICE_TYPE"]
+- !private ["PSs9AnyObject", "DEVICE_VERSION"]
 - !private ["PSs9AnyObject", "UIView"]
 - !private ["PSs9AnyObject", "alpha"]
 - !private ["PSs9AnyObject", "animateWithDuration"]
@@ -36,6 +42,7 @@ depends-member:
 - ["PSs9AnyObject", "push_left"]
 - ["PSs9AnyObject", "push_right"]
 - ["PSs9AnyObject", "right_frame"]
+- !private ["PSs9AnyObject", "setDeviceInfo"]
 - ["PSs9AnyObject", "show"]
 - ["PSs9AnyObject", "super_view"]
 - !private ["PSs9AnyObject", "view"]
@@ -43,6 +50,8 @@ depends-member:
 - ["PSs9AnyObject", ""]
 - !private ["C7PaletV219AuxillaryController", "CGFloat"]
 - ["C7PaletV219AuxillaryController", "CGRect"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_TYPE"]
+- !private ["C7PaletV219AuxillaryController", "DEVICE_VERSION"]
 - ["C7PaletV219AuxillaryController", "NSTimeInterval"]
 - ["C7PaletV219AuxillaryController", "UIView"]
 - ["C7PaletV219AuxillaryController", "deinit"]
@@ -54,10 +63,14 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "push_left"]
 - ["C7PaletV219AuxillaryController", "push_right"]
 - ["C7PaletV219AuxillaryController", "right_frame"]
+- !private ["C7PaletV219AuxillaryController", "setDeviceInfo"]
 - ["C7PaletV219AuxillaryController", "show"]
 - ["C7PaletV219AuxillaryController", "super_view"]
 - !private ["C7PaletV219AuxillaryController", "view"]
 - ["C7PaletV219AuxillaryController", "viewDidLoad"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
@@ -65,6 +78,8 @@ depends-member:
 - !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "CGRect"]
+- !private ["PSs11CVarArgType", "DEVICE_TYPE"]
+- !private ["PSs11CVarArgType", "DEVICE_VERSION"]
 - !private ["PSs11CVarArgType", "UIView"]
 - !private ["PSs11CVarArgType", "alpha"]
 - !private ["PSs11CVarArgType", "animateWithDuration"]
@@ -78,13 +93,17 @@ depends-member:
 - ["PSs11CVarArgType", "push_left"]
 - ["PSs11CVarArgType", "push_right"]
 - ["PSs11CVarArgType", "right_frame"]
+- !private ["PSs11CVarArgType", "setDeviceInfo"]
 - ["PSs11CVarArgType", "show"]
 - ["PSs11CVarArgType", "super_view"]
 - !private ["PSs11CVarArgType", "view"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_TYPE"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_VERSION"]
 - !private ["PSs23CustomStringConvertible", "UIView"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "alpha"]
 - !private ["PSs23CustomStringConvertible", "animateWithDuration"]
 - !private ["PSs23CustomStringConvertible", "bounds"]
@@ -97,13 +116,20 @@ depends-member:
 - ["PSs23CustomStringConvertible", "push_left"]
 - ["PSs23CustomStringConvertible", "push_right"]
 - ["PSs23CustomStringConvertible", "right_frame"]
+- !private ["PSs23CustomStringConvertible", "setDeviceInfo"]
 - ["PSs23CustomStringConvertible", "show"]
 - ["PSs23CustomStringConvertible", "super_view"]
 - !private ["PSs23CustomStringConvertible", "view"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["O7PaletV211DEVICE_TYPE", "IPAD"]
+- !private ["O7PaletV211DEVICE_TYPE", "deinit"]
 - !private ["PSs9Equatable", "CGRect"]
+- !private ["PSs9Equatable", "DEVICE_TYPE"]
+- !private ["PSs9Equatable", "DEVICE_VERSION"]
+- !private ["PSs9Equatable", "IPAD"]
 - !private ["PSs9Equatable", "UIView"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "alpha"]
 - !private ["PSs9Equatable", "animateWithDuration"]
 - !private ["PSs9Equatable", "bounds"]
@@ -118,6 +144,7 @@ depends-member:
 - ["PSs9Equatable", "push_left"]
 - ["PSs9Equatable", "push_right"]
 - ["PSs9Equatable", "right_frame"]
+- !private ["PSs9Equatable", "setDeviceInfo"]
 - ["PSs9Equatable", "show"]
 - ["PSs9Equatable", "super_view"]
 - !private ["PSs9Equatable", "view"]
@@ -126,7 +153,11 @@ depends-member:
 - !private ["PSs9Equatable", "y"]
 - ["PSs9Equatable", ""]
 - !private ["PSs8Hashable", "CGRect"]
+- !private ["PSs8Hashable", "DEVICE_TYPE"]
+- !private ["PSs8Hashable", "DEVICE_VERSION"]
+- !private ["PSs8Hashable", "IPAD"]
 - !private ["PSs8Hashable", "UIView"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "alpha"]
 - !private ["PSs8Hashable", "animateWithDuration"]
 - !private ["PSs8Hashable", "bounds"]
@@ -139,12 +170,16 @@ depends-member:
 - ["PSs8Hashable", "push_left"]
 - ["PSs8Hashable", "push_right"]
 - ["PSs8Hashable", "right_frame"]
+- !private ["PSs8Hashable", "setDeviceInfo"]
 - ["PSs8Hashable", "show"]
 - ["PSs8Hashable", "super_view"]
 - !private ["PSs8Hashable", "view"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
 - !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "DEVICE_TYPE"]
+- !private ["PSo8NSCoding", "DEVICE_VERSION"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
@@ -158,12 +193,15 @@ depends-member:
 - ["PSo8NSCoding", "push_left"]
 - ["PSo8NSCoding", "push_right"]
 - ["PSo8NSCoding", "right_frame"]
+- !private ["PSo8NSCoding", "setDeviceInfo"]
 - ["PSo8NSCoding", "show"]
 - ["PSo8NSCoding", "super_view"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_TYPE"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_VERSION"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "in_frame"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -173,6 +211,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "push_left"]
 - ["PSo26NSExtensionRequestHandling", "push_right"]
 - ["PSo26NSExtensionRequestHandling", "right_frame"]
+- !private ["PSo26NSExtensionRequestHandling", "setDeviceInfo"]
 - ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "super_view"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -180,6 +219,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "DEVICE_TYPE"]
+- !private ["CSo8NSObject", "DEVICE_VERSION"]
 - ["CSo8NSObject", "NSTimeInterval"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "alpha"]
@@ -194,11 +235,14 @@ depends-member:
 - ["CSo8NSObject", "push_left"]
 - ["CSo8NSObject", "push_right"]
 - ["CSo8NSObject", "right_frame"]
+- !private ["CSo8NSObject", "setDeviceInfo"]
 - ["CSo8NSObject", "show"]
 - ["CSo8NSObject", "super_view"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_TYPE"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_VERSION"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
@@ -212,6 +256,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "push_left"]
 - ["PSo16NSObjectProtocol", "push_right"]
 - ["PSo16NSObjectProtocol", "right_frame"]
+- !private ["PSo16NSObjectProtocol", "setDeviceInfo"]
 - ["PSo16NSObjectProtocol", "show"]
 - ["PSo16NSObjectProtocol", "super_view"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -226,6 +271,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_TYPE"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_VERSION"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
@@ -239,12 +286,15 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "push_left"]
 - ["PSo21UIAppearanceContainer", "push_right"]
 - ["PSo21UIAppearanceContainer", "right_frame"]
+- !private ["PSo21UIAppearanceContainer", "setDeviceInfo"]
 - ["PSo21UIAppearanceContainer", "show"]
 - ["PSo21UIAppearanceContainer", "super_view"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "DEVICE_TYPE"]
+- !private ["PSo18UIContentContainer", "DEVICE_VERSION"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "in_frame"]
 - ["PSo18UIContentContainer", "init"]
@@ -254,6 +304,7 @@ depends-member:
 - ["PSo18UIContentContainer", "push_left"]
 - ["PSo18UIContentContainer", "push_right"]
 - ["PSo18UIContentContainer", "right_frame"]
+- !private ["PSo18UIContentContainer", "setDeviceInfo"]
 - ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "super_view"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -269,6 +320,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "DEVICE_TYPE"]
+- !private ["CSo11UIResponder", "DEVICE_VERSION"]
 - ["CSo11UIResponder", "NSTimeInterval"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "alpha"]
@@ -283,11 +336,14 @@ depends-member:
 - ["CSo11UIResponder", "push_left"]
 - ["CSo11UIResponder", "push_right"]
 - ["CSo11UIResponder", "right_frame"]
+- !private ["CSo11UIResponder", "setDeviceInfo"]
 - ["CSo11UIResponder", "show"]
 - ["CSo11UIResponder", "super_view"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "DEVICE_TYPE"]
+- !private ["PSo16UIStateRestoring", "DEVICE_VERSION"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "in_frame"]
 - ["PSo16UIStateRestoring", "init"]
@@ -297,12 +353,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "push_left"]
 - ["PSo16UIStateRestoring", "push_right"]
 - ["PSo16UIStateRestoring", "right_frame"]
+- !private ["PSo16UIStateRestoring", "setDeviceInfo"]
 - ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "super_view"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_TYPE"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_VERSION"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
@@ -316,6 +375,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "push_left"]
 - ["PSo18UITraitEnvironment", "push_right"]
 - ["PSo18UITraitEnvironment", "right_frame"]
+- !private ["PSo18UITraitEnvironment", "setDeviceInfo"]
 - ["PSo18UITraitEnvironment", "show"]
 - ["PSo18UITraitEnvironment", "super_view"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -327,6 +387,8 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "DEVICE_TYPE"]
+- !private ["CSo16UIViewController", "DEVICE_VERSION"]
 - ["CSo16UIViewController", "NSTimeInterval"]
 - ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "in_frame"]
@@ -337,11 +399,15 @@ depends-member:
 - ["CSo16UIViewController", "push_left"]
 - ["CSo16UIViewController", "push_right"]
 - ["CSo16UIViewController", "right_frame"]
+- !private ["CSo16UIViewController", "setDeviceInfo"]
 - ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "super_view"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "alpha"]
 - !private ["PSs12_Reflectable", "animateWithDuration"]
 - !private ["PSs12_Reflectable", "bounds"]
@@ -354,13 +420,18 @@ depends-member:
 depends-nominal:
 - "PSs9AnyObject"
 - "C7PaletV219AuxillaryController"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC7CGPoint"
 - !private "VSC6CGRect"
 - "PSs11CVarArgType"
 - "PSs23CustomStringConvertible"
+- !private "O7PaletV211DEVICE_TYPE"
 - "PSs9Equatable"
 - "PSs8Hashable"
+- !private "SQ"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
@@ -376,6 +447,8 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -388,4 +461,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 interface-hash: "4b3bb755fc92dee7d8502b123f4c85ad"

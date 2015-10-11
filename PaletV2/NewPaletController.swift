@@ -73,8 +73,6 @@ class NewPaletController:AuxillaryController, UITextFieldDelegate
         table.separatorStyle = UITableViewCellSeparatorStyle.None;
         table.dataSource = nav_controller.palet_controller;
         table.delegate = nav_controller.palet_controller;
-        
-
     }
     
     // start text field delegate functions

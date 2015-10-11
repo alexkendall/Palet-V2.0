@@ -323,6 +323,8 @@ SWIFT_CLASS("_TtC7PaletV219FavoritesController")
 - (void)viewDidLoad;
 - (BOOL)prefersStatusBarHidden;
 - (void)push_left:(NSTimeInterval)duration;
+- (void)minimize_table:(NSTimeInterval)duration;
+- (void)maximize_table:(NSTimeInterval)duration;
 - (void)push_right:(NSTimeInterval)duration;
 - (void)place_right;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

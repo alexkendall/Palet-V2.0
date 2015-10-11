@@ -132,7 +132,7 @@ class NavController: UIViewController
     
     func view_palet()
     {
-        
+        show_label("PICKER");
         menu_controller.place_left();
         view_palet_controller.show(0.5);
         let name = view_palet_controller.palet_name;

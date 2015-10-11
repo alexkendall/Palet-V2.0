@@ -18,8 +18,8 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
     var selected_index:Int = -1;
     var selected_colors = Set<Int>();
     var sorted_colors = [Int]();
-    
-    
+    var table_max_frame:CGRect!; // frame when copy controller is brought up
+    var table_min_frame:CGRect!;
     
     func load_favorites()
     {
@@ -63,7 +63,6 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         let label_width:CGFloat = cell.frame.width - color_view.frame.maxX;
         let rgb_label = UILabel(frame: CGRect(x: color_view.frame.maxX, y: 0.0, width: label_width, height: cell.frame.height));
         rgb_label.text = text;
-        rgb_label.font = UIFont.systemFontOfSize(14.0);
         rgb_label.textColor = UIColor.whiteColor();
         cell.addSubview(rgb_label);
         cell.selectionStyle = UITableViewCellSelectionStyle.None;
@@ -82,9 +81,21 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         check_button.set_highlight_color(UIColor.clearColor());
         check_button.set_unhighlight_color(UIColor.clearColor());
         check_button.set_image_color(UIColor.whiteColor());
-        
         cell.addSubview(check_button);
         
+        setDeviceInfo();
+        if(DEVICE_VERSION == DEVICE_TYPE.IPAD)
+        {
+            rgb_label.font = UIFont.systemFontOfSize(17.0);
+        }
+        else if(DEVICE_VERSION == DEVICE_TYPE.IPHONE_4 || DEVICE_VERSION == DEVICE_TYPE.IPHONE_5)
+        {
+            rgb_label.font = UIFont.systemFontOfSize(13.0);
+        }
+        else if(DEVICE_VERSION == DEVICE_TYPE.IPHONE_6 || DEVICE_VERSION == DEVICE_TYPE.IPHONE_6_PLUS)
+        {
+            rgb_label.font = UIFont.systemFontOfSize(15.0);
+        }
         
     
         // alternate colors
@@ -114,6 +125,7 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
             if(selected_colors.count == 0)
             {
                 nav_controller.operation_controller.hide();
+                nav_controller.copy_controller.hide();
             }
         }
     }
@@ -157,15 +169,18 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         super_view.frame = left_frame;
         margin = super_view.bounds.width * 0.05;
         
+        let copy_height = (super_view.bounds.height * 0.4) + 44.0;
         // configure back view
-        let table_frame = CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin) + 0.5, height: super_view.bounds.height - (2.0 * margin));
-        table = UITableView(frame: table_frame, style: UITableViewStyle.Plain);
+        table_max_frame = CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin) + 0.5, height: super_view.bounds.height - (2.0 * margin));
+        table_min_frame = CGRect(x: margin, y: margin, width: super_view.frame.width - (2.0 * margin) + 0.5, height: copy_height);
+        
+        
+        table = UITableView(frame: table_max_frame, style: UITableViewStyle.Plain);
         table.backgroundColor = DARK_GRAY;
         super_view.addSubview(table);
         table.dataSource = self;
         table.delegate = self;
         table.separatorStyle = UITableViewCellSeparatorStyle.None;
-        
         }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -179,6 +194,20 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         table.reloadData();
         nav_controller.operation_controller.hide();
         selected_colors.removeAll();
+    }
+    
+    func minimize_table(duration: NSTimeInterval)
+    {
+        UIView.animateWithDuration(duration, animations: {
+            self.table.frame = self.table_min_frame;
+        });
+    }
+    
+    func maximize_table(duration: NSTimeInterval)
+    {
+        UIView.animateWithDuration(duration, animations: {
+            self.table.frame = self.table_max_frame;
+        });
     }
     
     // this override removes any table cell highlights when view is pushed out

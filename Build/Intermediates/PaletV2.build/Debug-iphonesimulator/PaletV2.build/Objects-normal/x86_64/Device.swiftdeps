@@ -12,19 +12,19 @@ provides-member:
 - ["O7PaletV211DEVICE_TYPE", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- "banner_view"
-- "CGFloat"
-- "setDeviceInfo"
-- "DEVICE_WIDTH"
-- !private "StringLiteralType"
 - "ADBannerView"
-- "=="
-- !private "nav_controller"
+- !private "StringLiteralType"
 - "DEVICE_HEIGHT"
+- !private "print"
+- "=="
+- "CGFloat"
+- "DEVICE_WIDTH"
 - !private ">"
-- "DEVICE_VERSION"
 - "DEVICE_TYPE"
+- !private "nav_controller"
+- "DEVICE_VERSION"
+- "banner_view"
+- "setDeviceInfo"
 depends-member:
 - ["CSo12ADBannerView", "init"]
 - ["PSs16AbsoluteValuable", "init"]

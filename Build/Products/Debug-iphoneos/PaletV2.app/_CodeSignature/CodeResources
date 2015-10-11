@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gYe2Zv405Mlom2Dt96GkN5aGcIQ=
+		7cmGTeTtjb4Z/Y4eVR9zdcck1mE=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
@@ -44,9 +44,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		CcIRSRfoHGjtlXoOkte9JQDUI3o=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		5pW7cKArdWPOhQBOzw+g4SgDzuU=
+		</data>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		p+apEVlpYGw0cItz9tc+xh+PhQ4=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
@@ -59,6 +67,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		Tre7ptV0waKMe4MAxADum1DDYtQ=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		VqHIR+DBBCv/bIfNcvoNTaL7elM=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -113,7 +125,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gYe2Zv405Mlom2Dt96GkN5aGcIQ=
+		7cmGTeTtjb4Z/Y4eVR9zdcck1mE=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
@@ -151,9 +163,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		CcIRSRfoHGjtlXoOkte9JQDUI3o=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		5pW7cKArdWPOhQBOzw+g4SgDzuU=
+		</data>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		p+apEVlpYGw0cItz9tc+xh+PhQ4=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
@@ -166,6 +186,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		Tre7ptV0waKMe4MAxADum1DDYtQ=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		VqHIR+DBBCv/bIfNcvoNTaL7elM=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>

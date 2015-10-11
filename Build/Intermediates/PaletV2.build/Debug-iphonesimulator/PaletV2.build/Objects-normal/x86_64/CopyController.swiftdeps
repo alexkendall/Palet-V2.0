@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C7PaletV214CopyController", ""]
 provides-dynamic-lookup:
-- "hide"
-- "table"
-- "exit_button"
-- "show"
 - "copy_colors"
-- "tableView"
-- "tableView"
+- "show"
 - "viewDidLoad"
 - "selected_label"
+- "exit_button"
+- "tableView"
+- "tableView"
+- "table"
+- "hide"
 depends-top-level:
-- !private "SOFT_GREEN"
-- !private "++"
-- !private "nav_controller"
-- !private "UIColor"
-- !private "CGFloat"
-- !private "UITableViewCellSeparatorStyle"
 - !private "UITableViewStyle"
-- !private "print"
-- !private "*"
-- !private "SOFT_RED"
-- !private "SaveButton"
-- !private "<"
-- !private "WOLF_GRAY"
-- !private "%"
-- !private "fetch_color"
-- "UITableView"
-- "CopyController"
-- "ExitButton"
-- !private "+"
-- "AuxillaryController"
-- "NSIndexPath"
-- "UITableViewDataSource"
-- !private "DARK_GRAY"
-- !private "SOFT_ORANGE"
+- "UITableViewCell"
+- !private "CGFloat"
+- !private "UIColor"
+- !private "SOFT_GREEN"
 - !private "UIControlEvents"
-- !private "ViewButton"
 - !private "=="
-- !private ">"
-- !private "!="
+- "UIButton"
 - !private "StringLiteralType"
 - !private "fetch_palets"
-- !private "LIGHT_GRAY"
-- "UITableViewCell"
-- !private "store_color"
-- "Int"
-- "UIButton"
-- !private "-"
-- !private "CGRect"
+- !private "DARK_GRAY"
+- !private "++"
+- !private "SOFT_RED"
 - "UIView"
+- "UITableViewDataSource"
+- !private "WOLF_GRAY"
+- !private "nav_controller"
+- "AuxillaryController"
+- "CopyController"
+- "UITableView"
+- !private "LIGHT_GRAY"
+- !private "%"
+- !private "UITableViewCellSeparatorStyle"
+- !private ">"
+- !private "store_color"
+- "NSIndexPath"
+- !private "*"
+- !private "SaveButton"
+- !private "fetch_color"
+- "Int"
+- "ExitButton"
+- !private "<"
+- !private "print"
+- !private "-"
+- !private "SOFT_ORANGE"
+- !private "+"
+- !private "ViewButton"
+- !private "CGRect"
+- !private "!="
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "DARK_GRAY"]
@@ -90,6 +90,9 @@ depends-member:
 - ["PSs9AnyObject", "hide"]
 - !private ["PSs9AnyObject", "in_frame"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "lightGrayColor"]
+- !private ["PSs9AnyObject", "maximize_table"]
+- !private ["PSs9AnyObject", "minimize_table"]
 - !private ["PSs9AnyObject", "nav_controller"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "orangeColor"]
@@ -164,6 +167,8 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "hide"]
 - !private ["C7PaletV219AuxillaryController", "in_frame"]
 - ["C7PaletV219AuxillaryController", "init"]
+- !private ["C7PaletV219AuxillaryController", "maximize_table"]
+- !private ["C7PaletV219AuxillaryController", "minimize_table"]
 - !private ["C7PaletV219AuxillaryController", "nav_controller"]
 - ["C7PaletV219AuxillaryController", "numberOfSectionsInTableView"]
 - !private ["C7PaletV219AuxillaryController", "palette_names"]
@@ -228,6 +233,9 @@ depends-member:
 - ["PSs11CVarArgType", "hide"]
 - !private ["PSs11CVarArgType", "in_frame"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "lightGrayColor"]
+- !private ["PSs11CVarArgType", "maximize_table"]
+- !private ["PSs11CVarArgType", "minimize_table"]
 - !private ["PSs11CVarArgType", "nav_controller"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "orangeColor"]
@@ -353,6 +361,9 @@ depends-member:
 - ["PSs23CustomStringConvertible", "hide"]
 - !private ["PSs23CustomStringConvertible", "in_frame"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "lightGrayColor"]
+- !private ["PSs23CustomStringConvertible", "maximize_table"]
+- !private ["PSs23CustomStringConvertible", "minimize_table"]
 - !private ["PSs23CustomStringConvertible", "nav_controller"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "orangeColor"]
@@ -426,6 +437,9 @@ depends-member:
 - ["PSs9Equatable", "hide"]
 - !private ["PSs9Equatable", "in_frame"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "lightGrayColor"]
+- !private ["PSs9Equatable", "maximize_table"]
+- !private ["PSs9Equatable", "minimize_table"]
 - !private ["PSs9Equatable", "nav_controller"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "orangeColor"]
@@ -467,6 +481,8 @@ depends-member:
 - !private ["C7PaletV210ExitButton", "set_path_width"]
 - !private ["C7PaletV210ExitButton", "set_unhighlight_color"]
 - !private ["C7PaletV219FavoritesController", "colors"]
+- !private ["C7PaletV219FavoritesController", "maximize_table"]
+- !private ["C7PaletV219FavoritesController", "minimize_table"]
 - !private ["C7PaletV219FavoritesController", "sorted_colors"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
@@ -510,6 +526,9 @@ depends-member:
 - ["PSs8Hashable", "hide"]
 - !private ["PSs8Hashable", "in_frame"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "lightGrayColor"]
+- !private ["PSs8Hashable", "maximize_table"]
+- !private ["PSs8Hashable", "minimize_table"]
 - !private ["PSs8Hashable", "nav_controller"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "orangeColor"]
@@ -614,6 +633,9 @@ depends-member:
 - ["PSo8NSCoding", "hide"]
 - !private ["PSo8NSCoding", "in_frame"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lightGrayColor"]
+- !private ["PSo8NSCoding", "maximize_table"]
+- !private ["PSo8NSCoding", "minimize_table"]
 - !private ["PSo8NSCoding", "nav_controller"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "orangeColor"]
@@ -645,6 +667,7 @@ depends-member:
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "lightGrayColor"]
 - !private ["PSo9NSCopying", "orangeColor"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "whiteColor"]
@@ -674,6 +697,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "hide"]
 - !private ["PSo26NSExtensionRequestHandling", "in_frame"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "maximize_table"]
+- !private ["PSo26NSExtensionRequestHandling", "minimize_table"]
 - !private ["PSo26NSExtensionRequestHandling", "nav_controller"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "palet_controller"]
@@ -731,6 +756,9 @@ depends-member:
 - ["CSo8NSObject", "hide"]
 - !private ["CSo8NSObject", "in_frame"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "lightGrayColor"]
+- !private ["CSo8NSObject", "maximize_table"]
+- !private ["CSo8NSObject", "minimize_table"]
 - !private ["CSo8NSObject", "nav_controller"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "orangeColor"]
@@ -794,6 +822,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "hide"]
 - !private ["PSo16NSObjectProtocol", "in_frame"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lightGrayColor"]
+- !private ["PSo16NSObjectProtocol", "maximize_table"]
+- !private ["PSo16NSObjectProtocol", "minimize_table"]
 - !private ["PSo16NSObjectProtocol", "nav_controller"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "orangeColor"]
@@ -825,6 +856,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "lightGrayColor"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
@@ -943,6 +975,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "hide"]
 - !private ["PSo21UIAppearanceContainer", "in_frame"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "maximize_table"]
+- !private ["PSo21UIAppearanceContainer", "minimize_table"]
 - !private ["PSo21UIAppearanceContainer", "nav_controller"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "palet_controller"]
@@ -979,6 +1013,7 @@ depends-member:
 - !private ["CSo8UIButton", "set_unhighlight_color"]
 - !private ["CSo8UIButton", "tag"]
 - !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "lightGrayColor"]
 - !private ["CSo7UIColor", "orangeColor"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGRect"]
@@ -1007,6 +1042,8 @@ depends-member:
 - ["PSo18UIContentContainer", "hide"]
 - !private ["PSo18UIContentContainer", "in_frame"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "maximize_table"]
+- !private ["PSo18UIContentContainer", "minimize_table"]
 - !private ["PSo18UIContentContainer", "nav_controller"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "palet_controller"]
@@ -1114,6 +1151,8 @@ depends-member:
 - ["CSo11UIResponder", "hide"]
 - !private ["CSo11UIResponder", "in_frame"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "maximize_table"]
+- !private ["CSo11UIResponder", "minimize_table"]
 - !private ["CSo11UIResponder", "nav_controller"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "palet_controller"]
@@ -1147,6 +1186,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "separatorStyle"]
 - !private ["PSo20UIScrollViewDelegate", "colors"]
+- !private ["PSo20UIScrollViewDelegate", "maximize_table"]
+- !private ["PSo20UIScrollViewDelegate", "minimize_table"]
 - !private ["PSo20UIScrollViewDelegate", "palette_names"]
 - !private ["PSo20UIScrollViewDelegate", "sorted_colors"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
@@ -1175,6 +1216,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "hide"]
 - !private ["PSo16UIStateRestoring", "in_frame"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "maximize_table"]
+- !private ["PSo16UIStateRestoring", "minimize_table"]
 - !private ["PSo16UIStateRestoring", "nav_controller"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "palet_controller"]
@@ -1228,6 +1271,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "fetch_color"]
 - !private ["PSo21UITableViewDataSource", "fetch_palets"]
 - !private ["PSo21UITableViewDataSource", "in_frame"]
+- !private ["PSo21UITableViewDataSource", "maximize_table"]
+- !private ["PSo21UITableViewDataSource", "minimize_table"]
 - !private ["PSo21UITableViewDataSource", "nav_controller"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "palette_names"]
@@ -1243,6 +1288,8 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "colors"]
+- !private ["PSo19UITableViewDelegate", "maximize_table"]
+- !private ["PSo19UITableViewDelegate", "minimize_table"]
 - !private ["PSo19UITableViewDelegate", "palette_names"]
 - !private ["PSo19UITableViewDelegate", "sorted_colors"]
 - !private ["OSC16UITableViewStyle", "Plain"]
@@ -1279,6 +1326,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "hide"]
 - !private ["PSo18UITraitEnvironment", "in_frame"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "maximize_table"]
+- !private ["PSo18UITraitEnvironment", "minimize_table"]
 - !private ["PSo18UITraitEnvironment", "nav_controller"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "palet_controller"]
@@ -1353,6 +1402,8 @@ depends-member:
 - ["CSo16UIViewController", "hide"]
 - !private ["CSo16UIViewController", "in_frame"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "maximize_table"]
+- !private ["CSo16UIViewController", "minimize_table"]
 - !private ["CSo16UIViewController", "nav_controller"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "palet_controller"]
