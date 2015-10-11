@@ -6,61 +6,70 @@ provides-nominal:
 provides-member:
 - ["C7PaletV213NavController", ""]
 provides-dynamic-lookup:
+- "copy_favorites"
+- "menu_controller"
+- "favorites_controller"
+- "controller_label"
+- "copy_controller"
+- "show_picker"
+- "didReceiveMemoryWarning"
+- "new_palet"
+- "view_colors"
 - "notification_controller"
 - "view_palet_controller"
-- "didReceiveMemoryWarning"
-- "controller_label"
-- "show_favorites"
-- "new_palet"
-- "viewDidLoad"
-- "menu_controller"
-- "operation_controller"
-- "show_picker"
-- "palet_controller"
-- "favorites_controller"
-- "copy_controller"
-- "handle_selection"
-- "view_palet"
+- "nav_but"
 - "picker_controller"
 - "show_label"
-- "view_colors"
-- "copy_favorites"
+- "operation_controller"
+- "viewDidLoad"
+- "view_palet"
 - "hide_label"
-- "prefersStatusBarHidden"
+- "show_favorites"
+- "handle_selection"
 - "new_palet_controller"
-- "nav_but"
+- "prefersStatusBarHidden"
+- "palet_controller"
 depends-top-level:
-- "FavoritesController"
-- "Bool"
-- "SelController"
-- "PaletController"
 - "NavButton"
-- "UIViewController"
-- "UILabel"
-- "NavController"
-- "ViewPaletController"
-- "CopyController"
-- !private "StringLiteralType"
-- !private "=="
-- "PickerController"
-- "String"
-- "CGRect"
-- "NotificationController"
-- !private "print"
-- !private "NSTextAlignment"
-- "NewPaletController"
-- !private "CGFloat"
-- "OperationController"
 - !private "UIView"
+- !private "setDeviceInfo"
+- "SelController"
+- "PickerController"
+- "OperationController"
+- "Bool"
+- !private "=="
+- !private "CGRect"
+- "UILabel"
+- !private "StringLiteralType"
+- "FavoritesController"
+- !private "DEVICE_TYPE"
+- !private "+"
+- !private "DEVICE_VERSION"
+- !private "CGFloat"
+- !private "print"
 - !private "-"
-- !private "BooleanLiteralType"
+- "NavController"
+- "NotificationController"
+- !private "NSTextAlignment"
+- !private "*"
+- "PaletController"
+- "CopyController"
 - !private "UIControlEvents"
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "NewPaletController"
+- "String"
+- "ViewPaletController"
 depends-member:
-- ["PSs9AnyObject", "CGRect"]
+- !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
+- !private ["PSs16AbsoluteValuable", "Stride"]
+- !private ["PSs9AnyObject", "CGRect"]
 - ["PSs9AnyObject", "CopyController"]
+- !private ["PSs9AnyObject", "DEVICE_TYPE"]
+- !private ["PSs9AnyObject", "DEVICE_VERSION"]
 - ["PSs9AnyObject", "FavoritesController"]
 - !private ["PSs9AnyObject", "NSTextAlignment"]
-- ["PSs9AnyObject", "NavButton"]
+- !private ["PSs9AnyObject", "NavButton"]
 - ["PSs9AnyObject", "NewPaletController"]
 - ["PSs9AnyObject", "NotificationController"]
 - ["PSs9AnyObject", "OperationController"]
@@ -102,6 +111,7 @@ depends-member:
 - ["PSs9AnyObject", "prefersStatusBarHidden"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "reloadData"]
+- !private ["PSs9AnyObject", "setDeviceInfo"]
 - !private ["PSs9AnyObject", "show"]
 - ["PSs9AnyObject", "show_favorites"]
 - ["PSs9AnyObject", "show_label"]
@@ -124,24 +134,34 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "place_right"]
 - !private ["C7PaletV219AuxillaryController", "show"]
 - !private ["C7PaletV219AuxillaryController", "view"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
-- ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "maxX"]
+- !private ["VSC6CGRect", "maxY"]
 - !private ["VSC6CGRect", "width"]
-- ["PSs11CVarArgType", "CGRect"]
+- !private ["PSs11CVarArgType", "CGRect"]
 - ["PSs11CVarArgType", "CopyController"]
+- !private ["PSs11CVarArgType", "DEVICE_TYPE"]
+- !private ["PSs11CVarArgType", "DEVICE_VERSION"]
 - ["PSs11CVarArgType", "FavoritesController"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSTextAlignment"]
-- ["PSs11CVarArgType", "NavButton"]
+- !private ["PSs11CVarArgType", "NavButton"]
 - ["PSs11CVarArgType", "NewPaletController"]
 - ["PSs11CVarArgType", "NotificationController"]
 - ["PSs11CVarArgType", "OperationController"]
 - ["PSs11CVarArgType", "PaletController"]
 - ["PSs11CVarArgType", "PickerController"]
 - ["PSs11CVarArgType", "SelController"]
+- !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UILabel"]
 - !private ["PSs11CVarArgType", "UIView"]
@@ -177,6 +197,7 @@ depends-member:
 - ["PSs11CVarArgType", "prefersStatusBarHidden"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "reloadData"]
+- !private ["PSs11CVarArgType", "setDeviceInfo"]
 - !private ["PSs11CVarArgType", "show"]
 - ["PSs11CVarArgType", "show_favorites"]
 - ["PSs11CVarArgType", "show_label"]
@@ -191,19 +212,25 @@ depends-member:
 - ["PSs11CVarArgType", "view_palet"]
 - ["PSs11CVarArgType", "view_palet_controller"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "Stride"]
 - ["C7PaletV214CopyController", "init"]
 - !private ["C7PaletV214CopyController", "view"]
-- ["PSs23CustomStringConvertible", "CGRect"]
+- !private ["PSs23CustomStringConvertible", "CGRect"]
 - ["PSs23CustomStringConvertible", "CopyController"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_TYPE"]
+- !private ["PSs23CustomStringConvertible", "DEVICE_VERSION"]
 - ["PSs23CustomStringConvertible", "FavoritesController"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "NSTextAlignment"]
-- ["PSs23CustomStringConvertible", "NavButton"]
+- !private ["PSs23CustomStringConvertible", "NavButton"]
 - ["PSs23CustomStringConvertible", "NewPaletController"]
 - ["PSs23CustomStringConvertible", "NotificationController"]
 - ["PSs23CustomStringConvertible", "OperationController"]
 - ["PSs23CustomStringConvertible", "PaletController"]
 - ["PSs23CustomStringConvertible", "PickerController"]
 - ["PSs23CustomStringConvertible", "SelController"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UILabel"]
 - !private ["PSs23CustomStringConvertible", "UIView"]
@@ -240,6 +267,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "prefersStatusBarHidden"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
+- !private ["PSs23CustomStringConvertible", "setDeviceInfo"]
 - !private ["PSs23CustomStringConvertible", "show"]
 - ["PSs23CustomStringConvertible", "show_favorites"]
 - ["PSs23CustomStringConvertible", "show_label"]
@@ -254,11 +282,20 @@ depends-member:
 - ["PSs23CustomStringConvertible", "view_palet"]
 - ["PSs23CustomStringConvertible", "view_palet_controller"]
 - ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "CGRect"]
+- !private ["O7PaletV211DEVICE_TYPE", "IPAD"]
+- !private ["O7PaletV211DEVICE_TYPE", "deinit"]
+- !private ["Sd", "IntegerLiteralType"]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "CGRect"]
 - ["PSs9Equatable", "CopyController"]
+- !private ["PSs9Equatable", "DEVICE_TYPE"]
+- !private ["PSs9Equatable", "DEVICE_VERSION"]
 - ["PSs9Equatable", "FavoritesController"]
+- !private ["PSs9Equatable", "IPAD"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSTextAlignment"]
-- ["PSs9Equatable", "NavButton"]
+- !private ["PSs9Equatable", "NavButton"]
 - ["PSs9Equatable", "NewPaletController"]
 - ["PSs9Equatable", "NotificationController"]
 - ["PSs9Equatable", "OperationController"]
@@ -266,6 +303,7 @@ depends-member:
 - ["PSs9Equatable", "PickerController"]
 - !private ["PSs9Equatable", "Right"]
 - ["PSs9Equatable", "SelController"]
+- !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UILabel"]
@@ -290,6 +328,7 @@ depends-member:
 - ["PSs9Equatable", "hide_label"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "maxX"]
+- !private ["PSs9Equatable", "maxY"]
 - ["PSs9Equatable", "menu_controller"]
 - ["PSs9Equatable", "nav_but"]
 - ["PSs9Equatable", "new_palet"]
@@ -304,6 +343,7 @@ depends-member:
 - ["PSs9Equatable", "prefersStatusBarHidden"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "reloadData"]
+- !private ["PSs9Equatable", "setDeviceInfo"]
 - !private ["PSs9Equatable", "show"]
 - ["PSs9Equatable", "show_favorites"]
 - ["PSs9Equatable", "show_label"]
@@ -323,11 +363,21 @@ depends-member:
 - !private ["C7PaletV219FavoritesController", "place_right"]
 - !private ["C7PaletV219FavoritesController", "show"]
 - !private ["C7PaletV219FavoritesController", "view"]
-- ["PSs8Hashable", "CGRect"]
+- !private ["PSs23FloatLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs23FloatLiteralConvertible", "Stride"]
+- !private ["PSs17FloatingPointType", "IntegerLiteralType"]
+- !private ["PSs17FloatingPointType", "Stride"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Stride"]
+- !private ["PSs8Hashable", "CGRect"]
 - ["PSs8Hashable", "CopyController"]
+- !private ["PSs8Hashable", "DEVICE_TYPE"]
+- !private ["PSs8Hashable", "DEVICE_VERSION"]
 - ["PSs8Hashable", "FavoritesController"]
+- !private ["PSs8Hashable", "IPAD"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSTextAlignment"]
-- ["PSs8Hashable", "NavButton"]
+- !private ["PSs8Hashable", "NavButton"]
 - ["PSs8Hashable", "NewPaletController"]
 - ["PSs8Hashable", "NotificationController"]
 - ["PSs8Hashable", "OperationController"]
@@ -335,6 +385,7 @@ depends-member:
 - ["PSs8Hashable", "PickerController"]
 - !private ["PSs8Hashable", "Right"]
 - ["PSs8Hashable", "SelController"]
+- !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UILabel"]
 - !private ["PSs8Hashable", "UIView"]
@@ -371,6 +422,7 @@ depends-member:
 - ["PSs8Hashable", "prefersStatusBarHidden"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "reloadData"]
+- !private ["PSs8Hashable", "setDeviceInfo"]
 - !private ["PSs8Hashable", "show"]
 - ["PSs8Hashable", "show_favorites"]
 - ["PSs8Hashable", "show_label"]
@@ -385,12 +437,24 @@ depends-member:
 - ["PSs8Hashable", "view_palet"]
 - ["PSs8Hashable", "view_palet_controller"]
 - ["PSs8Hashable", ""]
-- ["Si", "deinit"]
-- ["PSo8NSCoding", "CGRect"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Stride"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Stride"]
+- !private ["PSo8NSCoding", "CGRect"]
 - ["PSo8NSCoding", "CopyController"]
+- !private ["PSo8NSCoding", "DEVICE_TYPE"]
+- !private ["PSo8NSCoding", "DEVICE_VERSION"]
 - ["PSo8NSCoding", "FavoritesController"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
-- ["PSo8NSCoding", "NavButton"]
+- !private ["PSo8NSCoding", "NavButton"]
 - ["PSo8NSCoding", "NewPaletController"]
 - ["PSo8NSCoding", "NotificationController"]
 - ["PSo8NSCoding", "OperationController"]
@@ -432,6 +496,7 @@ depends-member:
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
+- !private ["PSo8NSCoding", "setDeviceInfo"]
 - !private ["PSo8NSCoding", "show"]
 - ["PSo8NSCoding", "show_favorites"]
 - ["PSo8NSCoding", "show_label"]
@@ -446,11 +511,13 @@ depends-member:
 - ["PSo8NSCoding", "view_palet"]
 - ["PSo8NSCoding", "view_palet_controller"]
 - ["PSo8NSCoding", ""]
-- ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - ["PSo26NSExtensionRequestHandling", "CopyController"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_TYPE"]
+- !private ["PSo26NSExtensionRequestHandling", "DEVICE_VERSION"]
 - ["PSo26NSExtensionRequestHandling", "FavoritesController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
-- ["PSo26NSExtensionRequestHandling", "NavButton"]
+- !private ["PSo26NSExtensionRequestHandling", "NavButton"]
 - ["PSo26NSExtensionRequestHandling", "NewPaletController"]
 - ["PSo26NSExtensionRequestHandling", "NotificationController"]
 - ["PSo26NSExtensionRequestHandling", "OperationController"]
@@ -485,6 +552,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "place_right"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "setDeviceInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "show"]
 - ["PSo26NSExtensionRequestHandling", "show_favorites"]
 - ["PSo26NSExtensionRequestHandling", "show_label"]
@@ -497,8 +565,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGFloat"]
-- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CopyController"]
+- !private ["CSo8NSObject", "DEVICE_TYPE"]
+- !private ["CSo8NSObject", "DEVICE_VERSION"]
 - ["CSo8NSObject", "FavoritesController"]
 - !private ["CSo8NSObject", "NSTextAlignment"]
 - ["CSo8NSObject", "NavButton"]
@@ -544,6 +614,7 @@ depends-member:
 - ["CSo8NSObject", "prefersStatusBarHidden"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
+- !private ["CSo8NSObject", "setDeviceInfo"]
 - !private ["CSo8NSObject", "show"]
 - ["CSo8NSObject", "show_favorites"]
 - ["CSo8NSObject", "show_label"]
@@ -557,11 +628,13 @@ depends-member:
 - ["CSo8NSObject", "view_colors"]
 - ["CSo8NSObject", "view_palet"]
 - ["CSo8NSObject", "view_palet_controller"]
-- ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
 - ["PSo16NSObjectProtocol", "CopyController"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_TYPE"]
+- !private ["PSo16NSObjectProtocol", "DEVICE_VERSION"]
 - ["PSo16NSObjectProtocol", "FavoritesController"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
-- ["PSo16NSObjectProtocol", "NavButton"]
+- !private ["PSo16NSObjectProtocol", "NavButton"]
 - ["PSo16NSObjectProtocol", "NewPaletController"]
 - ["PSo16NSObjectProtocol", "NotificationController"]
 - ["PSo16NSObjectProtocol", "OperationController"]
@@ -603,6 +676,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
+- !private ["PSo16NSObjectProtocol", "setDeviceInfo"]
 - !private ["PSo16NSObjectProtocol", "show"]
 - ["PSo16NSObjectProtocol", "show_favorites"]
 - ["PSo16NSObjectProtocol", "show_label"]
@@ -620,13 +694,15 @@ depends-member:
 - !private ["OSC15NSTextAlignment", "Right"]
 - !private ["C7PaletV29NavButton", "addTarget"]
 - !private ["C7PaletV29NavButton", "frame"]
-- ["C7PaletV29NavButton", "init"]
+- !private ["C7PaletV29NavButton", "init"]
 - !private ["C7PaletV29NavButton", "toggle_off"]
 - !private ["C7PaletV29NavButton", "toggle_on"]
 - ["C7PaletV213NavController", "Bool"]
 - !private ["C7PaletV213NavController", "CGFloat"]
-- ["C7PaletV213NavController", "CGRect"]
+- !private ["C7PaletV213NavController", "CGRect"]
 - ["C7PaletV213NavController", "CopyController"]
+- !private ["C7PaletV213NavController", "DEVICE_TYPE"]
+- !private ["C7PaletV213NavController", "DEVICE_VERSION"]
 - ["C7PaletV213NavController", "FavoritesController"]
 - !private ["C7PaletV213NavController", "NSTextAlignment"]
 - ["C7PaletV213NavController", "NavButton"]
@@ -660,6 +736,7 @@ depends-member:
 - ["C7PaletV213NavController", "picker_controller"]
 - ["C7PaletV213NavController", "prefersStatusBarHidden"]
 - !private ["C7PaletV213NavController", "print"]
+- !private ["C7PaletV213NavController", "setDeviceInfo"]
 - ["C7PaletV213NavController", "show_favorites"]
 - ["C7PaletV213NavController", "show_label"]
 - ["C7PaletV213NavController", "show_picker"]
@@ -690,6 +767,8 @@ depends-member:
 - !private ["C7PaletV216PickerController", "place_right"]
 - !private ["C7PaletV216PickerController", "show"]
 - !private ["C7PaletV216PickerController", "view"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
 - !private ["PSs16RawRepresentable", "Right"]
 - !private ["PSs16RawRepresentable", "TouchUpInside"]
 - ["C7PaletV213SelController", "init"]
@@ -698,13 +777,19 @@ depends-member:
 - !private ["C7PaletV213SelController", "view"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["PSs14SetAlgebraType", "TouchUpInside"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "Stride"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Stride"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Stride"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
-- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
@@ -716,17 +801,19 @@ depends-member:
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "frame"]
-- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "toggle_off"]
 - !private ["PSo12UIAppearance", "toggle_on"]
-- ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "CGRect"]
 - ["PSo21UIAppearanceContainer", "CopyController"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_TYPE"]
+- !private ["PSo21UIAppearanceContainer", "DEVICE_VERSION"]
 - ["PSo21UIAppearanceContainer", "FavoritesController"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
-- ["PSo21UIAppearanceContainer", "NavButton"]
+- !private ["PSo21UIAppearanceContainer", "NavButton"]
 - ["PSo21UIAppearanceContainer", "NewPaletController"]
 - ["PSo21UIAppearanceContainer", "NotificationController"]
 - ["PSo21UIAppearanceContainer", "OperationController"]
@@ -768,6 +855,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
+- !private ["PSo21UIAppearanceContainer", "setDeviceInfo"]
 - !private ["PSo21UIAppearanceContainer", "show"]
 - ["PSo21UIAppearanceContainer", "show_favorites"]
 - ["PSo21UIAppearanceContainer", "show_label"]
@@ -784,7 +872,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "frame"]
-- ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "init"]
 - !private ["CSo8UIButton", "toggle_off"]
 - !private ["CSo8UIButton", "toggle_on"]
 - !private ["CSo16UICollectionView", "reloadData"]
@@ -806,11 +894,13 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "place_right"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "show"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
-- ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "CGRect"]
 - ["PSo18UIContentContainer", "CopyController"]
+- !private ["PSo18UIContentContainer", "DEVICE_TYPE"]
+- !private ["PSo18UIContentContainer", "DEVICE_VERSION"]
 - ["PSo18UIContentContainer", "FavoritesController"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
-- ["PSo18UIContentContainer", "NavButton"]
+- !private ["PSo18UIContentContainer", "NavButton"]
 - ["PSo18UIContentContainer", "NewPaletController"]
 - ["PSo18UIContentContainer", "NotificationController"]
 - ["PSo18UIContentContainer", "OperationController"]
@@ -845,6 +935,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "place_right"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "setDeviceInfo"]
 - !private ["PSo18UIContentContainer", "show"]
 - ["PSo18UIContentContainer", "show_favorites"]
 - ["PSo18UIContentContainer", "show_label"]
@@ -857,7 +948,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "frame"]
-- ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "init"]
 - !private ["CSo9UIControl", "toggle_off"]
 - !private ["CSo9UIControl", "toggle_on"]
 - !private ["VSC15UIControlEvents", "TouchUpInside"]
@@ -867,7 +958,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "frame"]
-- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
@@ -879,7 +970,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "frame"]
-- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
@@ -891,8 +982,10 @@ depends-member:
 - !private ["CSo7UILabel", "textAlignment"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGFloat"]
-- ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CopyController"]
+- !private ["CSo11UIResponder", "DEVICE_TYPE"]
+- !private ["CSo11UIResponder", "DEVICE_VERSION"]
 - ["CSo11UIResponder", "FavoritesController"]
 - !private ["CSo11UIResponder", "NSTextAlignment"]
 - ["CSo11UIResponder", "NavButton"]
@@ -938,6 +1031,7 @@ depends-member:
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
+- !private ["CSo11UIResponder", "setDeviceInfo"]
 - !private ["CSo11UIResponder", "show"]
 - ["CSo11UIResponder", "show_favorites"]
 - ["CSo11UIResponder", "show_label"]
@@ -958,11 +1052,13 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "place_right"]
 - !private ["PSo20UIScrollViewDelegate", "show"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
-- ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "CGRect"]
 - ["PSo16UIStateRestoring", "CopyController"]
+- !private ["PSo16UIStateRestoring", "DEVICE_TYPE"]
+- !private ["PSo16UIStateRestoring", "DEVICE_VERSION"]
 - ["PSo16UIStateRestoring", "FavoritesController"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
-- ["PSo16UIStateRestoring", "NavButton"]
+- !private ["PSo16UIStateRestoring", "NavButton"]
 - ["PSo16UIStateRestoring", "NewPaletController"]
 - ["PSo16UIStateRestoring", "NotificationController"]
 - ["PSo16UIStateRestoring", "OperationController"]
@@ -997,6 +1093,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "place_right"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "setDeviceInfo"]
 - !private ["PSo16UIStateRestoring", "show"]
 - ["PSo16UIStateRestoring", "show_favorites"]
 - ["PSo16UIStateRestoring", "show_label"]
@@ -1019,11 +1116,13 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "place_right"]
 - !private ["PSo19UITextFieldDelegate", "show"]
 - !private ["PSo19UITextFieldDelegate", "view"]
-- ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "CGRect"]
 - ["PSo18UITraitEnvironment", "CopyController"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_TYPE"]
+- !private ["PSo18UITraitEnvironment", "DEVICE_VERSION"]
 - ["PSo18UITraitEnvironment", "FavoritesController"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
-- ["PSo18UITraitEnvironment", "NavButton"]
+- !private ["PSo18UITraitEnvironment", "NavButton"]
 - ["PSo18UITraitEnvironment", "NewPaletController"]
 - ["PSo18UITraitEnvironment", "NotificationController"]
 - ["PSo18UITraitEnvironment", "OperationController"]
@@ -1065,6 +1164,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
+- !private ["PSo18UITraitEnvironment", "setDeviceInfo"]
 - !private ["PSo18UITraitEnvironment", "show"]
 - ["PSo18UITraitEnvironment", "show_favorites"]
 - ["PSo18UITraitEnvironment", "show_label"]
@@ -1085,7 +1185,7 @@ depends-member:
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "frame"]
-- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
@@ -1093,8 +1193,10 @@ depends-member:
 - !private ["CSo6UIView", "toggle_on"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGFloat"]
-- ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CopyController"]
+- !private ["CSo16UIViewController", "DEVICE_TYPE"]
+- !private ["CSo16UIViewController", "DEVICE_VERSION"]
 - ["CSo16UIViewController", "FavoritesController"]
 - !private ["CSo16UIViewController", "NSTextAlignment"]
 - ["CSo16UIViewController", "NavButton"]
@@ -1133,6 +1235,7 @@ depends-member:
 - !private ["CSo16UIViewController", "place_right"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
 - !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "setDeviceInfo"]
 - !private ["CSo16UIViewController", "show"]
 - ["CSo16UIViewController", "show_favorites"]
 - ["CSo16UIViewController", "show_label"]
@@ -1143,6 +1246,8 @@ depends-member:
 - ["CSo16UIViewController", "view_palet"]
 - ["CSo16UIViewController", "view_palet_controller"]
 - ["CSo16UIViewController", ""]
+- !private ["VSs20UnsafeMutablePointer", "deinit"]
+- !private ["VSs13UnsafePointer", "deinit"]
 - !private ["C7PaletV219ViewPaletController", "color_colection"]
 - ["C7PaletV219ViewPaletController", "init"]
 - !private ["C7PaletV219ViewPaletController", "palet_name"]
@@ -1150,7 +1255,27 @@ depends-member:
 - !private ["C7PaletV219ViewPaletController", "show"]
 - !private ["C7PaletV219ViewPaletController", "view"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs19_CVarArgAlignedType", "IntegerLiteralType"]
+- !private ["PSs19_CVarArgAlignedType", "Stride"]
+- !private ["PSs22_CVarArgPassedAsDouble", "IntegerLiteralType"]
+- !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Stride"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
@@ -1158,36 +1283,54 @@ depends-member:
 - !private ["PSs12_Reflectable", "animateWithDuration"]
 - !private ["PSs12_Reflectable", "bounds"]
 - !private ["PSs12_Reflectable", "frame"]
-- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "maxX"]
+- !private ["PSs12_Reflectable", "maxY"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textAlignment"]
 - !private ["PSs12_Reflectable", "toggle_off"]
 - !private ["PSs12_Reflectable", "toggle_on"]
 - !private ["PSs12_Reflectable", "width"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "Stride"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Stride"]
 depends-nominal:
+- !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
 - !private "PSs23ArrayLiteralConvertible"
 - "C7PaletV219AuxillaryController"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
-- "VSC6CGRect"
+- !private "VSC6CGRect"
 - "PSs11CVarArgType"
+- !private "PSs10Comparable"
 - "C7PaletV214CopyController"
 - "PSs23CustomStringConvertible"
+- !private "O7PaletV211DEVICE_TYPE"
+- !private "Sd"
 - "PSs9Equatable"
 - "C7PaletV219FavoritesController"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- !private "PSs16ForwardIndexType"
 - "PSs8Hashable"
-- "Si"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "OSC15NSTextAlignment"
-- "C7PaletV29NavButton"
+- !private "C7PaletV29NavButton"
 - "C7PaletV213NavController"
 - "C7PaletV218NewPaletController"
 - "C7PaletV222NotificationController"
@@ -1196,23 +1339,27 @@ depends-nominal:
 - !private "Sq"
 - "C7PaletV215PaletController"
 - "C7PaletV216PickerController"
+- !private "PSs21RandomAccessIndexType"
 - !private "PSs16RawRepresentable"
 - "C7PaletV213SelController"
 - !private "V10ObjectiveC8Selector"
 - !private "PSs14SetAlgebraType"
-- "PSo29UIAccessibilityIdentification"
-- "PSo12UIAppearance"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- "CSo8UIButton"
+- !private "CSo8UIButton"
 - !private "CSo16UICollectionView"
 - "PSo26UICollectionViewDataSource"
 - "PSo24UICollectionViewDelegate"
 - "PSo34UICollectionViewDelegateFlowLayout"
 - "PSo18UIContentContainer"
-- "CSo9UIControl"
+- !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
-- "PSo17UICoordinateSpace"
-- "PSo13UIDynamicItem"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
@@ -1222,12 +1369,24 @@ depends-nominal:
 - "PSo19UITableViewDelegate"
 - "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
-- "CSo6UIView"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "VSs20UnsafeMutablePointer"
+- !private "VSs13UnsafePointer"
 - "C7PaletV219ViewPaletController"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
 - !private "PSs21_ObjectiveCBridgeable"
-- "PSs12_Reflectable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -1239,4 +1398,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "aeb6ed7e60ecb2446cbfe5acb9c3c461"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "4520dd32fd4360a27ef6f608020e5c44"

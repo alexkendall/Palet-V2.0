@@ -12,9 +12,8 @@ import UIKit
 class SelController:AuxillaryController
 {
     var margin:CGFloat!;
-    var nav:NavButton!;
     var back_view:UIView!;
-    var label_texts = ["PALETTES", "FAVORITES", "PICKER"];
+    var label_texts = ["PALETTES", "PICKER", "FAVORITES"];
     var colors = [SOFT_GREEN, SOFT_ORANGE, MAGENTA, LIGHT_BLUE, UIColor.yellowColor()];
     
     override func viewDidLoad() {
@@ -61,18 +60,17 @@ class SelController:AuxillaryController
             }
             else if(i == 1)
             {
-                icon_button = FavoriteButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
-                icon_button.set_path_width(3.0);
-                
-                icon_button.addTarget(nav_controller, action: "show_favorites", forControlEvents: UIControlEvents.TouchUpInside);
-            }
-            
-            else if(i == 2)
-            {
                 icon_button = PickerButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
                 icon_button.set_path_width(3.0);
                 
                 icon_button.addTarget(nav_controller, action: "show_picker", forControlEvents: UIControlEvents.TouchUpInside);
+            }
+            else if(i == 2)
+            {
+                icon_button = FavoriteButton(frame: CGRect(x: but_marg * 0.5, y: but_marg, width: but_size, height: but_size));
+                icon_button.set_path_width(3.0);
+                
+                icon_button.addTarget(nav_controller, action: "show_favorites", forControlEvents: UIControlEvents.TouchUpInside);
             }
             else
             {

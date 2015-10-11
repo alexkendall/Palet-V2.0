@@ -359,7 +359,7 @@ SWIFT_CLASS("_TtC7PaletV213NavController")
 @property (nonatomic, readonly) ViewPaletController * __nonnull view_palet_controller;
 @property (nonatomic, readonly) NewPaletController * __nonnull new_palet_controller;
 @property (nonatomic) UILabel * __null_unspecified controller_label;
-@property (nonatomic) NavButton * __nonnull nav_but;
+@property (nonatomic) NavButton * __null_unspecified nav_but;
 @property (nonatomic, readonly) NotificationController * __nonnull notification_controller;
 @property (nonatomic, readonly) OperationController * __nonnull operation_controller;
 @property (nonatomic, readonly) CopyController * __nonnull copy_controller;
@@ -527,7 +527,6 @@ SWIFT_CLASS("_TtC7PaletV210SaveButton")
 
 SWIFT_CLASS("_TtC7PaletV213SelController")
 @interface SelController : AuxillaryController
-@property (nonatomic) NavButton * __null_unspecified nav;
 @property (nonatomic) UIView * __null_unspecified back_view;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull label_texts;
 @property (nonatomic, copy) NSArray<UIColor *> * __nonnull colors;

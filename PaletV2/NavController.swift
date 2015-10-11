@@ -17,7 +17,7 @@ class NavController: UIViewController
     let view_palet_controller = ViewPaletController();
     let new_palet_controller = NewPaletController();
     var controller_label:UILabel!;
-    var nav_but = NavButton(frame: CGRect(x: 15.0, y: 15.0, width: 40.0, height: 40.0));
+    var nav_but:NavButton!;
     let notification_controller = NotificationController();
     let operation_controller = OperationController();
     let copy_controller = CopyController();
@@ -26,6 +26,18 @@ class NavController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setDeviceInfo();
+        
+        if(DEVICE_VERSION == DEVICE_TYPE.IPAD)
+        {
+            nav_but = NavButton(frame: CGRect(x: view.bounds.width * 0.05 - 3.0, y: 15.0, width:  view.bounds.width * 0.075, height:  view.bounds.width * 0.075));
+        }
+        else
+        {
+            nav_but = NavButton(frame: CGRect(x: view.bounds.width * 0.05 - 3.0, y: 15.0, width:  view.bounds.width * 0.1, height:  view.bounds.width * 0.1));
+        }
+        
         self.view.addSubview(nav_but);
         self.view.addSubview(menu_controller.view);
         self.view.addSubview(picker_controller.view);
@@ -40,7 +52,18 @@ class NavController: UIViewController
         operation_controller.copy_button.addTarget(copy_controller, action: "show", forControlEvents: UIControlEvents.TouchUpInside);
         
         let label_width:CGFloat = self.view.bounds.width - nav_but.frame.maxX;
-        controller_label = UILabel(frame: CGRect(x: nav_but.frame.maxX, y: 15.0, width: label_width - 15.0, height: 40.0));
+        let label_height:CGFloat = 40.0;
+        let label_y:CGFloat = nav_but.frame.maxY - label_height + 3;
+        
+        setDeviceInfo();
+        if(DEVICE_VERSION == DEVICE_TYPE.IPAD)
+        {
+            controller_label = UILabel(frame: CGRect(x: nav_but.frame.maxX - 28.0, y: label_y, width: label_width - 15.0, height: label_height));
+        }
+        else
+        {
+            controller_label = UILabel(frame: CGRect(x: nav_but.frame.maxX, y: label_y, width: label_width - 15.0, height: label_height));
+        }
         controller_label.textAlignment = NSTextAlignment.Right;
         controller_label.text = "MENU";
         self.view.addSubview(controller_label);
@@ -143,7 +166,7 @@ class NavController: UIViewController
     {
         menu_controller.place_left();
         new_palet_controller.show(0.5);
-        show_label("PALETS");
+        show_label("PALETTES");
         nav_but.toggle_off();
     }
 

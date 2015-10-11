@@ -9,19 +9,19 @@ provides-dynamic-lookup:
 - "highlight_color"
 - "drawRect"
 depends-top-level:
-- !private "Float"
-- !private "*"
-- "UIColor"
-- !private "UIControlEvents"
-- !private "fatalError"
-- "NSCoder"
+- "ControlButton"
 - !private "CGSize"
-- !private "StringLiteralType"
+- !private "Float"
+- !private "BooleanLiteralType"
+- !private "*"
 - "MenuButton"
 - "CGFloat"
+- !private "fatalError"
 - "CGRect"
-- "ControlButton"
-- !private "BooleanLiteralType"
+- !private "UIControlEvents"
+- "NSCoder"
+- "UIColor"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGColor"]

@@ -6,71 +6,71 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219FavoritesController", ""]
 provides-dynamic-lookup:
+- "table"
+- "copy_colors"
+- "reset_table"
+- "delete_colors"
+- "clicked"
+- "label_texts"
+- "sorted_colors"
+- "load_favorites"
+- "tableView"
+- "tableView"
+- "tableView"
+- "push_left"
+- "viewDidLoad"
+- "place_right"
 - "push_right"
 - "prefersStatusBarHidden"
 - "colors"
-- "clicked"
-- "table"
-- "selected_colors"
-- "reset_table"
-- "load_favorites"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "copy_colors"
-- "place_right"
-- "push_left"
-- "label_texts"
-- "delete_colors"
-- "sorted_colors"
 - "selected_index"
+- "selected_colors"
 depends-top-level:
 - !private "!"
-- !private ">"
+- "Bool"
+- "CGFloat"
 - !private "++"
 - !private "print"
+- !private ">"
 - !private "UITableViewCellSeparatorStyle"
+- !private "*"
 - !private "nav_controller"
-- !private "%"
-- !private "delete_color"
-- "Set"
-- "NSTimeInterval"
+- "UITableViewCell"
+- "Array"
 - "StringLiteralType"
-- "UIColor"
-- !private "get_hex"
 - !private "UIView"
-- !private "=="
-- !private "+"
-- !private "DARK_GRAY"
 - "NSIndexPath"
-- !private "FAVORITE_GROUP_NAME"
-- !private "SOFT_GREEN"
-- !private "CGRect"
-- "UITableView"
-- !private "fetch_colors"
-- "CheckButton"
+- !private "+"
+- !private "get_rgb"
+- !private "=="
+- !private "DARK_GRAY"
+- "FavoritesController"
+- !private "UIFont"
+- "UITableViewDataSource"
+- !private "UITableViewStyle"
+- "AuxillaryController"
+- !private "UILabel"
+- !private "UITableViewCellSelectionStyle"
+- "NSTimeInterval"
+- !private "delete_color"
+- !private "<"
+- !private "UIControlEvents"
 - "UITableViewDelegate"
+- "CheckButton"
+- "Int"
+- !private "fetch_colors"
+- !private "%"
+- "UITableView"
+- !private "FAVORITE_GROUP_NAME"
+- "Set"
+- !private "-"
 - !private "get_color"
 - !private "WOLF_GRAY"
-- !private "*"
-- "UITableViewDataSource"
-- "CGFloat"
-- "AuxillaryController"
-- !private "-"
-- !private "UIFont"
-- !private "UILabel"
-- !private "UIControlEvents"
-- !private "UITableViewCellSelectionStyle"
-- "Int"
-- !private "<"
-- "Array"
-- !private "get_rgb"
-- !private "UITableViewStyle"
-- "Bool"
-- "FavoritesController"
+- !private "CGRect"
 - !private "BooleanLiteralType"
-- "UITableViewCell"
+- "UIColor"
+- !private "SOFT_GREEN"
+- !private "get_hex"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGRect"]
@@ -273,9 +273,12 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "maxX"]
+- !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "CGColor"]
 - !private ["PSs11CVarArgType", "CGRect"]
@@ -599,6 +602,7 @@ depends-member:
 - !private ["PSs9Equatable", "nav_controller"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "operation_controller"]
+- !private ["PSs9Equatable", "origin"]
 - ["PSs9Equatable", "place_right"]
 - ["PSs9Equatable", "prefersStatusBarHidden"]
 - !private ["PSs9Equatable", "print"]
@@ -646,6 +650,8 @@ depends-member:
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
+- !private ["PSs9Equatable", "x"]
+- !private ["PSs9Equatable", "y"]
 - ["PSs9Equatable", ""]
 - ["C7PaletV219FavoritesController", "Bool"]
 - ["C7PaletV219FavoritesController", "CGFloat"]
@@ -1682,6 +1688,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
+- !private ["CSo12UIScrollView", "frame"]
 - !private ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "separatorStyle"]
@@ -1805,6 +1812,7 @@ depends-member:
 - !private ["CSo11UITableView", "backgroundColor"]
 - !private ["CSo11UITableView", "dataSource"]
 - !private ["CSo11UITableView", "delegate"]
+- !private ["CSo11UITableView", "frame"]
 - !private ["CSo11UITableView", "init"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
@@ -2174,6 +2182,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "insert"]
 - !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "maxX"]
+- !private ["PSs12_Reflectable", "origin"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "remove"]
 - !private ["PSs12_Reflectable", "removeAll"]
@@ -2192,6 +2201,8 @@ depends-member:
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textColor"]
 - !private ["PSs12_Reflectable", "width"]
+- !private ["PSs12_Reflectable", "x"]
+- !private ["PSs12_Reflectable", "y"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
@@ -2210,6 +2221,7 @@ depends-nominal:
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
 - !private "VSC6CGRect"
 - "PSs11CVarArgType"
 - !private "C7PaletV211CheckButton"
@@ -2308,4 +2320,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 interface-hash: "be3ba0ac47b92cedee33d249570ba414"

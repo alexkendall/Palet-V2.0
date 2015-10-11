@@ -24,12 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        setDeviceInfo();
         window?.backgroundColor = UIColor.whiteColor();
         window?.rootViewController = nav_controller;
-        //window?.rootViewController = sel_controller;
-        //window?.rootViewController = favorites_controller;
-        //window?.rootViewController = view_palet_controller;
         return true
     }
 

@@ -23,6 +23,8 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell();
+        cell.frame = CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: tableView.frame.width, height: cell.frame.height);
+        
         cell.selectionStyle = UITableViewCellSelectionStyle.None;
         if((indexPath.row % 2) == 1)
         {
@@ -47,7 +49,8 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         let delete_button = DeleteButton();
         let del_height:CGFloat = cell.bounds.height * 0.5;
         let del_margin:CGFloat = (cell.bounds.height - del_height) * 0.5;
-        let del_x:CGFloat = cell.bounds.width - del_height;
+        
+        let del_x:CGFloat = cell.frame.width - del_height - del_margin;
         delete_button.frame = CGRect(x: del_x, y: del_margin, width: del_height, height: del_height);
         delete_button.set_highlight_color(LIGHT_GRAY);
         delete_button.set_unhighlight_color(SOFT_RED);
@@ -172,6 +175,7 @@ class PaletController:AuxillaryController, UITableViewDataSource, UITableViewDel
         }
         
         table.reloadData();
+        nav_controller.copy_controller.table.reloadData();
         nav_controller.new_palet_controller.table.reloadData();
     }
     

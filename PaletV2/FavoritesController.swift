@@ -43,6 +43,7 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell();
+        cell.frame = CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: tableView.frame.width, height: cell.frame.height);
         let color = colors[indexPath.row];
         let color_margin:CGFloat = cell.frame.height * 0.1;
         let sub_dim:CGFloat = cell.frame.height - (2.0 * color_margin);
@@ -70,7 +71,7 @@ class FavoritesController:AuxillaryController, UITableViewDataSource, UITableVie
         // configure chech button that allows users to delete and copy colors
         let button_dim:CGFloat = cell.bounds.height * 0.7;
         let button_margin:CGFloat = (cell.bounds.height - button_dim) * 0.5;
-        let button_x:CGFloat = cell.bounds.width - button_dim - button_margin;
+        let button_x:CGFloat = cell.frame.width - button_dim - button_margin;
 
         let check_button = CheckButton(x: button_x, y: button_margin, in_highlight_color: UIColor.whiteColor(), in_unhigh_color: SOFT_GREEN, dim: button_dim);
         check_button.tag = indexPath.row;

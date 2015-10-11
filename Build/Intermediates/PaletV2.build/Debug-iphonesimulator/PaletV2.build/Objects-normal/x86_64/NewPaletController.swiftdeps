@@ -6,52 +6,52 @@ provides-nominal:
 provides-member:
 - ["C7PaletV218NewPaletController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "table"
+- "enter_palet"
+- "selected_index"
 - "textFieldDidBeginEditing"
 - "textFieldShouldReturn"
+- "push_left"
+- "viewDidLoad"
 - "INIT_ENTRY"
-- "add_button"
-- "margin"
+- "new_palet_container"
+- "add_palet_container"
+- "text_entry"
 - "push_right"
 - "prefersStatusBarHidden"
 - "ERROR_ENTRY"
-- "selected_index"
-- "new_palet_container"
-- "enter_palet"
-- "text_entry"
-- "table"
-- "add_palet_container"
-- "didReceiveMemoryWarning"
-- "push_left"
-- "viewDidLoad"
+- "add_button"
+- "margin"
 depends-top-level:
-- "TextField"
-- "NSTimeInterval"
+- "Bool"
 - !private "UIColor"
 - "CGFloat"
-- !private "&&"
-- !private "+"
-- !private "*"
 - "AuxillaryController"
-- "UIView"
+- !private "&&"
 - "NewPaletController"
-- !private "BooleanLiteralType"
-- "UITextFieldDelegate"
-- !private "SOFT_GREEN"
-- "UITextField"
-- "Int"
-- !private "UIControlEvents"
 - !private "UITableViewCellSeparatorStyle"
-- "Bool"
-- !private "!="
-- !private "-"
-- !private "LIGHT_GRAY"
-- !private "store_palet"
-- "AddButton"
-- "AnimatedView"
+- !private "*"
 - !private "WOLF_GRAY"
-- "UITableView"
-- "CGRect"
+- "UITextFieldDelegate"
+- "Int"
+- !private "BooleanLiteralType"
+- "UITextField"
+- !private "+"
+- "TextField"
+- "UIView"
+- !private "-"
+- !private "SOFT_GREEN"
+- !private "store_palet"
+- !private "LIGHT_GRAY"
+- !private "!="
+- "AddButton"
+- "NSTimeInterval"
+- !private "UIControlEvents"
 - !private "nav_controller"
+- "UITableView"
+- "AnimatedView"
+- "CGRect"
 - "StringLiteralType"
 depends-member:
 - !private ["C7PaletV29AddButton", "addTarget"]
@@ -81,6 +81,7 @@ depends-member:
 - !private ["PSs9AnyObject", "blackColor"]
 - !private ["PSs9AnyObject", "borderWidth"]
 - !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "copy_controller"]
 - !private ["PSs9AnyObject", "dataSource"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
@@ -203,6 +204,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "blackColor"]
 - !private ["PSs11CVarArgType", "borderWidth"]
 - !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "copy_controller"]
 - !private ["PSs11CVarArgType", "dataSource"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
@@ -245,6 +247,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
+- !private ["C7PaletV214CopyController", "table"]
 - !private ["PSs23CustomStringConvertible", "AddButton"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
 - ["PSs23CustomStringConvertible", "ERROR_ENTRY"]
@@ -267,6 +270,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "blackColor"]
 - !private ["PSs23CustomStringConvertible", "borderWidth"]
 - !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "copy_controller"]
 - !private ["PSs23CustomStringConvertible", "dataSource"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -333,6 +337,7 @@ depends-member:
 - !private ["PSs9Equatable", "blackColor"]
 - !private ["PSs9Equatable", "borderWidth"]
 - !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "copy_controller"]
 - !private ["PSs9Equatable", "dataSource"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
@@ -402,6 +407,7 @@ depends-member:
 - !private ["PSs8Hashable", "blackColor"]
 - !private ["PSs8Hashable", "borderWidth"]
 - !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "copy_controller"]
 - !private ["PSs8Hashable", "dataSource"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
@@ -471,6 +477,7 @@ depends-member:
 - !private ["PSo8NSCoding", "blackColor"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "copy_controller"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -531,6 +538,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "WOLF_GRAY"]
 - ["PSo26NSExtensionRequestHandling", "add_button"]
 - ["PSo26NSExtensionRequestHandling", "add_palet_container"]
+- !private ["PSo26NSExtensionRequestHandling", "copy_controller"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "enter_palet"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -585,6 +593,7 @@ depends-member:
 - !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "copy_controller"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -647,6 +656,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "copy_controller"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -692,6 +702,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "blackColor"]
 - !private ["PSo14NSSecureCoding", "grayColor"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["C7PaletV213NavController", "copy_controller"]
 - !private ["C7PaletV213NavController", "palet_controller"]
 - ["C7PaletV218NewPaletController", "AddButton"]
 - ["C7PaletV218NewPaletController", "AnimatedView"]
@@ -812,6 +823,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "add_palet_container"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "copy_controller"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -876,6 +888,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "WOLF_GRAY"]
 - ["PSo18UIContentContainer", "add_button"]
 - ["PSo18UIContentContainer", "add_palet_container"]
+- !private ["PSo18UIContentContainer", "copy_controller"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "enter_palet"]
 - ["PSo18UIContentContainer", "init"]
@@ -986,6 +999,7 @@ depends-member:
 - ["CSo11UIResponder", "add_palet_container"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
+- !private ["CSo11UIResponder", "copy_controller"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1048,6 +1062,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "WOLF_GRAY"]
 - ["PSo16UIStateRestoring", "add_button"]
 - ["PSo16UIStateRestoring", "add_palet_container"]
+- !private ["PSo16UIStateRestoring", "copy_controller"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "enter_palet"]
 - ["PSo16UIStateRestoring", "init"]
@@ -1159,6 +1174,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "add_palet_container"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "copy_controller"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -1238,6 +1254,7 @@ depends-member:
 - !private ["CSo16UIViewController", "WOLF_GRAY"]
 - ["CSo16UIViewController", "add_button"]
 - ["CSo16UIViewController", "add_palet_container"]
+- !private ["CSo16UIViewController", "copy_controller"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "enter_palet"]
 - ["CSo16UIViewController", "init"]
@@ -1303,6 +1320,7 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - "PSs11CVarArgType"
+- !private "C7PaletV214CopyController"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
@@ -1364,4 +1382,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 interface-hash: "6d9bfa85db890f31d13a46c4fd2b68d4"

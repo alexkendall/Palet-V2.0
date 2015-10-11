@@ -25,10 +25,20 @@ class AuxillaryController:UIViewController
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        
         super_view = self.view;
-        let header:CGFloat = 55.0;
-        super_view.frame = CGRect(x: 0.0, y: 55.0, width: super_view.bounds.width, height: super_view.bounds.height - header);
+        
+        
+        var header:CGFloat!;
+        setDeviceInfo();
+        if(DEVICE_VERSION == DEVICE_TYPE.IPAD)
+        {
+            header = 55.0;
+        }
+        else
+        {
+            header = 40.0;
+        }
+        super_view.frame = CGRect(x: 0.0, y: header, width: super_view.bounds.width, height: super_view.bounds.height - header);
         in_frame = super_view.frame;
         left_frame = CGRect(x: -super_view.bounds.width, y: header, width: super_view.bounds.width, height: super_view.bounds.height);
         right_frame = CGRect(x: super_view.bounds.width, y: header, width: super_view.bounds.width, height: super_view.bounds.height);

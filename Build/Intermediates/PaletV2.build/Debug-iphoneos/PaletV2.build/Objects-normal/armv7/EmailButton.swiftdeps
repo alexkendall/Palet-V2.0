@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
-- !private "CGPoint"
-- "CGRect"
 - !private "UIBezierPath"
 - !private "*"
-- "MenuButton"
 - "EmailButton"
+- "MenuButton"
+- !private "CGPoint"
+- "CGRect"
 depends-member:
 - !private ["PSs9AnyObject", "CGPoint"]
 - !private ["PSs9AnyObject", "CGRect"]

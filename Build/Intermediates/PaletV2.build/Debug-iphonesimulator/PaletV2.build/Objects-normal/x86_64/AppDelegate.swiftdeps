@@ -12,58 +12,59 @@ provides-nominal:
 provides-member:
 - ["C7PaletV211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDocumentsDirectory"
-- "applicationWillTerminate"
-- "managedObjectModel"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
 - "applicationWillResignActive"
 - "persistentStoreCoordinator"
-- "application"
-- "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
-- "window"
-- "applicationDidEnterBackground"
-- "managedObjectContext"
+- "applicationWillTerminate"
 - "saveContext"
+- "managedObjectContext"
+- "application"
+- "applicationDocumentsDirectory"
+- "applicationDidBecomeActive"
+- "window"
+- "managedObjectModel"
 depends-top-level:
-- "UIResponder"
+- !private "BooleanLiteralType"
+- "sel_controller"
+- "UIApplicationDelegate"
 - "NSURL"
-- !private "NSLocalizedDescriptionKey"
-- "AppDelegate"
-- !private "NSSQLiteStoreType"
-- !private "NSUnderlyingErrorKey"
-- "UIApplication"
-- "nav_controller"
-- "NSObject"
-- !private "NSLog"
+- "FavoritesController"
+- !private "NSLocalizedFailureReasonErrorKey"
 - !private "UIColor"
+- "SelController"
+- "UIApplication"
+- !private "=="
+- "email_controller"
+- "AnyObject"
+- !private "-"
+- "NavController"
 - "StringLiteralType"
 - "Bool"
-- !private "=="
-- !private "NSFileManager"
-- "NSPersistentStoreCoordinator"
-- !private "-"
-- "AnyObject"
+- "NSObject"
+- "nav_controller"
 - !private "fatalError"
-- "NSManagedObjectModel"
-- !private "abort"
-- "sel_controller"
-- "EmailController"
-- "FavoritesController"
-- "email_controller"
-- "SelController"
-- "UIApplicationDelegate"
-- "NSError"
-- "FAVORITE_GROUP_NAME"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "NSBundle"
-- "UIWindow"
-- "NavController"
+- "AppDelegate"
 - "view_palet_controller"
-- "ViewPaletController"
+- !private "NSLocalizedDescriptionKey"
+- !private "NSSQLiteStoreType"
+- !private "NSUnderlyingErrorKey"
 - "NSManagedObjectContext"
-- !private "BooleanLiteralType"
-- "favorites_controller"
+- !private "NSFileManager"
+- "UIWindow"
+- "NSError"
+- !private "NSLog"
+- !private "NSBundle"
+- "ViewPaletController"
 - !private "String"
+- "UIResponder"
+- "favorites_controller"
+- "NSManagedObjectModel"
+- "NSPersistentStoreCoordinator"
+- "EmailController"
+- "FAVORITE_GROUP_NAME"
+- !private "abort"
+- !private "setDeviceInfo"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSBundle"]
@@ -115,6 +116,7 @@ depends-member:
 - !private ["PSs9AnyObject", "rootViewController"]
 - !private ["PSs9AnyObject", "save"]
 - ["PSs9AnyObject", "saveContext"]
+- !private ["PSs9AnyObject", "setDeviceInfo"]
 - !private ["PSs9AnyObject", "userInfo"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", "window"]
@@ -164,6 +166,7 @@ depends-member:
 - ["C7PaletV211AppDelegate", "persistentStoreCoordinator"]
 - !private ["C7PaletV211AppDelegate", "persistentStoreCoordinator.storage"]
 - ["C7PaletV211AppDelegate", "saveContext"]
+- !private ["C7PaletV211AppDelegate", "setDeviceInfo"]
 - ["C7PaletV211AppDelegate", "window"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -239,6 +242,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "rootViewController"]
 - !private ["PSs11CVarArgType", "save"]
 - ["PSs11CVarArgType", "saveContext"]
+- !private ["PSs11CVarArgType", "setDeviceInfo"]
 - !private ["PSs11CVarArgType", "userInfo"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", "window"]
@@ -317,6 +321,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "rootViewController"]
 - !private ["PSs23CustomStringConvertible", "save"]
 - ["PSs23CustomStringConvertible", "saveContext"]
+- !private ["PSs23CustomStringConvertible", "setDeviceInfo"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "userInfo"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
@@ -382,6 +387,7 @@ depends-member:
 - !private ["PSs9Equatable", "rootViewController"]
 - !private ["PSs9Equatable", "save"]
 - ["PSs9Equatable", "saveContext"]
+- !private ["PSs9Equatable", "setDeviceInfo"]
 - !private ["PSs9Equatable", "userInfo"]
 - !private ["PSs9Equatable", "whiteColor"]
 - ["PSs9Equatable", "window"]
@@ -447,6 +453,7 @@ depends-member:
 - !private ["PSs8Hashable", "rootViewController"]
 - !private ["PSs8Hashable", "save"]
 - ["PSs8Hashable", "saveContext"]
+- !private ["PSs8Hashable", "setDeviceInfo"]
 - !private ["PSs8Hashable", "userInfo"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", "window"]
@@ -577,6 +584,7 @@ depends-member:
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
+- !private ["CSo8NSObject", "setDeviceInfo"]
 - !private ["CSo8NSObject", "userInfo"]
 - !private ["CSo8NSObject", "whiteColor"]
 - ["CSo8NSObject", "window"]
@@ -629,6 +637,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
+- !private ["PSo16NSObjectProtocol", "setDeviceInfo"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", "window"]
@@ -725,6 +734,7 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "nav_controller"]
 - !private ["PSo21UIApplicationDelegate", "persistentStoreCoordinator"]
 - !private ["PSo21UIApplicationDelegate", "saveContext"]
+- !private ["PSo21UIApplicationDelegate", "setDeviceInfo"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["PSo26UICollectionViewDataSource", "init"]
@@ -783,6 +793,7 @@ depends-member:
 - ["CSo11UIResponder", "persistentStoreCoordinator.storage"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "saveContext"]
+- !private ["CSo11UIResponder", "setDeviceInfo"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - ["PSo20UIScrollViewDelegate", "init"]
@@ -1000,4 +1011,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 interface-hash: "8326bd1aff942cd851cc486e2742921e"

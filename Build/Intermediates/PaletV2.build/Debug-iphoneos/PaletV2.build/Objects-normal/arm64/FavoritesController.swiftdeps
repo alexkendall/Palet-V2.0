@@ -6,67 +6,71 @@ provides-nominal:
 provides-member:
 - ["C7PaletV219FavoritesController", ""]
 provides-dynamic-lookup:
-- "prefersStatusBarHidden"
+- "copy_colors"
+- "sorted_colors"
 - "table"
-- "colors"
+- "push_right"
+- "clicked"
+- "push_left"
+- "place_right"
+- "tableView"
+- "tableView"
+- "tableView"
+- "label_texts"
 - "selected_colors"
 - "viewDidLoad"
-- "push_left"
+- "reset_table"
 - "load_favorites"
-- "tableView"
-- "tableView"
-- "tableView"
-- "selected_index"
-- "clicked"
-- "push_right"
-- "label_texts"
-- "sorted_colors"
 - "delete_colors"
+- "selected_index"
+- "colors"
+- "prefersStatusBarHidden"
 depends-top-level:
-- !private "CGRect"
-- !private "*"
-- "AuxillaryController"
-- "UITableViewDataSource"
-- !private "SOFT_GREEN"
 - "Int"
-- "NSTimeInterval"
-- !private "-"
-- "Set"
-- "NSIndexPath"
-- "CGFloat"
-- "CheckButton"
-- !private "UIView"
-- "StringLiteralType"
-- !private "get_rgb"
-- !private "UIControlEvents"
-- "UITableViewCell"
-- !private "UITableViewCellSeparatorStyle"
-- "UITableViewDelegate"
-- !private "delete_color"
+- !private "<"
+- !private "!"
 - !private "+"
-- !private "UIFont"
-- !private "FAVORITE_GROUP_NAME"
-- !private "WOLF_GRAY"
-- !private "=="
-- !private "%"
-- !private "fetch_colors"
+- "FavoritesController"
+- !private "UITableViewCellSelectionStyle"
+- "UITableView"
+- !private "-"
+- !private "DARK_GRAY"
+- "UIColor"
+- !private "delete_color"
 - !private "UITableViewStyle"
-- !private "get_hex"
+- !private "SOFT_GREEN"
+- !private "%"
+- !private "WOLF_GRAY"
+- "StringLiteralType"
+- !private "UIFont"
+- !private "++"
+- "CheckButton"
+- "Bool"
+- !private "=="
 - !private "get_color"
 - "Array"
-- !private "!"
-- !private "++"
-- "Bool"
-- !private "UILabel"
-- !private ">"
-- "UITableView"
-- !private "UITableViewCellSelectionStyle"
-- "UIColor"
-- !private "DARK_GRAY"
-- !private "<"
-- "FavoritesController"
-- !private "BooleanLiteralType"
+- !private "get_rgb"
+- !private "UITableViewCellSeparatorStyle"
+- !private "UIControlEvents"
 - !private "nav_controller"
+- "NSTimeInterval"
+- "UITableViewCell"
+- !private "BooleanLiteralType"
+- !private "FAVORITE_GROUP_NAME"
+- "UITableViewDelegate"
+- !private "fetch_colors"
+- "UITableViewDataSource"
+- !private "UIView"
+- !private "UILabel"
+- !private "CGRect"
+- "AuxillaryController"
+- !private ">"
+- !private "print"
+- !private "*"
+- "NSIndexPath"
+- "CGFloat"
+- "Set"
+- !private "get_hex"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGRect"]
@@ -97,6 +101,7 @@ depends-member:
 - !private ["PSs9AnyObject", "clearColor"]
 - ["PSs9AnyObject", "clicked"]
 - ["PSs9AnyObject", "colors"]
+- ["PSs9AnyObject", "copy_colors"]
 - !private ["PSs9AnyObject", "dataSource"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "delete_color"]
@@ -117,10 +122,13 @@ depends-member:
 - !private ["PSs9AnyObject", "nav_controller"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "operation_controller"]
+- ["PSs9AnyObject", "place_right"]
 - ["PSs9AnyObject", "prefersStatusBarHidden"]
+- !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "push_left"]
 - ["PSs9AnyObject", "push_right"]
 - !private ["PSs9AnyObject", "reloadData"]
+- ["PSs9AnyObject", "reset_table"]
 - !private ["PSs9AnyObject", "row"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
@@ -211,6 +219,7 @@ depends-member:
 - !private ["C7PaletV219AuxillaryController", "WOLF_GRAY"]
 - ["C7PaletV219AuxillaryController", "clicked"]
 - ["C7PaletV219AuxillaryController", "colors"]
+- ["C7PaletV219AuxillaryController", "copy_colors"]
 - !private ["C7PaletV219AuxillaryController", "delete_color"]
 - ["C7PaletV219AuxillaryController", "delete_colors"]
 - !private ["C7PaletV219AuxillaryController", "fetch_colors"]
@@ -224,9 +233,12 @@ depends-member:
 - ["C7PaletV219AuxillaryController", "margin"]
 - !private ["C7PaletV219AuxillaryController", "nav_controller"]
 - ["C7PaletV219AuxillaryController", "numberOfSectionsInTableView"]
+- ["C7PaletV219AuxillaryController", "place_right"]
 - ["C7PaletV219AuxillaryController", "prefersStatusBarHidden"]
+- !private ["C7PaletV219AuxillaryController", "print"]
 - ["C7PaletV219AuxillaryController", "push_left"]
 - ["C7PaletV219AuxillaryController", "push_right"]
+- ["C7PaletV219AuxillaryController", "reset_table"]
 - ["C7PaletV219AuxillaryController", "scrollViewDidEndDecelerating"]
 - ["C7PaletV219AuxillaryController", "scrollViewDidEndDragging"]
 - ["C7PaletV219AuxillaryController", "scrollViewDidEndScrollingAnimation"]
@@ -296,6 +308,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "clearColor"]
 - ["PSs11CVarArgType", "clicked"]
 - ["PSs11CVarArgType", "colors"]
+- ["PSs11CVarArgType", "copy_colors"]
 - !private ["PSs11CVarArgType", "dataSource"]
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "delete_color"]
@@ -316,10 +329,13 @@ depends-member:
 - !private ["PSs11CVarArgType", "nav_controller"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "operation_controller"]
+- ["PSs11CVarArgType", "place_right"]
 - ["PSs11CVarArgType", "prefersStatusBarHidden"]
+- !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "push_left"]
 - ["PSs11CVarArgType", "push_right"]
 - !private ["PSs11CVarArgType", "reloadData"]
+- ["PSs11CVarArgType", "reset_table"]
 - !private ["PSs11CVarArgType", "row"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
@@ -446,6 +462,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "clearColor"]
 - ["PSs23CustomStringConvertible", "clicked"]
 - ["PSs23CustomStringConvertible", "colors"]
+- ["PSs23CustomStringConvertible", "copy_colors"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "dataSource"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
@@ -468,13 +485,16 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "nav_controller"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "operation_controller"]
+- ["PSs23CustomStringConvertible", "place_right"]
 - ["PSs23CustomStringConvertible", "prefersStatusBarHidden"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "push_left"]
 - ["PSs23CustomStringConvertible", "push_right"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "remove"]
 - !private ["PSs23CustomStringConvertible", "removeAll"]
 - !private ["PSs23CustomStringConvertible", "removeAtIndex"]
+- ["PSs23CustomStringConvertible", "reset_table"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -554,6 +574,7 @@ depends-member:
 - !private ["PSs9Equatable", "clearColor"]
 - ["PSs9Equatable", "clicked"]
 - ["PSs9Equatable", "colors"]
+- ["PSs9Equatable", "copy_colors"]
 - !private ["PSs9Equatable", "count"]
 - !private ["PSs9Equatable", "dataSource"]
 - !private ["PSs9Equatable", "delegate"]
@@ -578,12 +599,15 @@ depends-member:
 - !private ["PSs9Equatable", "nav_controller"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "operation_controller"]
+- ["PSs9Equatable", "place_right"]
 - ["PSs9Equatable", "prefersStatusBarHidden"]
+- !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "push_left"]
 - ["PSs9Equatable", "push_right"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "remove"]
 - !private ["PSs9Equatable", "removeAll"]
+- ["PSs9Equatable", "reset_table"]
 - !private ["PSs9Equatable", "row"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
@@ -647,6 +671,7 @@ depends-member:
 - !private ["C7PaletV219FavoritesController", "WOLF_GRAY"]
 - ["C7PaletV219FavoritesController", "clicked"]
 - ["C7PaletV219FavoritesController", "colors"]
+- ["C7PaletV219FavoritesController", "copy_colors"]
 - ["C7PaletV219FavoritesController", "deinit"]
 - !private ["C7PaletV219FavoritesController", "delete_color"]
 - ["C7PaletV219FavoritesController", "delete_colors"]
@@ -661,9 +686,12 @@ depends-member:
 - ["C7PaletV219FavoritesController", "margin"]
 - !private ["C7PaletV219FavoritesController", "nav_controller"]
 - ["C7PaletV219FavoritesController", "numberOfSectionsInTableView"]
+- ["C7PaletV219FavoritesController", "place_right"]
 - ["C7PaletV219FavoritesController", "prefersStatusBarHidden"]
+- !private ["C7PaletV219FavoritesController", "print"]
 - ["C7PaletV219FavoritesController", "push_left"]
 - ["C7PaletV219FavoritesController", "push_right"]
+- ["C7PaletV219FavoritesController", "reset_table"]
 - ["C7PaletV219FavoritesController", "scrollViewDidEndDecelerating"]
 - ["C7PaletV219FavoritesController", "scrollViewDidEndDragging"]
 - ["C7PaletV219FavoritesController", "scrollViewDidEndScrollingAnimation"]
@@ -727,6 +755,7 @@ depends-member:
 - !private ["PSs8Hashable", "clearColor"]
 - ["PSs8Hashable", "clicked"]
 - ["PSs8Hashable", "colors"]
+- ["PSs8Hashable", "copy_colors"]
 - !private ["PSs8Hashable", "count"]
 - !private ["PSs8Hashable", "dataSource"]
 - !private ["PSs8Hashable", "delegate"]
@@ -749,12 +778,15 @@ depends-member:
 - !private ["PSs8Hashable", "nav_controller"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "operation_controller"]
+- ["PSs8Hashable", "place_right"]
 - ["PSs8Hashable", "prefersStatusBarHidden"]
+- !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "push_left"]
 - ["PSs8Hashable", "push_right"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "remove"]
 - !private ["PSs8Hashable", "removeAll"]
+- ["PSs8Hashable", "reset_table"]
 - !private ["PSs8Hashable", "row"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
@@ -793,7 +825,6 @@ depends-member:
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
-- !private ["SQ", "deinit"]
 - ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
@@ -890,6 +921,7 @@ depends-member:
 - !private ["PSo8NSCoding", "clearColor"]
 - ["PSo8NSCoding", "clicked"]
 - ["PSo8NSCoding", "colors"]
+- ["PSo8NSCoding", "copy_colors"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "delete_color"]
@@ -910,10 +942,13 @@ depends-member:
 - !private ["PSo8NSCoding", "nav_controller"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "operation_controller"]
+- ["PSo8NSCoding", "place_right"]
 - ["PSo8NSCoding", "prefersStatusBarHidden"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "push_left"]
 - ["PSo8NSCoding", "push_right"]
 - !private ["PSo8NSCoding", "reloadData"]
+- ["PSo8NSCoding", "reset_table"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -975,6 +1010,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "WOLF_GRAY"]
 - ["PSo26NSExtensionRequestHandling", "clicked"]
 - ["PSo26NSExtensionRequestHandling", "colors"]
+- ["PSo26NSExtensionRequestHandling", "copy_colors"]
 - !private ["PSo26NSExtensionRequestHandling", "delete_color"]
 - ["PSo26NSExtensionRequestHandling", "delete_colors"]
 - !private ["PSo26NSExtensionRequestHandling", "fetch_colors"]
@@ -990,9 +1026,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "nav_controller"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "operation_controller"]
+- ["PSo26NSExtensionRequestHandling", "place_right"]
 - ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "push_left"]
 - ["PSo26NSExtensionRequestHandling", "push_right"]
+- ["PSo26NSExtensionRequestHandling", "reset_table"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -1050,6 +1089,7 @@ depends-member:
 - !private ["CSo8NSObject", "clearColor"]
 - ["CSo8NSObject", "clicked"]
 - ["CSo8NSObject", "colors"]
+- ["CSo8NSObject", "copy_colors"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "delete_color"]
@@ -1070,10 +1110,13 @@ depends-member:
 - !private ["CSo8NSObject", "nav_controller"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "operation_controller"]
+- ["CSo8NSObject", "place_right"]
 - ["CSo8NSObject", "prefersStatusBarHidden"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "push_left"]
 - ["CSo8NSObject", "push_right"]
 - !private ["CSo8NSObject", "reloadData"]
+- ["CSo8NSObject", "reset_table"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -1139,6 +1182,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "clearColor"]
 - ["PSo16NSObjectProtocol", "clicked"]
 - ["PSo16NSObjectProtocol", "colors"]
+- ["PSo16NSObjectProtocol", "copy_colors"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "delete_color"]
@@ -1159,10 +1203,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "nav_controller"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "operation_controller"]
+- ["PSo16NSObjectProtocol", "place_right"]
 - ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "push_left"]
 - ["PSo16NSObjectProtocol", "push_right"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
+- ["PSo16NSObjectProtocol", "reset_table"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1336,6 +1383,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "clicked"]
 - ["PSo21UIAppearanceContainer", "colors"]
+- ["PSo21UIAppearanceContainer", "copy_colors"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "delete_color"]
@@ -1356,10 +1404,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "nav_controller"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "operation_controller"]
+- ["PSo21UIAppearanceContainer", "place_right"]
 - ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "push_left"]
 - ["PSo21UIAppearanceContainer", "push_right"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
+- ["PSo21UIAppearanceContainer", "reset_table"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1426,6 +1477,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "WOLF_GRAY"]
 - ["PSo18UIContentContainer", "clicked"]
 - ["PSo18UIContentContainer", "colors"]
+- ["PSo18UIContentContainer", "copy_colors"]
 - !private ["PSo18UIContentContainer", "delete_color"]
 - ["PSo18UIContentContainer", "delete_colors"]
 - !private ["PSo18UIContentContainer", "fetch_colors"]
@@ -1441,9 +1493,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "nav_controller"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "operation_controller"]
+- ["PSo18UIContentContainer", "place_right"]
 - ["PSo18UIContentContainer", "prefersStatusBarHidden"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "push_left"]
 - ["PSo18UIContentContainer", "push_right"]
+- ["PSo18UIContentContainer", "reset_table"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1563,6 +1618,7 @@ depends-member:
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "clicked"]
 - ["CSo11UIResponder", "colors"]
+- ["CSo11UIResponder", "copy_colors"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "delete_color"]
@@ -1583,10 +1639,13 @@ depends-member:
 - !private ["CSo11UIResponder", "nav_controller"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "operation_controller"]
+- ["CSo11UIResponder", "place_right"]
 - ["CSo11UIResponder", "prefersStatusBarHidden"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "push_left"]
 - ["CSo11UIResponder", "push_right"]
 - !private ["CSo11UIResponder", "reloadData"]
+- ["CSo11UIResponder", "reset_table"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1655,6 +1714,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "margin"]
 - !private ["PSo20UIScrollViewDelegate", "nav_controller"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "reset_table"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1696,6 +1757,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "WOLF_GRAY"]
 - ["PSo16UIStateRestoring", "clicked"]
 - ["PSo16UIStateRestoring", "colors"]
+- ["PSo16UIStateRestoring", "copy_colors"]
 - !private ["PSo16UIStateRestoring", "delete_color"]
 - ["PSo16UIStateRestoring", "delete_colors"]
 - !private ["PSo16UIStateRestoring", "fetch_colors"]
@@ -1711,9 +1773,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "nav_controller"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "operation_controller"]
+- ["PSo16UIStateRestoring", "place_right"]
 - ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "push_left"]
 - ["PSo16UIStateRestoring", "push_right"]
+- ["PSo16UIStateRestoring", "reset_table"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1780,6 +1845,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "margin"]
 - !private ["PSo21UITableViewDataSource", "nav_controller"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "reset_table"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -1830,6 +1897,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "margin"]
 - !private ["PSo19UITableViewDelegate", "nav_controller"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- !private ["PSo19UITableViewDelegate", "reset_table"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1877,6 +1946,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "clicked"]
 - ["PSo18UITraitEnvironment", "colors"]
+- ["PSo18UITraitEnvironment", "copy_colors"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "delete_color"]
@@ -1897,10 +1967,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "nav_controller"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "operation_controller"]
+- ["PSo18UITraitEnvironment", "place_right"]
 - ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "push_left"]
 - ["PSo18UITraitEnvironment", "push_right"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
+- ["PSo18UITraitEnvironment", "reset_table"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1982,6 +2055,7 @@ depends-member:
 - !private ["CSo16UIViewController", "WOLF_GRAY"]
 - ["CSo16UIViewController", "clicked"]
 - ["CSo16UIViewController", "colors"]
+- ["CSo16UIViewController", "copy_colors"]
 - !private ["CSo16UIViewController", "delete_color"]
 - ["CSo16UIViewController", "delete_colors"]
 - !private ["CSo16UIViewController", "fetch_colors"]
@@ -1997,9 +2071,12 @@ depends-member:
 - !private ["CSo16UIViewController", "nav_controller"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "operation_controller"]
+- ["CSo16UIViewController", "place_right"]
 - ["CSo16UIViewController", "prefersStatusBarHidden"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "push_left"]
 - ["CSo16UIViewController", "push_right"]
+- ["CSo16UIViewController", "reset_table"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -2146,7 +2223,6 @@ depends-nominal:
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
-- !private "SQ"
 - "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
@@ -2232,4 +2308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "5e2873b0d00d5801dc17913e0a7e3c30"
+interface-hash: "be3ba0ac47b92cedee33d249570ba414"

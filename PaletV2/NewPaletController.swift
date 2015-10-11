@@ -98,7 +98,8 @@ class NewPaletController:AuxillaryController, UITextFieldDelegate
         {
             //nav_controller.palet_controller.palette_names.append(text_entry.text!);
             store_palet(text_entry.text!);
-            
+            nav_controller.copy_controller.table.reloadData();
+            nav_controller.palet_controller.table.reloadData();
             self.table.reloadData();
             nav_controller.palet_controller.table.reloadData();
             text_entry.text = INIT_ENTRY;

@@ -7,65 +7,65 @@ provides-member:
 - ["C7PaletV215PaletController", ""]
 provides-dynamic-lookup:
 - "push_left"
-- "set_name"
-- "add_palet_container"
-- "selected_index"
 - "margin"
 - "delete_palet"
-- "tableView"
-- "tableView"
-- "tableView"
-- "viewDidLoad"
-- "palette_names"
+- "add_palet_container"
 - "selected_label"
+- "selected_index"
+- "viewDidLoad"
 - "push_right"
-- "table"
-- "didReceiveMemoryWarning"
 - "prefersStatusBarHidden"
+- "didReceiveMemoryWarning"
+- "palette_names"
+- "set_name"
+- "table"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "Int"
-- !private "UIView"
-- !private "SOFT_GREEN"
-- !private "ViewButton"
-- !private "-"
-- !private "StringLiteralType"
 - "AnimatedView"
-- "PaletController"
-- !private "+"
 - !private "%"
-- !private "fetch_palets"
-- "NSTimeInterval"
-- !private "=="
-- !private "UIColor"
-- !private "UITableViewCellSeparatorStyle"
 - !private "SOFT_RED"
-- "String"
-- !private "get_palet"
-- "UITableView"
-- !private "UITableViewCellSelectionStyle"
-- "NSIndexPath"
-- "UIButton"
-- "CGRect"
-- !private "DARK_GRAY"
-- "Bool"
-- !private "delete_group"
-- !private "*"
-- !private "LIGHT_GRAY"
-- !private "BooleanLiteralType"
-- !private "++"
-- !private "print"
-- "DeleteButton"
-- "UITableViewDelegate"
-- "CGFloat"
-- "UITableViewDataSource"
-- "UITableViewCell"
-- "UILabel"
-- !private "UIControlEvents"
-- "AuxillaryController"
 - !private "WOLF_GRAY"
-- !private "remove_palet"
+- !private "UIControlEvents"
 - !private "nav_controller"
+- !private "++"
+- "NSIndexPath"
+- "String"
+- !private "UITableViewCellSeparatorStyle"
+- "PaletController"
+- !private "BooleanLiteralType"
+- "UITableViewCell"
+- !private "UITableViewCellSelectionStyle"
+- !private "DARK_GRAY"
+- "CGFloat"
+- "CGRect"
+- "DeleteButton"
+- !private "=="
+- !private "ViewButton"
+- !private "UIColor"
+- "AuxillaryController"
+- "UILabel"
 - !private "<"
+- "UITableViewDataSource"
+- "Bool"
+- "Int"
+- !private "remove_palet"
+- !private "-"
+- !private "SOFT_GREEN"
+- "UIButton"
+- !private "*"
+- "NSTimeInterval"
+- !private "get_palet"
+- !private "LIGHT_GRAY"
+- !private "+"
+- !private "print"
+- !private "UIView"
+- !private "delete_group"
+- "UITableViewDelegate"
+- "UITableView"
+- !private "fetch_palets"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["PSs16AbsoluteValuable", "Stride"]
@@ -93,6 +93,7 @@ depends-member:
 - !private ["PSs9AnyObject", "blackColor"]
 - !private ["PSs9AnyObject", "borderWidth"]
 - !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "copy_controller"]
 - !private ["PSs9AnyObject", "dataSource"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "delete_group"]
@@ -292,6 +293,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "blackColor"]
 - !private ["PSs11CVarArgType", "borderWidth"]
 - !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "copy_controller"]
 - !private ["PSs11CVarArgType", "dataSource"]
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "delete_group"]
@@ -369,6 +371,7 @@ depends-member:
 - !private ["PSs10Comparable", "IntegerLiteralType"]
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "init"]
+- !private ["C7PaletV214CopyController", "table"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
@@ -412,6 +415,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "blackColor"]
 - !private ["PSs23CustomStringConvertible", "borderWidth"]
 - !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "copy_controller"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "dataSource"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
@@ -518,6 +522,7 @@ depends-member:
 - !private ["PSs9Equatable", "blackColor"]
 - !private ["PSs9Equatable", "borderWidth"]
 - !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "copy_controller"]
 - !private ["PSs9Equatable", "dataSource"]
 - !private ["PSs9Equatable", "delegate"]
 - !private ["PSs9Equatable", "delete_group"]
@@ -623,6 +628,7 @@ depends-member:
 - !private ["PSs8Hashable", "blackColor"]
 - !private ["PSs8Hashable", "borderWidth"]
 - !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "copy_controller"]
 - !private ["PSs8Hashable", "dataSource"]
 - !private ["PSs8Hashable", "delegate"]
 - !private ["PSs8Hashable", "delete_group"]
@@ -774,6 +780,7 @@ depends-member:
 - !private ["PSo8NSCoding", "blackColor"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "copy_controller"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "delete_group"]
@@ -859,6 +866,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "ViewButton"]
 - !private ["PSo26NSExtensionRequestHandling", "WOLF_GRAY"]
 - ["PSo26NSExtensionRequestHandling", "add_palet_container"]
+- !private ["PSo26NSExtensionRequestHandling", "copy_controller"]
 - !private ["PSo26NSExtensionRequestHandling", "delete_group"]
 - ["PSo26NSExtensionRequestHandling", "delete_palet"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -937,6 +945,7 @@ depends-member:
 - !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "copy_controller"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "delete_group"]
@@ -1023,6 +1032,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "copy_controller"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "delete_group"]
@@ -1090,6 +1100,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "lightGrayColor"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["C7PaletV213NavController", "copy_controller"]
 - !private ["C7PaletV213NavController", "new_palet_controller"]
 - !private ["C7PaletV213NavController", "picker_controller"]
 - !private ["C7PaletV213NavController", "view"]
@@ -1271,6 +1282,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "add_palet_container"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "copy_controller"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "delete_group"]
@@ -1358,6 +1370,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "ViewButton"]
 - !private ["PSo18UIContentContainer", "WOLF_GRAY"]
 - ["PSo18UIContentContainer", "add_palet_container"]
+- !private ["PSo18UIContentContainer", "copy_controller"]
 - !private ["PSo18UIContentContainer", "delete_group"]
 - ["PSo18UIContentContainer", "delete_palet"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -1490,6 +1503,7 @@ depends-member:
 - ["CSo11UIResponder", "add_palet_container"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
+- !private ["CSo11UIResponder", "copy_controller"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "delete_group"]
@@ -1622,6 +1636,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "ViewButton"]
 - !private ["PSo16UIStateRestoring", "WOLF_GRAY"]
 - ["PSo16UIStateRestoring", "add_palet_container"]
+- !private ["PSo16UIStateRestoring", "copy_controller"]
 - !private ["PSo16UIStateRestoring", "delete_group"]
 - ["PSo16UIStateRestoring", "delete_palet"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -1805,6 +1820,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "add_palet_container"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "copy_controller"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "delete_group"]
@@ -1909,6 +1925,7 @@ depends-member:
 - !private ["CSo16UIViewController", "ViewButton"]
 - !private ["CSo16UIViewController", "WOLF_GRAY"]
 - ["CSo16UIViewController", "add_palet_container"]
+- !private ["CSo16UIViewController", "copy_controller"]
 - !private ["CSo16UIViewController", "delete_group"]
 - ["CSo16UIViewController", "delete_palet"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
@@ -2082,6 +2099,7 @@ depends-nominal:
 - "PSs11CVarArgType"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
+- !private "C7PaletV214CopyController"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - !private "C7PaletV212DeleteButton"

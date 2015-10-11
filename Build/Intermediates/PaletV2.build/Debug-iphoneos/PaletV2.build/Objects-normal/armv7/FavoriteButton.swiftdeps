@@ -8,18 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
-- !private "StringLiteralType"
-- "CGRect"
-- !private "CGRectGetWidth"
-- !private "fatalError"
-- "MenuButton"
-- !private "CGAffineTransformTranslate"
 - !private "CGPointMake"
-- !private "*"
-- !private "CGAffineTransformMakeScale"
-- "FavoriteButton"
 - "NSCoder"
+- !private "CGAffineTransformTranslate"
+- "MenuButton"
+- "CGRect"
+- !private "StringLiteralType"
+- !private "CGRectGetWidth"
 - !private "CGRectGetHeight"
+- "FavoriteButton"
+- !private "fatalError"
+- !private "CGAffineTransformMakeScale"
+- !private "*"
 depends-member:
 - !private ["PSs9AnyObject", "CGAffineTransformMakeScale"]
 - !private ["PSs9AnyObject", "CGAffineTransformTranslate"]

@@ -1,0 +1,267 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ExitButton"
+provides-nominal:
+- "C7PaletV210ExitButton"
+provides-member:
+- ["C7PaletV210ExitButton", ""]
+provides-dynamic-lookup:
+- "drawRect"
+depends-top-level:
+- "ExitButton"
+- !private "CGPoint"
+- "MenuButton"
+- !private "*"
+- "CGRect"
+depends-member:
+- !private ["PSs9AnyObject", "CGPoint"]
+- !private ["PSs9AnyObject", "addLineToPoint"]
+- ["PSs9AnyObject", "drawRect"]
+- !private ["PSs9AnyObject", "icon_color"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "lineWidth"]
+- !private ["PSs9AnyObject", "line_width"]
+- !private ["PSs9AnyObject", "moveToPoint"]
+- !private ["PSs9AnyObject", "path"]
+- !private ["PSs9AnyObject", "setStroke"]
+- !private ["PSs9AnyObject", "stroke"]
+- ["PSs9AnyObject", ""]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "width"]
+- !private ["PSs11CVarArgType", "CGPoint"]
+- !private ["PSs11CVarArgType", "addLineToPoint"]
+- ["PSs11CVarArgType", "drawRect"]
+- !private ["PSs11CVarArgType", "icon_color"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "lineWidth"]
+- !private ["PSs11CVarArgType", "line_width"]
+- !private ["PSs11CVarArgType", "moveToPoint"]
+- !private ["PSs11CVarArgType", "path"]
+- !private ["PSs11CVarArgType", "setStroke"]
+- !private ["PSs11CVarArgType", "stroke"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CGPoint"]
+- !private ["PSs23CustomStringConvertible", "addLineToPoint"]
+- ["PSs23CustomStringConvertible", "drawRect"]
+- !private ["PSs23CustomStringConvertible", "icon_color"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "lineWidth"]
+- !private ["PSs23CustomStringConvertible", "line_width"]
+- !private ["PSs23CustomStringConvertible", "moveToPoint"]
+- !private ["PSs23CustomStringConvertible", "path"]
+- !private ["PSs23CustomStringConvertible", "setStroke"]
+- !private ["PSs23CustomStringConvertible", "stroke"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "CGPoint"]
+- !private ["PSs9Equatable", "addLineToPoint"]
+- ["PSs9Equatable", "drawRect"]
+- !private ["PSs9Equatable", "height"]
+- !private ["PSs9Equatable", "icon_color"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "lineWidth"]
+- !private ["PSs9Equatable", "line_width"]
+- !private ["PSs9Equatable", "moveToPoint"]
+- !private ["PSs9Equatable", "path"]
+- !private ["PSs9Equatable", "setStroke"]
+- !private ["PSs9Equatable", "stroke"]
+- !private ["PSs9Equatable", "width"]
+- ["PSs9Equatable", ""]
+- !private ["C7PaletV210ExitButton", "CGPoint"]
+- ["C7PaletV210ExitButton", "CGRect"]
+- ["C7PaletV210ExitButton", "deinit"]
+- ["C7PaletV210ExitButton", "drawRect"]
+- !private ["C7PaletV210ExitButton", "icon_color"]
+- ["C7PaletV210ExitButton", "init"]
+- !private ["C7PaletV210ExitButton", "line_width"]
+- !private ["C7PaletV210ExitButton", "path"]
+- !private ["PSs8Hashable", "CGPoint"]
+- !private ["PSs8Hashable", "addLineToPoint"]
+- ["PSs8Hashable", "drawRect"]
+- !private ["PSs8Hashable", "icon_color"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "lineWidth"]
+- !private ["PSs8Hashable", "line_width"]
+- !private ["PSs8Hashable", "moveToPoint"]
+- !private ["PSs8Hashable", "path"]
+- !private ["PSs8Hashable", "setStroke"]
+- !private ["PSs8Hashable", "stroke"]
+- ["PSs8Hashable", ""]
+- !private ["C7PaletV210MenuButton", "CGPoint"]
+- ["C7PaletV210MenuButton", "CGRect"]
+- ["C7PaletV210MenuButton", "drawRect"]
+- !private ["C7PaletV210MenuButton", "icon_color"]
+- ["C7PaletV210MenuButton", "init"]
+- !private ["C7PaletV210MenuButton", "line_width"]
+- !private ["C7PaletV210MenuButton", "path"]
+- ["C7PaletV210MenuButton", ""]
+- !private ["PSo8NSCoding", "CGPoint"]
+- !private ["PSo8NSCoding", "addLineToPoint"]
+- ["PSo8NSCoding", "drawRect"]
+- !private ["PSo8NSCoding", "icon_color"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lineWidth"]
+- !private ["PSo8NSCoding", "line_width"]
+- !private ["PSo8NSCoding", "moveToPoint"]
+- !private ["PSo8NSCoding", "path"]
+- !private ["PSo8NSCoding", "setStroke"]
+- !private ["PSo8NSCoding", "stroke"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "addLineToPoint"]
+- !private ["PSo9NSCopying", "lineWidth"]
+- !private ["PSo9NSCopying", "moveToPoint"]
+- !private ["PSo9NSCopying", "setStroke"]
+- !private ["PSo9NSCopying", "stroke"]
+- !private ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "addLineToPoint"]
+- ["CSo8NSObject", "drawRect"]
+- !private ["CSo8NSObject", "icon_color"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "lineWidth"]
+- !private ["CSo8NSObject", "line_width"]
+- !private ["CSo8NSObject", "moveToPoint"]
+- !private ["CSo8NSObject", "path"]
+- !private ["CSo8NSObject", "setStroke"]
+- !private ["CSo8NSObject", "stroke"]
+- !private ["PSo16NSObjectProtocol", "CGPoint"]
+- !private ["PSo16NSObjectProtocol", "addLineToPoint"]
+- ["PSo16NSObjectProtocol", "drawRect"]
+- !private ["PSo16NSObjectProtocol", "icon_color"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lineWidth"]
+- !private ["PSo16NSObjectProtocol", "line_width"]
+- !private ["PSo16NSObjectProtocol", "moveToPoint"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- !private ["PSo16NSObjectProtocol", "setStroke"]
+- !private ["PSo16NSObjectProtocol", "stroke"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "setStroke"]
+- !private ["PSo29UIAccessibilityIdentification", "CGPoint"]
+- ["PSo29UIAccessibilityIdentification", "drawRect"]
+- !private ["PSo29UIAccessibilityIdentification", "icon_color"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "line_width"]
+- !private ["PSo29UIAccessibilityIdentification", "path"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGPoint"]
+- ["PSo12UIAppearance", "drawRect"]
+- !private ["PSo12UIAppearance", "icon_color"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "line_width"]
+- !private ["PSo12UIAppearance", "path"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGPoint"]
+- ["PSo21UIAppearanceContainer", "drawRect"]
+- !private ["PSo21UIAppearanceContainer", "icon_color"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "line_width"]
+- !private ["PSo21UIAppearanceContainer", "path"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo12UIBezierPath", "addLineToPoint"]
+- !private ["CSo12UIBezierPath", "lineWidth"]
+- !private ["CSo12UIBezierPath", "moveToPoint"]
+- !private ["CSo12UIBezierPath", "stroke"]
+- !private ["CSo8UIButton", "CGPoint"]
+- ["CSo8UIButton", "CGRect"]
+- ["CSo8UIButton", "drawRect"]
+- !private ["CSo8UIButton", "icon_color"]
+- ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "line_width"]
+- !private ["CSo8UIButton", "path"]
+- !private ["CSo7UIColor", "setStroke"]
+- !private ["CSo9UIControl", "CGPoint"]
+- ["CSo9UIControl", "CGRect"]
+- ["CSo9UIControl", "drawRect"]
+- !private ["CSo9UIControl", "icon_color"]
+- ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "line_width"]
+- !private ["CSo9UIControl", "path"]
+- !private ["PSo17UICoordinateSpace", "CGPoint"]
+- ["PSo17UICoordinateSpace", "drawRect"]
+- !private ["PSo17UICoordinateSpace", "icon_color"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "line_width"]
+- !private ["PSo17UICoordinateSpace", "path"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGPoint"]
+- ["PSo13UIDynamicItem", "drawRect"]
+- !private ["PSo13UIDynamicItem", "icon_color"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "line_width"]
+- !private ["PSo13UIDynamicItem", "path"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["CSo11UIResponder", "CGPoint"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "drawRect"]
+- !private ["CSo11UIResponder", "icon_color"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "line_width"]
+- !private ["CSo11UIResponder", "path"]
+- !private ["PSo18UITraitEnvironment", "CGPoint"]
+- ["PSo18UITraitEnvironment", "drawRect"]
+- !private ["PSo18UITraitEnvironment", "icon_color"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "line_width"]
+- !private ["PSo18UITraitEnvironment", "path"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "CGPoint"]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "drawRect"]
+- !private ["CSo6UIView", "icon_color"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "line_width"]
+- !private ["CSo6UIView", "path"]
+- !private ["PSs12_Reflectable", "CGPoint"]
+- ["PSs12_Reflectable", "drawRect"]
+- !private ["PSs12_Reflectable", "height"]
+- !private ["PSs12_Reflectable", "icon_color"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "line_width"]
+- !private ["PSs12_Reflectable", "path"]
+- !private ["PSs12_Reflectable", "width"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- "C7PaletV210ExitButton"
+- "PSs8Hashable"
+- "C7PaletV210MenuButton"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo12UIBezierPath"
+- "CSo8UIButton"
+- !private "CSo7UIColor"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "d8ed7a1368f9357e6553015f97e33406"

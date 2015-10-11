@@ -42,6 +42,7 @@
 		469C56F91BC884F300F952E8 /* CopyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C56F81BC884F300F952E8 /* CopyController.swift */; settings = {ASSET_TAGS = (); }; };
 		469C56FD1BC8853100F952E8 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C56FC1BC8853100F952E8 /* ExitButton.swift */; settings = {ASSET_TAGS = (); }; };
 		469C56FF1BC8857100F952E8 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C56FE1BC8857100F952E8 /* SaveButton.swift */; settings = {ASSET_TAGS = (); }; };
+		469C57021BC8D29200F952E8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C57011BC8D29200F952E8 /* Device.swift */; settings = {ASSET_TAGS = (); }; };
 		46B553191BAB5CB6007D814D /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B553181BAB5CB6007D814D /* EmailButton.swift */; };
 		46BF1F681BAF29AB0095F13B /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F671BAF29AB0095F13B /* DeleteButton.swift */; settings = {ASSET_TAGS = (); }; };
 		46BF1F6B1BAF45770095F13B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF1F6A1BAF45770095F13B /* Core.swift */; settings = {ASSET_TAGS = (); }; };
@@ -104,6 +105,7 @@
 		469C56F81BC884F300F952E8 /* CopyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyController.swift; sourceTree = "<group>"; };
 		469C56FC1BC8853100F952E8 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitButton.swift; path = ../ExitButton.swift; sourceTree = "<group>"; };
 		469C56FE1BC8857100F952E8 /* SaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveButton.swift; path = ../SaveButton.swift; sourceTree = "<group>"; };
+		469C57011BC8D29200F952E8 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		46B553181BAB5CB6007D814D /* EmailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		46BF1F671BAF29AB0095F13B /* DeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		46BF1F6A1BAF45770095F13B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = ../Core.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		46140F641BA90CC900E8CCD2 /* PaletV2 */ = {
 			isa = PBXGroup;
 			children = (
+				469C57001BC8D1C700F952E8 /* Device */,
 				46140F671BA90CC900E8CCD2 /* AppDelegate.swift */,
 				46D671001BC70F290007296D /* TextFieldOverride */,
 				4608982E1BAA7269005275AD /* ViewControllers */,
@@ -259,6 +262,14 @@
 				46D671031BC7770B0007296D /* Stepper.swift */,
 			);
 			name = ControlButtons;
+			sourceTree = "<group>";
+		};
+		469C57001BC8D1C700F952E8 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				469C57011BC8D29200F952E8 /* Device.swift */,
+			);
+			name = Device;
 			sourceTree = "<group>";
 		};
 		46BF1F661BAF288A0095F13B /* InfoControllers */ = {
@@ -416,6 +427,7 @@
 				4608983F1BAA835F005275AD /* AnimatedTableView.swift in Sources */,
 				469C56F91BC884F300F952E8 /* CopyController.swift in Sources */,
 				46EFAA8E1BAB9B4E00E5AA40 /* EmailController.swift in Sources */,
+				469C57021BC8D29200F952E8 /* Device.swift in Sources */,
 				46140FA51BAA0D4200E8CCD2 /* NavButton.swift in Sources */,
 				460898431BAAA997005275AD /* MenuButton.swift in Sources */,
 				46140F951BA9C18800E8CCD2 /* Color.swift in Sources */,

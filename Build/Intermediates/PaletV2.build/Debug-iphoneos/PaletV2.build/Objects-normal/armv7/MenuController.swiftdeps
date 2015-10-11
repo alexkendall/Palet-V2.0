@@ -6,50 +6,49 @@ provides-nominal:
 provides-member:
 - ["C7PaletV213SelController", ""]
 provides-dynamic-lookup:
-- "back_view"
-- "prefersStatusBarHidden"
-- "viewDidLoad"
-- "nav"
 - "colors"
-- "label_texts"
+- "viewDidLoad"
+- "prefersStatusBarHidden"
+- "back_view"
+- "nav"
 - "didReceiveMemoryWarning"
+- "label_texts"
 depends-top-level:
-- !private "UILabel"
-- !private "WOLF_GRAY"
-- "SelController"
-- "CGFloat"
-- "AuxillaryController"
-- "SOFT_ORANGE"
-- !private "-"
-- !private "++"
-- "MAGENTA"
-- !private "*"
-- "StringLiteralType"
 - "LIGHT_BLUE"
-- !private "=="
-- !private "FavoriteButton"
-- !private "MenuButton"
-- "Bool"
-- "UIView"
-- !private "UIFont"
+- !private "UIControlEvents"
 - !private "PickerButton"
-- "NavButton"
-- !private "<"
+- !private "++"
+- "UIColor"
 - !private "nav_controller"
+- !private "AddButton"
+- !private "WOLF_GRAY"
+- !private "<"
+- "StringLiteralType"
+- !private "-"
+- !private "=="
+- "SOFT_ORANGE"
+- "AuxillaryController"
+- "MAGENTA"
+- !private "FavoriteButton"
+- "Bool"
+- "NavButton"
+- !private "UIFont"
+- "Array"
+- "SelController"
+- !private "+"
+- !private "*"
+- !private "UILabel"
+- !private "MenuButton"
+- "UIView"
+- !private "/"
+- "CGFloat"
 - !private "BooleanLiteralType"
 - "SOFT_GREEN"
-- !private "AddButton"
-- !private "UIControlEvents"
-- "Array"
-- !private "+"
 - !private "CGRect"
-- "UIColor"
-- !private "/"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["C7PaletV29AddButton", "init"]
 - !private ["PSs9AnyObject", "AddButton"]
-- !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGFloat"]
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "FavoriteButton"]
@@ -70,7 +69,6 @@ depends-member:
 - ["PSs9AnyObject", "back_view"]
 - !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "blackColor"]
-- !private ["PSs9AnyObject", "borderColor"]
 - !private ["PSs9AnyObject", "borderWidth"]
 - !private ["PSs9AnyObject", "bounds"]
 - ["PSs9AnyObject", "colors"]
@@ -150,9 +148,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["CSo7CALayer", "borderColor"]
 - !private ["CSo7CALayer", "borderWidth"]
-- !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
@@ -161,7 +157,6 @@ depends-member:
 - !private ["VSC6CGRect", "maxX"]
 - !private ["VSC6CGRect", "width"]
 - !private ["PSs11CVarArgType", "AddButton"]
-- !private ["PSs11CVarArgType", "CGColor"]
 - !private ["PSs11CVarArgType", "CGFloat"]
 - !private ["PSs11CVarArgType", "CGRect"]
 - !private ["PSs11CVarArgType", "Distance"]
@@ -184,7 +179,6 @@ depends-member:
 - ["PSs11CVarArgType", "back_view"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "blackColor"]
-- !private ["PSs11CVarArgType", "borderColor"]
 - !private ["PSs11CVarArgType", "borderWidth"]
 - !private ["PSs11CVarArgType", "bounds"]
 - ["PSs11CVarArgType", "colors"]
@@ -228,7 +222,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "AddButton"]
-- !private ["PSs23CustomStringConvertible", "CGColor"]
 - !private ["PSs23CustomStringConvertible", "CGFloat"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
@@ -256,7 +249,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "back_view"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "blackColor"]
-- !private ["PSs23CustomStringConvertible", "borderColor"]
 - !private ["PSs23CustomStringConvertible", "borderWidth"]
 - !private ["PSs23CustomStringConvertible", "bounds"]
 - ["PSs23CustomStringConvertible", "colors"]
@@ -286,7 +278,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "yellowColor"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "AddButton"]
-- !private ["PSs9Equatable", "CGColor"]
 - !private ["PSs9Equatable", "CGFloat"]
 - !private ["PSs9Equatable", "CGRect"]
 - !private ["PSs9Equatable", "Distance"]
@@ -311,7 +302,6 @@ depends-member:
 - ["PSs9Equatable", "back_view"]
 - !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "blackColor"]
-- !private ["PSs9Equatable", "borderColor"]
 - !private ["PSs9Equatable", "borderWidth"]
 - !private ["PSs9Equatable", "bounds"]
 - ["PSs9Equatable", "colors"]
@@ -348,7 +338,6 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "AddButton"]
-- !private ["PSs8Hashable", "CGColor"]
 - !private ["PSs8Hashable", "CGFloat"]
 - !private ["PSs8Hashable", "CGRect"]
 - !private ["PSs8Hashable", "Distance"]
@@ -372,7 +361,6 @@ depends-member:
 - ["PSs8Hashable", "back_view"]
 - !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "blackColor"]
-- !private ["PSs8Hashable", "borderColor"]
 - !private ["PSs8Hashable", "borderWidth"]
 - !private ["PSs8Hashable", "bounds"]
 - ["PSs8Hashable", "colors"]
@@ -445,7 +433,6 @@ depends-member:
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "AddButton"]
-- !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "FavoriteButton"]
@@ -466,7 +453,6 @@ depends-member:
 - ["PSo8NSCoding", "back_view"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
-- !private ["PSo8NSCoding", "borderColor"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "colors"]
@@ -493,7 +479,6 @@ depends-member:
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", "yellowColor"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightGrayColor"]
@@ -529,7 +514,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSObject", "AddButton"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "FavoriteButton"]
@@ -551,7 +535,6 @@ depends-member:
 - ["CSo8NSObject", "back_view"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
-- !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "colors"]
@@ -578,7 +561,6 @@ depends-member:
 - !private ["CSo8NSObject", "whiteColor"]
 - ["CSo8NSObject", "yellowColor"]
 - !private ["PSo16NSObjectProtocol", "AddButton"]
-- !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "FavoriteButton"]
@@ -599,7 +581,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "back_view"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
-- !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "colors"]
@@ -626,7 +607,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", "yellowColor"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "blackColor"]
 - !private ["PSo14NSSecureCoding", "lightGrayColor"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
@@ -773,7 +753,6 @@ depends-member:
 - !private ["CSo8UIButton", "set_highlight_color"]
 - !private ["CSo8UIButton", "set_path_width"]
 - !private ["CSo8UIButton", "set_unhighlight_color"]
-- !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "lightGrayColor"]
 - !private ["CSo7UIColor", "whiteColor"]
@@ -1175,4 +1154,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "d1bd417ffcc69ca970c8a0793cdd7916"
+interface-hash: "c95e5d01413561e59bffad75a7124230"
